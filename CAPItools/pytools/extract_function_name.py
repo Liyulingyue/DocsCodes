@@ -1,63 +1,75 @@
-import re
+import CppHeaderParser
+import json
+import os
+
+# TODO 通过已安装的 paddle 来查找 include
+# import paddle
+# import inspect
+#
+# # 获取已安装paddle的路径
+# print(os.path.dirname(inspect.getsourcefile(paddle)))
 
 
-def analysis_function_type1(text):
-    """
-        主要解析的结构如下:
-        ```
-        PADDLE_API Tensor acos(const Tensor& x);
-        ```
-    Args:
-        text: 文件内容
-
-    Returns:
-        func_data: 函数返回值和输入参数
-        func_name: 函数名
-    """
-    # 获取所在行
-    func_line = re.findall(r"PADDLE_API (.*?)\n", text, re.DOTALL)
-    for i in func_line:
-        # 处理返回值[0],和输入参数[1]
-        func_data = re.split(r'(.*?) [a-zA-Z0-9_]*?\((.*?)\);', i)[1:-1]
-        # 处理函数名
-        func_name = re.search(r' [a-zA-Z0-9_]*?\([a-zA-Z_]', i).group()[:-2]
-    return func_data, func_name
-
-
-# TODO 这里要考虑到部分函数不包含的情况(放在外层)
+# TODO 需要单独处理一下这种
 """
-namespace A{
-
-namespace B{
-} // namespace B
-
-namespace C{
-} // namespace C
-
-} // namespace A
+#if defined(PADDLE_WITH_CUDA) || defined(PADDLE_WITH_HIP)
+/**
+ * Get the current CUDA stream for the passed CUDA device.
+ */
+PADDLE_API phi::CUDAStream* GetCurrentCUDAStream(const phi::Place& place);
+#endif
 """
-def analysis_namespace(text):
-    """
-        主要解析的结构如下:
-        ```
-        namespace paddle {
-        namespace framework {
-        ```
-    Args:
-        text: 文件内容
-
-    Returns:
-        namespace: 最外层namespace
-        data: 去除最外层namespace的内容
-    """
-    # 提取第一个 namespace
-    namespace = re.split(r'namespace (.*?) \{', text)
-    data = text.split('namespace ' + namespace[1] + " {")[1].split('}  // namespace ' + namespace[1])[0]
-    return namespace, data
 
 
-# if __name__ == "__main__":
-#     file_path = '../paddle/phi/api/include/api.h'
-#     with open(file_path, 'r') as f:
-#         file_content = f.read()
-#         analysis_namespace(file_content)
+# 获取存在 PADDLE_API func 数组的名称
+def get_PADDLE_API_func(data: dict):
+    result = []
+    for i in data["functions"]:
+        if 'PADDLE_API' in i['debug']:
+            result.append(i)
+    return result
+
+
+# 获取存在 PADDLE_API class 数组的名称
+def get_PADDLE_API_class(data: dict):
+    result = []
+    for classname in data["classes"]:
+        # TODO 目前没有 PADDLE_API 是 struct 的
+        if data["classes"][classname]["declaration_method"] == "struct":
+            continue
+
+        # TODO 这里需要处理一下, 因为类名和 PADDLE_API 会粘在一起, 例: PADDLE_APIDeviceContextPool
+        if "PADDLE_API" in classname:
+            result.append(data["classes"][classname])
+    return result
+
+
+# 获取namespace
+# 多线程使用并不安全, 请不要使用多线程
+def analysis_file(path):
+    header = CppHeaderParser.CppHeader(path)
+    data = json.loads(header.toJSON())
+    # print(header.toJSON())
+    # print(data)
+    # print(type(data))
+    return data
+
+
+if __name__ == "__main__":
+    # file_path = '../paddle/phi/api/include/api.h'
+    # file_path = '../paddle/phi/api/include/context_pool.h'
+    # data = analysis_file(file_path)
+    # print(get_PADDLE_API_class(data))
+
+    root_dir = '../paddle'
+    for home, dirs, files in os.walk(root_dir):
+        for file_name in files:
+            # 跳过文件中未包含PADDLE_API
+            file_path = os.path.join(home, file_name)
+            with open(file_path, encoding='utf8') as f:
+                if 'PADDLE_API ' not in f.read():
+                    continue
+
+            print("Parsing: ", file_path)
+            data = analysis_file(file_path)
+            print(get_PADDLE_API_class(data))
