@@ -50,9 +50,29 @@ def get_PADDLE_API_class(data: dict):
 def analysis_file(path):
     header = CppHeaderParser.CppHeader(path)
     data = json.loads(header.toJSON())
-    # print(header.toJSON())
-    # print(data)
     return data
+
+
+# 获取方法中的参数parameters
+def get_parameters(parameters):
+    parameter_api = ""  # 这里解析是给api使用的 (暂时不用)
+    parameter = "\n参数\n:::::::::::::::::::::\n"
+    for i in parameters:
+        parameter_type_tmp = i['type'].replace(" &", "").replace(" *", "")
+        # * 和 & 情况
+        # parameter_api += parameter_type_tmp
+        if i["reference"] == 1:
+            # parameter_api += "&"
+            parameter_type_tmp += "&"
+        elif i["pointer"] == 1:
+            # parameter_api += "*"
+            parameter_type_tmp += "*"
+        # parameter_api += f" {i['name']}, "
+        desc = i.get('desc', '').replace('  ', '')
+        parameter += f"\t- **{i['name']}** ({parameter_type_tmp}) - {desc}\n"
+    # 去掉末尾的逗号
+    # parameter_api = parameter_api[:-2]
+    return parameter, parameter_api
 
 
 # 生成函数文档
@@ -60,29 +80,14 @@ def generate_func_docs_file(data: dict):
     # TODO 这里要看一下 operator== 这种情况能不能正常解析
     func_name = data["name"]
     namespace = data["namespace"].replace("::", "_")
+    doxygen = data.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
     # TODO 如果使用已安装的 paddle 包需要调整
     file_path = data["filename"].replace("../", "")
 
     # 解析参数
     parameter = ""
-    parameter_api = ""  # 这里解析是给api使用的
     if len(data["parameters"]) != 0:
-        parameter = "\n参数\n:::::::::::::::::::::\n"
-        for i in data["parameters"]:
-            parameter_type_tmp = i['type'].replace(" &", "").replace(" *", "")
-            # * 和 & 情况
-            parameter_api += parameter_type_tmp
-            if i["reference"] == 1:
-                parameter_api += "&"
-                parameter_type_tmp += "&"
-            elif i["pointer"] == 1:
-                parameter_api += "*"
-                parameter_type_tmp += "*"
-            parameter_api += f" {i['name']}, "
-            desc = i.get('desc', '').replace('  ', '')
-            parameter += f"\t- **{i['name']}** ({parameter_type_tmp}) - {desc}\n"
-        # 去掉末尾的逗号
-        parameter_api = parameter_api[:-2]
+        parameter, parameter_api = get_parameters(data["parameters"])
 
     # 解析返回值, 这里不用考虑空返回值, 因为空也会有 void
     returns_text = "\n返回\n:::::::::::::::::::::\n"
@@ -90,7 +95,7 @@ def generate_func_docs_file(data: dict):
 
     # 解析api
     api = data["debug"].replace("PADDLE_API ", "")  # 这个解析出来会有空格
-    # api = f"{returns} {func_name}({parameter_api});" # 这个部分解析不到type
+    # api = f"{returns} {func_name}({parameter_api});" # 这个有部分api解析不到type
 
     # TODO 这里面的描述要根据中英文来修改
     text = f""".. _{LANGUAGE}_api_{namespace}{func_name}:
@@ -100,22 +105,89 @@ def generate_func_docs_file(data: dict):
 
 .. cpp:function:: {api}
 
-// TODO 描述: 这里用解析的
+<name="desc">
+{doxygen}
+</name>
 
 定义目录
 :::::::::::::::::::::
 {file_path}
 {parameter}
 {returns_text + returns}
+
+<name="reference_link">
+
+</name>
+
 """
+    # TODO 参考链接
     # TODO 代码示例 (暂时不考虑)
     return text
 
 
 # 生成类文档
 def generate_class_doc_file(data: dict):
-    # TODO 解析class
-    pass
+    class_name = data["name"].replace("PADDLE_API", "")
+    # TODO 如果使用已安装的 paddle 包需要调整
+    file_path = data["filename"].replace("../", "")
+    doxygen = data.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
+    # 初始化函数
+    init_func = class_name
+    funcs = ""
+    parameter = ""
+    if len(data["methods"]["public"]) != 0:
+        funcs += "方法\n:::::::::::::::::::::\n"
+        for i in data["methods"]["public"]:
+            if class_name in i["name"] and len(i["debug"]) > len(init_func):
+                init_func = i["debug"]
+            # 获取描述
+            funcs_doxygen = i.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
+            # 解析参数
+            parameter = ""
+            if len(i["parameters"]) != 0:
+                parameter, parameter_api = get_parameters(i["parameters"])
+            # 获取返回值
+            returns = i["returns"].replace("PADDLE_API ", "")
+            if returns == "":
+                returns = "无"
+            funcs += f"""{i["debug"]}
+'''''''''
+<name="desc">
+{funcs_doxygen}
+</name>
+
+{parameter}
+返回
+:::::::::::::::::::::
+{returns}
+
+"""
+
+    text = f""".. _cn_api_{class_name}:
+
+{class_name}
+-------------------------------
+
+.. cpp:class:: {init_func}
+
+<name="desc">
+{doxygen}
+</name>
+
+定义目录
+:::::::::::::::::::::
+{file_path}
+
+{funcs}
+
+<name="reference_link">
+
+</name>
+
+"""
+    # TODO 参考链接
+    # TODO 代码示例 (暂时不考虑)
+    return text
 
 
 # 生成文件
@@ -135,14 +207,14 @@ def generate_docs(all_funcs, all_class):
         path = i["filename"].replace("../", "").replace(".h", "")
         if not os.path.exists("./" + path):
             os.makedirs("./" + path)
+        text = generate_class_doc_file(i)
+
+        func_name = i["name"].replace("PADDLE_API", "")
+        f = open("./" + path + "/" + func_name + ".rst", "w")
+        f.write(text)
 
 
 if __name__ == "__main__":
-    # file_path = '../paddle/phi/api/include/api.h'
-    # file_path = '../paddle/phi/api/include/context_pool.h'
-    # data = analysis_file(file_path)
-    # print(get_PADDLE_API_class(data))
-
     all_funcs = []
     all_class = []
     root_dir = '../paddle'
@@ -156,11 +228,6 @@ if __name__ == "__main__":
 
             print("Parsing: ", file_path)
             data = analysis_file(file_path)
-            # print(get_PADDLE_API_func(data))
-            # print(get_PADDLE_API_class(data))
-            # if len(all_class) != 0:
-            #     generate_docs(all_funcs, all_class)
-            #     exit()
             all_funcs.extend(get_PADDLE_API_func(data))
             all_class.extend(get_PADDLE_API_class(data))
 
