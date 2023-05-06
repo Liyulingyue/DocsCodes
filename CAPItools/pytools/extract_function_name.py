@@ -57,8 +57,6 @@ def analysis_file(path):
 
 # 生成函数文档
 def generate_func_docs_file(data: dict):
-    if data["name"] == "from_blob":
-        print(data)
     # TODO 这里要看一下 operator== 这种情况能不能正常解析
     func_name = data["name"]
     namespace = data["namespace"].replace("::", "_")
@@ -123,20 +121,20 @@ def generate_class_doc_file(data: dict):
 # 生成文件
 def generate_docs(all_funcs, all_class):
     for i in all_funcs:
-        path = i["namespace"].replace("::", "/")
+        path = i["filename"].replace("../", "").replace(".h", "")
         if not os.path.exists("./" + path):
-            os.mkdir("./" + path)
+            os.makedirs("./" + path)
         text = generate_func_docs_file(i)
 
         # TODO 这个反斜杠需要单独处理看看
         func_name = i["name"].replace("/", "")
-        f = open("./" + path + func_name + ".rst", "w")
+        f = open("./" + path + "/" + func_name + ".rst", "w")
         f.write(text)
 
     for i in all_class:
-        path = i["namespace"].replace("::", "/")
+        path = i["filename"].replace("../", "").replace(".h", "")
         if not os.path.exists("./" + path):
-            os.mkdir("./" + path)
+            os.makedirs("./" + path)
 
 
 if __name__ == "__main__":
