@@ -48,7 +48,7 @@ def get_PADDLE_API_class(data: dict):
 # 获取namespace
 # 多线程使用并不安全, 请不要使用多线程
 def analysis_file(path):
-    header = CppHeaderParser.CppHeader(path)
+    header = CppHeaderParser.CppHeader(path, encoding='utf8')
     data = json.loads(header.toJSON())
     return data
 
@@ -200,8 +200,12 @@ def generate_docs(all_funcs, all_class):
 
         # TODO 这个反斜杠需要单独处理看看
         func_name = i["name"].replace("/", "")
-        f = open("./" + path + "/" + func_name + ".rst", "w")
-        f.write(text)
+        # avoid a filename such as operate*.rst
+        try:
+            f = open("./" + path + "/" + func_name + ".rst", "w")
+            f.write(text)
+        except:
+            pass
 
     for i in all_class:
         path = i["filename"].replace("../", "").replace(".h", "")
