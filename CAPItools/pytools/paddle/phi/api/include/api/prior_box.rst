@@ -5,11 +5,11 @@ prior_box
 
 ..cpp: function::std::tuple<Tensor , Tensor> prior_box ( const Tensor & input , const Tensor & image , const std::vector<float> & min_sizes , const std::vector<float> & max_sizes = { } , const std::vector<float> & aspect_ratios = { } , const std::vector<float> & variances = { } , bool flip = true , bool clip = true , float step_w = 0.0 , float step_h = 0.0 , float offset = 0.5 , bool min_max_aspect_ratios_order = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **input** (const Tensor&) - 
 	- **image** (const Tensor&) - 
@@ -24,6 +24,6 @@ paddle\phi\api\include\api.h
 	- **offset** (float) - 
 	- **min_max_aspect_ratios_order** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

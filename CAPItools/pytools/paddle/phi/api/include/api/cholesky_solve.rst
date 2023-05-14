@@ -5,16 +5,16 @@ cholesky_solve
 
 ..cpp: function::Tensor cholesky_solve ( const Tensor & x , const Tensor & y , bool upper = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **y** (const Tensor&) - 
 	- **upper** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

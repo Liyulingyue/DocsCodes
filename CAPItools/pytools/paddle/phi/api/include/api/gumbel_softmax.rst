@@ -5,17 +5,17 @@ gumbel_softmax
 
 ..cpp: function::Tensor gumbel_softmax ( const Tensor & x , float temperature = 1.0 , bool hard = false , int axis = - 1 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **temperature** (float) - 
 	- **hard** (bool) - 
 	- **axis** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

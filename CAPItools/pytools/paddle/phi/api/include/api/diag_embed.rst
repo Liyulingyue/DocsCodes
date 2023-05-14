@@ -5,17 +5,17 @@ diag_embed
 
 ..cpp: function::Tensor diag_embed ( const Tensor & input , int offset = 0 , int dim1 = - 2 , int dim2 = - 1 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **input** (const Tensor&) - 
 	- **offset** (int) - 
 	- **dim1** (int) - 
 	- **dim2** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

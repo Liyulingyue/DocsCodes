@@ -5,11 +5,11 @@ dropout
 
 ..cpp: function::std::tuple<Tensor , Tensor> dropout ( const Tensor & x , const paddle::optional<Tensor> & seed_tensor , const Scalar & p , bool is_test , const std::string & mode , int seed , bool fix_seed ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **seed_tensor** (const paddle::optional<Tensor>&) - 
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **seed** (int) - 
 	- **fix_seed** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

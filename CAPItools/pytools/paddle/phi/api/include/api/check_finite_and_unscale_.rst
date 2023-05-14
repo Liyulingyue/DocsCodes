@@ -5,16 +5,16 @@ check_finite_and_unscale_
 
 ..cpp: function::std::tuple<std::vector<Tensor> & , Tensor &> check_finite_and_unscale_ ( std::vector<Tensor> & x , const Tensor & scale , Tensor & input_found_infinite ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (std::vector<Tensor>&) - 
 	- **scale** (const Tensor&) - 
 	- **input_found_infinite** (Tensor&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<std::vector<Tensor> , Tensor >

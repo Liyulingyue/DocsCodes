@@ -5,16 +5,16 @@ roll
 
 ..cpp: function::Tensor roll ( const Tensor & x , const IntArray & shifts = { } , const std::vector<int64_t> & axis = { } ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **shifts** (const IntArray&) - 
 	- **axis** (const std::vector<int64_t>&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

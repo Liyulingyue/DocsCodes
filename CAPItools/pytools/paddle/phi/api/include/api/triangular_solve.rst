@@ -5,11 +5,11 @@ triangular_solve
 
 ..cpp: function::Tensor triangular_solve ( const Tensor & x , const Tensor & y , bool upper , bool transpose , bool unitriangular ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **y** (const Tensor&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **transpose** (bool) - 
 	- **unitriangular** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

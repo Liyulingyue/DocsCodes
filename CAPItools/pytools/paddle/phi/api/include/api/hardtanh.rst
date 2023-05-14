@@ -5,16 +5,16 @@ hardtanh
 
 ..cpp: function::Tensor hardtanh ( const Tensor & x , float t_min = 0 , float t_max = 24 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **t_min** (float) - 
 	- **t_max** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

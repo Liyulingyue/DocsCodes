@@ -5,15 +5,15 @@ clip_by_norm
 
 ..cpp: function::Tensor clip_by_norm ( const Tensor & x , float max_norm ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **max_norm** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

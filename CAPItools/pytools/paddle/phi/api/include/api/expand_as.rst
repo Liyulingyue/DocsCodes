@@ -5,16 +5,16 @@ expand_as
 
 ..cpp: function::Tensor expand_as ( const Tensor & x , const paddle::optional<Tensor> & y , const std::vector<int> & target_shape = { } ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **y** (const paddle::optional<Tensor>&) - 
 	- **target_shape** (const std::vector<int>&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

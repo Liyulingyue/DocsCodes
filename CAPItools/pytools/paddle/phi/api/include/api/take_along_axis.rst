@@ -5,16 +5,16 @@ take_along_axis
 
 ..cpp: function::Tensor take_along_axis ( const Tensor & arr , const Tensor & indices , int axis ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **arr** (const Tensor&) - 
 	- **indices** (const Tensor&) - 
 	- **axis** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

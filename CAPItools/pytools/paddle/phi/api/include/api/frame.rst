@@ -5,17 +5,17 @@ frame
 
 ..cpp: function::Tensor frame ( const Tensor & x , int frame_length , int hop_length , int axis = - 1 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **frame_length** (int) - 
 	- **hop_length** (int) - 
 	- **axis** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

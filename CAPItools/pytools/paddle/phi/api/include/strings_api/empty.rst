@@ -5,15 +5,15 @@ empty
 
 ..cpp: function::Tensor empty ( const IntArray & shape , const Place & place = CPUPlace ( ) ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\strings_api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **shape** (const IntArray&) - 
 	- **place** (const Place&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

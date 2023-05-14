@@ -5,11 +5,11 @@ slice
 
 ..cpp: function::Tensor slice ( const Tensor & input , const std::vector<int64_t> & axes , const IntArray & starts , const IntArray & ends , const std::vector<int64_t> & infer_flags , const std::vector<int64_t> & decrease_axis ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **input** (const Tensor&) - 
 	- **axes** (const std::vector<int64_t>&) - 
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **infer_flags** (const std::vector<int64_t>&) - 
 	- **decrease_axis** (const std::vector<int64_t>&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

@@ -5,11 +5,11 @@ matrix_nms
 
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor> matrix_nms ( const Tensor & bboxes , const Tensor & scores , float score_threshold , int nms_top_k , int keep_top_k , float post_threshold = 0 . , bool use_gaussian = false , float gaussian_sigma = 2 . , int background_label = 0 , bool normalized = true ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **bboxes** (const Tensor&) - 
 	- **scores** (const Tensor&) - 
@@ -22,6 +22,6 @@ paddle\phi\api\include\api.h
 	- **background_label** (int) - 
 	- **normalized** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

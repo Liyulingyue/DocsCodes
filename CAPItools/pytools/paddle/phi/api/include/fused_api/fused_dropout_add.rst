@@ -5,11 +5,11 @@ fused_dropout_add
 
 ..cpp: function::std::tuple<Tensor , Tensor> fused_dropout_add ( const Tensor & x , const Tensor & y , const paddle::optional<Tensor> & seed_tensor , const Scalar & p , bool is_test , const std::string & mode , int seed = 0 , bool fix_seed = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\fused_api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **y** (const Tensor&) - 
@@ -20,6 +20,6 @@ paddle\phi\api\include\fused_api.h
 	- **seed** (int) - 
 	- **fix_seed** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

@@ -5,16 +5,16 @@ lerp_
 
 ..cpp: function::Tensor & lerp_ ( Tensor & x , const Tensor & y , const Tensor & weight ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (Tensor&) - 
 	- **y** (const Tensor&) - 
 	- **weight** (const Tensor&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

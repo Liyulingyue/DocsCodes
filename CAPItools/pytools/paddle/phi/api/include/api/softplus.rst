@@ -5,16 +5,16 @@ softplus
 
 ..cpp: function::Tensor softplus ( const Tensor & x , float beta = 1.0 , float threshold = 20.0 f ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **beta** (float) - 
 	- **threshold** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

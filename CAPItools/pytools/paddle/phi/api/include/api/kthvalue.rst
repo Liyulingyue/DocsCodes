@@ -5,17 +5,17 @@ kthvalue
 
 ..cpp: function::std::tuple<Tensor , Tensor> kthvalue ( const Tensor & x , int k = 1 , int axis = - 1 , bool keepdim = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **k** (int) - 
 	- **axis** (int) - 
 	- **keepdim** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

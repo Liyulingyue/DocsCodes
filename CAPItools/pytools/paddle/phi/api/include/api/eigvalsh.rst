@@ -5,16 +5,16 @@ eigvalsh
 
 ..cpp: function::std::tuple<Tensor , Tensor> eigvalsh ( const Tensor & x , const std::string & uplo = "L" , bool is_test = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **uplo** (const std::string&) - 
 	- **is_test** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

@@ -5,15 +5,15 @@ subtract_
 
 ..cpp: function::Tensor & subtract_ ( Tensor & x , const Tensor & y ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (Tensor&) - 
 	- **y** (const Tensor&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

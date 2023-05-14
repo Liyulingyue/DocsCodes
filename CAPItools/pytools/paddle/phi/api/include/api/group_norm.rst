@@ -5,11 +5,11 @@ group_norm
 
 ..cpp: function::Tensor group_norm ( const Tensor & x , const paddle::optional<Tensor> & scale , const paddle::optional<Tensor> & bias , float epsilon , int groups , const std::string & data_layout ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **scale** (const paddle::optional<Tensor>&) - 
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **groups** (int) - 
 	- **data_layout** (const std::string&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

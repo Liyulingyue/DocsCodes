@@ -5,11 +5,11 @@ deformable_conv
 
 ..cpp: function::Tensor deformable_conv ( const Tensor & x , const Tensor & offset , const Tensor & filter , const paddle::optional<Tensor> & mask , const std::vector<int> & strides , const std::vector<int> & paddings , const std::vector<int> & dilations , int deformable_groups , int groups , int im2col_step ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **offset** (const Tensor&) - 
@@ -22,6 +22,6 @@ paddle\phi\api\include\api.h
 	- **groups** (int) - 
 	- **im2col_step** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

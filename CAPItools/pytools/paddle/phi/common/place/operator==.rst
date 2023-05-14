@@ -5,15 +5,15 @@ operator==
 
 ..cpp: function::bool operator = = ( PlaceType place_type , const Place & place ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\common\place.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **place_type** (PlaceType) - 
 	- **place** (Place&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 bool

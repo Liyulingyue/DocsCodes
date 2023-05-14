@@ -5,11 +5,11 @@ fused_adam_
 
 ..cpp: function::std::tuple<std::vector<Tensor> & , std::vector<Tensor> & , std::vector<Tensor> & , std::vector<Tensor> & , std::vector<Tensor> & , paddle::optional<std::vector<Tensor> > &> fused_adam_ ( std::vector<Tensor> & params , const std::vector<Tensor> & grads , const Tensor & learning_rate , std::vector<Tensor> & moments1 , std::vector<Tensor> & moments2 , std::vector<Tensor> & beta1_pows , std::vector<Tensor> & beta2_pows , paddle::optional<std::vector<Tensor> > & master_params , const paddle::optional<Tensor> & skip_update , const Scalar & beta1 , const Scalar & beta2 , const Scalar & epsilon , int chunk_size , float weight_decay , bool use_adamw , bool multi_precision , bool use_global_beta_pow ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **params** (std::vector<Tensor>&) - 
 	- **grads** (const std::vector<Tensor>&) - 
@@ -29,6 +29,6 @@ paddle\phi\api\include\api.h
 	- **multi_precision** (bool) - 
 	- **use_global_beta_pow** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<std::vector<Tensor> , std::vector<Tensor> , std::vector<Tensor> , std::vector<Tensor> , std::vector<Tensor> , paddle::optional<std::vector<Tensor> > >

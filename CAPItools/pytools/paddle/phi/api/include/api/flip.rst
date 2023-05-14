@@ -5,15 +5,15 @@ flip
 
 ..cpp: function::Tensor flip ( const Tensor & x , const std::vector<int> & axis ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **axis** (const std::vector<int>&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

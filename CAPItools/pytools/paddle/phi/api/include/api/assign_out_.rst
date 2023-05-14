@@ -5,15 +5,15 @@ assign_out_
 
 ..cpp: function::Tensor & assign_out_ ( const Tensor & x , Tensor & output ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **output** (Tensor&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

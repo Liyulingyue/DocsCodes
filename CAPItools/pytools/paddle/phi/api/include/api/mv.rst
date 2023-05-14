@@ -5,15 +5,15 @@ mv
 
 ..cpp: function::Tensor mv ( const Tensor & x , const Tensor & vec ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **vec** (const Tensor&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

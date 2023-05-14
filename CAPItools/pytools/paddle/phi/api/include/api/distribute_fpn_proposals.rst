@@ -5,11 +5,11 @@ distribute_fpn_proposals
 
 ..cpp: function::std::tuple<std::vector<Tensor> , std::vector<Tensor> , Tensor> distribute_fpn_proposals ( const Tensor & fpn_rois , const paddle::optional<Tensor> & rois_num , int min_level , int max_level , int refer_level , int refer_scale , bool pixel_offset ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **fpn_rois** (const Tensor&) - 
 	- **rois_num** (const paddle::optional<Tensor>&) - 
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **refer_scale** (int) - 
 	- **pixel_offset** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<std::vector<Tensor> , std::vector<Tensor> , Tensor>

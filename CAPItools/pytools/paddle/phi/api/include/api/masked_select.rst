@@ -5,15 +5,15 @@ masked_select
 
 ..cpp: function::Tensor masked_select ( const Tensor & x , const Tensor & mask ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **mask** (const Tensor&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

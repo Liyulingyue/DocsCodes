@@ -5,11 +5,11 @@ put_along_axis
 
 ..cpp: function::Tensor put_along_axis ( const Tensor & arr , const Tensor & indices , const Tensor & values , int axis , const std::string & reduce = "assign" ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **arr** (const Tensor&) - 
 	- **indices** (const Tensor&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **axis** (int) - 
 	- **reduce** (const std::string&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

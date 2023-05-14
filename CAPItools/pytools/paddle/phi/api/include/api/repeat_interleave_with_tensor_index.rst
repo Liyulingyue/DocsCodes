@@ -5,16 +5,16 @@ repeat_interleave_with_tensor_index
 
 ..cpp: function::Tensor repeat_interleave_with_tensor_index ( const Tensor & x , const Tensor & repeats , int axis ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **repeats** (const Tensor&) - 
 	- **axis** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

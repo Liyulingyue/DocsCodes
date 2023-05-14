@@ -5,15 +5,15 @@ elu_
 
 ..cpp: function::Tensor & elu_ ( Tensor & x , float alpha = 1.0 f ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (Tensor&) - 
 	- **alpha** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

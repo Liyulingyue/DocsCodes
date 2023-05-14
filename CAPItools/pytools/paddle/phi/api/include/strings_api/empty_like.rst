@@ -5,15 +5,15 @@ empty_like
 
 ..cpp: function::Tensor empty_like ( const Tensor & x , const Place & place = { } ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\strings_api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **place** (const Place&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

@@ -5,11 +5,11 @@ uniform_inplace_
 
 ..cpp: function::Tensor & uniform_inplace_ ( Tensor & x , float min = -1.0 , float max = 1.0 , int seed = 0 , int diag_num = 0 , int diag_step = 0 , float diag_val = 1.0 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (Tensor&) - 
 	- **min** (float) - 
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **diag_step** (int) - 
 	- **diag_val** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

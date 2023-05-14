@@ -46,7 +46,7 @@ class func_helper(object):
         self.returns = self.function_dict["returns"].replace("PADDLE_API ", "")
 
     def create_file(self, save_dir):
-        with open(save_dir, 'w') as f:
+        with open(save_dir, 'w', encoding='utf8') as f:
             head_text = f'.. _{LANGUAGE}_api_{self.namespace}{self.func_name}:\n' \
                         f'\n'
             f.write(head_text)

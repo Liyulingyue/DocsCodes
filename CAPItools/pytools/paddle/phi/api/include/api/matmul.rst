@@ -5,17 +5,17 @@ matmul
 
 ..cpp: function::Tensor matmul ( const Tensor & x , const Tensor & y , bool transpose_x = false , bool transpose_y = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **y** (const Tensor&) - 
 	- **transpose_x** (bool) - 
 	- **transpose_y** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

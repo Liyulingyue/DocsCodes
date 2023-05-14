@@ -5,11 +5,11 @@ max_pool3d_with_index
 
 ..cpp: function::std::tuple<Tensor , Tensor> max_pool3d_with_index ( const Tensor & x , const std::vector<int> & kernel_size , const std::vector<int> & strides , const std::vector<int> & paddings , bool global_pooling , bool adaptive ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **kernel_size** (const std::vector<int>&) - 
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **global_pooling** (bool) - 
 	- **adaptive** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

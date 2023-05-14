@@ -5,11 +5,11 @@ sgd_
 
 ..cpp: function::std::tuple<Tensor & , paddle::optional<Tensor> &> sgd_ ( Tensor & param , const Tensor & learning_rate , const Tensor & grad , paddle::optional<Tensor> & master_param , bool multi_precision = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **param** (Tensor&) - 
 	- **learning_rate** (const Tensor&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **master_param** (paddle::optional<Tensor>&) - 
 	- **multi_precision** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , paddle::optional<Tensor> >

@@ -5,15 +5,15 @@ mish
 
 ..cpp: function::Tensor mish ( const Tensor & x , float lambda ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **lambda** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

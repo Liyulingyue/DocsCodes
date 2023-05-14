@@ -5,11 +5,11 @@ full_
 
 ..cpp: function::Tensor & full_ ( Tensor & output , const IntArray & shape , const Scalar & value , DataType dtype = DataType::FLOAT32 , const Place & place = CPUPlace ( ) ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **output** (Tensor&) - 
 	- **shape** (const IntArray&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType) - 
 	- **place** (const Place&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

@@ -5,15 +5,15 @@ transpose
 
 ..cpp: function::Tensor transpose ( const Tensor & x , const std::vector<int> & perm ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **perm** (const std::vector<int>&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

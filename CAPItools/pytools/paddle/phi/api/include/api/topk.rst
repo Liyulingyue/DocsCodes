@@ -5,11 +5,11 @@ topk
 
 ..cpp: function::std::tuple<Tensor , Tensor> topk ( const Tensor & x , const Scalar & k = 1 , int axis = - 1 , bool largest = true , bool sorted = true ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **k** (const Scalar&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **largest** (bool) - 
 	- **sorted** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

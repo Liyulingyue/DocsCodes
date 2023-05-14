@@ -5,16 +5,16 @@ multinomial
 
 ..cpp: function::Tensor multinomial ( const Tensor & x , const Scalar & num_samples = 1 , bool replacement = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **num_samples** (const Scalar&) - 
 	- **replacement** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

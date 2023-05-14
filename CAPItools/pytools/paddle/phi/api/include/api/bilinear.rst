@@ -5,17 +5,17 @@ bilinear
 
 ..cpp: function::Tensor bilinear ( const Tensor & x , const Tensor & y , const Tensor & weight , const paddle::optional<Tensor> & bias ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **y** (const Tensor&) - 
 	- **weight** (const Tensor&) - 
 	- **bias** (const paddle::optional<Tensor>&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

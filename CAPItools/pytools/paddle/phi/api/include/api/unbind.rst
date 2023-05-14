@@ -5,15 +5,15 @@ unbind
 
 ..cpp: function::std::vector<Tensor> unbind ( const Tensor & input , int axis = 0 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **input** (const Tensor&) - 
 	- **axis** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::vector<Tensor>

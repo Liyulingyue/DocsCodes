@@ -5,11 +5,11 @@ unique
 
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor , Tensor> unique ( const Tensor & x , bool return_index , bool return_inverse , bool return_counts , const std::vector<int> & axis , DataType dtype = DataType::INT64 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **return_index** (bool) - 
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **axis** (const std::vector<int>&) - 
 	- **dtype** (DataType) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor , Tensor>

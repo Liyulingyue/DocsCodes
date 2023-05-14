@@ -5,15 +5,15 @@ fill
 
 ..cpp: function::Tensor fill ( const Tensor & x , const Scalar & value ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **value** (const Scalar&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

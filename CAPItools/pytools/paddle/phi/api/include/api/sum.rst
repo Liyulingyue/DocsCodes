@@ -5,17 +5,17 @@ sum
 
 ..cpp: function::Tensor sum ( const Tensor & x , const IntArray & axis = { } , DataType dtype = DataType::UNDEFINED , bool keepdim = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **axis** (const IntArray&) - 
 	- **dtype** (DataType) - 
 	- **keepdim** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

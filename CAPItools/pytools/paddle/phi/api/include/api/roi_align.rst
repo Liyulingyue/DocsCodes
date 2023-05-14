@@ -5,11 +5,11 @@ roi_align
 
 ..cpp: function::Tensor roi_align ( const Tensor & x , const Tensor & boxes , const paddle::optional<Tensor> & boxes_num , int pooled_height , int pooled_width , float spatial_scale , int sampling_ratio , bool aligned ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **boxes** (const Tensor&) - 
@@ -20,6 +20,6 @@ paddle\phi\api\include\api.h
 	- **sampling_ratio** (int) - 
 	- **aligned** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

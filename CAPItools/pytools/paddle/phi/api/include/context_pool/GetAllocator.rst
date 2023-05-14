@@ -6,14 +6,14 @@ GetAllocator
 ..cpp: function::phi::Allocator * GetAllocator ( const phi::Place & place ) ;
  Get the Allocator for the passed place.
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\context_pool.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **place** (const phi::Place&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 phi::Allocator

@@ -5,11 +5,11 @@ adagrad_
 
 ..cpp: function::std::tuple<Tensor & , Tensor & , paddle::optional<Tensor> &> adagrad_ ( Tensor & param , const Tensor & grad , Tensor & moment , const Tensor & learning_rate , paddle::optional<Tensor> & master_param , float epsilon = 1.0e-6 f , bool multi_precision = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **param** (Tensor&) - 
 	- **grad** (const Tensor&) - 
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **epsilon** (float) - 
 	- **multi_precision** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , paddle::optional<Tensor> >

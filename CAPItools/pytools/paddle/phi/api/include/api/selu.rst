@@ -5,16 +5,16 @@ selu
 
 ..cpp: function::Tensor selu ( const Tensor & x , float scale = 1.0507009873554804934193349852946 , float alpha = 1.6732632423543772848170429916717 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **scale** (float) - 
 	- **alpha** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

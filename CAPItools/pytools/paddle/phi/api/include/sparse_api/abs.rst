@@ -5,14 +5,14 @@ abs
 
 ..cpp: function::Tensor abs ( const Tensor & x ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

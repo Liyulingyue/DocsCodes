@@ -5,15 +5,15 @@ matrix_power
 
 ..cpp: function::Tensor matrix_power ( const Tensor & x , int n ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **n** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

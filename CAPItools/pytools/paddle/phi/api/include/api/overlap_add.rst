@@ -5,16 +5,16 @@ overlap_add
 
 ..cpp: function::Tensor overlap_add ( const Tensor & x , int hop_length , int axis = - 1 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **hop_length** (int) - 
 	- **axis** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

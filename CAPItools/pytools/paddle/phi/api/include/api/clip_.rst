@@ -5,16 +5,16 @@ clip_
 
 ..cpp: function::Tensor & clip_ ( Tensor & x , const Scalar & min , const Scalar & max ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (Tensor&) - 
 	- **min** (const Scalar&) - 
 	- **max** (const Scalar&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

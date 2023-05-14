@@ -5,11 +5,11 @@ allclose
 
 ..cpp: function::Tensor allclose ( const Tensor & x , const Tensor & y , const Scalar & rtol = "1e-5" , const Scalar & atol = "1e-8" , bool equal_nan = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **y** (const Tensor&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **atol** (const Scalar&) - 
 	- **equal_nan** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

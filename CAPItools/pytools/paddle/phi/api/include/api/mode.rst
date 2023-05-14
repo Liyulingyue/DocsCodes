@@ -5,16 +5,16 @@ mode
 
 ..cpp: function::std::tuple<Tensor , Tensor> mode ( const Tensor & x , int axis = - 1 , bool keepdim = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **axis** (int) - 
 	- **keepdim** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

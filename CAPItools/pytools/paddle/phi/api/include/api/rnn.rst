@@ -5,11 +5,11 @@ rnn
 
 ..cpp: function::std::tuple<Tensor , Tensor , std::vector<Tensor> > rnn ( const Tensor & x , const std::vector<Tensor> & pre_state , const std::vector<Tensor> & weight_list , const paddle::optional<Tensor> & sequence_length , const Tensor & dropout_state_in , float dropout_prob = 0.0 , bool is_bidirec = false , int input_size = 10 , int hidden_size = 100 , int num_layers = 1 , const std::string & mode = "RNN_TANH" , int seed = 0 , bool is_test = false ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **pre_state** (const std::vector<Tensor>&) - 
@@ -25,6 +25,6 @@ paddle\phi\api\include\api.h
 	- **seed** (int) - 
 	- **is_test** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , std::vector<Tensor> >

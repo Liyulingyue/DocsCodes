@@ -5,17 +5,17 @@ sigmoid_cross_entropy_with_logits_
 
 ..cpp: function::Tensor & sigmoid_cross_entropy_with_logits_ ( Tensor & x , const Tensor & label , bool normalize = false , int ignore_index = - 100 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (Tensor&) - 
 	- **label** (const Tensor&) - 
 	- **normalize** (bool) - 
 	- **ignore_index** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

@@ -5,16 +5,16 @@ pixel_shuffle
 
 ..cpp: function::Tensor pixel_shuffle ( const Tensor & x , int upscale_factor = 1 , const std::string & data_format = "NCHW" ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **upscale_factor** (int) - 
 	- **data_format** (const std::string&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

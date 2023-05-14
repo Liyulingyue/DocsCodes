@@ -5,11 +5,11 @@ cumsum
 
 ..cpp: function::Tensor cumsum ( const Tensor & x , const Scalar & axis , bool flatten , bool exclusive , bool reverse ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **axis** (const Scalar&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **exclusive** (bool) - 
 	- **reverse** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

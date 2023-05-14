@@ -5,15 +5,15 @@ leaky_relu
 
 ..cpp: function::Tensor leaky_relu ( const Tensor & x , float alpha ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **alpha** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

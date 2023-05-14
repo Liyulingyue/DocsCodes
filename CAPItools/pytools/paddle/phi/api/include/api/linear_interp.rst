@@ -5,11 +5,11 @@ linear_interp
 
 ..cpp: function::Tensor linear_interp ( const Tensor & x , const paddle::optional<Tensor> & out_size , const paddle::optional<std::vector<Tensor> > & size_tensor , const paddle::optional<Tensor> & scale_tensor , const std::string & data_layout = "NCHW" , int out_d = 0 , int out_h = 0 , int out_w = 0 , const std::vector<float> & scale = { } , const std::string & interp_method = "bilinear" , bool align_corners = true , int align_mode = 1 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **out_size** (const paddle::optional<Tensor>&) - 
@@ -24,6 +24,6 @@ paddle\phi\api\include\api.h
 	- **align_corners** (bool) - 
 	- **align_mode** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

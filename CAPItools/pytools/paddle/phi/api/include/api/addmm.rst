@@ -5,11 +5,11 @@ addmm
 
 ..cpp: function::Tensor addmm ( const Tensor & input , const Tensor & x , const Tensor & y , float beta = 1.0 , float alpha = 1.0 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **input** (const Tensor&) - 
 	- **x** (const Tensor&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **beta** (float) - 
 	- **alpha** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

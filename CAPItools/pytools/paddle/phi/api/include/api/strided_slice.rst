@@ -5,11 +5,11 @@ strided_slice
 
 ..cpp: function::Tensor strided_slice ( const Tensor & x , const std::vector<int> & axes , const IntArray & starts , const IntArray & ends , const IntArray & strides ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **axes** (const std::vector<int>&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **ends** (const IntArray&) - 
 	- **strides** (const IntArray&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

@@ -5,10 +5,10 @@ DefaultGPUPlace
 
 ..cpp: function::GPUPlace DefaultGPUPlace ( ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\common\place.h
 
-返回
+杩斿洖
 :::::::::::::::::::::
 GPUPlace

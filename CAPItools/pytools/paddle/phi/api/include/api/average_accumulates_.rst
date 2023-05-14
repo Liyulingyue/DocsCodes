@@ -5,11 +5,11 @@ average_accumulates_
 
 ..cpp: function::std::tuple<Tensor & , Tensor & , Tensor & , Tensor & , Tensor & , Tensor &> average_accumulates_ ( const Tensor & param , Tensor & in_sum_1 , Tensor & in_sum_2 , Tensor & in_sum_3 , Tensor & in_num_accumulates , Tensor & in_old_num_accumulates , Tensor & in_num_updates , float average_window = 0 , int64_t max_average_window = INT64_MAX , int64_t min_average_window = 10000 L ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **param** (const Tensor&) - 
 	- **in_sum_1** (Tensor&) - 
@@ -22,6 +22,6 @@ paddle\phi\api\include\api.h
 	- **max_average_window** (int64_t) - 
 	- **min_average_window** (int64_t) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor , Tensor , Tensor , Tensor >

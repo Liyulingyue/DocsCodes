@@ -5,15 +5,15 @@ hardshrink
 
 ..cpp: function::Tensor hardshrink ( const Tensor & x , float threshold = 0.5 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **threshold** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

@@ -5,17 +5,17 @@ scatter
 
 ..cpp: function::Tensor scatter ( const Tensor & x , const Tensor & index , const Tensor & updates , bool overwrite = true ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **index** (const Tensor&) - 
 	- **updates** (const Tensor&) - 
 	- **overwrite** (bool) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

@@ -5,11 +5,11 @@ pool2d
 
 ..cpp: function::Tensor pool2d ( const Tensor & x , const IntArray & kernel_size , const std::vector<int> & strides , const std::vector<int> & paddings , bool ceil_mode , bool exclusive , const std::string & data_format , const std::string & pooling_type , bool global_pooling , bool adaptive , const std::string & padding_algorithm ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **kernel_size** (const IntArray&) - 
@@ -23,6 +23,6 @@ paddle\phi\api\include\api.h
 	- **adaptive** (bool) - 
 	- **padding_algorithm** (const std::string&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

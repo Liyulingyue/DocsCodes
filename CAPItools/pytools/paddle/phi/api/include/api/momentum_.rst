@@ -5,11 +5,11 @@ momentum_
 
 ..cpp: function::std::tuple<Tensor & , Tensor & , paddle::optional<Tensor> &> momentum_ ( Tensor & param , const Tensor & grad , Tensor & velocity , const Tensor & learning_rate , paddle::optional<Tensor> & master_param , float mu , bool use_nesterov = false , const std::string & regularization_method = "" , float regularization_coeff = 0.0 f , bool multi_precision = false , float rescale_grad = 1.0 f ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **param** (Tensor&) - 
 	- **grad** (const Tensor&) - 
@@ -23,6 +23,6 @@ paddle\phi\api\include\api.h
 	- **multi_precision** (bool) - 
 	- **rescale_grad** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , paddle::optional<Tensor> >

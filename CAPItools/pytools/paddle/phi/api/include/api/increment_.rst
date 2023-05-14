@@ -5,15 +5,15 @@ increment_
 
 ..cpp: function::Tensor & increment_ ( Tensor & x , float value = 1.0 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (Tensor&) - 
 	- **value** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

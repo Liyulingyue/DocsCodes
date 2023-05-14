@@ -5,17 +5,17 @@ eye
 
 ..cpp: function::Tensor eye ( const Scalar & num_rows , const Scalar & num_columns , DataType dtype = DataType::FLOAT32 , const Place & place = { } ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **num_rows** (const Scalar&) - 
 	- **num_columns** (const Scalar&) - 
 	- **dtype** (DataType) - 
 	- **place** (const Place&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

@@ -5,16 +5,16 @@ hardsigmoid
 
 ..cpp: function::Tensor hardsigmoid ( const Tensor & x , float slope = 0.2 , float offset = 0.5 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **slope** (float) - 
 	- **offset** (float) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

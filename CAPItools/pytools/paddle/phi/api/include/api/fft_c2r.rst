@@ -5,11 +5,11 @@ fft_c2r
 
 ..cpp: function::Tensor fft_c2r ( const Tensor & x , const std::vector<int64_t> & axes , const std::string & normalization , bool forward , int64_t last_dim_size = 0 L ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **axes** (const std::vector<int64_t>&) - 
@@ -17,6 +17,6 @@ paddle\phi\api\include\api.h
 	- **forward** (bool) - 
 	- **last_dim_size** (int64_t) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

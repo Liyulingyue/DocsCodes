@@ -5,16 +5,16 @@ sparse_coo_tensor
 
 ..cpp: function::Tensor sparse_coo_tensor ( const Tensor & values , const Tensor & indices , const std::vector<int64_t> & shape = { } ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **values** (const Tensor&) - 
 	- **indices** (const Tensor&) - 
 	- **shape** (const std::vector<int64_t>&) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor

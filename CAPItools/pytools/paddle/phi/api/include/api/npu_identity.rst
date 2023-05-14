@@ -5,15 +5,15 @@ npu_identity
 
 ..cpp: function::Tensor npu_identity ( const Tensor & x , int format = - 1 ) ;
 
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+鍙傛暟
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 	- **format** (int) - 
 
-返回
+杩斿洖
 :::::::::::::::::::::
 Tensor
