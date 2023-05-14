@@ -1,3 +1,25 @@
+# 获取方法中的参数parameters
+def get_parameters(parameters):
+    parameter_api = ""  # 这里解析是给api使用的 (暂时不用)
+    parameter = "\n参数\n:::::::::::::::::::::\n"
+    for i in parameters:
+        parameter_type_tmp = i['type'].replace(" &", "").replace(" *", "")
+        # * 和 & 情况
+        # parameter_api += parameter_type_tmp
+        if i["reference"] == 1:
+            # parameter_api += "&"
+            parameter_type_tmp += "&"
+        elif i["pointer"] == 1:
+            # parameter_api += "*"
+            parameter_type_tmp += "*"
+        # parameter_api += f" {i['name']}, "
+        desc = i.get('desc', '').replace('  ', '')
+        parameter += f"\t- **{i['name']}** ({parameter_type_tmp}) - {desc}\n"
+    # 去掉末尾的逗号
+    # parameter_api = parameter_api[:-2]
+    return parameter, parameter_api
+
+
 # 生成函数文档
 def generate_func_docs_file(data: dict):
     # TODO 这里要看一下 operator== 这种情况能不能正常解析
