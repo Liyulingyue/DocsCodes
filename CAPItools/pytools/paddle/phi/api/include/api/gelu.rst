@@ -3,11 +3,7 @@
 gelu
 -------------------------------
 
-.. cpp:function:: Tensor gelu ( const Tensor & x , bool approximate = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor gelu ( const Tensor & x , bool approximate = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **approximate** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

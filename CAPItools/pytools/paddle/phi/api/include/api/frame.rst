@@ -3,11 +3,7 @@
 frame
 -------------------------------
 
-.. cpp:function:: Tensor frame ( const Tensor & x , int frame_length , int hop_length , int axis = - 1 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor frame ( const Tensor & x , int frame_length , int hop_length , int axis = - 1 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **hop_length** (int) - 
 	- **axis** (int) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

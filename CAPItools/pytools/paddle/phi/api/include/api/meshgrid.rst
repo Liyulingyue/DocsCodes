@@ -3,11 +3,7 @@
 meshgrid
 -------------------------------
 
-.. cpp:function:: std::vector<Tensor> meshgrid ( const std::vector<Tensor> & inputs ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::vector<Tensor> meshgrid ( const std::vector<Tensor> & inputs ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -17,12 +13,6 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **inputs** (const std::vector<Tensor>&) - 
 
-
 返回
 :::::::::::::::::::::
 std::vector<Tensor>
-
-<name="reference_link">
-
-</name>
-

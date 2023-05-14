@@ -3,11 +3,7 @@
 arange
 -------------------------------
 
-.. cpp:function:: Tensor arange ( const Tensor & start , const Tensor & end , const Tensor & step , DataType dtype , const Place & place = { } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor arange ( const Tensor & start , const Tensor & end , const Tensor & step , DataType dtype , const Place & place = { } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -21,12 +17,6 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType) - 
 	- **place** (const Place&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

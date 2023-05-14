@@ -3,11 +3,7 @@
 pad
 -------------------------------
 
-.. cpp:function:: Tensor pad ( const Tensor & x , const std::vector<int> & paddings , const Scalar & pad_value ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor pad ( const Tensor & x , const std::vector<int> & paddings , const Scalar & pad_value ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **paddings** (const std::vector<int>&) - 
 	- **pad_value** (const Scalar&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

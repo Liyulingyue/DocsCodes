@@ -3,11 +3,7 @@
 thresholded_relu
 -------------------------------
 
-.. cpp:function:: Tensor thresholded_relu ( const Tensor & x , float threshold = 1.0 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor thresholded_relu ( const Tensor & x , float threshold = 1.0 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **threshold** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

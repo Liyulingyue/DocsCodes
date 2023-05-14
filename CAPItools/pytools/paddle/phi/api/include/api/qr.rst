@@ -3,11 +3,7 @@
 qr
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor> qr ( const Tensor & x , const std::string & mode = "reduced" ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor> qr ( const Tensor & x , const std::string & mode = "reduced" ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **mode** (const std::string&) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

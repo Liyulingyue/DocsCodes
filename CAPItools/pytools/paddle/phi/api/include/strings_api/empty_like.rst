@@ -3,11 +3,7 @@
 empty_like
 -------------------------------
 
-.. cpp:function:: Tensor empty_like ( const Tensor & x , const Place & place = { } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor empty_like ( const Tensor & x , const Place & place = { } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\strings_api.h
 	- **x** (const Tensor&) - 
 	- **place** (const Place&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

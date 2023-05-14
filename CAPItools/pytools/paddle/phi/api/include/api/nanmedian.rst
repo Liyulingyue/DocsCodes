@@ -3,11 +3,7 @@
 nanmedian
 -------------------------------
 
-.. cpp:function:: Tensor nanmedian ( const Tensor & x , const IntArray & axis = { } , bool keepdim = true ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor nanmedian ( const Tensor & x , const IntArray & axis = { } , bool keepdim = true ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **axis** (const IntArray&) - 
 	- **keepdim** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

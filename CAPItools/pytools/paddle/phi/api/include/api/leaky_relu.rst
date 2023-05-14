@@ -3,11 +3,7 @@
 leaky_relu
 -------------------------------
 
-.. cpp:function:: Tensor leaky_relu ( const Tensor & x , float negative_slope = 0.02 f ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor leaky_relu ( const Tensor & x , float negative_slope = 0.02 f ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **negative_slope** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

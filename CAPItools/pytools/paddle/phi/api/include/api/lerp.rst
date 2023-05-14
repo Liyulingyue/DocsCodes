@@ -3,11 +3,7 @@
 lerp
 -------------------------------
 
-.. cpp:function:: Tensor lerp ( const Tensor & x , const Tensor & y , const Tensor & weight ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor lerp ( const Tensor & x , const Tensor & y , const Tensor & weight ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **y** (const Tensor&) - 
 	- **weight** (const Tensor&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

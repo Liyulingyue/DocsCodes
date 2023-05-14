@@ -3,11 +3,7 @@
 argmax
 -------------------------------
 
-.. cpp:function:: Tensor argmax ( const Tensor & x , const Scalar & axis , bool keepdims = false , bool flatten = false , int dtype = 3 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor argmax ( const Tensor & x , const Scalar & axis , bool keepdims = false , bool flatten = false , int dtype = 3 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -21,12 +17,6 @@ paddle\phi\api\include\api.h
 	- **flatten** (bool) - 
 	- **dtype** (int) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

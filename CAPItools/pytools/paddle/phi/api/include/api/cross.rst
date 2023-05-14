@@ -3,11 +3,7 @@
 cross
 -------------------------------
 
-.. cpp:function:: Tensor cross ( const Tensor & x , const Tensor & y , int axis = 9 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor cross ( const Tensor & x , const Tensor & y , int axis = 9 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **y** (const Tensor&) - 
 	- **axis** (int) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

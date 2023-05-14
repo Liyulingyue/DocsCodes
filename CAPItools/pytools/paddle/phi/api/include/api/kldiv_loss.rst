@@ -3,11 +3,7 @@
 kldiv_loss
 -------------------------------
 
-.. cpp:function:: Tensor kldiv_loss ( const Tensor & x , const Tensor & label , const std::string & reduction = "mean" ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor kldiv_loss ( const Tensor & x , const Tensor & label , const std::string & reduction = "mean" ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **label** (const Tensor&) - 
 	- **reduction** (const std::string&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 bce_loss_
 -------------------------------
 
-.. cpp:function:: Tensor & bce_loss_ ( Tensor & input , const Tensor & label ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor & bce_loss_ ( Tensor & input , const Tensor & label ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **input** (Tensor&) - 
 	- **label** (const Tensor&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

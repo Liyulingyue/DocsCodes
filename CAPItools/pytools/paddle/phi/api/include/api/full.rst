@@ -3,11 +3,7 @@
 full
 -------------------------------
 
-.. cpp:function:: Tensor full ( const IntArray & shape , const Scalar & value , DataType dtype = DataType::FLOAT32 , const Place & place = CPUPlace ( ) ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor full ( const IntArray & shape , const Scalar & value , DataType dtype = DataType::FLOAT32 , const Place & place = CPUPlace ( ) ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType) - 
 	- **place** (const Place&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 send_ue_recv
 -------------------------------
 
-.. cpp:function:: Tensor send_ue_recv ( const Tensor & x , const Tensor & y , const Tensor & src_index , const Tensor & dst_index , const std::string & message_op = "ADD" , const std::string & reduce_op = "SUM" , const IntArray & out_size = { 0 } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor send_ue_recv ( const Tensor & x , const Tensor & y , const Tensor & src_index , const Tensor & dst_index , const std::string & message_op = "ADD" , const std::string & reduce_op = "SUM" , const IntArray & out_size = { 0 } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -23,12 +19,6 @@ paddle\phi\api\include\api.h
 	- **reduce_op** (const std::string&) - 
 	- **out_size** (const IntArray&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

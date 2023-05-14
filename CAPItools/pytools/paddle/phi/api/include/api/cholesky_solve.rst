@@ -3,11 +3,7 @@
 cholesky_solve
 -------------------------------
 
-.. cpp:function:: Tensor cholesky_solve ( const Tensor & x , const Tensor & y , bool upper = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor cholesky_solve ( const Tensor & x , const Tensor & y , bool upper = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **y** (const Tensor&) - 
 	- **upper** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

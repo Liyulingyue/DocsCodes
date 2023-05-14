@@ -3,11 +3,7 @@
 exponential_
 -------------------------------
 
-.. cpp:function:: Tensor & exponential_ ( Tensor & x , float lam ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor & exponential_ ( Tensor & x , float lam ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (Tensor&) - 
 	- **lam** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

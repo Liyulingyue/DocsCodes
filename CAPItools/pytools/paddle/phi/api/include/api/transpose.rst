@@ -3,11 +3,7 @@
 transpose
 -------------------------------
 
-.. cpp:function:: Tensor transpose ( const Tensor & x , const std::vector<int> & perm ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor transpose ( const Tensor & x , const std::vector<int> & perm ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **perm** (const std::vector<int>&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

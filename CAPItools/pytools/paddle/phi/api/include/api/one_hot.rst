@@ -3,11 +3,7 @@
 one_hot
 -------------------------------
 
-.. cpp:function:: Tensor one_hot ( const Tensor & x , const Scalar & num_classes ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor one_hot ( const Tensor & x , const Scalar & num_classes ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **num_classes** (const Scalar&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

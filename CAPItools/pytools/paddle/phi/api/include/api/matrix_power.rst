@@ -3,11 +3,7 @@
 matrix_power
 -------------------------------
 
-.. cpp:function:: Tensor matrix_power ( const Tensor & x , int n ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor matrix_power ( const Tensor & x , int n ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **n** (int) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

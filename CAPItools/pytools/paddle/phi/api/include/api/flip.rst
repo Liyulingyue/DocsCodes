@@ -3,11 +3,7 @@
 flip
 -------------------------------
 
-.. cpp:function:: Tensor flip ( const Tensor & x , const std::vector<int> & axis ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor flip ( const Tensor & x , const std::vector<int> & axis ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **axis** (const std::vector<int>&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

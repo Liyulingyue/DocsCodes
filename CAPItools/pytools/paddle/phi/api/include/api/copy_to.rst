@@ -3,11 +3,7 @@
 copy_to
 -------------------------------
 
-.. cpp:function:: Tensor copy_to ( const Tensor & x , const Place & place , bool blocking ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor copy_to ( const Tensor & x , const Place & place , bool blocking ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **place** (const Place&) - 
 	- **blocking** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

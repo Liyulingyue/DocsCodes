@@ -3,11 +3,7 @@
 mode
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor> mode ( const Tensor & x , int axis = - 1 , bool keepdim = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor> mode ( const Tensor & x , int axis = - 1 , bool keepdim = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **axis** (int) - 
 	- **keepdim** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

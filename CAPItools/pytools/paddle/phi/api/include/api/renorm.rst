@@ -3,11 +3,7 @@
 renorm
 -------------------------------
 
-.. cpp:function:: Tensor renorm ( const Tensor & x , float p , int axis , float max_norm ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor renorm ( const Tensor & x , float p , int axis , float max_norm ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **axis** (int) - 
 	- **max_norm** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 nonzero
 -------------------------------
 
-.. cpp:function:: Tensor nonzero ( const Tensor & condition ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor nonzero ( const Tensor & condition ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -17,12 +13,6 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **condition** (const Tensor&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

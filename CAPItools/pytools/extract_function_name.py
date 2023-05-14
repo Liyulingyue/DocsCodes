@@ -3,6 +3,7 @@ import json
 import os
 
 from configure import generate_func_docs_file, generate_class_doc_file
+from configure import func_helper
 
 # TODO 通过已安装的 paddle 来查找 include
 # import paddle
@@ -57,21 +58,23 @@ def analysis_file(path):
 
 # 生成文件
 def generate_docs(all_funcs, all_class):
-    for i in all_funcs:
-        path = i["filename"].replace("../", "").replace(".h", "")
+    for item in all_funcs:
+        path = item["filename"].replace("../", "").replace(".h", "")
         if not os.path.exists("./" + path):
             os.makedirs("./" + path)
-        text = generate_func_docs_file(i)
+        text = generate_func_docs_file(item)
 
         # TODO 这个反斜杠需要单独处理看看
-        func_name = i["name"].replace("/", "")
+        func_name = item["name"].replace("/", "")
+        rst_dir = os.path.join(".", path, func_name+".rst")
         # avoid a filename such as operate*.rst
         try:
-            with open("./" + path + "/" + func_name + ".rst", "w") as f:
-                f.write(text)
-
+            helper = func_helper(item)
+            helper.create_file(rst_dir)
+            # with open(rst_dir, "w") as f:
+            #     f.write(text)
         except:
-            print("./" + path + "/" + func_name + ".rst")
+            print('FAULT GENERATE:' + rst_dir)
 
     for i in all_class:
         path = i["filename"].replace("../", "").replace(".h", "")
@@ -80,7 +83,8 @@ def generate_docs(all_funcs, all_class):
         text = generate_class_doc_file(i)
 
         func_name = i["name"].replace("PADDLE_API", "")
-        with open("./" + path + "/" + func_name + ".rst", "w") as f:
+        rst_dir = os.path.join(".", path, func_name+".rst")
+        with open(rst_dir, "w") as f:
             f.write(text)
 
 

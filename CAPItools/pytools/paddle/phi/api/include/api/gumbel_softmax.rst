@@ -3,11 +3,7 @@
 gumbel_softmax
 -------------------------------
 
-.. cpp:function:: Tensor gumbel_softmax ( const Tensor & x , float temperature = 1.0 , bool hard = false , int axis = - 1 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor gumbel_softmax ( const Tensor & x , float temperature = 1.0 , bool hard = false , int axis = - 1 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **hard** (bool) - 
 	- **axis** (int) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

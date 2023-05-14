@@ -3,11 +3,7 @@
 accuracy
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor , Tensor> accuracy ( const Tensor & x , const Tensor & indices , const Tensor & label ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor , Tensor> accuracy ( const Tensor & x , const Tensor & indices , const Tensor & label ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **indices** (const Tensor&) - 
 	- **label** (const Tensor&) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

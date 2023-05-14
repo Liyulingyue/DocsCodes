@@ -3,11 +3,7 @@
 zeros_like
 -------------------------------
 
-.. cpp:function:: Tensor zeros_like ( const Tensor & x , DataType dtype = DataType::UNDEFINED , const Place & place = { } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor zeros_like ( const Tensor & x , DataType dtype = DataType::UNDEFINED , const Place & place = { } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType) - 
 	- **place** (const Place&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

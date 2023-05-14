@@ -3,11 +3,7 @@
 viterbi_decode
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor> viterbi_decode ( const Tensor & potentials , const Tensor & transition_params , const Tensor & lengths , bool include_bos_eos_tag = true ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor> viterbi_decode ( const Tensor & potentials , const Tensor & transition_params , const Tensor & lengths , bool include_bos_eos_tag = true ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **lengths** (const Tensor&) - 
 	- **include_bos_eos_tag** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

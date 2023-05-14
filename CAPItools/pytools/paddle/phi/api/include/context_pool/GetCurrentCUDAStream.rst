@@ -3,12 +3,8 @@
 GetCurrentCUDAStream
 -------------------------------
 
-.. cpp:function:: phi::CUDAStream * GetCurrentCUDAStream ( const phi::Place & place ) ;
-
-<name="desc">
+..cpp: function::phi::CUDAStream * GetCurrentCUDAStream ( const phi::Place & place ) ;
  Get the current CUDA stream for the passed CUDA device.
-
-</name>
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\context_pool.h
 :::::::::::::::::::::
 	- **place** (const phi::Place&) - 
 
-
 返回
 :::::::::::::::::::::
 phi::CUDAStream
-
-<name="reference_link">
-
-</name>
-

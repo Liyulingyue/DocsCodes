@@ -3,11 +3,7 @@
 segment_pool
 -------------------------------
 
-.. cpp:function:: Tensor segment_pool ( const Tensor & x , const Tensor & segment_ids , const std::string & pooltype = "SUM" ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor segment_pool ( const Tensor & x , const Tensor & segment_ids , const std::string & pooltype = "SUM" ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **segment_ids** (const Tensor&) - 
 	- **pooltype** (const std::string&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

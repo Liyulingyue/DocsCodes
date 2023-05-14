@@ -3,11 +3,7 @@
 eigvalsh
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor> eigvalsh ( const Tensor & x , const std::string & uplo = "L" , bool is_test = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor> eigvalsh ( const Tensor & x , const std::string & uplo = "L" , bool is_test = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **uplo** (const std::string&) - 
 	- **is_test** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

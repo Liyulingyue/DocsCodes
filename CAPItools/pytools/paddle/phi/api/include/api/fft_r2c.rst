@@ -3,11 +3,7 @@
 fft_r2c
 -------------------------------
 
-.. cpp:function:: Tensor fft_r2c ( const Tensor & x , const std::vector<int64_t> & axes , const std::string & normalization , bool forward , bool onesided ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor fft_r2c ( const Tensor & x , const std::vector<int64_t> & axes , const std::string & normalization , bool forward , bool onesided ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -21,12 +17,6 @@ paddle\phi\api\include\api.h
 	- **forward** (bool) - 
 	- **onesided** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

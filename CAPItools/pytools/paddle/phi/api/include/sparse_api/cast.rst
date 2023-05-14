@@ -3,11 +3,7 @@
 cast
 -------------------------------
 
-.. cpp:function:: Tensor cast ( const Tensor & x , DataType index_dtype = DataType::UNDEFINED , DataType value_dtype = DataType::UNDEFINED ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor cast ( const Tensor & x , DataType index_dtype = DataType::UNDEFINED , DataType value_dtype = DataType::UNDEFINED ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\sparse_api.h
 	- **index_dtype** (DataType) - 
 	- **value_dtype** (DataType) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

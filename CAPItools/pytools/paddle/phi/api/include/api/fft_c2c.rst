@@ -3,11 +3,7 @@
 fft_c2c
 -------------------------------
 
-.. cpp:function:: Tensor fft_c2c ( const Tensor & x , const std::vector<int64_t> & axes , const std::string & normalization , bool forward ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor fft_c2c ( const Tensor & x , const std::vector<int64_t> & axes , const std::string & normalization , bool forward ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **normalization** (const std::string&) - 
 	- **forward** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

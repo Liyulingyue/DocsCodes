@@ -3,11 +3,7 @@
 scale
 -------------------------------
 
-.. cpp:function:: Tensor scale ( const Tensor & x , const Scalar & scale = 1.0 , float bias = 0.0 , bool bias_after_scale = true ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor scale ( const Tensor & x , const Scalar & scale = 1.0 , float bias = 0.0 , bool bias_after_scale = true ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **bias** (float) - 
 	- **bias_after_scale** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

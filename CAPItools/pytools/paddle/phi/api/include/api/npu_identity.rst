@@ -3,11 +3,7 @@
 npu_identity
 -------------------------------
 
-.. cpp:function:: Tensor npu_identity ( const Tensor & x , int format = - 1 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor npu_identity ( const Tensor & x , int format = - 1 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **format** (int) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

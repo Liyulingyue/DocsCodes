@@ -3,11 +3,7 @@
 auc
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor , Tensor> auc ( const Tensor & x , const Tensor & label , const Tensor & stat_pos , const Tensor & stat_neg , const paddle::optional<Tensor> & ins_tag_weight , const std::string & curve = "ROC" , int num_thresholds = ( 2 << 12 ) - 1 , int slide_steps = 1 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor , Tensor> auc ( const Tensor & x , const Tensor & label , const Tensor & stat_pos , const Tensor & stat_neg , const paddle::optional<Tensor> & ins_tag_weight , const std::string & curve = "ROC" , int num_thresholds = ( 2 << 12 ) - 1 , int slide_steps = 1 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -24,12 +20,6 @@ paddle\phi\api\include\api.h
 	- **num_thresholds** (int) - 
 	- **slide_steps** (int) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

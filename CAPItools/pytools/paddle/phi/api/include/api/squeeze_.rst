@@ -3,11 +3,7 @@
 squeeze_
 -------------------------------
 
-.. cpp:function:: Tensor & squeeze_ ( Tensor & x , const IntArray & axis = { } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor & squeeze_ ( Tensor & x , const IntArray & axis = { } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (Tensor&) - 
 	- **axis** (const IntArray&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

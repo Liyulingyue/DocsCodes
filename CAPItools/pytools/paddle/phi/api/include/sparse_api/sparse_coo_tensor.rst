@@ -3,11 +3,7 @@
 sparse_coo_tensor
 -------------------------------
 
-.. cpp:function:: Tensor sparse_coo_tensor ( const Tensor & values , const Tensor & indices , const std::vector<int64_t> & shape = { } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor sparse_coo_tensor ( const Tensor & values , const Tensor & indices , const std::vector<int64_t> & shape = { } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\sparse_api.h
 	- **indices** (const Tensor&) - 
 	- **shape** (const std::vector<int64_t>&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 increment_
 -------------------------------
 
-.. cpp:function:: Tensor & increment_ ( Tensor & x , float value = 1.0 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor & increment_ ( Tensor & x , float value = 1.0 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (Tensor&) - 
 	- **value** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

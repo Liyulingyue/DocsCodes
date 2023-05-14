@@ -3,11 +3,7 @@
 split
 -------------------------------
 
-.. cpp:function:: std::vector<Tensor> split ( const Tensor & x , const IntArray & sections , const Scalar & axis ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::vector<Tensor> split ( const Tensor & x , const IntArray & sections , const Scalar & axis ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **sections** (const IntArray&) - 
 	- **axis** (const Scalar&) - 
 
-
 返回
 :::::::::::::::::::::
 std::vector<Tensor>
-
-<name="reference_link">
-
-</name>
-

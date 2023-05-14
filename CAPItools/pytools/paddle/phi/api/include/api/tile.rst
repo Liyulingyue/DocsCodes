@@ -3,11 +3,7 @@
 tile
 -------------------------------
 
-.. cpp:function:: Tensor tile ( const Tensor & x , const IntArray & repeat_times = { } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor tile ( const Tensor & x , const IntArray & repeat_times = { } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **repeat_times** (const IntArray&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

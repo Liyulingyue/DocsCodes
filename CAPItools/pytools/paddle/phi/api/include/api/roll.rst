@@ -3,11 +3,7 @@
 roll
 -------------------------------
 
-.. cpp:function:: Tensor roll ( const Tensor & x , const IntArray & shifts = { } , const std::vector<int64_t> & axis = { } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor roll ( const Tensor & x , const IntArray & shifts = { } , const std::vector<int64_t> & axis = { } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **shifts** (const IntArray&) - 
 	- **axis** (const std::vector<int64_t>&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

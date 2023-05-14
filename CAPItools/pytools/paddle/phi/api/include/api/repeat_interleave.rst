@@ -3,11 +3,7 @@
 repeat_interleave
 -------------------------------
 
-.. cpp:function:: Tensor repeat_interleave ( const Tensor & x , int repeats , int axis ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor repeat_interleave ( const Tensor & x , int repeats , int axis ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **repeats** (int) - 
 	- **axis** (int) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 label_smooth
 -------------------------------
 
-.. cpp:function:: Tensor label_smooth ( const Tensor & label , const paddle::optional<Tensor> & prior_dist , float epsilon = 0.0 f ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor label_smooth ( const Tensor & label , const paddle::optional<Tensor> & prior_dist , float epsilon = 0.0 f ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **prior_dist** (const paddle::optional<Tensor>&) - 
 	- **epsilon** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

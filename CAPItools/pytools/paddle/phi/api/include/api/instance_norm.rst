@@ -3,11 +3,7 @@
 instance_norm
 -------------------------------
 
-.. cpp:function:: Tensor instance_norm ( const Tensor & x , const paddle::optional<Tensor> & scale , const paddle::optional<Tensor> & bias , float epsilon ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor instance_norm ( const Tensor & x , const paddle::optional<Tensor> & scale , const paddle::optional<Tensor> & bias , float epsilon ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **bias** (const paddle::optional<Tensor>&) - 
 	- **epsilon** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

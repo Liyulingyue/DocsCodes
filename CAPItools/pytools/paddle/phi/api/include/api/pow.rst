@@ -3,11 +3,7 @@
 pow
 -------------------------------
 
-.. cpp:function:: Tensor pow ( const Tensor & x , const Scalar & y = 1.0 f ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor pow ( const Tensor & x , const Scalar & y = 1.0 f ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **y** (const Scalar&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

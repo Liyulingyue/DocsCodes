@@ -3,11 +3,7 @@
 crop
 -------------------------------
 
-.. cpp:function:: Tensor crop ( const Tensor & x , const IntArray & shape = { } , const IntArray & offsets = { } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor crop ( const Tensor & x , const IntArray & shape = { } , const IntArray & offsets = { } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **shape** (const IntArray&) - 
 	- **offsets** (const IntArray&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

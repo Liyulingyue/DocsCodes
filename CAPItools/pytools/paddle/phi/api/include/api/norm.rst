@@ -3,11 +3,7 @@
 norm
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor> norm ( const Tensor & x , int axis , float epsilon , bool is_test ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor> norm ( const Tensor & x , int axis , float epsilon , bool is_test ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **epsilon** (float) - 
 	- **is_test** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

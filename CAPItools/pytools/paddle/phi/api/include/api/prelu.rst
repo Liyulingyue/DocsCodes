@@ -3,11 +3,7 @@
 prelu
 -------------------------------
 
-.. cpp:function:: Tensor prelu ( const Tensor & x , const Tensor & alpha , const std::string & data_format = "NCHW" , const std::string & mode = "all" ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor prelu ( const Tensor & x , const Tensor & alpha , const std::string & data_format = "NCHW" , const std::string & mode = "all" ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **data_format** (const std::string&) - 
 	- **mode** (const std::string&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

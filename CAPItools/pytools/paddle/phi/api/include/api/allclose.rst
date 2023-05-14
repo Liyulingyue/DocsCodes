@@ -3,11 +3,7 @@
 allclose
 -------------------------------
 
-.. cpp:function:: Tensor allclose ( const Tensor & x , const Tensor & y , const Scalar & rtol = "1e-5" , const Scalar & atol = "1e-8" , bool equal_nan = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor allclose ( const Tensor & x , const Tensor & y , const Scalar & rtol = "1e-5" , const Scalar & atol = "1e-8" , bool equal_nan = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -21,12 +17,6 @@ paddle\phi\api\include\api.h
 	- **atol** (const Scalar&) - 
 	- **equal_nan** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

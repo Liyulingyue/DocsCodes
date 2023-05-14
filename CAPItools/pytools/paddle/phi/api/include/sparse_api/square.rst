@@ -3,11 +3,7 @@
 square
 -------------------------------
 
-.. cpp:function:: Tensor square ( const Tensor & x ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor square ( const Tensor & x ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -17,12 +13,6 @@ paddle\phi\api\include\sparse_api.h
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

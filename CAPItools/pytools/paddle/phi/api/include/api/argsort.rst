@@ -3,11 +3,7 @@
 argsort
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor> argsort ( const Tensor & x , int axis = - 1 , bool descending = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor> argsort ( const Tensor & x , int axis = - 1 , bool descending = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **axis** (int) - 
 	- **descending** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

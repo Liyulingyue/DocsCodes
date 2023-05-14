@@ -3,11 +3,7 @@
 diagonal
 -------------------------------
 
-.. cpp:function:: Tensor diagonal ( const Tensor & x , int offset = 0 , int axis1 = 0 , int axis2 = 1 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor diagonal ( const Tensor & x , int offset = 0 , int axis1 = 0 , int axis2 = 1 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **axis1** (int) - 
 	- **axis2** (int) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 softshrink
 -------------------------------
 
-.. cpp:function:: Tensor softshrink ( const Tensor & x , float threshold = 0.5 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor softshrink ( const Tensor & x , float threshold = 0.5 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **threshold** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

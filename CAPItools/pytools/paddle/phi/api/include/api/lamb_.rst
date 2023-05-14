@@ -3,11 +3,7 @@
 lamb_
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor & , Tensor & , Tensor & , Tensor & , Tensor & , paddle::optional<Tensor> &> lamb_ ( Tensor & param , const Tensor & grad , const Tensor & learning_rate , Tensor & moment1 , Tensor & moment2 , Tensor & beta1_pow , Tensor & beta2_pow , paddle::optional<Tensor> & master_param , const paddle::optional<Tensor> & skip_update , float weight_decay , float beta1 = 0.9 , float beta2 = 0.999 , float epsilon = 1.0e-6 f , bool multi_precision = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor & , Tensor & , Tensor & , Tensor & , Tensor & , paddle::optional<Tensor> &> lamb_ ( Tensor & param , const Tensor & grad , const Tensor & learning_rate , Tensor & moment1 , Tensor & moment2 , Tensor & beta1_pow , Tensor & beta2_pow , paddle::optional<Tensor> & master_param , const paddle::optional<Tensor> & skip_update , float weight_decay , float beta1 = 0.9 , float beta2 = 0.999 , float epsilon = 1.0e-6 f , bool multi_precision = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -30,12 +26,6 @@ paddle\phi\api\include\api.h
 	- **epsilon** (float) - 
 	- **multi_precision** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor , Tensor , Tensor , paddle::optional<Tensor> >
-
-<name="reference_link">
-
-</name>
-

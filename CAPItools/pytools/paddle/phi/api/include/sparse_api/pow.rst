@@ -3,11 +3,7 @@
 pow
 -------------------------------
 
-.. cpp:function:: Tensor pow ( const Tensor & x , float factor ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor pow ( const Tensor & x , float factor ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\sparse_api.h
 	- **x** (const Tensor&) - 
 	- **factor** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

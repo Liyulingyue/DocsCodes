@@ -3,11 +3,7 @@
 reshape_
 -------------------------------
 
-.. cpp:function:: Tensor & reshape_ ( Tensor & x , const IntArray & shape ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor & reshape_ ( Tensor & x , const IntArray & shape ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (Tensor&) - 
 	- **shape** (const IntArray&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

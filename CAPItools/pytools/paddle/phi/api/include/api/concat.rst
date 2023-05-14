@@ -3,11 +3,7 @@
 concat
 -------------------------------
 
-.. cpp:function:: Tensor concat ( const std::vector<Tensor> & x , const Scalar & axis ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor concat ( const std::vector<Tensor> & x , const Scalar & axis ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const std::vector<Tensor>&) - 
 	- **axis** (const Scalar&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

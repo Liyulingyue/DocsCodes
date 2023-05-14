@@ -3,11 +3,7 @@
 update_loss_scaling_
 -------------------------------
 
-.. cpp:function:: std::tuple<std::vector<Tensor> & , Tensor & , Tensor & , Tensor &> update_loss_scaling_ ( std::vector<Tensor> & x , const Tensor & found_infinite , Tensor & prev_loss_scaling , Tensor & in_good_steps , Tensor & in_bad_steps , int incr_every_n_steps , int decr_every_n_nan_or_inf , float incr_ratio , float decr_ratio , const Scalar & stop_update = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<std::vector<Tensor> & , Tensor & , Tensor & , Tensor &> update_loss_scaling_ ( std::vector<Tensor> & x , const Tensor & found_infinite , Tensor & prev_loss_scaling , Tensor & in_good_steps , Tensor & in_bad_steps , int incr_every_n_steps , int decr_every_n_nan_or_inf , float incr_ratio , float decr_ratio , const Scalar & stop_update = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -26,12 +22,6 @@ paddle\phi\api\include\api.h
 	- **decr_ratio** (float) - 
 	- **stop_update** (const Scalar&) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<std::vector<Tensor> , Tensor , Tensor , Tensor >
-
-<name="reference_link">
-
-</name>
-

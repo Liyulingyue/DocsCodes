@@ -3,11 +3,7 @@
 affine_grid
 -------------------------------
 
-.. cpp:function:: Tensor affine_grid ( const Tensor & input , const IntArray & output_shape = { } , bool align_corners = true ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor affine_grid ( const Tensor & input , const IntArray & output_shape = { } , bool align_corners = true ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **output_shape** (const IntArray&) - 
 	- **align_corners** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

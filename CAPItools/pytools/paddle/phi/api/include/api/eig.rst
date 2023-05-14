@@ -3,11 +3,7 @@
 eig
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor> eig ( const Tensor & x ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor> eig ( const Tensor & x ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -17,12 +13,6 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

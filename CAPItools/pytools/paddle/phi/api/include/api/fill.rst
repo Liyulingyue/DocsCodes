@@ -3,11 +3,7 @@
 fill
 -------------------------------
 
-.. cpp:function:: Tensor fill ( const Tensor & x , const Scalar & value ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor fill ( const Tensor & x , const Scalar & value ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **value** (const Scalar&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 searchsorted
 -------------------------------
 
-.. cpp:function:: Tensor searchsorted ( const Tensor & sorted_sequence , const Tensor & values , bool out_int32 = false , bool right = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor searchsorted ( const Tensor & sorted_sequence , const Tensor & values , bool out_int32 = false , bool right = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **out_int32** (bool) - 
 	- **right** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

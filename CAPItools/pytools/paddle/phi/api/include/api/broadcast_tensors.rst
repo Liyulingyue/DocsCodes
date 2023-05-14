@@ -3,11 +3,7 @@
 broadcast_tensors
 -------------------------------
 
-.. cpp:function:: std::vector<Tensor> broadcast_tensors ( const std::vector<Tensor> & input ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::vector<Tensor> broadcast_tensors ( const std::vector<Tensor> & input ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -17,12 +13,6 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **input** (const std::vector<Tensor>&) - 
 
-
 返回
 :::::::::::::::::::::
 std::vector<Tensor>
-
-<name="reference_link">
-
-</name>
-

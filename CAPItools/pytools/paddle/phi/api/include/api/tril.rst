@@ -3,11 +3,7 @@
 tril
 -------------------------------
 
-.. cpp:function:: Tensor tril ( const Tensor & x , int diagonal ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor tril ( const Tensor & x , int diagonal ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **diagonal** (int) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

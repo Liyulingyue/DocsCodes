@@ -3,11 +3,7 @@
 bilinear
 -------------------------------
 
-.. cpp:function:: Tensor bilinear ( const Tensor & x , const Tensor & y , const Tensor & weight , const paddle::optional<Tensor> & bias ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor bilinear ( const Tensor & x , const Tensor & y , const Tensor & weight , const paddle::optional<Tensor> & bias ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **weight** (const Tensor&) - 
 	- **bias** (const paddle::optional<Tensor>&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 log_loss
 -------------------------------
 
-.. cpp:function:: Tensor log_loss ( const Tensor & input , const Tensor & label , float epsilon ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor log_loss ( const Tensor & input , const Tensor & label , float epsilon ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **label** (const Tensor&) - 
 	- **epsilon** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

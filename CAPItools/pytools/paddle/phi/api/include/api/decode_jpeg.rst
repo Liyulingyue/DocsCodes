@@ -3,11 +3,7 @@
 decode_jpeg
 -------------------------------
 
-.. cpp:function:: Tensor decode_jpeg ( const Tensor & x , const std::string & mode , const Place & place ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor decode_jpeg ( const Tensor & x , const std::string & mode , const Place & place ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **mode** (const std::string&) - 
 	- **place** (const Place&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

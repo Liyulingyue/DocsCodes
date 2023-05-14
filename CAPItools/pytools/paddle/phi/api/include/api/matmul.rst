@@ -3,11 +3,7 @@
 matmul
 -------------------------------
 
-.. cpp:function:: Tensor matmul ( const Tensor & x , const Tensor & y , bool transpose_x = false , bool transpose_y = false ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor matmul ( const Tensor & x , const Tensor & y , bool transpose_x = false , bool transpose_y = false ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -20,12 +16,6 @@ paddle\phi\api\include\api.h
 	- **transpose_x** (bool) - 
 	- **transpose_y** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

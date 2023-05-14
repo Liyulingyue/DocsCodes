@@ -3,11 +3,7 @@
 nll_loss
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor , Tensor> nll_loss ( const Tensor & input , const Tensor & label , const paddle::optional<Tensor> & weight , int64_t ignore_index = - 100 , const std::string & reduction = "mean" ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor , Tensor> nll_loss ( const Tensor & input , const Tensor & label , const paddle::optional<Tensor> & weight , int64_t ignore_index = - 100 , const std::string & reduction = "mean" ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -21,12 +17,6 @@ paddle\phi\api\include\api.h
 	- **ignore_index** (int64_t) - 
 	- **reduction** (const std::string&) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 randint
 -------------------------------
 
-.. cpp:function:: Tensor randint ( int low , int high , const IntArray & shape , DataType dtype = DataType::INT64 , const Place & place = { } ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor randint ( int low , int high , const IntArray & shape , DataType dtype = DataType::INT64 , const Place & place = { } ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -21,12 +17,6 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType) - 
 	- **place** (const Place&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

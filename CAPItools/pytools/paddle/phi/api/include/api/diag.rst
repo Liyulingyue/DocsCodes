@@ -3,11 +3,7 @@
 diag
 -------------------------------
 
-.. cpp:function:: Tensor diag ( const Tensor & x , int offset = 0 , float padding_value = 0.0 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor diag ( const Tensor & x , int offset = 0 , float padding_value = 0.0 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **offset** (int) - 
 	- **padding_value** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

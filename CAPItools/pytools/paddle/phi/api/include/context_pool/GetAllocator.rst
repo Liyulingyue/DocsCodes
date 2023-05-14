@@ -3,12 +3,8 @@
 GetAllocator
 -------------------------------
 
-.. cpp:function:: phi::Allocator * GetAllocator ( const phi::Place & place ) ;
-
-<name="desc">
+..cpp: function::phi::Allocator * GetAllocator ( const phi::Place & place ) ;
  Get the Allocator for the passed place.
-
-</name>
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\context_pool.h
 :::::::::::::::::::::
 	- **place** (const phi::Place&) - 
 
-
 返回
 :::::::::::::::::::::
 phi::Allocator
-
-<name="reference_link">
-
-</name>
-

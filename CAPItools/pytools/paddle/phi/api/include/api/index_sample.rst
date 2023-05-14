@@ -3,11 +3,7 @@
 index_sample
 -------------------------------
 
-.. cpp:function:: Tensor index_sample ( const Tensor & x , const Tensor & index ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor index_sample ( const Tensor & x , const Tensor & index ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **index** (const Tensor&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

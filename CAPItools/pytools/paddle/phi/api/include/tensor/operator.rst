@@ -3,11 +3,7 @@
 operator/
 -------------------------------
 
-.. cpp:function:: Tensor operator / ( const Scalar & x , const Tensor & y ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor operator / ( const Scalar & x , const Tensor & y ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\tensor.h
 	- **x** (Scalar&) - 
 	- **y** (const Tensor&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 clip_
 -------------------------------
 
-.. cpp:function:: Tensor & clip_ ( Tensor & x , const Scalar & min , const Scalar & max ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor & clip_ ( Tensor & x , const Scalar & min , const Scalar & max ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **min** (const Scalar&) - 
 	- **max** (const Scalar&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 cast
 -------------------------------
 
-.. cpp:function:: Tensor cast ( const Tensor & x , DataType dtype ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor cast ( const Tensor & x , DataType dtype ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **dtype** (DataType) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

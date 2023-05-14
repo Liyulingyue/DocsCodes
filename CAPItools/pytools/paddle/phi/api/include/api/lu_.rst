@@ -3,11 +3,7 @@
 lu_
 -------------------------------
 
-.. cpp:function:: std::tuple<Tensor & , Tensor , Tensor> lu_ ( Tensor & x , bool pivot = true ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::tuple<Tensor & , Tensor , Tensor> lu_ ( Tensor & x , bool pivot = true ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **x** (Tensor&) - 
 	- **pivot** (bool) - 
 
-
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>
-
-<name="reference_link">
-
-</name>
-

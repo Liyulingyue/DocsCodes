@@ -3,11 +3,7 @@
 acosh
 -------------------------------
 
-.. cpp:function:: Tensor acosh ( const Tensor & x ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor acosh ( const Tensor & x ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -17,12 +13,6 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 huber_loss
 -------------------------------
 
-.. cpp:function:: Tensor huber_loss ( const Tensor & input , const Tensor & label , float delta ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor huber_loss ( const Tensor & input , const Tensor & label , float delta ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **label** (const Tensor&) - 
 	- **delta** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

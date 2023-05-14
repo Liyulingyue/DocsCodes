@@ -3,11 +3,7 @@
 addmm
 -------------------------------
 
-.. cpp:function:: Tensor addmm ( const Tensor & input , const Tensor & x , const Tensor & y , float beta = 1.0 , float alpha = 1.0 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor addmm ( const Tensor & input , const Tensor & x , const Tensor & y , float beta = 1.0 , float alpha = 1.0 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -21,12 +17,6 @@ paddle\phi\api\include\sparse_api.h
 	- **beta** (float) - 
 	- **alpha** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

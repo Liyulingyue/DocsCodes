@@ -3,11 +3,7 @@
 hardtanh
 -------------------------------
 
-.. cpp:function:: Tensor hardtanh ( const Tensor & x , float t_min = 0 , float t_max = 24 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor hardtanh ( const Tensor & x , float t_min = 0 , float t_max = 24 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **t_min** (float) - 
 	- **t_max** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

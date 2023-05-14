@@ -3,11 +3,7 @@
 unbind
 -------------------------------
 
-.. cpp:function:: std::vector<Tensor> unbind ( const Tensor & input , int axis = 0 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::vector<Tensor> unbind ( const Tensor & input , int axis = 0 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -18,12 +14,6 @@ paddle\phi\api\include\api.h
 	- **input** (const Tensor&) - 
 	- **axis** (int) - 
 
-
 返回
 :::::::::::::::::::::
 std::vector<Tensor>
-
-<name="reference_link">
-
-</name>
-

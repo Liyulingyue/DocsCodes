@@ -22,11 +22,66 @@ def get_parameters(parameters):
     # parameter_api = parameter_api[:-2]
     return parameter, parameter_api
 
+class func_helper(object):
+    def __init__(self, function_dict):
+        super(func_helper, self).__init__()
+        self.function_dict = function_dict
+        self.decode()
+
+    def decode(self):
+        # TODO 这里要看一下 operator== 这种情况能不能正常解析
+        self.func_name = self.function_dict["name"]
+        # 解析api
+        self.api = self.function_dict["debug"].replace("PADDLE_API ", "")
+        self.namespace = self.function_dict["namespace"].replace("::", "_")
+        self.doxygen = self.function_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
+        # TODO 如果使用已安装的 paddle 包需要调整
+        self.file_path = self.function_dict["filename"].replace("../", "")
+
+        if len(self.function_dict["parameters"]) != 0:
+            self.parameter, _ = get_parameters(self.function_dict["parameters"])
+        else:
+            self.parameter = ""
+
+        self.returns = self.function_dict["returns"].replace("PADDLE_API ", "")
+
+    def create_file(self, save_dir):
+        with open(save_dir, 'w') as f:
+            head_text = f'.. _{LANGUAGE}_api_{self.namespace}{self.func_name}:\n' \
+                        f'\n'
+            f.write(head_text)
+
+            name_and_intro_text = f'{self.func_name}\n'\
+                                  f'-------------------------------\n' \
+                                  f'\n' \
+                                  f'..cpp: function::{self.api}\n' \
+                                  f'{self.doxygen}' \
+                                  f'\n'
+            f.write(name_and_intro_text)
+
+            define_path_text = f'定义目录\n' \
+                               f':::::::::::::::::::::\n' \
+                               f'{self.file_path}' \
+                               f'\n'
+            f.write(define_path_text)
+
+            # TODO 可以统一把“参数”这样的文本移动到这里进行表达，增加代码维护性
+            f.write(self.parameter+'\n')
+
+            return_text = f'返回\n' \
+                          f':::::::::::::::::::::\n' \
+                          f'{self.returns}' \
+                          f'\n'
+            if 'void' not in self.returns:
+                f.write(return_text)
+
 
 # 生成函数文档
 def generate_func_docs_file(data: dict):
     # TODO 这里要看一下 operator== 这种情况能不能正常解析
     func_name = data["name"]
+    # 解析api
+    api = data["debug"].replace("PADDLE_API ", "")
     namespace = data["namespace"].replace("::", "_")
     doxygen = data.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
     # TODO 如果使用已安装的 paddle 包需要调整

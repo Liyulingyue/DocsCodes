@@ -3,11 +3,7 @@
 selu
 -------------------------------
 
-.. cpp:function:: Tensor selu ( const Tensor & x , float scale = 1.0507009873554804934193349852946 , float alpha = 1.6732632423543772848170429916717 ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::Tensor selu ( const Tensor & x , float scale = 1.0507009873554804934193349852946 , float alpha = 1.6732632423543772848170429916717 ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **scale** (float) - 
 	- **alpha** (float) - 
 
-
 返回
 :::::::::::::::::::::
 Tensor
-
-<name="reference_link">
-
-</name>
-

@@ -3,11 +3,7 @@
 split_with_num
 -------------------------------
 
-.. cpp:function:: std::vector<Tensor> split_with_num ( const Tensor & x , int num , const Scalar & axis ) ;
-
-<name="desc">
-
-</name>
+..cpp: function::std::vector<Tensor> split_with_num ( const Tensor & x , int num , const Scalar & axis ) ;
 
 定义目录
 :::::::::::::::::::::
@@ -19,12 +15,6 @@ paddle\phi\api\include\api.h
 	- **num** (int) - 
 	- **axis** (const Scalar&) - 
 
-
 返回
 :::::::::::::::::::::
 std::vector<Tensor>
-
-<name="reference_link">
-
-</name>
-
