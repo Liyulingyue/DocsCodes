@@ -127,6 +127,7 @@ def generate_func_docs_file(data: dict):
 
 # 生成类文档
 def generate_class_doc_file(data: dict):
+    branch = "develop"  # TODO 这里可以看看从包里面获取
     class_name = data["name"].replace("PADDLE_API", "")
     # TODO 如果使用已安装的 paddle 包需要调整
     file_path = data["filename"].replace("../", "")
@@ -165,7 +166,7 @@ def generate_class_doc_file(data: dict):
 
     text = f""".. _cn_api_{class_name}:
 
-{class_name}
+{class_name}[源代码](https://github.com/PaddlePaddle/Paddle/blob/{branch}/{file_path})
 -------------------------------
 
 .. cpp:class:: {init_func}
