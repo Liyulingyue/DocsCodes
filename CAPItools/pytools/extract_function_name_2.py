@@ -21,18 +21,35 @@ def find_PADDLE_API(file_dir, record_list):
             if 'PADDLE_API ' in line:
                 record_list.append([line, file_dir])
 
-record_list = find_files_in_root()
+if 0:
+    record_list = find_files_in_root()
 
-class_count = 0
-API_count = 0
-other = 0
-with open('tmp.txt','w') as f:
-    for item in record_list:
-        f.write(item[0][:-1]+' '+item[1]+'\n')
-        if item[0].startswith('class'): class_count+=1
-        elif item[0].startswith('PADDLE_API'): API_count += 1
-        else:
-            other+=1
-            print(item[0])
+    class_count = 0
+    API_count = 0
+    other = 0
+    with open('tmp.txt','w') as f:
+        for item in record_list:
+            f.write(item[0][:-1]+' '+item[1]+'\n')
+            if item[0].startswith('class'): class_count+=1
+            elif item[0].startswith('PADDLE_API'): API_count += 1
+            else:
+                other+=1
+                print(item[0])
 
-print(class_count,API_count,other)
+    print(class_count,API_count,other)
+
+import CppHeaderParser
+
+cppHeader = CppHeaderParser.CppHeader("../paddle/phi/api/include/strings_api.h")
+
+print(cppHeader.includes)
+
+for classname in cppHeader.classes.keys():
+    print(classname)
+
+for func in cppHeader.functions:
+    print('name: {}'.format(func['name']))
+    print('rtnType: {}'.format(func['rtnType']))
+    print('parameters: {}'.format(func['parameters']))
+    print('')
+

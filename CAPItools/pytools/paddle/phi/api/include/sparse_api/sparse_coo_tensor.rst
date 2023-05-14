@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_sparse_sparse_coo_tensor:
-    
+
 sparse_coo_tensor
 -------------------------------
 

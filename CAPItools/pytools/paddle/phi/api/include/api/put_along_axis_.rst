@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_put_along_axis_:
-    
+
 put_along_axis_
 -------------------------------
 

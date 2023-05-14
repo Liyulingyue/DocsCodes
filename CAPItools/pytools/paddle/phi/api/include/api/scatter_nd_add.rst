@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_scatter_nd_add:
-    
+
 scatter_nd_add
 -------------------------------
 

@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_fused_adam_:
-    
+
 fused_adam_
 -------------------------------
 

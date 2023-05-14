@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_fill_diagonal_tensor_:
-    
+
 fill_diagonal_tensor_
 -------------------------------
 

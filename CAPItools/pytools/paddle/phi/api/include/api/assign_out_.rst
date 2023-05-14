@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_assign_out_:
-    
+
 assign_out_
 -------------------------------
 

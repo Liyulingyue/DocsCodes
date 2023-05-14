@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_depthwise_conv2d:
-    
+
 depthwise_conv2d
 -------------------------------
 

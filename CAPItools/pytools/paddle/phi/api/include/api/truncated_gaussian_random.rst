@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_truncated_gaussian_random:
-    
+
 truncated_gaussian_random
 -------------------------------
 

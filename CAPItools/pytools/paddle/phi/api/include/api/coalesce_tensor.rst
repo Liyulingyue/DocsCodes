@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_coalesce_tensor:
-    
+
 coalesce_tensor
 -------------------------------
 

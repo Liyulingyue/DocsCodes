@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_cross_entropy_with_softmax_:
-    
+
 cross_entropy_with_softmax_
 -------------------------------
 

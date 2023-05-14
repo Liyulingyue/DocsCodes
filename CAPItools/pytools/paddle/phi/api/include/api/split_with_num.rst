@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_split_with_num:
-    
+
 split_with_num
 -------------------------------
 

@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_update_loss_scaling_:
-    
+
 update_loss_scaling_
 -------------------------------
 

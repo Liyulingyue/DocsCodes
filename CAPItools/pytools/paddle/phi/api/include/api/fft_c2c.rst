@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_fft_c2c:
-    
+
 fft_c2c
 -------------------------------
 

@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_distribute_fpn_proposals:
-    
+
 distribute_fpn_proposals
 -------------------------------
 

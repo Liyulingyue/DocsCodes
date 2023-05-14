@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_sigmoid_cross_entropy_with_logits_:
-    
+
 sigmoid_cross_entropy_with_logits_
 -------------------------------
 

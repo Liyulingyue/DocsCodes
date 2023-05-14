@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_linear_interp:
-    
+
 linear_interp
 -------------------------------
 

@@ -1,3 +1,6 @@
+LANGUAGE = "cn"
+
+
 # 获取方法中的参数parameters
 def get_parameters(parameters):
     parameter_api = ""  # 这里解析是给api使用的 (暂时不用)

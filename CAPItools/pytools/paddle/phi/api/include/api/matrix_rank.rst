@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_matrix_rank:
-    
+
 matrix_rank
 -------------------------------
 

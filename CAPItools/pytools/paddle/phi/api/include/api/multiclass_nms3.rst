@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_multiclass_nms3:
-    
+
 multiclass_nms3
 -------------------------------
 

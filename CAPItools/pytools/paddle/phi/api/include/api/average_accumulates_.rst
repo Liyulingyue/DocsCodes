@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_average_accumulates_:
-    
+
 average_accumulates_
 -------------------------------
 

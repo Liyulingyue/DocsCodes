@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_send_ue_recv:
-    
+
 send_ue_recv
 -------------------------------
 

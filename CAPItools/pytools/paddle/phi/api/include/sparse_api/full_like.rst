@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_sparse_full_like:
-    
+
 full_like
 -------------------------------
 

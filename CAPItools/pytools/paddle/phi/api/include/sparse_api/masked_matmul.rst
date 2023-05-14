@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_sparse_masked_matmul:
-    
+
 masked_matmul
 -------------------------------
 

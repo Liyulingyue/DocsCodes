@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_repeat_interleave_with_tensor_index:
-    
+
 repeat_interleave_with_tensor_index
 -------------------------------
 

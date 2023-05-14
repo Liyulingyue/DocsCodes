@@ -21,7 +21,7 @@ from configure import generate_func_docs_file, generate_class_doc_file
 PADDLE_API phi::CUDAStream* GetCurrentCUDAStream(const phi::Place& place);
 #endif
 """
-LANGUAGE = "cn"
+
 
 
 # 获取存在 PADDLE_API func 数组的名称

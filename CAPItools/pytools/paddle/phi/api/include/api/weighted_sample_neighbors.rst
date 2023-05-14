@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_weighted_sample_neighbors:
-    
+
 weighted_sample_neighbors
 -------------------------------
 

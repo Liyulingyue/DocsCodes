@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_margin_cross_entropy:
-    
+
 margin_cross_entropy
 -------------------------------
 

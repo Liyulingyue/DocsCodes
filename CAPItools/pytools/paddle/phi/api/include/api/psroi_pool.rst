@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_psroi_pool:
-    
+
 psroi_pool
 -------------------------------
 

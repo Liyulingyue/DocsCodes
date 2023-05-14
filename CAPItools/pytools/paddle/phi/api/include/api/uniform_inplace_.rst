@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_uniform_inplace_:
-    
+
 uniform_inplace_
 -------------------------------
 

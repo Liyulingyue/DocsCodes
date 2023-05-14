@@ -1,5 +1,5 @@
 .. _cn_api_paddle_from_blob:
-    
+
 from_blob
 -------------------------------
 

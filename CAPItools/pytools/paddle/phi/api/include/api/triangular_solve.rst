@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_triangular_solve:
-    
+
 triangular_solve
 -------------------------------
 

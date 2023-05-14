@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_atan2:
-    
+
 atan2
 -------------------------------
 

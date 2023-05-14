@@ -1,5 +1,5 @@
 .. _cn_api_paddle_experimental_sparse_log1p:
-    
+
 log1p
 -------------------------------
 
