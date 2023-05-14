@@ -5,9 +5,9 @@ adadelta_
 
 .. cpp:function:: std::tuple<Tensor & , Tensor & , Tensor & , paddle::optional<Tensor> &> adadelta_ ( Tensor & param , const Tensor & grad , Tensor & avg_squared_grad , Tensor & avg_squared_update , const Tensor & learning_rate , paddle::optional<Tensor> & master_param , float rho , float epsilon , bool multi_precision ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

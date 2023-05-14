@@ -5,9 +5,9 @@ zeros
 
 .. cpp:function:: Tensor zeros ( const IntArray & shape , DataType dtype = DataType::FLOAT32 , const Place & place = CPUPlace ( ) ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

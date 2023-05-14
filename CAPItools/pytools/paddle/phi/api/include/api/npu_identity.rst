@@ -5,9 +5,9 @@ npu_identity
 
 .. cpp:function:: Tensor npu_identity ( const Tensor & x , int format = - 1 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

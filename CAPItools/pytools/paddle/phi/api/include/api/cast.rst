@@ -5,9 +5,9 @@ cast
 
 .. cpp:function:: Tensor cast ( const Tensor & x , DataType dtype ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

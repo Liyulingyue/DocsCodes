@@ -5,9 +5,9 @@ add_
 
 .. cpp:function:: Tensor & add_ ( Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

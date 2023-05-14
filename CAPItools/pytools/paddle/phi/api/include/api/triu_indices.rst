@@ -5,9 +5,9 @@ triu_indices
 
 .. cpp:function:: Tensor triu_indices ( int row , int col , int offset , DataType dtype , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

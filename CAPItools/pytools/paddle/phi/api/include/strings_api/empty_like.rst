@@ -5,9 +5,9 @@ empty_like
 
 .. cpp:function:: Tensor empty_like ( const Tensor & x , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

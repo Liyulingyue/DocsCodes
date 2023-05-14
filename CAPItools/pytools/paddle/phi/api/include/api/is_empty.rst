@@ -5,9 +5,9 @@ is_empty
 
 .. cpp:function:: Tensor is_empty ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

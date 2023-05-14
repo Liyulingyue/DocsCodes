@@ -5,9 +5,9 @@ yolo_box
 
 .. cpp:function:: std::tuple<Tensor , Tensor> yolo_box ( const Tensor & x , const Tensor & img_size , const std::vector<int> & anchors = { } , int class_num = 1 , float conf_thresh = 0.01 , int downsample_ratio = 32 , bool clip_bbox = true , float scale_x_y = 1.0 , bool iou_aware = false , float iou_aware_factor = 0.5 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

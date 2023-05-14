@@ -5,9 +5,9 @@ logsumexp
 
 .. cpp:function:: Tensor logsumexp ( const Tensor & x , const std::vector<int64_t> & axis , bool keepdim , bool reduce_all ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

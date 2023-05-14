@@ -5,9 +5,9 @@ imag
 
 .. cpp:function:: Tensor imag ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

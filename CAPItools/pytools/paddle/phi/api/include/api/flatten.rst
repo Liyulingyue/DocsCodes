@@ -5,9 +5,9 @@ flatten
 
 .. cpp:function:: Tensor flatten ( const Tensor & x , int start_axis = 1 , int stop_axis = 1 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

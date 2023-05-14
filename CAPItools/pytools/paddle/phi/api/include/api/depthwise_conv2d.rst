@@ -5,9 +5,9 @@ depthwise_conv2d
 
 .. cpp:function:: Tensor depthwise_conv2d ( const Tensor & x , const Tensor & filter , const std::vector<int> & strides , const std::vector<int> & paddings , const std::string & padding_algorithm , int groups , const std::vector<int> & dilations , const std::string & data_format ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

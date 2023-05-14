@@ -5,9 +5,9 @@ concat
 
 .. cpp:function:: Tensor concat ( const std::vector<Tensor> & x , const Scalar & axis ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

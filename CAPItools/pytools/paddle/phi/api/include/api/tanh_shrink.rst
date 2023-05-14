@@ -5,9 +5,9 @@ tanh_shrink
 
 .. cpp:function:: Tensor tanh_shrink ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

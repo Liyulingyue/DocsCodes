@@ -5,9 +5,9 @@ bitwise_or
 
 .. cpp:function:: Tensor bitwise_or ( const Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

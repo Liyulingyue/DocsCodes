@@ -5,9 +5,9 @@ complex
 
 .. cpp:function:: Tensor complex ( const Tensor & real , const Tensor & imag ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

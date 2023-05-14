@@ -5,9 +5,9 @@ split
 
 .. cpp:function:: std::vector<Tensor> split ( const Tensor & x , const IntArray & sections , const Scalar & axis ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

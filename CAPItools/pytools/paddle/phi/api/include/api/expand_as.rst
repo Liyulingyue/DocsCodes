@@ -5,9 +5,9 @@ expand_as
 
 .. cpp:function:: Tensor expand_as ( const Tensor & x , const paddle::optional<Tensor> & y , const std::vector<int> & target_shape = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

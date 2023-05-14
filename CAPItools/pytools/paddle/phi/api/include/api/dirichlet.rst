@@ -5,9 +5,9 @@ dirichlet
 
 .. cpp:function:: Tensor dirichlet ( const Tensor & alpha ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

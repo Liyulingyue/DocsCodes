@@ -5,9 +5,9 @@ max_pool3d_with_index
 
 .. cpp:function:: std::tuple<Tensor , Tensor> max_pool3d_with_index ( const Tensor & x , const std::vector<int> & kernel_size , const std::vector<int> & strides , const std::vector<int> & paddings , bool global_pooling , bool adaptive ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

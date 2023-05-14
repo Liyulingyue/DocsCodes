@@ -5,9 +5,9 @@ less_than
 
 .. cpp:function:: Tensor less_than ( const Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ warpctc
 
 .. cpp:function:: Tensor warpctc ( const Tensor & logits , const Tensor & label , const paddle::optional<Tensor> & logits_length , const paddle::optional<Tensor> & labels_length , int blank = 0 , bool norm_by_times = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

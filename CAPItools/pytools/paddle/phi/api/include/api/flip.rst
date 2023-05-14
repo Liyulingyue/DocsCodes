@@ -5,9 +5,9 @@ flip
 
 .. cpp:function:: Tensor flip ( const Tensor & x , const std::vector<int> & axis ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

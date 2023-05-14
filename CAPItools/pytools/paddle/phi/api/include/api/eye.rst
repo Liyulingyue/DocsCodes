@@ -5,9 +5,9 @@ eye
 
 .. cpp:function:: Tensor eye ( const Scalar & num_rows , const Scalar & num_columns , DataType dtype = DataType::FLOAT32 , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

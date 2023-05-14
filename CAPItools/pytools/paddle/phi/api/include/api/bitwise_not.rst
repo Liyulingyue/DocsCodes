@@ -5,9 +5,9 @@ bitwise_not
 
 .. cpp:function:: Tensor bitwise_not ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

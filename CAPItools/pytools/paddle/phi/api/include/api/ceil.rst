@@ -5,9 +5,9 @@ ceil
 
 .. cpp:function:: Tensor ceil ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

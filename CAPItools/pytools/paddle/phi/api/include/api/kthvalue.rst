@@ -5,9 +5,9 @@ kthvalue
 
 .. cpp:function:: std::tuple<Tensor , Tensor> kthvalue ( const Tensor & x , int k = 1 , int axis = - 1 , bool keepdim = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

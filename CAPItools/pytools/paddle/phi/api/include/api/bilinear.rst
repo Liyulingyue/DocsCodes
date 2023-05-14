@@ -5,9 +5,9 @@ bilinear
 
 .. cpp:function:: Tensor bilinear ( const Tensor & x , const Tensor & y , const Tensor & weight , const paddle::optional<Tensor> & bias ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

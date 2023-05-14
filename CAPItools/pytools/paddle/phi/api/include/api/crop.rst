@@ -5,9 +5,9 @@ crop
 
 .. cpp:function:: Tensor crop ( const Tensor & x , const IntArray & shape = { } , const IntArray & offsets = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

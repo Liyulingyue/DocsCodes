@@ -5,9 +5,9 @@ unfold
 
 .. cpp:function:: Tensor unfold ( const Tensor & x , const std::vector<int> & kernel_sizes , const std::vector<int> & strides , const std::vector<int> & paddings , const std::vector<int> & dilations ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

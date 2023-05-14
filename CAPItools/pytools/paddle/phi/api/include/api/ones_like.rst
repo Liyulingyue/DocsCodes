@@ -5,9 +5,9 @@ ones_like
 
 .. cpp:function:: Tensor ones_like ( const Tensor & x , DataType dtype = DataType::UNDEFINED , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

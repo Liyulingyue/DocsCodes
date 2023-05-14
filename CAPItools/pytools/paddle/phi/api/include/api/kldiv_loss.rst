@@ -5,9 +5,9 @@ kldiv_loss
 
 .. cpp:function:: Tensor kldiv_loss ( const Tensor & x , const Tensor & label , const std::string & reduction = "mean" ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

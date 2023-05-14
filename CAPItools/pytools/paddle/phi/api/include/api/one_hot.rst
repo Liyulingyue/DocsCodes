@@ -5,9 +5,9 @@ one_hot
 
 .. cpp:function:: Tensor one_hot ( const Tensor & x , const Scalar & num_classes ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ eigh
 
 .. cpp:function:: std::tuple<Tensor , Tensor> eigh ( const Tensor & x , const std::string & UPLO = "L" ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

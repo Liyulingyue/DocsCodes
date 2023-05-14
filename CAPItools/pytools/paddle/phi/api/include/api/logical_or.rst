@@ -5,9 +5,9 @@ logical_or
 
 .. cpp:function:: Tensor logical_or ( const Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

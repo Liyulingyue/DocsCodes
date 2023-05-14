@@ -5,9 +5,9 @@ unstack
 
 .. cpp:function:: std::vector<Tensor> unstack ( const Tensor & x , int axis = 0 , int num = 0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

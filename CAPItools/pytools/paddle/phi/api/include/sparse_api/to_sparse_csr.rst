@@ -5,9 +5,9 @@ to_sparse_csr
 
 .. cpp:function:: Tensor to_sparse_csr ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

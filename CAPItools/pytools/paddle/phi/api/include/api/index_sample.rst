@@ -5,9 +5,9 @@ index_sample
 
 .. cpp:function:: Tensor index_sample ( const Tensor & x , const Tensor & index ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

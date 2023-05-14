@@ -5,9 +5,9 @@ cumsum
 
 .. cpp:function:: Tensor cumsum ( const Tensor & x , const Scalar & axis , bool flatten , bool exclusive , bool reverse ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

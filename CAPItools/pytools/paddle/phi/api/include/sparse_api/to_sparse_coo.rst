@@ -5,9 +5,9 @@ to_sparse_coo
 
 .. cpp:function:: Tensor to_sparse_coo ( const Tensor & x , int64_t sparse_dim ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

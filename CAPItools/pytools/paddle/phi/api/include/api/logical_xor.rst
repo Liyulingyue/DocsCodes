@@ -5,9 +5,9 @@ logical_xor
 
 .. cpp:function:: Tensor logical_xor ( const Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ gumbel_softmax
 
 .. cpp:function:: Tensor gumbel_softmax ( const Tensor & x , float temperature = 1.0 , bool hard = false , int axis = - 1 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

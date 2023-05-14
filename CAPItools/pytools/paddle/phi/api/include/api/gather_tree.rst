@@ -5,9 +5,9 @@ gather_tree
 
 .. cpp:function:: Tensor gather_tree ( const Tensor & ids , const Tensor & parents ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

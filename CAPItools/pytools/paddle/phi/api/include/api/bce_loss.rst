@@ -5,9 +5,9 @@ bce_loss
 
 .. cpp:function:: Tensor bce_loss ( const Tensor & input , const Tensor & label ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

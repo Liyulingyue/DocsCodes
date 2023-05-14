@@ -5,9 +5,9 @@ matrix_nms
 
 .. cpp:function:: std::tuple<Tensor , Tensor , Tensor> matrix_nms ( const Tensor & bboxes , const Tensor & scores , float score_threshold , int nms_top_k , int keep_top_k , float post_threshold = 0 . , bool use_gaussian = false , float gaussian_sigma = 2 . , int background_label = 0 , bool normalized = true ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

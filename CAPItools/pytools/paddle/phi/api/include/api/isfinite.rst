@@ -5,9 +5,9 @@ isfinite
 
 .. cpp:function:: Tensor isfinite ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

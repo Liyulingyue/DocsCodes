@@ -5,9 +5,9 @@ edit_distance
 
 .. cpp:function:: std::tuple<Tensor , Tensor> edit_distance ( const Tensor & hyps , const Tensor & refs , const paddle::optional<Tensor> & hypslength , const paddle::optional<Tensor> & refslength , bool normalized = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

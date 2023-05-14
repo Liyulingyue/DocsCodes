@@ -5,9 +5,9 @@ upper
 
 .. cpp:function:: Tensor upper ( const Tensor & x , bool use_utf8_encoding ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

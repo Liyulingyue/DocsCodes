@@ -53,9 +53,9 @@ def generate_func_docs_file(data: dict):
 
 .. cpp:function:: {api}
 
-<--! name="desc" -->
+<name="desc">
 {doxygen}
-<--! /name -->
+</name>
 
 定义目录
 :::::::::::::::::::::

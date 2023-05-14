@@ -5,9 +5,9 @@ cumprod
 
 .. cpp:function:: Tensor cumprod ( const Tensor & x , int dim ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

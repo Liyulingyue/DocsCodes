@@ -5,9 +5,9 @@ softplus
 
 .. cpp:function:: Tensor softplus ( const Tensor & x , float beta = 1.0 , float threshold = 20.0 f ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

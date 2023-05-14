@@ -5,9 +5,9 @@ frame
 
 .. cpp:function:: Tensor frame ( const Tensor & x , int frame_length , int hop_length , int axis = - 1 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ as_complex
 
 .. cpp:function:: Tensor as_complex ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

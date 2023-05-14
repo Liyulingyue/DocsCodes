@@ -5,9 +5,9 @@ nonzero
 
 .. cpp:function:: Tensor nonzero ( const Tensor & condition ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

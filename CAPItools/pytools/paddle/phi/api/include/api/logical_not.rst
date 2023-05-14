@@ -5,9 +5,9 @@ logical_not
 
 .. cpp:function:: Tensor logical_not ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

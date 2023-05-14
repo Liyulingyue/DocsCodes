@@ -5,9 +5,9 @@ unbind
 
 .. cpp:function:: std::vector<Tensor> unbind ( const Tensor & input , int axis = 0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ masked_matmul
 
 .. cpp:function:: Tensor masked_matmul ( const Tensor & x , const Tensor & y , const Tensor & mask ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

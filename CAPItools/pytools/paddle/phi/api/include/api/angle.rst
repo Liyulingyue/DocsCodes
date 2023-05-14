@@ -5,9 +5,9 @@ angle
 
 .. cpp:function:: Tensor angle ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

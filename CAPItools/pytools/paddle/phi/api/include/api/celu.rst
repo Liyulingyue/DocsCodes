@@ -5,9 +5,9 @@ celu
 
 .. cpp:function:: Tensor celu ( const Tensor & x , float alpha = 1.0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

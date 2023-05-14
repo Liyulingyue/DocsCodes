@@ -5,9 +5,9 @@ silu
 
 .. cpp:function:: Tensor silu ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

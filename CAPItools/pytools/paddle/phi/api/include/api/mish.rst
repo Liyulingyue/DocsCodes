@@ -5,9 +5,9 @@ mish
 
 .. cpp:function:: Tensor mish ( const Tensor & x , float lambda ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

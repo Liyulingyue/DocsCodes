@@ -5,9 +5,9 @@ floor_
 
 .. cpp:function:: Tensor & floor_ ( Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ adagrad_
 
 .. cpp:function:: std::tuple<Tensor & , Tensor & , paddle::optional<Tensor> &> adagrad_ ( Tensor & param , const Tensor & grad , Tensor & moment , const Tensor & learning_rate , paddle::optional<Tensor> & master_param , float epsilon = 1.0e-6 f , bool multi_precision = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

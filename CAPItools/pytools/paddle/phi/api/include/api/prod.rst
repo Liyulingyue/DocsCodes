@@ -5,9 +5,9 @@ prod
 
 .. cpp:function:: Tensor prod ( const Tensor & x , const IntArray & dims , bool keep_dim , bool reduce_all ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

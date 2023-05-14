@@ -5,9 +5,9 @@ bincount
 
 .. cpp:function:: Tensor bincount ( const Tensor & x , const paddle::optional<Tensor> & weights , const Scalar & minlength = 0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

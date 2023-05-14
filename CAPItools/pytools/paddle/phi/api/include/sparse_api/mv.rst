@@ -5,9 +5,9 @@ mv
 
 .. cpp:function:: Tensor mv ( const Tensor & x , const Tensor & vec ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ mode
 
 .. cpp:function:: std::tuple<Tensor , Tensor> mode ( const Tensor & x , int axis = - 1 , bool keepdim = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

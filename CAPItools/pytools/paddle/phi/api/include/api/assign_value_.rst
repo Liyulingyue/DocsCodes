@@ -5,9 +5,9 @@ assign_value_
 
 .. cpp:function:: Tensor & assign_value_ ( Tensor & output , const std::vector<int> & shape , DataType dtype , const std::vector<phi::Scalar> & values , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

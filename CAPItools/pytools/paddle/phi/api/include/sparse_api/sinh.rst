@@ -5,9 +5,9 @@ sinh
 
 .. cpp:function:: Tensor sinh ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

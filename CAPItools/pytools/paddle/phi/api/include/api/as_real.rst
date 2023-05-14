@@ -5,9 +5,9 @@ as_real
 
 .. cpp:function:: Tensor as_real ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

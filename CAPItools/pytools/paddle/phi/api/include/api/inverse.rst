@@ -5,9 +5,9 @@ inverse
 
 .. cpp:function:: Tensor inverse ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ bernoulli
 
 .. cpp:function:: Tensor bernoulli ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

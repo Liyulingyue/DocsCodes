@@ -5,9 +5,9 @@ asin
 
 .. cpp:function:: Tensor asin ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

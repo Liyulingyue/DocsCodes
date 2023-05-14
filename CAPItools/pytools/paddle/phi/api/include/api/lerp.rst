@@ -5,9 +5,9 @@ lerp
 
 .. cpp:function:: Tensor lerp ( const Tensor & x , const Tensor & y , const Tensor & weight ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

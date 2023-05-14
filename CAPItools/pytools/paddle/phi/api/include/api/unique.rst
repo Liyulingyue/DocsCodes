@@ -5,9 +5,9 @@ unique
 
 .. cpp:function:: std::tuple<Tensor , Tensor , Tensor , Tensor> unique ( const Tensor & x , bool return_index , bool return_inverse , bool return_counts , const std::vector<int> & axis , DataType dtype = DataType::INT64 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ gelu
 
 .. cpp:function:: Tensor gelu ( const Tensor & x , bool approximate = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

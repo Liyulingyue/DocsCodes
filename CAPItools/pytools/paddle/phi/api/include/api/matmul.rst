@@ -5,9 +5,9 @@ matmul
 
 .. cpp:function:: Tensor matmul ( const Tensor & x , const Tensor & y , bool transpose_x = false , bool transpose_y = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

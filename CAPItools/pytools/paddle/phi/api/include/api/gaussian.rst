@@ -5,9 +5,9 @@ gaussian
 
 .. cpp:function:: Tensor gaussian ( const IntArray & shape , float mean , float std , int seed , DataType dtype , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

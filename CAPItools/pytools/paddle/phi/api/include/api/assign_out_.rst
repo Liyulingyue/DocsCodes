@@ -5,9 +5,9 @@ assign_out_
 
 .. cpp:function:: Tensor & assign_out_ ( const Tensor & x , Tensor & output ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

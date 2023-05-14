@@ -5,9 +5,9 @@ eig
 
 .. cpp:function:: std::tuple<Tensor , Tensor> eig ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

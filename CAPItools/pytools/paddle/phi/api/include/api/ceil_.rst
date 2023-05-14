@@ -5,9 +5,9 @@ ceil_
 
 .. cpp:function:: Tensor & ceil_ ( Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

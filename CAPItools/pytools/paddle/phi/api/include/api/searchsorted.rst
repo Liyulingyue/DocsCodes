@@ -5,9 +5,9 @@ searchsorted
 
 .. cpp:function:: Tensor searchsorted ( const Tensor & sorted_sequence , const Tensor & values , bool out_int32 = false , bool right = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

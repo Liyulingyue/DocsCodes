@@ -5,9 +5,9 @@ multi_dot
 
 .. cpp:function:: Tensor multi_dot ( const std::vector<Tensor> & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

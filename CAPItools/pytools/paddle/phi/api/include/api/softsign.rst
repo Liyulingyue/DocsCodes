@@ -5,9 +5,9 @@ softsign
 
 .. cpp:function:: Tensor softsign ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

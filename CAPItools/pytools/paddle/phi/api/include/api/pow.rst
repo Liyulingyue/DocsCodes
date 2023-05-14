@@ -5,9 +5,9 @@ pow
 
 .. cpp:function:: Tensor pow ( const Tensor & x , const Scalar & y = 1.0 f ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

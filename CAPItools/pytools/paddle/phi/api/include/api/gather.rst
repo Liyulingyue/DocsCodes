@@ -5,9 +5,9 @@ gather
 
 .. cpp:function:: Tensor gather ( const Tensor & x , const Tensor & index , const Scalar & axis = 0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

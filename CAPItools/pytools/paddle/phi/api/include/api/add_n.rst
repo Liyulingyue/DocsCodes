@@ -5,9 +5,9 @@ add_n
 
 .. cpp:function:: Tensor add_n ( const std::vector<Tensor> & inputs ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

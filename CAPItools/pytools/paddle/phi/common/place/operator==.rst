@@ -5,9 +5,9 @@ operator==
 
 .. cpp:function:: bool operator = = ( PlaceType place_type , const Place & place ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

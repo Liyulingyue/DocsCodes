@@ -5,9 +5,9 @@ temporal_shift
 
 .. cpp:function:: Tensor temporal_shift ( const Tensor & x , int seg_num , float shift_ratio = 0.25 f , const std::string & data_format = "NCHW" ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

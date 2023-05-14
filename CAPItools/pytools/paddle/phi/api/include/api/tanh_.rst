@@ -5,9 +5,9 @@ tanh_
 
 .. cpp:function:: Tensor & tanh_ ( Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

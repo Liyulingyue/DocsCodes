@@ -5,9 +5,9 @@ addmm
 
 .. cpp:function:: Tensor addmm ( const Tensor & input , const Tensor & x , const Tensor & y , float beta = 1.0 , float alpha = 1.0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ divide_scalar
 
 .. cpp:function:: Tensor divide_scalar ( const Tensor & x , float scalar ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

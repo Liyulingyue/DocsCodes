@@ -5,9 +5,9 @@ qr
 
 .. cpp:function:: std::tuple<Tensor , Tensor> qr ( const Tensor & x , const std::string & mode = "reduced" ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

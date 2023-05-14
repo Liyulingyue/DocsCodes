@@ -5,9 +5,9 @@ matrix_power
 
 .. cpp:function:: Tensor matrix_power ( const Tensor & x , int n ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

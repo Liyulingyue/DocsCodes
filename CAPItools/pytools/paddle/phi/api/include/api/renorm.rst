@@ -5,9 +5,9 @@ renorm
 
 .. cpp:function:: Tensor renorm ( const Tensor & x , float p , int axis , float max_norm ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

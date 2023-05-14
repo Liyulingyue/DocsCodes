@@ -5,9 +5,9 @@ multinomial
 
 .. cpp:function:: Tensor multinomial ( const Tensor & x , const Scalar & num_samples = 1 , bool replacement = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

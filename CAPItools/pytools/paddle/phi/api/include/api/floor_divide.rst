@@ -5,9 +5,9 @@ floor_divide
 
 .. cpp:function:: Tensor floor_divide ( const Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ dist
 
 .. cpp:function:: Tensor dist ( const Tensor & x , const Tensor & y , float p = 2.0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

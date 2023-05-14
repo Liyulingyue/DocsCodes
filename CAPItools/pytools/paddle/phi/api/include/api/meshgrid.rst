@@ -5,9 +5,9 @@ meshgrid
 
 .. cpp:function:: std::vector<Tensor> meshgrid ( const std::vector<Tensor> & inputs ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

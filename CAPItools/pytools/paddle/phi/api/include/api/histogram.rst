@@ -5,9 +5,9 @@ histogram
 
 .. cpp:function:: Tensor histogram ( const Tensor & input , int64_t bins = 100 , int min = 0 , int max = 0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ sin
 
 .. cpp:function:: Tensor sin ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

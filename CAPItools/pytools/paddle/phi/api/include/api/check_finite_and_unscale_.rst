@@ -5,9 +5,9 @@ check_finite_and_unscale_
 
 .. cpp:function:: std::tuple<std::vector<Tensor> & , Tensor &> check_finite_and_unscale_ ( std::vector<Tensor> & x , const Tensor & scale , Tensor & input_found_infinite ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

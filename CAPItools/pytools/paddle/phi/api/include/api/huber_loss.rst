@@ -5,9 +5,9 @@ huber_loss
 
 .. cpp:function:: Tensor huber_loss ( const Tensor & input , const Tensor & label , float delta ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

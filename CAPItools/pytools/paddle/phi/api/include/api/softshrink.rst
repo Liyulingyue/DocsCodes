@@ -5,9 +5,9 @@ softshrink
 
 .. cpp:function:: Tensor softshrink ( const Tensor & x , float threshold = 0.5 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

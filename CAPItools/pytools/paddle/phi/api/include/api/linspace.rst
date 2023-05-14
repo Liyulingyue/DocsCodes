@@ -5,9 +5,9 @@ linspace
 
 .. cpp:function:: Tensor linspace ( const Tensor & start , const Tensor & stop , const Tensor & number , DataType dtype , const Place & place ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

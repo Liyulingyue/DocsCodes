@@ -5,9 +5,9 @@ full_
 
 .. cpp:function:: Tensor & full_ ( Tensor & output , const IntArray & shape , const Scalar & value , DataType dtype = DataType::FLOAT32 , const Place & place = CPUPlace ( ) ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

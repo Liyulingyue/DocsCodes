@@ -5,9 +5,9 @@ trunc
 
 .. cpp:function:: Tensor trunc ( const Tensor & input ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ send_ue_recv
 
 .. cpp:function:: Tensor send_ue_recv ( const Tensor & x , const Tensor & y , const Tensor & src_index , const Tensor & dst_index , const std::string & message_op = "ADD" , const std::string & reduce_op = "SUM" , const IntArray & out_size = { 0 } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

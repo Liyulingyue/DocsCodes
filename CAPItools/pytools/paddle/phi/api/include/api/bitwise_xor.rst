@@ -5,9 +5,9 @@ bitwise_xor
 
 .. cpp:function:: Tensor bitwise_xor ( const Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

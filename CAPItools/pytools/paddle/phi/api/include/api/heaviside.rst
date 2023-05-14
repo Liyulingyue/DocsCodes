@@ -5,9 +5,9 @@ heaviside
 
 .. cpp:function:: Tensor heaviside ( const Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

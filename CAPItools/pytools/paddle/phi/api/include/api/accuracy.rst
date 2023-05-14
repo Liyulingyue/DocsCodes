@@ -5,9 +5,9 @@ accuracy
 
 .. cpp:function:: std::tuple<Tensor , Tensor , Tensor> accuracy ( const Tensor & x , const Tensor & indices , const Tensor & label ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

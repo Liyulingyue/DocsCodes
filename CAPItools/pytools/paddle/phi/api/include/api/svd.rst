@@ -5,9 +5,9 @@ svd
 
 .. cpp:function:: std::tuple<Tensor , Tensor , Tensor> svd ( const Tensor & x , bool full_matrices = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

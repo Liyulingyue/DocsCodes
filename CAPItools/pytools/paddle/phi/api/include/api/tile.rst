@@ -5,9 +5,9 @@ tile
 
 .. cpp:function:: Tensor tile ( const Tensor & x , const IntArray & repeat_times = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ unpool3d
 
 .. cpp:function:: Tensor unpool3d ( const Tensor & x , const Tensor & indices , const std::vector<int> & ksize , const std::vector<int> & strides , const std::vector<int> & padding , const std::vector<int> & output_size , const std::string & data_format ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

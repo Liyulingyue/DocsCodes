@@ -5,9 +5,9 @@ reshape_
 
 .. cpp:function:: Tensor & reshape_ ( Tensor & x , const IntArray & shape ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ fft_r2c
 
 .. cpp:function:: Tensor fft_r2c ( const Tensor & x , const std::vector<int64_t> & axes , const std::string & normalization , bool forward , bool onesided ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

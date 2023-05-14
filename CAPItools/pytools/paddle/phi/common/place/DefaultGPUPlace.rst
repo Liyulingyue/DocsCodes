@@ -5,9 +5,9 @@ DefaultGPUPlace
 
 .. cpp:function:: GPUPlace DefaultGPUPlace ( ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

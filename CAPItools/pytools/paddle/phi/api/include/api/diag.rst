@@ -5,9 +5,9 @@ diag
 
 .. cpp:function:: Tensor diag ( const Tensor & x , int offset = 0 , float padding_value = 0.0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

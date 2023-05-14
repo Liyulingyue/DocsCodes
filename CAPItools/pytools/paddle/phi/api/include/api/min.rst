@@ -5,9 +5,9 @@ min
 
 .. cpp:function:: Tensor min ( const Tensor & x , const IntArray & axis = { } , bool keepdim = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

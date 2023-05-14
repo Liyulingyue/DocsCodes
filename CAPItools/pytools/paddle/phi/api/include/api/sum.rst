@@ -5,9 +5,9 @@ sum
 
 .. cpp:function:: Tensor sum ( const Tensor & x , const IntArray & axis = { } , DataType dtype = DataType::UNDEFINED , bool keepdim = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

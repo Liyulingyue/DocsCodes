@@ -5,9 +5,9 @@ triangular_solve
 
 .. cpp:function:: Tensor triangular_solve ( const Tensor & x , const Tensor & y , bool upper , bool transpose , bool unitriangular ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

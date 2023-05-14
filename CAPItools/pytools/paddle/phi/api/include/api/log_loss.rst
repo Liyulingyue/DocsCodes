@@ -5,9 +5,9 @@ log_loss
 
 .. cpp:function:: Tensor log_loss ( const Tensor & input , const Tensor & label , float epsilon ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

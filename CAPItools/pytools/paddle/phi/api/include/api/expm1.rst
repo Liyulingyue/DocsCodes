@@ -5,9 +5,9 @@ expm1
 
 .. cpp:function:: Tensor expm1 ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

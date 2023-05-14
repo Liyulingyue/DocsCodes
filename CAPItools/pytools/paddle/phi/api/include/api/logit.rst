@@ -5,9 +5,9 @@ logit
 
 .. cpp:function:: Tensor logit ( const Tensor & x , float eps = 1e - 6f ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ diagonal
 
 .. cpp:function:: Tensor diagonal ( const Tensor & x , int offset = 0 , int axis1 = 0 , int axis2 = 1 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

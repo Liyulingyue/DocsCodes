@@ -5,9 +5,9 @@ fill_
 
 .. cpp:function:: Tensor & fill_ ( Tensor & x , const Scalar & value ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

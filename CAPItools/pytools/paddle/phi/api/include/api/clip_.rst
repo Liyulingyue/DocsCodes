@@ -5,9 +5,9 @@ clip_
 
 .. cpp:function:: Tensor & clip_ ( Tensor & x , const Scalar & min , const Scalar & max ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

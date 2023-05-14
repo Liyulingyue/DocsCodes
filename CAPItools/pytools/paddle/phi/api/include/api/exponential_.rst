@@ -5,9 +5,9 @@ exponential_
 
 .. cpp:function:: Tensor & exponential_ ( Tensor & x , float lam ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ relu6
 
 .. cpp:function:: Tensor relu6 ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ nearest_interp
 
 .. cpp:function:: Tensor nearest_interp ( const Tensor & x , const paddle::optional<Tensor> & out_size , const paddle::optional<std::vector<Tensor> > & size_tensor , const paddle::optional<Tensor> & scale_tensor , const std::string & data_layout = "NCHW" , int out_d = 0 , int out_h = 0 , int out_w = 0 , const std::vector<float> & scale = { } , const std::string & interp_method = "bilinear" , bool align_corners = true , int align_mode = 1 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

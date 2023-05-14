@@ -5,9 +5,9 @@ logical_and
 
 .. cpp:function:: Tensor logical_and ( const Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

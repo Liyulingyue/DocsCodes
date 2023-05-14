@@ -5,9 +5,9 @@ fill_diagonal_
 
 .. cpp:function:: Tensor & fill_diagonal_ ( Tensor & x , float value = 0 , int offset = 0 , bool wrap = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ lu
 
 .. cpp:function:: std::tuple<Tensor , Tensor , Tensor> lu ( const Tensor & x , bool pivot = true ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

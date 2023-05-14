@@ -5,9 +5,9 @@ greater_equal
 
 .. cpp:function:: Tensor greater_equal ( const Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ AssignTensorImpl
 
 .. cpp:function:: void AssignTensorImpl ( const Tensor & src , Tensor * dst ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ mean_all
 
 .. cpp:function:: Tensor mean_all ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

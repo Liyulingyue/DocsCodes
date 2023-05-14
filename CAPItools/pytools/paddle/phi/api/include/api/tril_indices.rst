@@ -5,9 +5,9 @@ tril_indices
 
 .. cpp:function:: Tensor tril_indices ( int rows , int cols , int offset , DataType dtype , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

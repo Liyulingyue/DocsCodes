@@ -5,9 +5,9 @@ subtract_
 
 .. cpp:function:: Tensor & subtract_ ( Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ argsort
 
 .. cpp:function:: std::tuple<Tensor , Tensor> argsort ( const Tensor & x , int axis = - 1 , bool descending = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

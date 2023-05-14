@@ -5,9 +5,9 @@ logspace
 
 .. cpp:function:: Tensor logspace ( const Tensor & start , const Tensor & stop , const Tensor & num , const Tensor & base , DataType dtype , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

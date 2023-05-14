@@ -5,9 +5,9 @@ increment_
 
 .. cpp:function:: Tensor & increment_ ( Tensor & x , float value = 1.0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

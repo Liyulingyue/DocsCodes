@@ -5,9 +5,9 @@ scatter
 
 .. cpp:function:: Tensor scatter ( const Tensor & x , const Tensor & index , const Tensor & updates , bool overwrite = true ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

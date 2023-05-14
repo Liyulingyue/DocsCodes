@@ -5,9 +5,9 @@ shape
 
 .. cpp:function:: Tensor shape ( const Tensor & input ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

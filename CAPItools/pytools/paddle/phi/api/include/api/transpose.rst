@@ -5,9 +5,9 @@ transpose
 
 .. cpp:function:: Tensor transpose ( const Tensor & x , const std::vector<int> & perm ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

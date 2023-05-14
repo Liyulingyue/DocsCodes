@@ -5,9 +5,9 @@ nanmedian
 
 .. cpp:function:: Tensor nanmedian ( const Tensor & x , const IntArray & axis = { } , bool keepdim = true ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

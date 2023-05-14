@@ -5,9 +5,9 @@ squared_l2_norm
 
 .. cpp:function:: Tensor squared_l2_norm ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ psroi_pool
 
 .. cpp:function:: Tensor psroi_pool ( const Tensor & x , const Tensor & boxes , const paddle::optional<Tensor> & boxes_num , int pooled_height , int pooled_width , int output_channels , float spatial_scale ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

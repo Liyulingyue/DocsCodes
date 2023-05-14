@@ -5,9 +5,9 @@ scatter_nd_add
 
 .. cpp:function:: Tensor scatter_nd_add ( const Tensor & x , const Tensor & index , const Tensor & updates ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

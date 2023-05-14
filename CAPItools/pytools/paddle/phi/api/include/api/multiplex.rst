@@ -5,9 +5,9 @@ multiplex
 
 .. cpp:function:: Tensor multiplex ( const std::vector<Tensor> & inputs , const Tensor & index ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

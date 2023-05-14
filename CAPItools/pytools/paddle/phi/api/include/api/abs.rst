@@ -5,9 +5,9 @@ abs
 
 .. cpp:function:: Tensor abs ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

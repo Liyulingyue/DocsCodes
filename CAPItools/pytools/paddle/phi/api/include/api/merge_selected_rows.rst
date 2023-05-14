@@ -5,9 +5,9 @@ merge_selected_rows
 
 .. cpp:function:: Tensor merge_selected_rows ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

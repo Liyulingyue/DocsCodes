@@ -5,10 +5,10 @@ GetAllocator
 
 .. cpp:function:: phi::Allocator * GetAllocator ( const phi::Place & place ) ;
 
-<--! name="desc" -->
+<name="desc">
  Get the Allocator for the passed place.
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

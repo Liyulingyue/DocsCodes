@@ -5,9 +5,9 @@ randperm
 
 .. cpp:function:: Tensor randperm ( int n , DataType dtype , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

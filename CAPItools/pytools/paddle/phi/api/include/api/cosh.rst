@@ -5,9 +5,9 @@ cosh
 
 .. cpp:function:: Tensor cosh ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

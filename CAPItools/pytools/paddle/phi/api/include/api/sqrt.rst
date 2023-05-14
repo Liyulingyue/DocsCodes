@@ -5,9 +5,9 @@ sqrt
 
 .. cpp:function:: Tensor sqrt ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

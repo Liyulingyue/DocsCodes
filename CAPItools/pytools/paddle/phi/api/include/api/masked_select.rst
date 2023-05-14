@@ -5,9 +5,9 @@ masked_select
 
 .. cpp:function:: Tensor masked_select ( const Tensor & x , const Tensor & mask ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

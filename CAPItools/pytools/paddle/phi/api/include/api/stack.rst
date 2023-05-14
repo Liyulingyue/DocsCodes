@@ -5,9 +5,9 @@ stack
 
 .. cpp:function:: Tensor stack ( const std::vector<Tensor> & x , int axis = 0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

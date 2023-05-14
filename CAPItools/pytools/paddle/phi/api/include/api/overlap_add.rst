@@ -5,9 +5,9 @@ overlap_add
 
 .. cpp:function:: Tensor overlap_add ( const Tensor & x , int hop_length , int axis = - 1 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ reverse
 
 .. cpp:function:: Tensor reverse ( const Tensor & x , const IntArray & axis ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

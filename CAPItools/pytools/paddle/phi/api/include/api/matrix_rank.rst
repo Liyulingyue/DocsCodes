@@ -5,9 +5,9 @@ matrix_rank
 
 .. cpp:function:: Tensor matrix_rank ( const Tensor & x , float tol , bool use_default_tol = true , bool hermitian = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

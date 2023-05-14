@@ -5,9 +5,9 @@ multiply_
 
 .. cpp:function:: Tensor & multiply_ ( Tensor & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

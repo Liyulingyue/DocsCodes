@@ -5,9 +5,9 @@ empty
 
 .. cpp:function:: Tensor empty ( const IntArray & shape , const Place & place = CPUPlace ( ) ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,10 +5,10 @@ GetCurrentCUDAStream
 
 .. cpp:function:: phi::CUDAStream * GetCurrentCUDAStream ( const phi::Place & place ) ;
 
-<--! name="desc" -->
+<name="desc">
  Get the current CUDA stream for the passed CUDA device.
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

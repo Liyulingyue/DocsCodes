@@ -5,9 +5,9 @@ lstsq
 
 .. cpp:function:: std::tuple<Tensor , Tensor , Tensor , Tensor> lstsq ( const Tensor & x , const Tensor & y , const Scalar & rcond , const std::string & driver ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

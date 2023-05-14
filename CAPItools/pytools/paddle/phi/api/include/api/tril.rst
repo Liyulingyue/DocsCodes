@@ -5,9 +5,9 @@ tril
 
 .. cpp:function:: Tensor tril ( const Tensor & x , int diagonal ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

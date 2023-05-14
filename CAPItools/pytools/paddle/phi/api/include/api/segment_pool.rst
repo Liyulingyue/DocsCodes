@@ -5,9 +5,9 @@ segment_pool
 
 .. cpp:function:: Tensor segment_pool ( const Tensor & x , const Tensor & segment_ids , const std::string & pooltype = "SUM" ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

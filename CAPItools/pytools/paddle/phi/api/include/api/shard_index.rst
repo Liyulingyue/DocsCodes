@@ -5,9 +5,9 @@ shard_index
 
 .. cpp:function:: Tensor shard_index ( const Tensor & input , int index_num , int nshards , int shard_id , int ignore_value = - 1 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

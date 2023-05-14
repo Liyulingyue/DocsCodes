@@ -5,9 +5,9 @@ rsqrt_
 
 .. cpp:function:: Tensor & rsqrt_ ( Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

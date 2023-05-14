@@ -5,9 +5,9 @@ sigmoid_cross_entropy_with_logits_
 
 .. cpp:function:: Tensor & sigmoid_cross_entropy_with_logits_ ( Tensor & x , const Tensor & label , bool normalize = false , int ignore_index = - 100 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

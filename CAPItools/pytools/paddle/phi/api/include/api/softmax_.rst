@@ -5,9 +5,9 @@ softmax_
 
 .. cpp:function:: Tensor & softmax_ ( Tensor & x , int axis ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

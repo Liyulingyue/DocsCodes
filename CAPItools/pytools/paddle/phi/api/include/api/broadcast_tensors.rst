@@ -5,9 +5,9 @@ broadcast_tensors
 
 .. cpp:function:: std::vector<Tensor> broadcast_tensors ( const std::vector<Tensor> & input ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

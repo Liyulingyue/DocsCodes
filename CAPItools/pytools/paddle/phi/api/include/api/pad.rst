@@ -5,9 +5,9 @@ pad
 
 .. cpp:function:: Tensor pad ( const Tensor & x , const std::vector<int> & paddings , const Scalar & pad_value ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ affine_grid
 
 .. cpp:function:: Tensor affine_grid ( const Tensor & input , const IntArray & output_shape = { } , bool align_corners = true ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

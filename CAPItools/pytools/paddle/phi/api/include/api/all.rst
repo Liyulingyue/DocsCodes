@@ -5,9 +5,9 @@ all
 
 .. cpp:function:: Tensor all ( const Tensor & x , const std::vector<int64_t> & axis = { } , bool keepdim = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

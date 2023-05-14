@@ -5,9 +5,9 @@ operator+
 
 .. cpp:function:: Tensor operator + ( const Scalar & x , const Tensor & y ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

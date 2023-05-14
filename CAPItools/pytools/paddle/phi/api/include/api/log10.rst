@@ -5,9 +5,9 @@ log10
 
 .. cpp:function:: Tensor log10 ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

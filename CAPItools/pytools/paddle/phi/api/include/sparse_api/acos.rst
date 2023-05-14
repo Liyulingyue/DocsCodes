@@ -5,9 +5,9 @@ acos
 
 .. cpp:function:: Tensor acos ( const Tensor & x ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

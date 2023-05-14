@@ -5,9 +5,9 @@ copy_to
 
 .. cpp:function:: Tensor copy_to ( const Tensor & x , const Place & place , bool blocking ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

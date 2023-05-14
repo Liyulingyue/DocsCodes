@@ -5,9 +5,9 @@ eigvalsh
 
 .. cpp:function:: std::tuple<Tensor , Tensor> eigvalsh ( const Tensor & x , const std::string & uplo = "L" , bool is_test = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

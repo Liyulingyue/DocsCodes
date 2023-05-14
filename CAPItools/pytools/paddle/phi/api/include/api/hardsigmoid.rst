@@ -5,9 +5,9 @@ hardsigmoid
 
 .. cpp:function:: Tensor hardsigmoid ( const Tensor & x , float slope = 0.2 , float offset = 0.5 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

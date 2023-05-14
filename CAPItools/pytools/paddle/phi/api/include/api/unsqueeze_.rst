@@ -5,9 +5,9 @@ unsqueeze_
 
 .. cpp:function:: Tensor & unsqueeze_ ( Tensor & x , const IntArray & axis = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

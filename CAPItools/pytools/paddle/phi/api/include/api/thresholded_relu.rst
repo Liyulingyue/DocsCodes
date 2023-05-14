@@ -5,9 +5,9 @@ thresholded_relu
 
 .. cpp:function:: Tensor thresholded_relu ( const Tensor & x , float threshold = 1.0 ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ leaky_relu
 
 .. cpp:function:: Tensor leaky_relu ( const Tensor & x , float alpha ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

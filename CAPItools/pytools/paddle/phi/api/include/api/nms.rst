@@ -5,9 +5,9 @@ nms
 
 .. cpp:function:: Tensor nms ( const Tensor & x , float threshold = 1.0 f ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

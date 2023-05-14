@@ -5,9 +5,9 @@ clip_by_norm
 
 .. cpp:function:: Tensor clip_by_norm ( const Tensor & x , float max_norm ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

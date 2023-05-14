@@ -5,9 +5,9 @@ gather_nd
 
 .. cpp:function:: Tensor gather_nd ( const Tensor & x , const Tensor & index ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

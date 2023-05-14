@@ -5,9 +5,9 @@ repeat_interleave
 
 .. cpp:function:: Tensor repeat_interleave ( const Tensor & x , int repeats , int axis ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

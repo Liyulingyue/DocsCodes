@@ -5,9 +5,9 @@ split_with_num
 
 .. cpp:function:: std::vector<Tensor> split_with_num ( const Tensor & x , int num , const Scalar & axis ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

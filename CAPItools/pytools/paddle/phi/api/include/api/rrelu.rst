@@ -5,9 +5,9 @@ rrelu
 
 .. cpp:function:: Tensor rrelu ( const Tensor & x , float lower , float upper , bool is_test ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

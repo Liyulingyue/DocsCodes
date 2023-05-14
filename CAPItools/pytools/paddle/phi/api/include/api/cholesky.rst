@@ -5,9 +5,9 @@ cholesky
 
 .. cpp:function:: Tensor cholesky ( const Tensor & x , bool upper = false ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

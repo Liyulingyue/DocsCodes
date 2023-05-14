@@ -5,9 +5,9 @@ memory_efficient_attention
 
 .. cpp:function:: std::tuple<Tensor , Tensor , Tensor> memory_efficient_attention ( const Tensor & query , const Tensor & key , const Tensor & value , const paddle::optional<Tensor> & bias , const paddle::optional<Tensor> & cu_seqlens_q , const paddle::optional<Tensor> & cu_seqlens_k , const paddle::optional<Tensor> & causal_diagonal , const paddle::optional<Tensor> & seqlen_k , const Scalar & max_seqlen_q , const Scalar & max_seqlen_k , bool causal , double dropout_p , float scale , bool is_test ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

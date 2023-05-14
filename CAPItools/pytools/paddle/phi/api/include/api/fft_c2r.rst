@@ -5,9 +5,9 @@ fft_c2r
 
 .. cpp:function:: Tensor fft_c2r ( const Tensor & x , const std::vector<int64_t> & axes , const std::string & normalization , bool forward , int64_t last_dim_size = 0 L ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

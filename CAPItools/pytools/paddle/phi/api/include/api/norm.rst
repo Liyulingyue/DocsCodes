@@ -5,9 +5,9 @@ norm
 
 .. cpp:function:: std::tuple<Tensor , Tensor> norm ( const Tensor & x , int axis , float epsilon , bool is_test ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

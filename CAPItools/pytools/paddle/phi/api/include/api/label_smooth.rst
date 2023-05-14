@@ -5,9 +5,9 @@ label_smooth
 
 .. cpp:function:: Tensor label_smooth ( const Tensor & label , const paddle::optional<Tensor> & prior_dist , float epsilon = 0.0 f ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

@@ -5,9 +5,9 @@ uniform
 
 .. cpp:function:: Tensor uniform ( const IntArray & shape , DataType dtype , const Scalar & min , const Scalar & max , int seed , const Place & place = { } ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::

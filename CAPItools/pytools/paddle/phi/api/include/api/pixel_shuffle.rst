@@ -5,9 +5,9 @@ pixel_shuffle
 
 .. cpp:function:: Tensor pixel_shuffle ( const Tensor & x , int upscale_factor = 1 , const std::string & data_format = "NCHW" ) ;
 
-<--! name="desc" -->
+<name="desc">
 
-<--! /name -->
+</name>
 
 ¶¨ÒåÄ¿Â¼
 :::::::::::::::::::::
