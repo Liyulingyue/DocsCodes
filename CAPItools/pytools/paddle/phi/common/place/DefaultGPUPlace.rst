@@ -9,6 +9,11 @@ DefaultGPUPlace
 :::::::::::::::::::::
 paddle\phi\common\place.h
 
+参数
+:::::::::::::::::::::
+
+
+
 返回
 :::::::::::::::::::::
 GPUPlace

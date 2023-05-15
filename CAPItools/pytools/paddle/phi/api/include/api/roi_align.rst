@@ -20,6 +20,8 @@ paddle\phi\api\include\api.h
 	- **sampling_ratio** (int) - 
 	- **aligned** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

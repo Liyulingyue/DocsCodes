@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **y** (const Tensor&) - 
 	- **upper** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

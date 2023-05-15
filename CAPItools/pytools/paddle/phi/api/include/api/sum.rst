@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType) - 
 	- **keepdim** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

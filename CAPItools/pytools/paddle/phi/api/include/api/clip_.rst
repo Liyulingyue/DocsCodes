@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **min** (const Scalar&) - 
 	- **max** (const Scalar&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

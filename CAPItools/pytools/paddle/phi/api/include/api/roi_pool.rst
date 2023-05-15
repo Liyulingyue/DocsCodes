@@ -18,6 +18,8 @@ paddle\phi\api\include\api.h
 	- **pooled_width** (int) - 
 	- **spatial_scale** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

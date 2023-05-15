@@ -23,6 +23,8 @@ paddle\phi\api\include\api.h
 	- **use_label_smooth** (bool) - 
 	- **scale_x_y** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

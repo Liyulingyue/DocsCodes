@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **ignore_index** (int64_t) - 
 	- **reduction** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

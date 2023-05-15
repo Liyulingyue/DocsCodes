@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **upscale_factor** (int) - 
 	- **data_format** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

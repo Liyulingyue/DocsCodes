@@ -23,6 +23,8 @@ paddle\phi\api\include\api.h
 	- **adaptive** (bool) - 
 	- **padding_algorithm** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -14,6 +14,8 @@ paddle\phi\api\include\api.h
 	- **x** (Tensor&) - 
 	- **pivot** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

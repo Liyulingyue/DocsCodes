@@ -14,6 +14,8 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **negative_slope** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

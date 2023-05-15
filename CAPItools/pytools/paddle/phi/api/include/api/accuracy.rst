@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **indices** (const Tensor&) - 
 	- **label** (const Tensor&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

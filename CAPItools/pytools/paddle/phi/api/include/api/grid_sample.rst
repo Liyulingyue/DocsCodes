@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **padding_mode** (const std::string&) - 
 	- **align_corners** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

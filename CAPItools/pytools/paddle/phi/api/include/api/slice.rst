@@ -18,6 +18,8 @@ paddle\phi\api\include\api.h
 	- **infer_flags** (const std::vector<int64_t>&) - 
 	- **decrease_axis** (const std::vector<int64_t>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

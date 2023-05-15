@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **dst_index** (const Tensor&) - 
 	- **message_op** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

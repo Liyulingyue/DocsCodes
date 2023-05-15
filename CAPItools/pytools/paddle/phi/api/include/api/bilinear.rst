@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **weight** (const Tensor&) - 
 	- **bias** (const paddle::optional<Tensor>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

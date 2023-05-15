@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **place** (const Place&) - 
 	- **blocking** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

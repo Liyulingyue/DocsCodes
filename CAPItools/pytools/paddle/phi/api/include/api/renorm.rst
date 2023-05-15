@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **axis** (int) - 
 	- **max_norm** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

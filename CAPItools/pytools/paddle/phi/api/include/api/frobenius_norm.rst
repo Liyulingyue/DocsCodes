@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **keep_dim** (bool) - 
 	- **reduce_all** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -1,123 +1,102 @@
 .. _cn_api_CPUContext:
 
-CPUContext[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\backends\cpu\cpu_context.h)
+CPUContext[婧愪唬鐮乚(https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\backends\cpu\cpu_context.h)
 -------------------------------
 
 .. cpp:class:: explicit CPUContext ( const Place & ) ;
 
-<name="desc">
 
-</name>
-
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\backends\cpu\cpu_context.h
 
-方法
+鏂规硶
 :::::::::::::::::::::
+
 CPUContext ( ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-返回
-:::::::::::::::::::::
-无
+**鍙傛暟**
+'''''''''''
+
+
 
 CPUContext ( CPUContext & & ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **&** (CPUContext&) - 
 
-返回
-:::::::::::::::::::::
-无
+
 
 CPUContext & operator = ( CPUContext & & ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **&** (CPUContext&) - 
 
-返回
-:::::::::::::::::::::
+
+
+**杩斿洖**
+'''''''''''
 CPUContext
-
 explicit CPUContext ( const Place & ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **&** (const Place) - 
 
-返回
-:::::::::::::::::::::
-无
+
 
 virtual ~CPUContext ( ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-返回
-:::::::::::::::::::::
-无
+**鍙傛暟**
+'''''''''''
+
+
 
 Eigen::DefaultDevice * eigen_device ( ) const ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-返回
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
+
+
+
+**杩斿洖**
+'''''''''''
 Eigen::DefaultDevice
-
 const Place & GetPlace ( ) const override ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-返回
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
+
+
+
+**杩斿洖**
+'''''''''''
 Place
-
 static const char * name ( ) {
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-返回
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
+
+
+
+**杩斿洖**
+'''''''''''
 char
-
-
-
-<name="reference_link">
-
-</name>
-

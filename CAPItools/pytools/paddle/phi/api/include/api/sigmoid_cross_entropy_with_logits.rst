@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **normalize** (bool) - 
 	- **ignore_index** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

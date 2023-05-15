@@ -26,6 +26,8 @@ paddle\phi\api\include\api.h
 	- **epsilon** (float) - 
 	- **multi_precision** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor , Tensor , Tensor , paddle::optional<Tensor> >

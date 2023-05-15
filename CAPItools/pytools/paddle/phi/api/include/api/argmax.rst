@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **flatten** (bool) - 
 	- **dtype** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

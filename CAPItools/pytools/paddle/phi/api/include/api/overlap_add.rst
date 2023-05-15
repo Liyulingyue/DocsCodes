@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **hop_length** (int) - 
 	- **axis** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

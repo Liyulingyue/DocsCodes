@@ -14,6 +14,8 @@ paddle\phi\api\include\api.h
 	- **x** (Tensor&) - 
 	- **lam** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

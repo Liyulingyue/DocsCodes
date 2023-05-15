@@ -18,6 +18,8 @@ paddle\phi\api\include\api.h
 	- **keepdim** (bool) - 
 	- **asvector** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

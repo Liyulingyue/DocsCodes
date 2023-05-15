@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **padding_idx** (int64_t) - 
 	- **sparse** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

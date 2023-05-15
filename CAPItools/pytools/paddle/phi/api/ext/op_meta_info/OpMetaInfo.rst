@@ -1,143 +1,116 @@
 .. _cn_api_OpMetaInfo:
 
-OpMetaInfo[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\api\ext\op_meta_info.h)
+OpMetaInfo[婧愪唬鐮乚(https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\api\ext\op_meta_info.h)
 -------------------------------
 
 .. cpp:class:: explicit OpMetaInfo ( const std::string & op_name ) :
 
-<name="desc">
 
-</name>
-
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\phi\api\ext\op_meta_info.h
 
-方法
+鏂规硶
 :::::::::::::::::::::
+
 explicit OpMetaInfo ( const std::string & op_name ) :
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **op_name** (const std::string&) - 
 
-返回
-:::::::::::::::::::::
-无
+
 
 OpMetaInfo & Inputs ( std::vector<std::string> & & inputs ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **inputs** (std::vector<std::string>) - 
 
-返回
-:::::::::::::::::::::
+
+
+**杩斿洖**
+'''''''''''
 OpMetaInfo
-
 OpMetaInfo & Outputs ( std::vector<std::string> & & outputs ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **outputs** (std::vector<std::string>) - 
 
-返回
-:::::::::::::::::::::
+
+
+**杩斿洖**
+'''''''''''
 OpMetaInfo
-
 OpMetaInfo & Attrs ( std::vector<std::string> & & attrs ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **attrs** (std::vector<std::string>) - 
 
-返回
-:::::::::::::::::::::
+
+
+**杩斿洖**
+'''''''''''
 OpMetaInfo
-
 OpMetaInfo & SetInplaceMap ( std::unordered_map<std::string , std::string> & & inplace_map ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **inplace_map** (std::unordered_map<std::string, std::string>) - 
 
-返回
-:::::::::::::::::::::
+
+
+**杩斿洖**
+'''''''''''
 OpMetaInfo
-
 OpMetaInfo & SetKernelFn ( KernelFunc & & func ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **func** (void ( ) ( CustomOpKernelContext )) - 
 
-返回
-:::::::::::::::::::::
+
+
+**杩斿洖**
+'''''''''''
 OpMetaInfo
-
 OpMetaInfo & SetInferShapeFn ( InferShapeFunc & & func ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **func** (vector<std::vector<int64_t> > ( ) ( const std::vector<std::vector<int64_t> > input_shapes, const std::vector<std::vector<std::vector<int64_t> > > vec_input_shapes, const std::vector<paddle::any> attrs )) - 
 
-返回
-:::::::::::::::::::::
+
+
+**杩斿洖**
+'''''''''''
 OpMetaInfo
-
 OpMetaInfo & SetInferDtypeFn ( InferDtypeFunc & & func ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-参数
-:::::::::::::::::::::
+**鍙傛暟**
+'''''''''''
 	- **func** (vector<DataType> ( ) ( const std::vector<DataType> input_dtypes, const std::vector<std::vector<DataType> > vec_input_dtypes )) - 
 
-返回
-:::::::::::::::::::::
+
+
+**杩斿洖**
+'''''''''''
 OpMetaInfo
-
-
-
-<name="reference_link">
-
-</name>
-

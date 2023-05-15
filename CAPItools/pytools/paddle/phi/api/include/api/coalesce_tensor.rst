@@ -23,6 +23,8 @@ paddle\phi\api\include\api.h
 	- **concated_shapes** (const std::vector<int64_t>&) - 
 	- **concated_ranks** (const std::vector<int64_t>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<std::vector<Tensor> , Tensor>

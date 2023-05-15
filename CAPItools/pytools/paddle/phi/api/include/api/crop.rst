@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **shape** (const IntArray&) - 
 	- **offsets** (const IntArray&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

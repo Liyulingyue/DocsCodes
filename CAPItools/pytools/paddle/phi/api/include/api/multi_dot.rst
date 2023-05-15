@@ -13,6 +13,8 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **x** (const std::vector<Tensor>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

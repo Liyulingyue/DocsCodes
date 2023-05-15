@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **pad_value** (float) - 
 	- **data_format** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

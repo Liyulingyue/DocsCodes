@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **dim1** (int) - 
 	- **dim2** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

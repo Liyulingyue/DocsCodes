@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **axis** (const std::vector<int>&) - 
 	- **dtype** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

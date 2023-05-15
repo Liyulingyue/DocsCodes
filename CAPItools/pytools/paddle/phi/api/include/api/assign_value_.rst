@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **values** (const std::vector<phi::Scalar>&) - 
 	- **place** (const Place&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

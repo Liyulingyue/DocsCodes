@@ -14,6 +14,8 @@ paddle\phi\api\include\api.h
 	- **x** (const Tensor&) - 
 	- **repeat_times** (const IntArray&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

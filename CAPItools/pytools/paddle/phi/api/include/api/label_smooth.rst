@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **prior_dist** (const paddle::optional<Tensor>&) - 
 	- **epsilon** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

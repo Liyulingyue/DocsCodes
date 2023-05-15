@@ -19,6 +19,8 @@ paddle\phi\api\include\api.h
 	- **axis** (int) - 
 	- **variance** (const std::vector<float>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **scale** (const Tensor&) - 
 	- **input_found_infinite** (Tensor&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<std::vector<Tensor> , Tensor >

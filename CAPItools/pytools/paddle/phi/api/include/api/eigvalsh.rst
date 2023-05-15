@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **uplo** (const std::string&) - 
 	- **is_test** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

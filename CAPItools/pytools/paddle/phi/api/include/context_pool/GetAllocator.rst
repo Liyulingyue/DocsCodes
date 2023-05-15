@@ -14,6 +14,8 @@ paddle\phi\api\include\context_pool.h
 :::::::::::::::::::::
 	- **place** (const phi::Place&) - 
 
+
+
 返回
 :::::::::::::::::::::
 phi::Allocator

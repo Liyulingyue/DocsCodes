@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **use_default_tol** (bool) - 
 	- **hermitian** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **label** (const Tensor&) - 
 	- **reduction** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

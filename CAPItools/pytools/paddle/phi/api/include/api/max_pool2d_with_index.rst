@@ -18,6 +18,8 @@ paddle\phi\api\include\api.h
 	- **global_pooling** (bool) - 
 	- **adaptive** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

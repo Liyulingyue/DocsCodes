@@ -23,6 +23,8 @@ paddle\phi\api\include\api.h
 	- **use_global_stats** (bool) - 
 	- **trainable_statistics** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor , Tensor , Tensor , Tensor>

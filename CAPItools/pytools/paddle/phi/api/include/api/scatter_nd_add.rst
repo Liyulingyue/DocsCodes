@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **index** (const Tensor&) - 
 	- **updates** (const Tensor&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

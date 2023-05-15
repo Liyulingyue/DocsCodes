@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **output_shape** (const IntArray&) - 
 	- **align_corners** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

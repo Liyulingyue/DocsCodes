@@ -23,6 +23,8 @@ paddle\phi\api\include\api.h
 	- **multi_precision** (bool) - 
 	- **rescale_grad** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<std::vector<Tensor> , std::vector<Tensor> , paddle::optional<std::vector<Tensor> > >

@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **slope** (float) - 
 	- **offset** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

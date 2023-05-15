@@ -17,6 +17,8 @@ paddle\phi\api\include\fused_api.h
 	- **dbias** (const paddle::optional<Tensor>&) - 
 	- **multi_precision** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

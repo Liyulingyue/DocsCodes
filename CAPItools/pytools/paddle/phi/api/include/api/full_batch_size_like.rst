@@ -19,6 +19,8 @@ paddle\phi\api\include\api.h
 	- **output_dim_idx** (int) - 
 	- **place** (const Place&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -18,6 +18,8 @@ paddle\phi\api\include\api.h
 	- **groups** (int) - 
 	- **data_layout** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **min** (int) - 
 	- **max** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

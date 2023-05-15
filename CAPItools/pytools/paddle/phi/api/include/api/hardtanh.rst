@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **t_min** (float) - 
 	- **t_max** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

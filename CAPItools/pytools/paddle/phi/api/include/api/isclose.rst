@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **atol** (const Scalar&) - 
 	- **equal_nan** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

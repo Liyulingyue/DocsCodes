@@ -20,6 +20,8 @@ paddle\phi\api\include\api.h
 	- **fix_seed** (bool) - 
 	- **seed** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

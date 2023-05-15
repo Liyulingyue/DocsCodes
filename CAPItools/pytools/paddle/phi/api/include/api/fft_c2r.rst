@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **forward** (bool) - 
 	- **last_dim_size** (int64_t) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

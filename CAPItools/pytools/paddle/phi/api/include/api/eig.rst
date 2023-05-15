@@ -13,6 +13,8 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **x** (const Tensor&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

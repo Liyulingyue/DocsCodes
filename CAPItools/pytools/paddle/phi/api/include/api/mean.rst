@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **axis** (const IntArray&) - 
 	- **keepdim** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

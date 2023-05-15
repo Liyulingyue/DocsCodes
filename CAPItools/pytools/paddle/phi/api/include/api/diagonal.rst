@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **axis1** (int) - 
 	- **axis2** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

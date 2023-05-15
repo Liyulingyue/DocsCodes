@@ -19,6 +19,8 @@ paddle\phi\api\include\api.h
 	- **output_size** (const std::vector<int>&) - 
 	- **data_format** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

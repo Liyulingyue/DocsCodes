@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **forward** (bool) - 
 	- **onesided** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **offset** (int) - 
 	- **padding_value** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

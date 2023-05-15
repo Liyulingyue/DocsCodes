@@ -14,6 +14,8 @@ paddle\phi\api\include\sparse_api.h
 	- **x** (const Tensor&) - 
 	- **perm** (const std::vector<int>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

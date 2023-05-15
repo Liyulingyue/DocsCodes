@@ -31,6 +31,8 @@ paddle\phi\api\include\api.h
 	- **multi_precision** (bool) - 
 	- **use_global_beta_pow** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor , Tensor , Tensor , paddle::optional<Tensor> >

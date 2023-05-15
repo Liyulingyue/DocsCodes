@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **segment_ids** (const Tensor&) - 
 	- **pooltype** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

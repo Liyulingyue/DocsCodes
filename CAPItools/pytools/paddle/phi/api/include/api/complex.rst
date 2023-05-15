@@ -14,6 +14,8 @@ paddle\phi\api\include\api.h
 	- **real** (const Tensor&) - 
 	- **imag** (const Tensor&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

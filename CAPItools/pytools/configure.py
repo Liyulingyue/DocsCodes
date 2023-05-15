@@ -4,7 +4,7 @@ LANGUAGE = "cn"
 # 获取方法中的参数parameters
 def get_parameters(parameters):
     parameter_api = ""  # 这里解析是给api使用的 (暂时不用)
-    parameter = "\n参数\n:::::::::::::::::::::\n"
+    parameter = ""
     for i in parameters:
         parameter_type_tmp = i['type'].replace(" &", "").replace(" *", "")
         # * 和 & 情况
@@ -61,12 +61,16 @@ class func_helper(object):
 
             define_path_text = f'定义目录\n' \
                                f':::::::::::::::::::::\n' \
-                               f'{self.file_path}' \
+                               f'{self.file_path}\n' \
                                f'\n'
             f.write(define_path_text)
 
             # TODO 可以统一把“参数”这样的文本移动到这里进行表达，增加代码维护性
-            f.write(self.parameter+'\n')
+            parameters_text = f'参数\n' \
+                              f':::::::::::::::::::::\n' \
+                              f'{self.parameter}\n' \
+                              f'\n'
+            f.write(parameters_text+'\n')
 
             return_text = f'返回\n' \
                           f':::::::::::::::::::::\n' \
@@ -75,122 +79,87 @@ class func_helper(object):
             if 'void' not in self.returns:
                 f.write(return_text)
 
+class class_helper(object):
+    def __init__(self, class_dict):
+        super(class_helper, self).__init__()
+        self.class_dict = class_dict
+        self.decode()
 
-# 生成函数文档
-def generate_func_docs_file(data: dict):
-    # TODO 这里要看一下 operator== 这种情况能不能正常解析
-    func_name = data["name"]
-    # 解析api
-    api = data["debug"].replace("PADDLE_API ", "")
-    namespace = data["namespace"].replace("::", "_")
-    doxygen = data.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
-    # TODO 如果使用已安装的 paddle 包需要调整
-    file_path = data["filename"].replace("../", "")
+    def decode(self):
+        self.branch = "develop"  # TODO 这里可以看看从包里面获取
+        self.class_name = self.class_dict["name"].replace("PADDLE_API", "")
+        # TODO 如果使用已安装的 paddle 包需要调整
+        self.file_path = self.class_dict["filename"].replace("../", "")
+        self.doxygen = self.class_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
+        # 初始化函数
+        # 避免空函数解析
+        self.init_func = self.class_name
 
-    # 解析参数
-    parameter = ""
-    if len(data["parameters"]) != 0:
-        parameter, parameter_api = get_parameters(data["parameters"])
+        self.functions_infor = []
+        self.class_function_number = len(self.class_dict["methods"]["public"])
+        for i in range(self.class_function_number):
+            ith_function = self.class_dict["methods"]["public"][i]
+            if self.class_name in ith_function["name"] and len(ith_function["debug"]) > len(self.init_func):
+                self.init_func = ith_function["debug"]
 
-    # 解析返回值, 这里不用考虑空返回值, 因为空也会有 void
-    returns_text = "\n返回\n:::::::::::::::::::::\n"
-    returns = data["returns"].replace("PADDLE_API ", "")
-
-    # 解析api
-    api = data["debug"].replace("PADDLE_API ", "")  # 这个解析出来会有空格
-    # api = f"{returns} {func_name}({parameter_api});" # 这个有部分api解析不到type
-
-    # TODO 这里面的描述要根据中英文来修改
-    text = f""".. _{LANGUAGE}_api_{namespace}{func_name}:
-
-{func_name}
--------------------------------
-
-.. cpp:function:: {api}
-
-<name="desc">
-{doxygen}
-</name>
-
-定义目录
-:::::::::::::::::::::
-{file_path}
-{parameter}
-{returns_text + returns}
-
-<name="reference_link">
-
-</name>
-
-"""
-    # TODO 参考链接
-    # TODO 代码示例 (暂时不考虑)
-    return text
-
-
-# 生成类文档
-def generate_class_doc_file(data: dict):
-    branch = "develop"  # TODO 这里可以看看从包里面获取
-    class_name = data["name"].replace("PADDLE_API", "")
-    # TODO 如果使用已安装的 paddle 包需要调整
-    file_path = data["filename"].replace("../", "")
-    doxygen = data.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
-    # 初始化函数
-    init_func = class_name
-    funcs = ""
-    parameter = ""
-    if len(data["methods"]["public"]) != 0:
-        funcs += "方法\n:::::::::::::::::::::\n"
-        for i in data["methods"]["public"]:
-            if class_name in i["name"] and len(i["debug"]) > len(init_func):
-                init_func = i["debug"]
+            function_name = ith_function['debug']
             # 获取描述
-            funcs_doxygen = i.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ",
-                                                                                                                 "")
+            funcs_doxygen = ith_function.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ","")
             # 解析参数
             parameter = ""
-            if len(i["parameters"]) != 0:
-                parameter, parameter_api = get_parameters(i["parameters"])
+            if len(ith_function["parameters"]) != 0:
+                parameter, _ = get_parameters(ith_function["parameters"])
             # 获取返回值
-            returns = i["returns"].replace("PADDLE_API ", "")
-            if returns == "":
-                returns = "无"
-            funcs += f"""{i["debug"]}
-'''''''''
-<name="desc">
-{funcs_doxygen}
-</name>
+            returns = ith_function["returns"].replace("PADDLE_API ", "")
 
-{parameter}
-返回
-:::::::::::::::::::::
-{returns}
+            self.functions_infor.append({'name':function_name,
+                                        'doxygen':funcs_doxygen,
+                                        'parameter':parameter,
+                                        'returns':returns})
 
-"""
+    def create_file(self, save_dir):
+        with open(save_dir, 'w', encoding='utf8') as f:
+            head_text = f'.. _cn_api_{self.class_name}:\n' \
+                        f'\n'
+            f.write(head_text)
 
-    text = f""".. _cn_api_{class_name}:
+            name_and_intro_text = f'{self.class_name}[源代码](https://github.com/PaddlePaddle/Paddle/blob/{self.branch}/{self.file_path})\n' \
+                                  f'-------------------------------\n' \
+                                  f'\n'\
+                                  f'.. cpp:class:: {self.init_func}\n' \
+                                  f'{self.doxygen}\n' \
+                                  f'\n'
+            f.write(name_and_intro_text)
 
-{class_name}[源代码](https://github.com/PaddlePaddle/Paddle/blob/{branch}/{file_path})
--------------------------------
+            define_path_text = f'定义目录\n' \
+                               f':::::::::::::::::::::\n' \
+                               f'{self.file_path}\n' \
+                               f'\n'
+            f.write(define_path_text)
 
-.. cpp:class:: {init_func}
+            if self.class_function_number != 0:
+                class_function_head_text = f'方法\n' \
+                                           f':::::::::::::::::::::\n' \
+                                           f'\n'
+                f.write(class_function_head_text)
 
-<name="desc">
-{doxygen}
-</name>
+                for fun_infor in self.functions_infor:
+                    fun_name_and_intro_text = f"{fun_infor['name']}\n" \
+                                              f"\'\'\'\'\'\'\'\'\'\'\'\n" \
+                                              f"{fun_infor['doxygen']}\n" \
+                                              f"\n"
+                    f.write(fun_name_and_intro_text)
 
-定义目录
-:::::::::::::::::::::
-{file_path}
+                    # TODO 可以统一把“参数”这样的文本移动到这里进行表达，增加代码维护性
+                    fun_parameters_text = f"**参数**\n" \
+                                          f"\'\'\'\'\'\'\'\'\'\'\'\n" \
+                                          f"{fun_infor['parameter']}\n" \
+                                          f"\n"
+                    f.write(fun_parameters_text + '\n')
 
-{funcs}
-
-<name="reference_link">
-
-</name>
-
-"""
-    # TODO 参考链接
-    # TODO 代码示例 (暂时不考虑)
-    return text
-
+                    if fun_infor['returns'] != '' and 'void' not in fun_infor['returns']:
+                        fun_return_text = f"**返回**\n" \
+                                          f"\'\'\'\'\'\'\'\'\'\'\'\n" \
+                                          f"{fun_infor['returns']}" \
+                                          f"\n"
+                        f.write(fun_return_text)

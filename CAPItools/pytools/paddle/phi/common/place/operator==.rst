@@ -14,6 +14,8 @@ paddle\phi\common\place.h
 	- **place_type** (PlaceType) - 
 	- **place** (Place&) - 
 
+
+
 返回
 :::::::::::::::::::::
 bool

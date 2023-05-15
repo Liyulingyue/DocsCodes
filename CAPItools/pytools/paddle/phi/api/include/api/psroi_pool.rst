@@ -19,6 +19,8 @@ paddle\phi\api\include\api.h
 	- **output_channels** (int) - 
 	- **spatial_scale** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

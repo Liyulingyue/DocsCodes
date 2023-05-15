@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **label** (const Tensor&) - 
 	- **epsilon** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

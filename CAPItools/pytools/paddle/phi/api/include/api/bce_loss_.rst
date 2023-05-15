@@ -14,6 +14,8 @@ paddle\phi\api\include\api.h
 	- **input** (Tensor&) - 
 	- **label** (const Tensor&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

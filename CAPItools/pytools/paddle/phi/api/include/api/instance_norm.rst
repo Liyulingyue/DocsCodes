@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **bias** (const paddle::optional<Tensor>&) - 
 	- **epsilon** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

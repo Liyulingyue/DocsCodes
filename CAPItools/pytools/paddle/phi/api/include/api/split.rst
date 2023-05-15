@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **sections** (const IntArray&) - 
 	- **axis** (const Scalar&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::vector<Tensor>

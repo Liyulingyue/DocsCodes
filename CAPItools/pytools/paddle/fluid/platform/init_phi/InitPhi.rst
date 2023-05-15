@@ -1,34 +1,24 @@
 .. _cn_api_InitPhi:
 
-InitPhi[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\fluid\platform\init_phi.h)
+InitPhi[婧愪唬鐮乚(https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\fluid\platform\init_phi.h)
 -------------------------------
 
 .. cpp:class:: InitPhi ( ) ;
 
-<name="desc">
 
-</name>
-
-定义目录
+瀹氫箟鐩綍
 :::::::::::::::::::::
 paddle\fluid\platform\init_phi.h
 
-方法
+鏂规硶
 :::::::::::::::::::::
+
 InitPhi ( ) ;
-'''''''''
-<name="desc">
-
-</name>
+'''''''''''
 
 
-返回
-:::::::::::::::::::::
-无
+**鍙傛暟**
+'''''''''''
 
 
-
-<name="reference_link">
-
-</name>
 

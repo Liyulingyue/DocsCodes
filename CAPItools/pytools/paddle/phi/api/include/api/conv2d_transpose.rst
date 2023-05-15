@@ -22,6 +22,8 @@ paddle\phi\api\include\api.h
 	- **dilations** (const std::vector<int>&) - 
 	- **data_format** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

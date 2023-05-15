@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **normalization** (const std::string&) - 
 	- **forward** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

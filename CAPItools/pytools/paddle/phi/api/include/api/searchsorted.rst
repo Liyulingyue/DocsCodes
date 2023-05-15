@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **out_int32** (bool) - 
 	- **right** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

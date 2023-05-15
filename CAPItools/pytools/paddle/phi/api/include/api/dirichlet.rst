@@ -13,6 +13,8 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **alpha** (const Tensor&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

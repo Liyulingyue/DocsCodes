@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **hard** (bool) - 
 	- **axis** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

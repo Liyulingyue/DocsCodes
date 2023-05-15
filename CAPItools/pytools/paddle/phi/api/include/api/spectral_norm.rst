@@ -18,6 +18,8 @@ paddle\phi\api\include\api.h
 	- **power_iters** (int) - 
 	- **eps** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

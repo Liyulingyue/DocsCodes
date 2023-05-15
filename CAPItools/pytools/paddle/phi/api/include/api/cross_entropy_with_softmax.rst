@@ -19,6 +19,8 @@ paddle\phi\api\include\api.h
 	- **ignore_index** (int) - 
 	- **axis** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

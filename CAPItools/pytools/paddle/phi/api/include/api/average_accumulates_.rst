@@ -22,6 +22,8 @@ paddle\phi\api\include\api.h
 	- **max_average_window** (int64_t) - 
 	- **min_average_window** (int64_t) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor , Tensor , Tensor , Tensor >

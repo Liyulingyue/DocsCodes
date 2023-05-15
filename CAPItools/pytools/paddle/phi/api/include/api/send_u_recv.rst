@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **reduce_op** (const std::string&) - 
 	- **out_size** (const IntArray&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

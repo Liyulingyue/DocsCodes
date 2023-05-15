@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType) - 
 	- **place** (const Place&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -13,6 +13,8 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **inputs** (const std::vector<Tensor>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::vector<Tensor>

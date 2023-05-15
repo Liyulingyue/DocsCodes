@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **paddings** (const std::vector<int>&) - 
 	- **dilations** (const std::vector<int>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

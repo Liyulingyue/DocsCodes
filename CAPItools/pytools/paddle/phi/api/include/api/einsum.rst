@@ -14,6 +14,8 @@ paddle\phi\api\include\api.h
 	- **x** (const std::vector<Tensor>&) - 
 	- **equation** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , std::vector<Tensor> , std::vector<Tensor> >

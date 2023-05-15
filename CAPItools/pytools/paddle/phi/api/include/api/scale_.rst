@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **bias** (float) - 
 	- **bias_after_scale** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

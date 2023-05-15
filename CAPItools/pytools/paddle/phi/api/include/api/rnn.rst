@@ -25,6 +25,8 @@ paddle\phi\api\include\api.h
 	- **seed** (int) - 
 	- **is_test** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , std::vector<Tensor> >

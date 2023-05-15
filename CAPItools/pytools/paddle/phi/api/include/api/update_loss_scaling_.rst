@@ -22,6 +22,8 @@ paddle\phi\api\include\api.h
 	- **decr_ratio** (float) - 
 	- **stop_update** (const Scalar&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<std::vector<Tensor> , Tensor , Tensor , Tensor >

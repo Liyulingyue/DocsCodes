@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **upper** (float) - 
 	- **is_test** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

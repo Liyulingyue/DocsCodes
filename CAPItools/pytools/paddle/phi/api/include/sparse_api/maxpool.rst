@@ -17,6 +17,8 @@ paddle\phi\api\include\sparse_api.h
 	- **dilations** (const std::vector<int>&) - 
 	- **strides** (const std::vector<int>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

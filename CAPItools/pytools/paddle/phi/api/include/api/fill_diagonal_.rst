@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **offset** (int) - 
 	- **wrap** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

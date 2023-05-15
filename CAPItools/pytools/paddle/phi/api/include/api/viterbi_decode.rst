@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **lengths** (const Tensor&) - 
 	- **include_bos_eos_tag** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

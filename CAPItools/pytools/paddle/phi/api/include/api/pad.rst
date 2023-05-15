@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **paddings** (const std::vector<int>&) - 
 	- **pad_value** (const Scalar&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

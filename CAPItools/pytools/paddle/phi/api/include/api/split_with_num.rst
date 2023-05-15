@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **num** (int) - 
 	- **axis** (const Scalar&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::vector<Tensor>

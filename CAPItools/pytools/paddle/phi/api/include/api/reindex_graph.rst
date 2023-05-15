@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **hashtable_value** (const paddle::optional<Tensor>&) - 
 	- **hashtable_index** (const paddle::optional<Tensor>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

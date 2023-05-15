@@ -13,6 +13,8 @@ paddle\phi\api\include\api.h
 :::::::::::::::::::::
 	- **condition** (const Tensor&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

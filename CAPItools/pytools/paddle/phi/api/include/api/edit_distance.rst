@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **refslength** (const paddle::optional<Tensor>&) - 
 	- **normalized** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

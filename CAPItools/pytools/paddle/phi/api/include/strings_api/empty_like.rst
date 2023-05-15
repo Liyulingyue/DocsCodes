@@ -14,6 +14,8 @@ paddle\phi\api\include\strings_api.h
 	- **x** (const Tensor&) - 
 	- **place** (const Place&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

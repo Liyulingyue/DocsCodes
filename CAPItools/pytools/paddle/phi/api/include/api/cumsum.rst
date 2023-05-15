@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **exclusive** (bool) - 
 	- **reverse** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -14,6 +14,8 @@ paddle\phi\api\include\sparse_api.h
 	- **x** (const Tensor&) - 
 	- **scalar** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

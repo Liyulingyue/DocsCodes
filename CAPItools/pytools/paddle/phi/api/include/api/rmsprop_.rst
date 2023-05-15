@@ -24,6 +24,8 @@ paddle\phi\api\include\api.h
 	- **centered** (bool) - 
 	- **multi_precision** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor , paddle::optional<Tensor> , paddle::optional<Tensor> >

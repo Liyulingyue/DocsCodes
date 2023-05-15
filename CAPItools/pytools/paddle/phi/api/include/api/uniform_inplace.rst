@@ -19,6 +19,8 @@ paddle\phi\api\include\api.h
 	- **diag_step** (int) - 
 	- **diag_val** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

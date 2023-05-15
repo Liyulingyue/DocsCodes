@@ -2,8 +2,7 @@ import CppHeaderParser
 import json
 import os
 
-from configure import generate_func_docs_file, generate_class_doc_file
-from configure import func_helper
+from configure import func_helper, class_helper
 
 # TODO 通过已安装的 paddle 来查找 include
 # import paddle
@@ -62,7 +61,6 @@ def generate_docs(all_funcs, all_class):
         path = item["filename"].replace("../", "").replace(".h", "")
         if not os.path.exists("./" + path):
             os.makedirs("./" + path)
-        text = generate_func_docs_file(item)
 
         # TODO 这个反斜杠需要单独处理看看
         func_name = item["name"].replace("/", "")
@@ -71,21 +69,28 @@ def generate_docs(all_funcs, all_class):
         try:
             helper = func_helper(item)
             helper.create_file(rst_dir)
+        except:
+            print('FAULT GENERATE:' + rst_dir)
+
+    for item in all_class:
+        path = item["filename"].replace("../", "").replace(".h", "")
+        if not os.path.exists("./" + path):
+            os.makedirs("./" + path)
+        # text = generate_class_doc_file(i)
+
+        func_name = item["name"].replace("PADDLE_API", "")
+        rst_dir = os.path.join(".", path, func_name+".rst")
+        try:
+            helper = class_helper(item)
+            helper.create_file(rst_dir)
             # with open(rst_dir, "w") as f:
             #     f.write(text)
         except:
             print('FAULT GENERATE:' + rst_dir)
 
-    for i in all_class:
-        path = i["filename"].replace("../", "").replace(".h", "")
-        if not os.path.exists("./" + path):
-            os.makedirs("./" + path)
-        text = generate_class_doc_file(i)
 
-        func_name = i["name"].replace("PADDLE_API", "")
-        rst_dir = os.path.join(".", path, func_name+".rst")
-        with open(rst_dir, "w") as f:
-            f.write(text)
+        # with open(rst_dir, "w") as f:
+        #     f.write(text)
 
 
 if __name__ == "__main__":

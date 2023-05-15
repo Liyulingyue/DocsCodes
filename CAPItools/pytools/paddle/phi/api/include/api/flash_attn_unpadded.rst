@@ -26,6 +26,8 @@ paddle\phi\api\include\api.h
 	- **is_test** (bool) - 
 	- **rng_name** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

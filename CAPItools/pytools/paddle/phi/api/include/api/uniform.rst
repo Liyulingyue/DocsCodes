@@ -18,6 +18,8 @@ paddle\phi\api\include\api.h
 	- **seed** (int) - 
 	- **place** (const Place&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

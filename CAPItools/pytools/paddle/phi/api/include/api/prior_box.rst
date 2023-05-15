@@ -24,6 +24,8 @@ paddle\phi\api\include\api.h
 	- **offset** (float) - 
 	- **min_max_aspect_ratios_order** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

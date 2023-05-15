@@ -14,6 +14,8 @@ paddle\phi\api\include\strings_api.h
 	- **shape** (const IntArray&) - 
 	- **place** (const Place&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

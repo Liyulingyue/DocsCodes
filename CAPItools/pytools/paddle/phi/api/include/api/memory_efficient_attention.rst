@@ -26,6 +26,8 @@ paddle\phi\api\include\api.h
 	- **scale** (float) - 
 	- **is_test** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

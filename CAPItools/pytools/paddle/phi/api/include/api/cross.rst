@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **y** (const Tensor&) - 
 	- **axis** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

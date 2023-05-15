@@ -19,6 +19,8 @@ paddle\phi\api\include\api.h
 	- **refer_scale** (int) - 
 	- **pixel_offset** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<std::vector<Tensor> , std::vector<Tensor> , Tensor>

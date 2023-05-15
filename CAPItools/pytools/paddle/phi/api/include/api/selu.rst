@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **scale** (float) - 
 	- **alpha** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

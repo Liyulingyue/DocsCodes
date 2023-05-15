@@ -18,6 +18,8 @@ paddle\phi\api\include\api.h
 	- **blank** (int) - 
 	- **norm_by_times** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

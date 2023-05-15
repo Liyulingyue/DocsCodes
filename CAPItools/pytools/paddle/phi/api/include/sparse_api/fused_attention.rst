@@ -18,6 +18,8 @@ paddle\phi\api\include\sparse_api.h
 	- **key_padding_mask** (const paddle::optional<Tensor>&) - 
 	- **attn_mask** (const paddle::optional<Tensor>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

@@ -14,6 +14,8 @@ paddle\phi\api\include\api.h
 	- **input** (const Tensor&) - 
 	- **axis** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::vector<Tensor>

@@ -15,6 +15,8 @@ paddle\phi\api\include\sparse_api.h
 	- **y** (const Tensor&) - 
 	- **mask** (const Tensor&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

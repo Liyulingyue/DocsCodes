@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **axis** (const std::vector<int64_t>&) - 
 	- **keepdim** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

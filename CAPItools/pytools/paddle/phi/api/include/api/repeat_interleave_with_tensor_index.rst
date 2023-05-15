@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **repeats** (const Tensor&) - 
 	- **axis** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

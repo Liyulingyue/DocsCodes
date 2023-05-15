@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **master_param** (paddle::optional<Tensor>&) - 
 	- **multi_precision** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , paddle::optional<Tensor> >

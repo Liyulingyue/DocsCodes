@@ -15,6 +15,8 @@ paddle\phi\api\include\sparse_api.h
 	- **indices** (const Tensor&) - 
 	- **shape** (const std::vector<int64_t>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

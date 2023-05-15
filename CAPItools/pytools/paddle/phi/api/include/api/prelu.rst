@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **data_format** (const std::string&) - 
 	- **mode** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

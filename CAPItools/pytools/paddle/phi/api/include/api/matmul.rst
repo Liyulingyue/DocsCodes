@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **transpose_x** (bool) - 
 	- **transpose_y** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

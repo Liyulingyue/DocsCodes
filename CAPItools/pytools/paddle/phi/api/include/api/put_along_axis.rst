@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **axis** (int) - 
 	- **reduce** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

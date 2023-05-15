@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **axis** (int) - 
 	- **keepdim** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

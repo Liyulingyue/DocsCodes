@@ -24,6 +24,8 @@ paddle\phi\api\include\api.h
 	- **align_corners** (bool) - 
 	- **align_mode** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

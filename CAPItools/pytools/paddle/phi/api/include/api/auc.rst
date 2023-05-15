@@ -20,6 +20,8 @@ paddle\phi\api\include\api.h
 	- **num_thresholds** (int) - 
 	- **slide_steps** (int) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

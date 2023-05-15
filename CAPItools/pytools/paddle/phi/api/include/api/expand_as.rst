@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **y** (const paddle::optional<Tensor>&) - 
 	- **target_shape** (const std::vector<int>&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

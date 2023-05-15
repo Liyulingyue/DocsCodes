@@ -17,6 +17,8 @@ paddle\phi\api\include\api.h
 	- **beta** (float) - 
 	- **alpha** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

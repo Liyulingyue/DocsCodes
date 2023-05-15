@@ -15,6 +15,8 @@ paddle\phi\api\include\api.h
 	- **num_samples** (const Scalar&) - 
 	- **replacement** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

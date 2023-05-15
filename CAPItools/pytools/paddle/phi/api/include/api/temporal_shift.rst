@@ -16,6 +16,8 @@ paddle\phi\api\include\api.h
 	- **shift_ratio** (float) - 
 	- **data_format** (const std::string&) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor

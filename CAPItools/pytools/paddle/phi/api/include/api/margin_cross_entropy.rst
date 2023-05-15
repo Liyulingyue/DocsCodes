@@ -22,6 +22,8 @@ paddle\phi\api\include\api.h
 	- **margin3** (float) - 
 	- **scale** (float) - 
 
+
+
 返回
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

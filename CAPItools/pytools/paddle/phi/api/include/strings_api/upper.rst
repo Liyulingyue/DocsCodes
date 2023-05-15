@@ -14,6 +14,8 @@ paddle\phi\api\include\strings_api.h
 	- **x** (const Tensor&) - 
 	- **use_utf8_encoding** (bool) - 
 
+
+
 返回
 :::::::::::::::::::::
 Tensor
