@@ -11,11 +11,9 @@ paddle\phi\api\include\sparse_api.h
 
 参数
 :::::::::::::::::::::
-	- **values** (const Tensor&) - 
-	- **indices** (const Tensor&) - 
-	- **shape** (const std::vector<int64_t>&) - 
-
-
+	- **values** (const Tensor&)
+	- **indices** (const Tensor&)
+	- **shape** (const std::vector<int64_t>&)
 
 返回
 :::::::::::::::::::::

@@ -11,16 +11,14 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **filter** (const Tensor&) - 
-	- **strides** (const std::vector<int>&) - 
-	- **paddings** (const std::vector<int>&) - 
-	- **padding_algorithm** (const std::string&) - 
-	- **groups** (int) - 
-	- **dilations** (const std::vector<int>&) - 
-	- **data_format** (const std::string&) - 
-
-
+	- **x** (const Tensor&)
+	- **filter** (const Tensor&)
+	- **strides** (const std::vector<int>&)
+	- **paddings** (const std::vector<int>&)
+	- **padding_algorithm** (const std::string&)
+	- **groups** (int)
+	- **dilations** (const std::vector<int>&)
+	- **data_format** (const std::string&)
 
 返回
 :::::::::::::::::::::

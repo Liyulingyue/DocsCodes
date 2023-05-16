@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **neighbors** (const Tensor&) - 
-	- **count** (const Tensor&) - 
-	- **hashtable_value** (const paddle::optional<Tensor>&) - 
-	- **hashtable_index** (const paddle::optional<Tensor>&) - 
-
-
+	- **x** (const Tensor&)
+	- **neighbors** (const Tensor&)
+	- **count** (const Tensor&)
+	- **hashtable_value** (const paddle::optional<Tensor>&)
+	- **hashtable_index** (const paddle::optional<Tensor>&)
 
 返回
 :::::::::::::::::::::

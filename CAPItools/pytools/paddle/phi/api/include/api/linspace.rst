@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **start** (const Tensor&) - 
-	- **stop** (const Tensor&) - 
-	- **number** (const Tensor&) - 
-	- **dtype** (DataType) - 
-	- **place** (const Place&) - 
-
-
+	- **start** (const Tensor&)
+	- **stop** (const Tensor&)
+	- **number** (const Tensor&)
+	- **dtype** (DataType)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

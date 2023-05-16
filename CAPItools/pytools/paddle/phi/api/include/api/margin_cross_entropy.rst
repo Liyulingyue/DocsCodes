@@ -11,18 +11,16 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **logits** (const Tensor&) - 
-	- **label** (const Tensor&) - 
-	- **return_softmax** (bool) - 
-	- **ring_id** (int) - 
-	- **rank** (int) - 
-	- **nranks** (int) - 
-	- **margin1** (float) - 
-	- **margin2** (float) - 
-	- **margin3** (float) - 
-	- **scale** (float) - 
-
-
+	- **logits** (const Tensor&)
+	- **label** (const Tensor&)
+	- **return_softmax** (bool)
+	- **ring_id** (int)
+	- **rank** (int)
+	- **nranks** (int)
+	- **margin1** (float)
+	- **margin2** (float)
+	- **margin3** (float)
+	- **scale** (float)
 
 返回
 :::::::::::::::::::::

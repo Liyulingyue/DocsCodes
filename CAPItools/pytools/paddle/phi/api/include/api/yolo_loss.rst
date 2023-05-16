@@ -11,19 +11,17 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **gt_box** (const Tensor&) - 
-	- **gt_label** (const Tensor&) - 
-	- **gt_score** (const paddle::optional<Tensor>&) - 
-	- **anchors** (const std::vector<int>&) - 
-	- **anchor_mask** (const std::vector<int>&) - 
-	- **class_num** (int) - 
-	- **ignore_thresh** (float) - 
-	- **downsample_ratio** (int) - 
-	- **use_label_smooth** (bool) - 
-	- **scale_x_y** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **gt_box** (const Tensor&)
+	- **gt_label** (const Tensor&)
+	- **gt_score** (const paddle::optional<Tensor>&)
+	- **anchors** (const std::vector<int>&)
+	- **anchor_mask** (const std::vector<int>&)
+	- **class_num** (int)
+	- **ignore_thresh** (float)
+	- **downsample_ratio** (int)
+	- **use_label_smooth** (bool)
+	- **scale_x_y** (float)
 
 返回
 :::::::::::::::::::::

@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **dtype** (DataType) - 
-
-
+	- **x** (const Tensor&)
+	- **dtype** (DataType)
 
 返回
 :::::::::::::::::::::

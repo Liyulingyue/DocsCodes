@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **axes** (const std::vector<int>&) - 
-	- **starts** (const IntArray&) - 
-	- **ends** (const IntArray&) - 
-	- **strides** (const IntArray&) - 
-
-
+	- **x** (const Tensor&)
+	- **axes** (const std::vector<int>&)
+	- **starts** (const IntArray&)
+	- **ends** (const IntArray&)
+	- **strides** (const IntArray&)
 
 返回
 :::::::::::::::::::::

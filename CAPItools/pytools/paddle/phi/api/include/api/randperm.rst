@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **n** (int) - 
-	- **dtype** (DataType) - 
-	- **place** (const Place&) - 
-
-
+	- **n** (int)
+	- **dtype** (DataType)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

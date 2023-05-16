@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **y** (const paddle::optional<Tensor>&) - 
-	- **target_shape** (const std::vector<int>&) - 
-
-
+	- **x** (const Tensor&)
+	- **y** (const paddle::optional<Tensor>&)
+	- **target_shape** (const std::vector<int>&)
 
 返回
 :::::::::::::::::::::

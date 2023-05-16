@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **output_shape** (const IntArray&) - 
-	- **align_corners** (bool) - 
-
-
+	- **input** (const Tensor&)
+	- **output_shape** (const IntArray&)
+	- **align_corners** (bool)
 
 返回
 :::::::::::::::::::::

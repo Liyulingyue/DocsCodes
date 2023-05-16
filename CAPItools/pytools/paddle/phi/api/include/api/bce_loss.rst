@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **label** (const Tensor&) - 
-
-
+	- **input** (const Tensor&)
+	- **label** (const Tensor&)
 
 返回
 :::::::::::::::::::::

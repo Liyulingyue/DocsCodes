@@ -11,19 +11,17 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **scores** (const Tensor&) - 
-	- **bbox_deltas** (const Tensor&) - 
-	- **im_shape** (const Tensor&) - 
-	- **anchors** (const Tensor&) - 
-	- **variances** (const Tensor&) - 
-	- **pre_nms_top_n** (int) - 
-	- **post_nms_top_n** (int) - 
-	- **nms_thresh** (float) - 
-	- **min_size** (float) - 
-	- **eta** (float) - 
-	- **pixel_offset** (bool) - 
-
-
+	- **scores** (const Tensor&)
+	- **bbox_deltas** (const Tensor&)
+	- **im_shape** (const Tensor&)
+	- **anchors** (const Tensor&)
+	- **variances** (const Tensor&)
+	- **pre_nms_top_n** (int)
+	- **post_nms_top_n** (int)
+	- **nms_thresh** (float)
+	- **min_size** (float)
+	- **eta** (float)
+	- **pixel_offset** (bool)
 
 返回
 :::::::::::::::::::::

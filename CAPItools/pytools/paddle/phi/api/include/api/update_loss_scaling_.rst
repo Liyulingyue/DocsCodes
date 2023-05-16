@@ -11,18 +11,16 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (std::vector<Tensor>&) - 
-	- **found_infinite** (const Tensor&) - 
-	- **prev_loss_scaling** (Tensor&) - 
-	- **in_good_steps** (Tensor&) - 
-	- **in_bad_steps** (Tensor&) - 
-	- **incr_every_n_steps** (int) - 
-	- **decr_every_n_nan_or_inf** (int) - 
-	- **incr_ratio** (float) - 
-	- **decr_ratio** (float) - 
-	- **stop_update** (const Scalar&) - 
-
-
+	- **x** (std::vector<Tensor>&)
+	- **found_infinite** (const Tensor&)
+	- **prev_loss_scaling** (Tensor&)
+	- **in_good_steps** (Tensor&)
+	- **in_bad_steps** (Tensor&)
+	- **incr_every_n_steps** (int)
+	- **decr_every_n_nan_or_inf** (int)
+	- **incr_ratio** (float)
+	- **decr_ratio** (float)
+	- **stop_update** (const Scalar&)
 
 返回
 :::::::::::::::::::::

@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (Tensor&) - 
-	- **index** (const Tensor&) - 
-	- **updates** (const Tensor&) - 
-	- **overwrite** (bool) - 
-
-
+	- **x** (Tensor&)
+	- **index** (const Tensor&)
+	- **updates** (const Tensor&)
+	- **overwrite** (bool)
 
 返回
 :::::::::::::::::::::

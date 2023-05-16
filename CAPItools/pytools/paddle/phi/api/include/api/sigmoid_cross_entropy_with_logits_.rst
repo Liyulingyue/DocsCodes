@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (Tensor&) - 
-	- **label** (const Tensor&) - 
-	- **normalize** (bool) - 
-	- **ignore_index** (int) - 
-
-
+	- **x** (Tensor&)
+	- **label** (const Tensor&)
+	- **normalize** (bool)
+	- **ignore_index** (int)
 
 返回
 :::::::::::::::::::::

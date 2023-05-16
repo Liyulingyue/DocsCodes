@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **hyps** (const Tensor&) - 
-	- **refs** (const Tensor&) - 
-	- **hypslength** (const paddle::optional<Tensor>&) - 
-	- **refslength** (const paddle::optional<Tensor>&) - 
-	- **normalized** (bool) - 
-
-
+	- **hyps** (const Tensor&)
+	- **refs** (const Tensor&)
+	- **hypslength** (const paddle::optional<Tensor>&)
+	- **refslength** (const paddle::optional<Tensor>&)
+	- **normalized** (bool)
 
 返回
 :::::::::::::::::::::

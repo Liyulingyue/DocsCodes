@@ -11,17 +11,15 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **q** (const Tensor&) - 
-	- **k** (const Tensor&) - 
-	- **v** (const Tensor&) - 
-	- **fixed_seed_offset** (const paddle::optional<Tensor>&) - 
-	- **dropout** (float) - 
-	- **causal** (bool) - 
-	- **return_softmax** (bool) - 
-	- **is_test** (bool) - 
-	- **rng_name** (const std::string&) - 
-
-
+	- **q** (const Tensor&)
+	- **k** (const Tensor&)
+	- **v** (const Tensor&)
+	- **fixed_seed_offset** (const paddle::optional<Tensor>&)
+	- **dropout** (float)
+	- **causal** (bool)
+	- **return_softmax** (bool)
+	- **is_test** (bool)
+	- **rng_name** (const std::string&)
 
 返回
 :::::::::::::::::::::

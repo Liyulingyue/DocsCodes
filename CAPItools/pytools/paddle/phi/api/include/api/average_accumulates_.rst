@@ -11,18 +11,16 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **param** (const Tensor&) - 
-	- **in_sum_1** (Tensor&) - 
-	- **in_sum_2** (Tensor&) - 
-	- **in_sum_3** (Tensor&) - 
-	- **in_num_accumulates** (Tensor&) - 
-	- **in_old_num_accumulates** (Tensor&) - 
-	- **in_num_updates** (Tensor&) - 
-	- **average_window** (float) - 
-	- **max_average_window** (int64_t) - 
-	- **min_average_window** (int64_t) - 
-
-
+	- **param** (const Tensor&)
+	- **in_sum_1** (Tensor&)
+	- **in_sum_2** (Tensor&)
+	- **in_sum_3** (Tensor&)
+	- **in_num_accumulates** (Tensor&)
+	- **in_old_num_accumulates** (Tensor&)
+	- **in_num_updates** (Tensor&)
+	- **average_window** (float)
+	- **max_average_window** (int64_t)
+	- **min_average_window** (int64_t)
 
 返回
 :::::::::::::::::::::

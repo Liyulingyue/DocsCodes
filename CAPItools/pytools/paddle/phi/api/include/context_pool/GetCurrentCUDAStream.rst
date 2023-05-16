@@ -12,9 +12,7 @@ paddle\phi\api\include\context_pool.h
 
 参数
 :::::::::::::::::::::
-	- **place** (const phi::Place&) - 
-
-
+	- **place** (const phi::Place&)
 
 返回
 :::::::::::::::::::::

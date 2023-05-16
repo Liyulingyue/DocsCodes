@@ -11,21 +11,19 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **param** (std::vector<Tensor>&) - 
-	- **grad** (const std::vector<Tensor>&) - 
-	- **learning_rate** (const std::vector<Tensor>&) - 
-	- **moment1** (std::vector<Tensor>&) - 
-	- **moment2** (std::vector<Tensor>&) - 
-	- **beta1_pow** (std::vector<Tensor>&) - 
-	- **beta2_pow** (std::vector<Tensor>&) - 
-	- **master_param** (paddle::optional<std::vector<Tensor> >&) - 
-	- **beta1** (const Scalar&) - 
-	- **beta2** (const Scalar&) - 
-	- **epsilon** (const Scalar&) - 
-	- **multi_precision** (bool) - 
-	- **use_global_beta_pow** (bool) - 
-
-
+	- **param** (std::vector<Tensor>&)
+	- **grad** (const std::vector<Tensor>&)
+	- **learning_rate** (const std::vector<Tensor>&)
+	- **moment1** (std::vector<Tensor>&)
+	- **moment2** (std::vector<Tensor>&)
+	- **beta1_pow** (std::vector<Tensor>&)
+	- **beta2_pow** (std::vector<Tensor>&)
+	- **master_param** (paddle::optional<std::vector<Tensor> >&)
+	- **beta1** (const Scalar&)
+	- **beta2** (const Scalar&)
+	- **epsilon** (const Scalar&)
+	- **multi_precision** (bool)
+	- **use_global_beta_pow** (bool)
 
 返回
 :::::::::::::::::::::

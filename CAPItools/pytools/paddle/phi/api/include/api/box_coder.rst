@@ -11,15 +11,13 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **prior_box** (const Tensor&) - 
-	- **prior_box_var** (const paddle::optional<Tensor>&) - 
-	- **target_box** (const Tensor&) - 
-	- **code_type** (const std::string&) - 
-	- **box_normalized** (bool) - 
-	- **axis** (int) - 
-	- **variance** (const std::vector<float>&) - 
-
-
+	- **prior_box** (const Tensor&)
+	- **prior_box_var** (const paddle::optional<Tensor>&)
+	- **target_box** (const Tensor&)
+	- **code_type** (const std::string&)
+	- **box_normalized** (bool)
+	- **axis** (int)
+	- **variance** (const std::vector<float>&)
 
 返回
 :::::::::::::::::::::

@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (Tensor&) - 
-	- **axis** (int) - 
-
-
+	- **x** (Tensor&)
+	- **axis** (int)
 
 返回
 :::::::::::::::::::::

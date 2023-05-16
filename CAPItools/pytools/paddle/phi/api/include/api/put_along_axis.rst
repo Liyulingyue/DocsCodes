@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **arr** (const Tensor&) - 
-	- **indices** (const Tensor&) - 
-	- **values** (const Tensor&) - 
-	- **axis** (int) - 
-	- **reduce** (const std::string&) - 
-
-
+	- **arr** (const Tensor&)
+	- **indices** (const Tensor&)
+	- **values** (const Tensor&)
+	- **axis** (int)
+	- **reduce** (const std::string&)
 
 返回
 :::::::::::::::::::::

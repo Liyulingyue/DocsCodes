@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **bins** (int64_t) - 
-	- **min** (int) - 
-	- **max** (int) - 
-
-
+	- **input** (const Tensor&)
+	- **bins** (int64_t)
+	- **min** (int)
+	- **max** (int)
 
 返回
 :::::::::::::::::::::

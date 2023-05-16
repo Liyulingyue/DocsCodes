@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **y** (const Tensor&) - 
-	- **transpose_x** (bool) - 
-	- **transpose_y** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **y** (const Tensor&)
+	- **transpose_x** (bool)
+	- **transpose_y** (bool)
 
 返回
 :::::::::::::::::::::

@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **index_num** (int) - 
-	- **nshards** (int) - 
-	- **shard_id** (int) - 
-	- **ignore_value** (int) - 
-
-
+	- **input** (const Tensor&)
+	- **index_num** (int)
+	- **nshards** (int)
+	- **shard_id** (int)
+	- **ignore_value** (int)
 
 返回
 :::::::::::::::::::::

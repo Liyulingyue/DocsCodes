@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **place** (const Place&) - 
-	- **blocking** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **place** (const Place&)
+	- **blocking** (bool)
 
 返回
 :::::::::::::::::::::

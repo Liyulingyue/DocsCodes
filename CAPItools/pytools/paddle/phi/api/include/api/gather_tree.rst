@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **ids** (const Tensor&) - 
-	- **parents** (const Tensor&) - 
-
-
+	- **ids** (const Tensor&)
+	- **parents** (const Tensor&)
 
 返回
 :::::::::::::::::::::

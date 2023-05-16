@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (Tensor&) - 
-	- **lam** (float) - 
-
-
+	- **x** (Tensor&)
+	- **lam** (float)
 
 返回
 :::::::::::::::::::::

@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const std::vector<Tensor>&) - 
-	- **equation** (const std::string&) - 
-
-
+	- **x** (const std::vector<Tensor>&)
+	- **equation** (const std::string&)
 
 返回
 :::::::::::::::::::::

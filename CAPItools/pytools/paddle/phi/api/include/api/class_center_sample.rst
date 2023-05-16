@@ -11,16 +11,14 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **label** (const Tensor&) - 
-	- **num_classes** (int) - 
-	- **num_samples** (int) - 
-	- **ring_id** (int) - 
-	- **rank** (int) - 
-	- **nranks** (int) - 
-	- **fix_seed** (bool) - 
-	- **seed** (int) - 
-
-
+	- **label** (const Tensor&)
+	- **num_classes** (int)
+	- **num_samples** (int)
+	- **ring_id** (int)
+	- **rank** (int)
+	- **nranks** (int)
+	- **fix_seed** (bool)
+	- **seed** (int)
 
 返回
 :::::::::::::::::::::

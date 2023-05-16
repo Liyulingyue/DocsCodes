@@ -11,10 +11,8 @@ paddle\phi\api\include\strings_api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **place** (const Place&) - 
-
-
+	- **x** (const Tensor&)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

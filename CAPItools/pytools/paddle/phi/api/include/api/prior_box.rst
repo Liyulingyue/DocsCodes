@@ -11,20 +11,18 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **image** (const Tensor&) - 
-	- **min_sizes** (const std::vector<float>&) - 
-	- **max_sizes** (const std::vector<float>&) - 
-	- **aspect_ratios** (const std::vector<float>&) - 
-	- **variances** (const std::vector<float>&) - 
-	- **flip** (bool) - 
-	- **clip** (bool) - 
-	- **step_w** (float) - 
-	- **step_h** (float) - 
-	- **offset** (float) - 
-	- **min_max_aspect_ratios_order** (bool) - 
-
-
+	- **input** (const Tensor&)
+	- **image** (const Tensor&)
+	- **min_sizes** (const std::vector<float>&)
+	- **max_sizes** (const std::vector<float>&)
+	- **aspect_ratios** (const std::vector<float>&)
+	- **variances** (const std::vector<float>&)
+	- **flip** (bool)
+	- **clip** (bool)
+	- **step_w** (float)
+	- **step_h** (float)
+	- **offset** (float)
+	- **min_max_aspect_ratios_order** (bool)
 
 返回
 :::::::::::::::::::::

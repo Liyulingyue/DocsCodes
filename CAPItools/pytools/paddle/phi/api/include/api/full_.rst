@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **output** (Tensor&) - 
-	- **shape** (const IntArray&) - 
-	- **value** (const Scalar&) - 
-	- **dtype** (DataType) - 
-	- **place** (const Place&) - 
-
-
+	- **output** (Tensor&)
+	- **shape** (const IntArray&)
+	- **value** (const Scalar&)
+	- **dtype** (DataType)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

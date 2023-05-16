@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **y** (const Tensor&) - 
-	- **rtol** (const Scalar&) - 
-	- **atol** (const Scalar&) - 
-	- **equal_nan** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **y** (const Tensor&)
+	- **rtol** (const Scalar&)
+	- **atol** (const Scalar&)
+	- **equal_nan** (bool)
 
 返回
 :::::::::::::::::::::

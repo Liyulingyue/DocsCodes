@@ -11,18 +11,16 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **img_size** (const Tensor&) - 
-	- **anchors** (const std::vector<int>&) - 
-	- **class_num** (int) - 
-	- **conf_thresh** (float) - 
-	- **downsample_ratio** (int) - 
-	- **clip_bbox** (bool) - 
-	- **scale_x_y** (float) - 
-	- **iou_aware** (bool) - 
-	- **iou_aware_factor** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **img_size** (const Tensor&)
+	- **anchors** (const std::vector<int>&)
+	- **class_num** (int)
+	- **conf_thresh** (float)
+	- **downsample_ratio** (int)
+	- **clip_bbox** (bool)
+	- **scale_x_y** (float)
+	- **iou_aware** (bool)
+	- **iou_aware_factor** (float)
 
 返回
 :::::::::::::::::::::

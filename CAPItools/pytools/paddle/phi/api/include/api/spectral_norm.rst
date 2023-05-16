@@ -11,14 +11,12 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **weight** (const Tensor&) - 
-	- **u** (const Tensor&) - 
-	- **v** (const Tensor&) - 
-	- **dim** (int) - 
-	- **power_iters** (int) - 
-	- **eps** (float) - 
-
-
+	- **weight** (const Tensor&)
+	- **u** (const Tensor&)
+	- **v** (const Tensor&)
+	- **dim** (int)
+	- **power_iters** (int)
+	- **eps** (float)
 
 返回
 :::::::::::::::::::::

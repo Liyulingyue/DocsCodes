@@ -11,15 +11,13 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (Tensor&) - 
-	- **min** (float) - 
-	- **max** (float) - 
-	- **seed** (int) - 
-	- **diag_num** (int) - 
-	- **diag_step** (int) - 
-	- **diag_val** (float) - 
-
-
+	- **x** (Tensor&)
+	- **min** (float)
+	- **max** (float)
+	- **seed** (int)
+	- **diag_num** (int)
+	- **diag_step** (int)
+	- **diag_val** (float)
 
 返回
 :::::::::::::::::::::

@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **weights** (const paddle::optional<Tensor>&) - 
-	- **minlength** (const Scalar&) - 
-
-
+	- **x** (const Tensor&)
+	- **weights** (const paddle::optional<Tensor>&)
+	- **minlength** (const Scalar&)
 
 返回
 :::::::::::::::::::::

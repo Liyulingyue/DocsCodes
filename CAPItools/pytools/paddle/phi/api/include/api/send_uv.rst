@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **y** (const Tensor&) - 
-	- **src_index** (const Tensor&) - 
-	- **dst_index** (const Tensor&) - 
-	- **message_op** (const std::string&) - 
-
-
+	- **x** (const Tensor&)
+	- **y** (const Tensor&)
+	- **src_index** (const Tensor&)
+	- **dst_index** (const Tensor&)
+	- **message_op** (const std::string&)
 
 返回
 :::::::::::::::::::::

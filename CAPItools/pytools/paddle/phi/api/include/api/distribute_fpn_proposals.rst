@@ -11,15 +11,13 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **fpn_rois** (const Tensor&) - 
-	- **rois_num** (const paddle::optional<Tensor>&) - 
-	- **min_level** (int) - 
-	- **max_level** (int) - 
-	- **refer_level** (int) - 
-	- **refer_scale** (int) - 
-	- **pixel_offset** (bool) - 
-
-
+	- **fpn_rois** (const Tensor&)
+	- **rois_num** (const paddle::optional<Tensor>&)
+	- **min_level** (int)
+	- **max_level** (int)
+	- **refer_level** (int)
+	- **refer_scale** (int)
+	- **pixel_offset** (bool)
 
 返回
 :::::::::::::::::::::

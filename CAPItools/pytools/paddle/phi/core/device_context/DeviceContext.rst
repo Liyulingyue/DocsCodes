@@ -19,10 +19,6 @@ DeviceContext ( ) ;
  @brief Default construct.
 
 
-**参数**
-'''''''''''
-
-
 
 DeviceContext ( const DeviceContext & ) ;
 '''''''''''
@@ -31,9 +27,7 @@ DeviceContext ( const DeviceContext & ) ;
 
 **参数**
 '''''''''''
-	- **&** (const DeviceContext) - 
-
-
+	- **&** (const DeviceContext)
 
 DeviceContext ( DeviceContext & & ) ;
 '''''''''''
@@ -42,9 +36,7 @@ DeviceContext ( DeviceContext & & ) ;
 
 **参数**
 '''''''''''
-	- **&** (DeviceContext&) - 
-
-
+	- **&** (DeviceContext&)
 
 DeviceContext & operator = ( DeviceContext & & ) ;
 '''''''''''
@@ -53,9 +45,7 @@ DeviceContext & operator = ( DeviceContext & & ) ;
 
 **参数**
 '''''''''''
-	- **&** (DeviceContext&) - 
-
-
+	- **&** (DeviceContext&)
 
 **返回**
 '''''''''''
@@ -63,10 +53,6 @@ DeviceContext
 virtual ~DeviceContext ( ) ;
 '''''''''''
  @brief Default destruct.
-
-
-**参数**
-'''''''''''
 
 
 
@@ -77,9 +63,7 @@ void SetAllocator ( const Allocator * ) ;
 
 **参数**
 '''''''''''
-	- **** (const Allocator*) - 
-
-
+	- **** (const Allocator*)
 
 void SetHostAllocator ( const Allocator * ) ;
 '''''''''''
@@ -88,9 +72,7 @@ void SetHostAllocator ( const Allocator * ) ;
 
 **参数**
 '''''''''''
-	- **** (const Allocator*) - 
-
-
+	- **** (const Allocator*)
 
 void SetZeroAllocator ( const Allocator * ) ;
 '''''''''''
@@ -99,9 +81,7 @@ void SetZeroAllocator ( const Allocator * ) ;
 
 **参数**
 '''''''''''
-	- **** (const Allocator*) - 
-
-
+	- **** (const Allocator*)
 
 void SetHostZeroAllocator ( const Allocator * ) ;
 '''''''''''
@@ -110,9 +90,7 @@ void SetHostZeroAllocator ( const Allocator * ) ;
 
 **参数**
 '''''''''''
-	- **** (const Allocator*) - 
-
-
+	- **** (const Allocator*)
 
 void SetPinnedAllocator ( const Allocator * ) ;
 '''''''''''
@@ -121,17 +99,11 @@ void SetPinnedAllocator ( const Allocator * ) ;
 
 **参数**
 '''''''''''
-	- **** (const Allocator*) - 
-
-
+	- **** (const Allocator*)
 
 const Allocator & GetAllocator ( ) const ;
 '''''''''''
  @brief Get the const Allocator object. @return Allocator
-
-
-**参数**
-'''''''''''
 
 
 
@@ -143,19 +115,11 @@ const Allocator & GetHostAllocator ( ) const ;
  @brief Get the const device-related Allocator object. @return Allocator
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
 Allocator
 const Allocator & GetZeroAllocator ( ) const ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -167,19 +131,11 @@ const Allocator & GetHostZeroAllocator ( ) const ;
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
 Allocator
 const Allocator & GetPinnedAllocator ( ) const ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -194,17 +150,11 @@ void SetCUDAGraphAllocator ( const Allocator * ) ;
 
 **参数**
 '''''''''''
-	- **** (const Allocator*) - 
-
-
+	- **** (const Allocator*)
 
 const Allocator & GetCUDAGraphAllocator ( ) const ;
 '''''''''''
  @brief Get the const CUDA graph Allocator object. @return Allocator
-
-
-**参数**
-'''''''''''
 
 
 
@@ -214,10 +164,6 @@ Allocator
 bool IsCUDAGraphAllocatorValid ( ) const ;
 '''''''''''
  @brief Test whether the CUDA graph allocator is valid This method should be called before calling GetCUDAGraphAllocator(). Other unit can calls GetCUDAGraphAllocator() method, only when this method returns True! @return true if cuda_graph_allocator_ is valid, false otherwise
-
-
-**参数**
-'''''''''''
 
 
 
@@ -231,13 +177,11 @@ void * Alloc ( TensorBase * , DataType dtype , size_t requested_size = 0 , bool 
 
 **参数**
 '''''''''''
-	- **** (TensorBase*) - 
-	- **dtype** (DataType) - 
-	- **requested_size** (size_t) - 
-	- **pinned** (bool) - 
-	- **fake_alloc** (bool) - 
-
-
+	- **** (TensorBase*)
+	- **dtype** (DataType)
+	- **requested_size** (size_t)
+	- **pinned** (bool)
+	- **fake_alloc** (bool)
 
 T * Alloc ( TensorBase * tensor , size_t requested_size = 0 , bool pinned = false ) const ;
 '''''''''''
@@ -245,11 +189,9 @@ T * Alloc ( TensorBase * tensor , size_t requested_size = 0 , bool pinned = fals
 
 **参数**
 '''''''''''
-	- **tensor** (TensorBase*) - 
-	- **requested_size** (size_t) - 
-	- **pinned** (bool) - 
-
-
+	- **tensor** (TensorBase*)
+	- **requested_size** (size_t)
+	- **pinned** (bool)
 
 **返回**
 '''''''''''
@@ -261,12 +203,10 @@ void * HostAlloc ( TensorBase * tensor , DataType dtype , size_t requested_size 
 
 **参数**
 '''''''''''
-	- **tensor** (TensorBase*) - 
-	- **dtype** (DataType) - 
-	- **requested_size** (size_t) - 
-	- **fake_alloc** (bool) - 
-
-
+	- **tensor** (TensorBase*)
+	- **dtype** (DataType)
+	- **requested_size** (size_t)
+	- **fake_alloc** (bool)
 
 T * HostAlloc ( TensorBase * tensor , size_t requested_size = 0 ) const ;
 '''''''''''
@@ -274,19 +214,13 @@ T * HostAlloc ( TensorBase * tensor , size_t requested_size = 0 ) const ;
 
 **参数**
 '''''''''''
-	- **tensor** (TensorBase*) - 
-	- **requested_size** (size_t) - 
-
-
+	- **tensor** (TensorBase*)
+	- **requested_size** (size_t)
 
 **返回**
 '''''''''''
 T
 virtual const Place & GetPlace ( ) const = 0 ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -298,10 +232,6 @@ virtual void Wait ( ) const {
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 void SetGenerator ( Generator * ) ;
 '''''''''''
@@ -310,17 +240,11 @@ void SetGenerator ( Generator * ) ;
 
 **参数**
 '''''''''''
-	- **** (Generator*) - 
-
-
+	- **** (Generator*)
 
 Generator * GetGenerator ( ) const ;
 '''''''''''
  @brief Get the generator object. @return Generator
-
-
-**参数**
-'''''''''''
 
 
 
@@ -334,17 +258,11 @@ void SetHostGenerator ( Generator * ) ;
 
 **参数**
 '''''''''''
-	- **** (Generator*) - 
-
-
+	- **** (Generator*)
 
 Generator * GetHostGenerator ( ) const ;
 '''''''''''
  @brief Get the host generator object. @return Generator
-
-
-**参数**
-'''''''''''
 
 
 
@@ -354,10 +272,6 @@ Generator
 TypeInfo<DeviceContext> type_info ( ) const {
 '''''''''''
  @brief Return the type information of the derived class to supportsafely downcast in non-rtti environment. @return The type information of the derived class.
-
-
-**参数**
-'''''''''''
 
 
 
@@ -371,17 +285,11 @@ void SetCommContext ( distributed::CommContext * comm_context ) ;
 
 **参数**
 '''''''''''
-	- **comm_context** (distributed::CommContext*) - 
-
-
+	- **comm_context** (distributed::CommContext*)
 
 distributed::CommContext * GetCommContext ( ) const ;
 '''''''''''
  @brief Get the comm context point. @return comm context point
-
-
-**参数**
-'''''''''''
 
 
 

@@ -17,10 +17,6 @@ static OpMetaInfoMap & Instance ( ) {
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -31,18 +27,12 @@ std::vector<OpMetaInfo> & operator [ ] ( const std::string & name ) ;
 
 **参数**
 '''''''''''
-	- **name** (const std::string&) - 
-
-
+	- **name** (const std::string&)
 
 **返回**
 '''''''''''
 std :: vector< OpMetaInfo >
 const std::unordered_map<std::string , std::vector<OpMetaInfo> > & GetMap ( ) const ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 

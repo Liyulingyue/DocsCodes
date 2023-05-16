@@ -3,8 +3,8 @@ LANGUAGE = "cn"
 
 # 获取方法中的参数parameters
 def get_parameters(parameters):
-    parameter_api = ""  # 这里解析是给api使用的 (暂时不用)
-    parameter = ""
+    # parameter_api = ""  # 这里解析是给api使用的 (暂时不用)
+    parameter_dict = []
     for i in parameters:
         parameter_type_tmp = i['type'].replace(" &", "").replace(" *", "")
         # * 和 & 情况
@@ -17,10 +17,14 @@ def get_parameters(parameters):
             parameter_type_tmp += "*"
         # parameter_api += f" {i['name']}, "
         desc = i.get('desc', '').replace('  ', '')
-        parameter += f"\t- **{i['name']}** ({parameter_type_tmp}) - {desc}\n"
+        parameter_dict.append({'name':i['name'],
+                               'type':parameter_type_tmp,
+                               'intro':desc})
+        # parameter += f"\t- **{i['name']}** ({parameter_type_tmp}) - {desc}\n"
     # 去掉末尾的逗号
     # parameter_api = parameter_api[:-2]
-    return parameter, parameter_api
+    # return parameter, parameter_api
+    return parameter_dict
 
 class func_helper(object):
     def __init__(self, function_dict):
@@ -39,9 +43,9 @@ class func_helper(object):
         self.file_path = self.function_dict["filename"].replace("../", "")
 
         if len(self.function_dict["parameters"]) != 0:
-            self.parameter, _ = get_parameters(self.function_dict["parameters"])
+            self.parameter_dict = get_parameters(self.function_dict["parameters"])
         else:
-            self.parameter = ""
+            self.parameter_dict = {}
 
         self.returns = self.function_dict["returns"].replace("PADDLE_API ", "")
 
@@ -65,12 +69,19 @@ class func_helper(object):
                                f'\n'
             f.write(define_path_text)
 
-            # TODO 可以统一把“参数”这样的文本移动到这里进行表达，增加代码维护性
-            parameters_text = f'参数\n' \
-                              f':::::::::::::::::::::\n' \
-                              f'{self.parameter}\n' \
-                              f'\n'
-            f.write(parameters_text+'\n')
+            if len(self.parameter_dict) != 0:
+                parameters_text = f'参数\n' \
+                                  f':::::::::::::::::::::'
+                f.write(parameters_text+'\n')
+                for param in self.parameter_dict:
+                    param_text = f"\t- **{param['name']}**"
+                    if param['type'] != "":
+                        param_text += f" ({param['type']})"
+                    if param['intro'] != "":
+                        param_text += f" - {param['intro']}"
+                    param_text += "\n"
+                    f.write(param_text)
+            f.write('\n')
 
             return_text = f'返回\n' \
                           f':::::::::::::::::::::\n' \
@@ -106,15 +117,16 @@ class class_helper(object):
             # 获取描述
             funcs_doxygen = ith_function.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ","")
             # 解析参数
-            parameter = ""
             if len(ith_function["parameters"]) != 0:
-                parameter, _ = get_parameters(ith_function["parameters"])
+                parameter_dict = get_parameters(ith_function["parameters"])
+            else:
+                parameter_dict = {}
             # 获取返回值
             returns = ith_function["returns"].replace("PADDLE_API ", "")
 
             self.functions_infor.append({'name':function_name,
                                         'doxygen':funcs_doxygen,
-                                        'parameter':parameter,
+                                        'parameter':parameter_dict,
                                         'returns':returns})
 
     def create_file(self, save_dir):
@@ -150,12 +162,19 @@ class class_helper(object):
                                               f"\n"
                     f.write(fun_name_and_intro_text)
 
-                    # TODO 可以统一把“参数”这样的文本移动到这里进行表达，增加代码维护性
-                    fun_parameters_text = f"**参数**\n" \
-                                          f"\'\'\'\'\'\'\'\'\'\'\'\n" \
-                                          f"{fun_infor['parameter']}\n" \
-                                          f"\n"
-                    f.write(fun_parameters_text + '\n')
+                    if len(fun_infor['parameter']) != 0:
+                        parameters_text = f"**参数**\n" \
+                                          f"\'\'\'\'\'\'\'\'\'\'\'\n"
+                        f.write(parameters_text)
+                        for param in fun_infor['parameter']:
+                            param_text = f"\t- **{param['name']}**"
+                            if param['type'] != "":
+                                param_text += f" ({param['type']})"
+                            if param['intro'] != "":
+                                param_text += f" - {param['intro']}"
+                            param_text += "\n"
+                            f.write(param_text)
+                    f.write('\n')
 
                     if fun_infor['returns'] != '' and 'void' not in fun_infor['returns']:
                         fun_return_text = f"**返回**\n" \

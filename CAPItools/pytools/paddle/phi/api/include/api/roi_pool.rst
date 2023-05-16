@@ -11,14 +11,12 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **boxes** (const Tensor&) - 
-	- **boxes_num** (const paddle::optional<Tensor>&) - 
-	- **pooled_height** (int) - 
-	- **pooled_width** (int) - 
-	- **spatial_scale** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **boxes** (const Tensor&)
+	- **boxes_num** (const paddle::optional<Tensor>&)
+	- **pooled_height** (int)
+	- **pooled_width** (int)
+	- **spatial_scale** (float)
 
 返回
 :::::::::::::::::::::

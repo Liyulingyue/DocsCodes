@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **uplo** (const std::string&) - 
-	- **is_test** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **uplo** (const std::string&)
+	- **is_test** (bool)
 
 返回
 :::::::::::::::::::::

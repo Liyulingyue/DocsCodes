@@ -11,19 +11,17 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **param** (Tensor&) - 
-	- **grad** (const Tensor&) - 
-	- **velocity** (Tensor&) - 
-	- **learning_rate** (const Tensor&) - 
-	- **master_param** (paddle::optional<Tensor>&) - 
-	- **mu** (float) - 
-	- **use_nesterov** (bool) - 
-	- **regularization_method** (const std::string&) - 
-	- **regularization_coeff** (float) - 
-	- **multi_precision** (bool) - 
-	- **rescale_grad** (float) - 
-
-
+	- **param** (Tensor&)
+	- **grad** (const Tensor&)
+	- **velocity** (Tensor&)
+	- **learning_rate** (const Tensor&)
+	- **master_param** (paddle::optional<Tensor>&)
+	- **mu** (float)
+	- **use_nesterov** (bool)
+	- **regularization_method** (const std::string&)
+	- **regularization_coeff** (float)
+	- **multi_precision** (bool)
+	- **rescale_grad** (float)
 
 返回
 :::::::::::::::::::::

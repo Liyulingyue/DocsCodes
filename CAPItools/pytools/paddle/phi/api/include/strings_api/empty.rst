@@ -11,10 +11,8 @@ paddle\phi\api\include\strings_api.h
 
 参数
 :::::::::::::::::::::
-	- **shape** (const IntArray&) - 
-	- **place** (const Place&) - 
-
-
+	- **shape** (const IntArray&)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

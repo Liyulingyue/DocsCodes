@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (Tensor&) - 
-	- **value** (float) - 
-	- **offset** (int) - 
-	- **wrap** (bool) - 
-
-
+	- **x** (Tensor&)
+	- **value** (float)
+	- **offset** (int)
+	- **wrap** (bool)
 
 返回
 :::::::::::::::::::::

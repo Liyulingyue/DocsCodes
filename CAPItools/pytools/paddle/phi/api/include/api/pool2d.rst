@@ -11,19 +11,17 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **kernel_size** (const IntArray&) - 
-	- **strides** (const std::vector<int>&) - 
-	- **paddings** (const std::vector<int>&) - 
-	- **ceil_mode** (bool) - 
-	- **exclusive** (bool) - 
-	- **data_format** (const std::string&) - 
-	- **pooling_type** (const std::string&) - 
-	- **global_pooling** (bool) - 
-	- **adaptive** (bool) - 
-	- **padding_algorithm** (const std::string&) - 
-
-
+	- **x** (const Tensor&)
+	- **kernel_size** (const IntArray&)
+	- **strides** (const std::vector<int>&)
+	- **paddings** (const std::vector<int>&)
+	- **ceil_mode** (bool)
+	- **exclusive** (bool)
+	- **data_format** (const std::string&)
+	- **pooling_type** (const std::string&)
+	- **global_pooling** (bool)
+	- **adaptive** (bool)
+	- **padding_algorithm** (const std::string&)
 
 返回
 :::::::::::::::::::::

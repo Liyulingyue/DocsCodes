@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **repeat_times** (const IntArray&) - 
-
-
+	- **x** (const Tensor&)
+	- **repeat_times** (const IntArray&)
 
 返回
 :::::::::::::::::::::

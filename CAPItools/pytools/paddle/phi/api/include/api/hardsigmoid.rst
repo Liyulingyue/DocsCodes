@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **slope** (float) - 
-	- **offset** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **slope** (float)
+	- **offset** (float)
 
 返回
 :::::::::::::::::::::

@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **k** (const Scalar&) - 
-	- **axis** (int) - 
-	- **largest** (bool) - 
-	- **sorted** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **k** (const Scalar&)
+	- **axis** (int)
+	- **largest** (bool)
+	- **sorted** (bool)
 
 返回
 :::::::::::::::::::::

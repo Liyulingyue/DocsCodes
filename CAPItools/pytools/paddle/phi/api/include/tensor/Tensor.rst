@@ -18,10 +18,6 @@ Tensor ( ) = default ;
  @brief Construct a new Tensor object
 
 
-**参数**
-'''''''''''
-
-
 
 Tensor ( const Tensor & ) = default ;
 '''''''''''
@@ -30,9 +26,7 @@ Tensor ( const Tensor & ) = default ;
 
 **参数**
 '''''''''''
-	- **&** (const Tensor) - 
-
-
+	- **&** (const Tensor)
 
 Tensor ( Tensor & & ) = default ;
 '''''''''''
@@ -41,9 +35,7 @@ Tensor ( Tensor & & ) = default ;
 
 **参数**
 '''''''''''
-	- **&** (Tensor&) - 
-
-
+	- **&** (Tensor&)
 
 explicit Tensor ( std::shared_ptr<phi::TensorBase> tensor_impl ) ;
 '''''''''''
@@ -52,9 +44,7 @@ explicit Tensor ( std::shared_ptr<phi::TensorBase> tensor_impl ) ;
 
 **参数**
 '''''''''''
-	- **tensor_impl** (std::shared_ptr<phi::TensorBase >) - 
-
-
+	- **tensor_impl** (std::shared_ptr<phi::TensorBase >)
 
 explicit Tensor ( const Place & place ) ;
 '''''''''''
@@ -63,9 +53,7 @@ explicit Tensor ( const Place & place ) ;
 
 **参数**
 '''''''''''
-	- **place** (const Place&) - 
-
-
+	- **place** (const Place&)
 
 Tensor ( const Place & place , const std::vector<int64_t> & shape ) ;
 '''''''''''
@@ -74,10 +62,8 @@ Tensor ( const Place & place , const std::vector<int64_t> & shape ) ;
 
 **参数**
 '''''''''''
-	- **place** (const Place&) - 
-	- **shape** (const std::vector<int64_t>&) - 
-
-
+	- **place** (const Place&)
+	- **shape** (const std::vector<int64_t>&)
 
 Tensor ( std::shared_ptr<phi::TensorBase> tensor_impl , const std::string & name ) ;
 '''''''''''
@@ -86,10 +72,8 @@ Tensor ( std::shared_ptr<phi::TensorBase> tensor_impl , const std::string & name
 
 **参数**
 '''''''''''
-	- **tensor_impl** (std::shared_ptr<phi::TensorBase >) - 
-	- **name** (const std::string&) - 
-
-
+	- **tensor_impl** (std::shared_ptr<phi::TensorBase >)
+	- **name** (const std::string&)
 
 explicit Tensor ( const std::string & name ) :
 '''''''''''
@@ -97,17 +81,11 @@ explicit Tensor ( const std::string & name ) :
 
 **参数**
 '''''''''''
-	- **name** (const std::string&) - 
-
-
+	- **name** (const std::string&)
 
 int64_t numel ( ) const ;
 '''''''''''
  @brief Return the number of elements of Tensor. @return int64_t
-
-
-**参数**
-'''''''''''
 
 
 
@@ -119,10 +97,6 @@ int64_t size ( ) const ;
  @brief Get the size of current tensor. The compatible method of `Tensor::numel()`. This is a deprecated method and may be removed in the future! @return int64_t
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -132,10 +106,6 @@ const phi::DDim & dims ( ) const ;
  @brief Return the dimensions of Tensor. @return phi::DDim
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -143,10 +113,6 @@ phi::DDim
 std::vector<int64_t> shape ( ) const ;
 '''''''''''
  @brief Return the shape (dimensions) of Tensor. The compatible method of `Tensor::dims()`. This is a deprecated method and may be removed in the future! @return std::vector<int64_t>
-
-
-**参数**
-'''''''''''
 
 
 
@@ -160,17 +126,11 @@ void reshape ( const std::vector<int64_t> & shape ) ;
 
 **参数**
 '''''''''''
-	- **shape** (const std::vector<int64_t>&) - 
-
-
+	- **shape** (const std::vector<int64_t>&)
 
 DataType dtype ( ) const ;
 '''''''''''
  @brief Return the data type of Tensor. @return DataType
-
-
-**参数**
-'''''''''''
 
 
 
@@ -182,10 +142,6 @@ DataType type ( ) const ;
  @brief Return the data type of Tensor. The compatible method of `Tensor::dtype()`. This is a deprecated method and may be removed in the future! @return DataType
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -193,10 +149,6 @@ DataType
 phi::DataLayout layout ( ) const ;
 '''''''''''
  @brief Return the layout of Tensor. @return DataLayout
-
-
-**参数**
-'''''''''''
 
 
 
@@ -208,10 +160,6 @@ bool is_dense_tensor ( ) const ;
  @brief Determine whether tensor is DenseTensor @return true @return false
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -219,10 +167,6 @@ bool
 bool is_selected_rows ( ) const ;
 '''''''''''
  @brief Determine whether tensor is SelectedRows @return true @return false
-
-
-**参数**
-'''''''''''
 
 
 
@@ -234,10 +178,6 @@ bool is_sparse_coo_tensor ( ) const ;
  @brief Determine whether tensor is SparseCooTensor @return true @return false
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -245,10 +185,6 @@ bool
 bool is_sparse_csr_tensor ( ) const ;
 '''''''''''
  @brief Determine whether tensor is SparseCsrTensor @return true @return false
-
-
-**参数**
-'''''''''''
 
 
 
@@ -260,10 +196,6 @@ bool is_string_tensor ( ) const ;
  @brief Determine whether tensor is StringTensor @return true @return false
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -271,10 +203,6 @@ bool
 const Place & place ( ) const ;
 '''''''''''
  @brief Return the place (device) of Tensor. @return Place
-
-
-**参数**
-'''''''''''
 
 
 
@@ -286,10 +214,6 @@ bool is_cpu ( ) const ;
  @brief Determine whether the tensor device is CPU @return true @return false
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -297,10 +221,6 @@ bool
 bool is_gpu ( ) const ;
 '''''''''''
  @brief Determine whether the tensor device is GPU @return true @return false
-
-
-**参数**
-'''''''''''
 
 
 
@@ -312,10 +232,6 @@ bool is_gpu_pinned ( ) const ;
  @brief Determine whether the tensor device is GPU_PINNED @return true @return false
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -323,10 +239,6 @@ bool
 bool is_xpu ( ) const ;
 '''''''''''
  @brief Determine whether the tensor device is XPU @return true @return false
-
-
-**参数**
-'''''''''''
 
 
 
@@ -338,10 +250,6 @@ bool is_custom_device ( ) const ;
  @brief Determine whether the tensor device is CustomDevice @return true @return false
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -349,10 +257,6 @@ bool
 T * mutable_data ( ) ;
 '''''''''''
  @brief Get the memory pointer in CPU or GPU with specific data type. It's usually used to get the output data pointer, same as the T* data(). @tparam T @return T*
-
-
-**参数**
-'''''''''''
 
 
 
@@ -366,9 +270,7 @@ T * mutable_data ( const Place & place ) ;
 
 **参数**
 '''''''''''
-	- **place** (const Place&) - 
-
-
+	- **place** (const Place&)
 
 **返回**
 '''''''''''
@@ -376,10 +278,6 @@ T
 const T * data ( ) const ;
 '''''''''''
  @brief Get the const memory pointer directly. It's usually used to get the output data pointer. @tparam T @return T*
-
-
-**参数**
-'''''''''''
 
 
 
@@ -391,10 +289,6 @@ T * data ( ) ;
  @brief Get the memory pointer directly. It's usually used to get the mutable output data pointer. @tparam T @return T*
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -404,18 +298,10 @@ const void * data ( ) const ;
  @brief Get the const memory pointer directly. It's usually used to get the output data pointer. @tparam T @return T*
 
 
-**参数**
-'''''''''''
-
-
 
 void * data ( ) ;
 '''''''''''
  @brief Get the memory pointer directly. It's usually used to get the mutable output data pointer. @tparam T @return T*
-
-
-**参数**
-'''''''''''
 
 
 
@@ -429,18 +315,12 @@ Tensor slice ( int64_t begin_idx , int64_t end_idx ) const ;
 	- **begin_idx** (int64_t) - The index of the start row (inclusive) to slice.The index number begins from 0.
 	- **end_idx** (int64_t) - The index of the end row (exclusive) to slice. The index number begins from begin_idx + 1.
 
-
-
 **返回**
 '''''''''''
 Tensor
 const std::shared_ptr<phi::TensorBase> & impl ( ) const ;
 '''''''''''
  @brief Return the implementation of current Tensor. @return std::shared_ptr<phi::TensorBase>
-
-
-**参数**
-'''''''''''
 
 
 
@@ -454,9 +334,7 @@ void set_impl ( const std::shared_ptr<phi::TensorBase> & impl ) ;
 
 **参数**
 '''''''''''
-	- **impl** (const std::shared_ptr<phi::TensorBase>&) - 
-
-
+	- **impl** (const std::shared_ptr<phi::TensorBase>&)
 
 void set_impl ( std::shared_ptr<phi::TensorBase> & & impl ) ;
 '''''''''''
@@ -465,17 +343,11 @@ void set_impl ( std::shared_ptr<phi::TensorBase> & & impl ) ;
 
 **参数**
 '''''''''''
-	- **impl** (std::shared_ptr<phi::TensorBase>) - 
-
-
+	- **impl** (std::shared_ptr<phi::TensorBase>)
 
 gpuStream_t stream ( ) const ;
 '''''''''''
  @brief Get the stream where the tensor is currently located This is a deprecated method and may be removed in the future! @return gpuStream_t
-
-
-**参数**
-'''''''''''
 
 
 
@@ -485,10 +357,6 @@ gpuStream_t
 const std::string & name ( ) const {
 '''''''''''
  @brief Return the name of Tensor. @note Used to adapt original execution mechanism and debug analysis in the development of new dygraph. @return const std::string&
-
-
-**参数**
-'''''''''''
 
 
 
@@ -502,9 +370,7 @@ void set_name ( const std::string & name ) {
 
 **参数**
 '''''''''''
-	- **name** (const std::string&) - 
-
-
+	- **name** (const std::string&)
 
 Tensor copy_to ( const Place & target_place ) const ;
 '''''''''''
@@ -513,9 +379,7 @@ Tensor copy_to ( const Place & target_place ) const ;
 
 **参数**
 '''''''''''
-	- **target_place** (const Place&) - 
-
-
+	- **target_place** (const Place&)
 
 **返回**
 '''''''''''
@@ -527,10 +391,8 @@ Tensor copy_to ( const Place & place , bool blocking ) const ;
 
 **参数**
 '''''''''''
-	- **place** (const Place&) - 
-	- **blocking** (bool) - 
-
-
+	- **place** (const Place&)
+	- **blocking** (bool)
 
 **返回**
 '''''''''''
@@ -542,11 +404,9 @@ void copy_ ( const Tensor & src , const Place & target_place , bool blocking ) ;
 
 **参数**
 '''''''''''
-	- **src** (const Tensor&) - 
-	- **target_place** (const Place&) - 
-	- **blocking** (bool) - 
-
-
+	- **src** (const Tensor&)
+	- **target_place** (const Place&)
+	- **blocking** (bool)
 
 Tensor cast ( DataType target_type ) const ;
 '''''''''''
@@ -555,9 +415,7 @@ Tensor cast ( DataType target_type ) const ;
 
 **参数**
 '''''''''''
-	- **target_type** (DataType) - 
-
-
+	- **target_type** (DataType)
 
 **返回**
 '''''''''''
@@ -565,10 +423,6 @@ Tensor
 bool defined ( ) const ;
 '''''''''''
  @brief Determine whether it is a meaningful Tensor @return true @return false
-
-
-**参数**
-'''''''''''
 
 
 
@@ -580,10 +434,6 @@ bool initialized ( ) const ;
  @brief Determine whether Tensor is initialized. @return true @return false
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -591,10 +441,6 @@ bool
 bool is_initialized ( ) const ;
 '''''''''''
  @brief Determine whether Tensor is initialized. This is a deprecated method and may be removed in the future! @return true @return false
-
-
-**参数**
-'''''''''''
 
 
 
@@ -606,10 +452,6 @@ void reset ( ) ;
  @brief Reset the Tensor implementation
 
 
-**参数**
-'''''''''''
-
-
 
 Tensor & operator = ( const Tensor & x ) & ;
 '''''''''''
@@ -618,9 +460,7 @@ Tensor & operator = ( const Tensor & x ) & ;
 
 **参数**
 '''''''''''
-	- **x** (const Tensor&) - 
-
-
+	- **x** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -632,9 +472,7 @@ Tensor & operator = ( Tensor & & x ) & ;
 
 **参数**
 '''''''''''
-	- **x** (Tensor) - 
-
-
+	- **x** (Tensor)
 
 **返回**
 '''''''''''
@@ -646,9 +484,7 @@ Tensor operator + ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -659,9 +495,7 @@ Tensor operator - ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -672,9 +506,7 @@ Tensor operator * ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -685,9 +517,7 @@ Tensor operator / ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -698,9 +528,7 @@ Tensor operator + ( const Scalar & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (Scalar&) - 
-
-
+	- **other** (Scalar&)
 
 **返回**
 '''''''''''
@@ -711,9 +539,7 @@ Tensor operator - ( const Scalar & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (Scalar&) - 
-
-
+	- **other** (Scalar&)
 
 **返回**
 '''''''''''
@@ -724,9 +550,7 @@ Tensor operator * ( const Scalar & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (Scalar&) - 
-
-
+	- **other** (Scalar&)
 
 **返回**
 '''''''''''
@@ -737,9 +561,7 @@ Tensor operator / ( const Scalar & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (Scalar&) - 
-
-
+	- **other** (Scalar&)
 
 **返回**
 '''''''''''
@@ -750,9 +572,7 @@ Tensor operator<( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -763,9 +583,7 @@ Tensor operator<= ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -776,9 +594,7 @@ Tensor operator = = ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -789,9 +605,7 @@ Tensor operator ! = ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -802,9 +616,7 @@ Tensor operator> ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -815,9 +627,7 @@ Tensor operator> = ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -826,19 +636,11 @@ Tensor operator - ( ) const ;
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
 Tensor
 Tensor operator ~ ( ) const ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -852,9 +654,7 @@ Tensor operator & ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -865,9 +665,7 @@ Tensor operator | ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -878,9 +676,7 @@ Tensor operator ^ ( const Tensor & other ) const ;
 
 **参数**
 '''''''''''
-	- **other** (const Tensor&) - 
-
-
+	- **other** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -890,10 +686,6 @@ AbstractAutogradMeta * get_autograd_meta ( ) const ;
  @brief Get the autograd meta object pointer @return AbstractAutogradMeta*
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -901,10 +693,6 @@ AbstractAutogradMeta
 const std::shared_ptr<AbstractAutogradMeta> & mutable_autograd_meta ( ) const ;
 '''''''''''
  @brief Get the shared pointer of autograd meta object @return std::shared_ptr<AbstractAutogradMeta>&
-
-
-**参数**
-'''''''''''
 
 
 
@@ -918,27 +706,17 @@ void set_autograd_meta ( std::shared_ptr<AbstractAutogradMeta> autograd_meta ) ;
 
 **参数**
 '''''''''''
-	- **autograd_meta** (std::shared_ptr<AbstractAutogradMeta >) - 
-
-
+	- **autograd_meta** (std::shared_ptr<AbstractAutogradMeta >)
 
 void bump_inplace_version ( ) ;
 '''''''''''
  @brief Increase inplace version
 
 
-**参数**
-'''''''''''
-
-
 
 uint32_t current_inplace_version ( ) ;
 '''''''''''
  @brief Get current inplace version @return uint32_t
-
-
-**参数**
-'''''''''''
 
 
 
@@ -952,9 +730,7 @@ void reset_inplace_version ( bool set_to_zero = false ) ;
 
 **参数**
 '''''''''''
-	- **set_to_zero** (bool) - 
-
-
+	- **set_to_zero** (bool)
 
 Tensor to_sparse_coo ( const int64_t sparse_dim ) const ;
 '''''''''''
@@ -963,9 +739,7 @@ Tensor to_sparse_coo ( const int64_t sparse_dim ) const ;
 
 **参数**
 '''''''''''
-	- **sparse_dim** (const int64_t) - 
-
-
+	- **sparse_dim** (const int64_t)
 
 **返回**
 '''''''''''
@@ -975,10 +749,6 @@ Tensor to_sparse_csr ( ) const ;
  @brief Convert DenseTensor or SparseCooTensor to SparseCsrTensor @return Tensor
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
@@ -986,10 +756,6 @@ Tensor
 Tensor to_dense ( ) const ;
 '''''''''''
  @brief Convert SparseCooTensor or SparseCsrTensor to DenseTensor @return Tensor
-
-
-**参数**
-'''''''''''
 
 
 
@@ -1002,9 +768,7 @@ Tensor add ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1015,9 +779,7 @@ Tensor divide ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1028,9 +790,7 @@ Tensor multiply ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1041,9 +801,7 @@ Tensor subtract ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1054,9 +812,7 @@ Tensor add ( const Scalar & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (Scalar&) - 
-
-
+	- **y** (Scalar&)
 
 **返回**
 '''''''''''
@@ -1067,9 +823,7 @@ Tensor divide ( const Scalar & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (Scalar&) - 
-
-
+	- **y** (Scalar&)
 
 **返回**
 '''''''''''
@@ -1080,9 +834,7 @@ Tensor multiply ( const Scalar & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (Scalar&) - 
-
-
+	- **y** (Scalar&)
 
 **返回**
 '''''''''''
@@ -1093,9 +845,7 @@ Tensor subtract ( const Scalar & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (Scalar&) - 
-
-
+	- **y** (Scalar&)
 
 **返回**
 '''''''''''
@@ -1106,9 +856,7 @@ Tensor less_equal ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1119,9 +867,7 @@ Tensor less_than ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1132,9 +878,7 @@ Tensor equal ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1145,9 +889,7 @@ Tensor not_equal ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1158,9 +900,7 @@ Tensor greater_equal ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1171,9 +911,7 @@ Tensor greater_than ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1184,9 +922,7 @@ Tensor bitwise_and ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1197,9 +933,7 @@ Tensor bitwise_or ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1210,18 +944,12 @@ Tensor bitwise_xor ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
 Tensor
 Tensor bitwise_not ( ) const ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -1235,9 +963,7 @@ Tensor pow ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1248,9 +974,7 @@ Tensor pow ( const Scalar & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (Scalar&) - 
-
-
+	- **y** (Scalar&)
 
 **返回**
 '''''''''''
@@ -1259,19 +983,11 @@ Tensor exp ( ) const ;
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
 Tensor
 Tensor floor ( ) const ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -1285,18 +1001,12 @@ Tensor gather_nd ( const Tensor & index ) const ;
 
 **参数**
 '''''''''''
-	- **index** (const Tensor&) - 
-
-
+	- **index** (const Tensor&)
 
 **返回**
 '''''''''''
 Tensor
 Tensor log ( ) const ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -1310,10 +1020,8 @@ Tensor roll ( const IntArray & shifts = { } , const std::vector<int64_t> & axis 
 
 **参数**
 '''''''''''
-	- **shifts** (IntArray&) - 
-	- **axis** (const std::vector<int64_t>&) - 
-
-
+	- **shifts** (IntArray&)
+	- **axis** (const std::vector<int64_t>&)
 
 **返回**
 '''''''''''
@@ -1324,11 +1032,9 @@ Tensor scatter ( const Tensor & index , const Tensor & updates , bool overwrite 
 
 **参数**
 '''''''''''
-	- **index** (const Tensor&) - 
-	- **updates** (const Tensor&) - 
-	- **overwrite** (bool) - 
-
-
+	- **index** (const Tensor&)
+	- **updates** (const Tensor&)
+	- **overwrite** (bool)
 
 **返回**
 '''''''''''
@@ -1339,10 +1045,8 @@ Tensor scatter_nd_add ( const Tensor & index , const Tensor & updates ) const ;
 
 **参数**
 '''''''''''
-	- **index** (const Tensor&) - 
-	- **updates** (const Tensor&) - 
-
-
+	- **index** (const Tensor&)
+	- **updates** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1351,19 +1055,11 @@ Tensor abs ( ) const ;
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
 Tensor
 Tensor assign ( ) const ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -1377,9 +1073,7 @@ Tensor elementwise_pow ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1390,9 +1084,7 @@ Tensor expand ( const IntArray & shape ) const ;
 
 **参数**
 '''''''''''
-	- **shape** (IntArray&) - 
-
-
+	- **shape** (IntArray&)
 
 **返回**
 '''''''''''
@@ -1403,11 +1095,9 @@ Tensor matmul ( const Tensor & y , bool transpose_x = false , bool transpose_y =
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-	- **transpose_x** (bool) - 
-	- **transpose_y** (bool) - 
-
-
+	- **y** (const Tensor&)
+	- **transpose_x** (bool)
+	- **transpose_y** (bool)
 
 **返回**
 '''''''''''
@@ -1418,10 +1108,8 @@ Tensor max ( const IntArray & axis = { } , bool keepdim = false ) const ;
 
 **参数**
 '''''''''''
-	- **axis** (IntArray&) - 
-	- **keepdim** (bool) - 
-
-
+	- **axis** (IntArray&)
+	- **keepdim** (bool)
 
 **返回**
 '''''''''''
@@ -1432,9 +1120,7 @@ Tensor maximum ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1445,9 +1131,7 @@ Tensor minimum ( const Tensor & y ) const ;
 
 **参数**
 '''''''''''
-	- **y** (const Tensor&) - 
-
-
+	- **y** (const Tensor&)
 
 **返回**
 '''''''''''
@@ -1458,11 +1142,9 @@ Tensor scale ( const Scalar & scale = 1.0 , float bias = 0.0 , bool bias_after_s
 
 **参数**
 '''''''''''
-	- **scale** (Scalar&) - 
-	- **bias** (float) - 
-	- **bias_after_scale** (bool) - 
-
-
+	- **scale** (Scalar&)
+	- **bias** (float)
+	- **bias_after_scale** (bool)
 
 **返回**
 '''''''''''
@@ -1473,11 +1155,9 @@ Tensor sum ( const IntArray & axis = { } , DataType dtype = DataType::UNDEFINED 
 
 **参数**
 '''''''''''
-	- **axis** (IntArray&) - 
-	- **dtype** (DataType) - 
-	- **keepdim** (bool) - 
-
-
+	- **axis** (IntArray&)
+	- **dtype** (DataType)
+	- **keepdim** (bool)
 
 **返回**
 '''''''''''
@@ -1488,9 +1168,7 @@ Tensor tile ( const IntArray & repeat_times = { } ) const ;
 
 **参数**
 '''''''''''
-	- **repeat_times** (IntArray&) - 
-
-
+	- **repeat_times** (IntArray&)
 
 **返回**
 '''''''''''

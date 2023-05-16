@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **y** (const Tensor&) - 
-	- **rcond** (const Scalar&) - 
-	- **driver** (const std::string&) - 
-
-
+	- **x** (const Tensor&)
+	- **y** (const Tensor&)
+	- **rcond** (const Scalar&)
+	- **driver** (const std::string&)
 
 返回
 :::::::::::::::::::::

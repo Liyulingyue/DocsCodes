@@ -11,14 +11,12 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **porder** (float) - 
-	- **axis** (int) - 
-	- **epsilon** (float) - 
-	- **keepdim** (bool) - 
-	- **asvector** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **porder** (float)
+	- **axis** (int)
+	- **epsilon** (float)
+	- **keepdim** (bool)
+	- **asvector** (bool)
 
 返回
 :::::::::::::::::::::

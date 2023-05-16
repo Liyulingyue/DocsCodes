@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **weight** (const Tensor&) - 
-	- **padding_idx** (int64_t) - 
-	- **sparse** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **weight** (const Tensor&)
+	- **padding_idx** (int64_t)
+	- **sparse** (bool)
 
 返回
 :::::::::::::::::::::

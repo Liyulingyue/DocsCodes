@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **return_inverse** (bool) - 
-	- **return_counts** (bool) - 
-	- **axis** (const std::vector<int>&) - 
-	- **dtype** (int) - 
-
-
+	- **x** (const Tensor&)
+	- **return_inverse** (bool)
+	- **return_counts** (bool)
+	- **axis** (const std::vector<int>&)
+	- **dtype** (int)
 
 返回
 :::::::::::::::::::::

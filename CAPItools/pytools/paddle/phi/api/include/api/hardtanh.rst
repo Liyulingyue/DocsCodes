@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **t_min** (float) - 
-	- **t_max** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **t_min** (float)
+	- **t_max** (float)
 
 返回
 :::::::::::::::::::::

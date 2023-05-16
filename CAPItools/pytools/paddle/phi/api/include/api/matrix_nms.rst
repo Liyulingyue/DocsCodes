@@ -11,18 +11,16 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **bboxes** (const Tensor&) - 
-	- **scores** (const Tensor&) - 
-	- **score_threshold** (float) - 
-	- **nms_top_k** (int) - 
-	- **keep_top_k** (int) - 
-	- **post_threshold** (float) - 
-	- **use_gaussian** (bool) - 
-	- **gaussian_sigma** (float) - 
-	- **background_label** (int) - 
-	- **normalized** (bool) - 
-
-
+	- **bboxes** (const Tensor&)
+	- **scores** (const Tensor&)
+	- **score_threshold** (float)
+	- **nms_top_k** (int)
+	- **keep_top_k** (int)
+	- **post_threshold** (float)
+	- **use_gaussian** (bool)
+	- **gaussian_sigma** (float)
+	- **background_label** (int)
+	- **normalized** (bool)
 
 返回
 :::::::::::::::::::::

@@ -11,18 +11,16 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **bboxes** (const Tensor&) - 
-	- **scores** (const Tensor&) - 
-	- **rois_num** (const paddle::optional<Tensor>&) - 
-	- **score_threshold** (float) - 
-	- **nms_top_k** (int) - 
-	- **keep_top_k** (int) - 
-	- **nms_threshold** (float) - 
-	- **normalized** (bool) - 
-	- **nms_eta** (float) - 
-	- **background_label** (int) - 
-
-
+	- **bboxes** (const Tensor&)
+	- **scores** (const Tensor&)
+	- **rois_num** (const paddle::optional<Tensor>&)
+	- **score_threshold** (float)
+	- **nms_top_k** (int)
+	- **keep_top_k** (int)
+	- **nms_threshold** (float)
+	- **normalized** (bool)
+	- **nms_eta** (float)
+	- **background_label** (int)
 
 返回
 :::::::::::::::::::::

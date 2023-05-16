@@ -11,14 +11,12 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **label** (const Tensor&) - 
-	- **input_lengths** (const Tensor&) - 
-	- **label_lengths** (const Tensor&) - 
-	- **blank** (int) - 
-	- **fastemit_lambda** (float) - 
-
-
+	- **input** (const Tensor&)
+	- **label** (const Tensor&)
+	- **input_lengths** (const Tensor&)
+	- **label_lengths** (const Tensor&)
+	- **blank** (int)
+	- **fastemit_lambda** (float)
 
 返回
 :::::::::::::::::::::

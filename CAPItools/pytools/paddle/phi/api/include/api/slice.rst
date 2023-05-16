@@ -11,14 +11,12 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **axes** (const std::vector<int64_t>&) - 
-	- **starts** (const IntArray&) - 
-	- **ends** (const IntArray&) - 
-	- **infer_flags** (const std::vector<int64_t>&) - 
-	- **decrease_axis** (const std::vector<int64_t>&) - 
-
-
+	- **input** (const Tensor&)
+	- **axes** (const std::vector<int64_t>&)
+	- **starts** (const IntArray&)
+	- **ends** (const IntArray&)
+	- **infer_flags** (const std::vector<int64_t>&)
+	- **decrease_axis** (const std::vector<int64_t>&)
 
 返回
 :::::::::::::::::::::

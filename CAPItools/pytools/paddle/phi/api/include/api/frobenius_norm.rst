@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **axis** (const std::vector<int64_t>&) - 
-	- **keep_dim** (bool) - 
-	- **reduce_all** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **axis** (const std::vector<int64_t>&)
+	- **keep_dim** (bool)
+	- **reduce_all** (bool)
 
 返回
 :::::::::::::::::::::

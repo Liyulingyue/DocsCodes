@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **label** (const Tensor&) - 
-	- **prior_dist** (const paddle::optional<Tensor>&) - 
-	- **epsilon** (float) - 
-
-
+	- **label** (const Tensor&)
+	- **prior_dist** (const paddle::optional<Tensor>&)
+	- **epsilon** (float)
 
 返回
 :::::::::::::::::::::

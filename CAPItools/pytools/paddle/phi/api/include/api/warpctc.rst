@@ -11,14 +11,12 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **logits** (const Tensor&) - 
-	- **label** (const Tensor&) - 
-	- **logits_length** (const paddle::optional<Tensor>&) - 
-	- **labels_length** (const paddle::optional<Tensor>&) - 
-	- **blank** (int) - 
-	- **norm_by_times** (bool) - 
-
-
+	- **logits** (const Tensor&)
+	- **label** (const Tensor&)
+	- **logits_length** (const paddle::optional<Tensor>&)
+	- **labels_length** (const paddle::optional<Tensor>&)
+	- **blank** (int)
+	- **norm_by_times** (bool)
 
 返回
 :::::::::::::::::::::

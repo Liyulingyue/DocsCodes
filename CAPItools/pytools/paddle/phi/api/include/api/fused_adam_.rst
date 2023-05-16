@@ -11,25 +11,23 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **params** (std::vector<Tensor>&) - 
-	- **grads** (const std::vector<Tensor>&) - 
-	- **learning_rate** (const Tensor&) - 
-	- **moments1** (std::vector<Tensor>&) - 
-	- **moments2** (std::vector<Tensor>&) - 
-	- **beta1_pows** (std::vector<Tensor>&) - 
-	- **beta2_pows** (std::vector<Tensor>&) - 
-	- **master_params** (paddle::optional<std::vector<Tensor> >&) - 
-	- **skip_update** (const paddle::optional<Tensor>&) - 
-	- **beta1** (const Scalar&) - 
-	- **beta2** (const Scalar&) - 
-	- **epsilon** (const Scalar&) - 
-	- **chunk_size** (int) - 
-	- **weight_decay** (float) - 
-	- **use_adamw** (bool) - 
-	- **multi_precision** (bool) - 
-	- **use_global_beta_pow** (bool) - 
-
-
+	- **params** (std::vector<Tensor>&)
+	- **grads** (const std::vector<Tensor>&)
+	- **learning_rate** (const Tensor&)
+	- **moments1** (std::vector<Tensor>&)
+	- **moments2** (std::vector<Tensor>&)
+	- **beta1_pows** (std::vector<Tensor>&)
+	- **beta2_pows** (std::vector<Tensor>&)
+	- **master_params** (paddle::optional<std::vector<Tensor> >&)
+	- **skip_update** (const paddle::optional<Tensor>&)
+	- **beta1** (const Scalar&)
+	- **beta2** (const Scalar&)
+	- **epsilon** (const Scalar&)
+	- **chunk_size** (int)
+	- **weight_decay** (float)
+	- **use_adamw** (bool)
+	- **multi_precision** (bool)
+	- **use_global_beta_pow** (bool)
 
 返回
 :::::::::::::::::::::

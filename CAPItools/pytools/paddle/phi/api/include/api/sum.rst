@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **axis** (const IntArray&) - 
-	- **dtype** (DataType) - 
-	- **keepdim** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **axis** (const IntArray&)
+	- **dtype** (DataType)
+	- **keepdim** (bool)
 
 返回
 :::::::::::::::::::::

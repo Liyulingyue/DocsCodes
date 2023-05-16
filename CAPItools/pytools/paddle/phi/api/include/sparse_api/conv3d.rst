@@ -11,16 +11,14 @@ paddle\phi\api\include\sparse_api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **kernel** (const Tensor&) - 
-	- **paddings** (const std::vector<int>&) - 
-	- **dilations** (const std::vector<int>&) - 
-	- **strides** (const std::vector<int>&) - 
-	- **groups** (int) - 
-	- **subm** (bool) - 
-	- **key** (const std::string&) - 
-
-
+	- **x** (const Tensor&)
+	- **kernel** (const Tensor&)
+	- **paddings** (const std::vector<int>&)
+	- **dilations** (const std::vector<int>&)
+	- **strides** (const std::vector<int>&)
+	- **groups** (int)
+	- **subm** (bool)
+	- **key** (const std::string&)
 
 返回
 :::::::::::::::::::::

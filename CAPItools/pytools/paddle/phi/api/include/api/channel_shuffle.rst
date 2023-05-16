@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **groups** (int) - 
-	- **data_format** (const std::string&) - 
-
-
+	- **x** (const Tensor&)
+	- **groups** (int)
+	- **data_format** (const std::string&)
 
 返回
 :::::::::::::::::::::

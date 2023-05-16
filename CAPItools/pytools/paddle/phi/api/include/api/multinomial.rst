@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **num_samples** (const Scalar&) - 
-	- **replacement** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **num_samples** (const Scalar&)
+	- **replacement** (bool)
 
 返回
 :::::::::::::::::::::

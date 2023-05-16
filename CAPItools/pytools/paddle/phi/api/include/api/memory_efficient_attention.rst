@@ -11,22 +11,20 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **query** (const Tensor&) - 
-	- **key** (const Tensor&) - 
-	- **value** (const Tensor&) - 
-	- **bias** (const paddle::optional<Tensor>&) - 
-	- **cu_seqlens_q** (const paddle::optional<Tensor>&) - 
-	- **cu_seqlens_k** (const paddle::optional<Tensor>&) - 
-	- **causal_diagonal** (const paddle::optional<Tensor>&) - 
-	- **seqlen_k** (const paddle::optional<Tensor>&) - 
-	- **max_seqlen_q** (const Scalar&) - 
-	- **max_seqlen_k** (const Scalar&) - 
-	- **causal** (bool) - 
-	- **dropout_p** (double) - 
-	- **scale** (float) - 
-	- **is_test** (bool) - 
-
-
+	- **query** (const Tensor&)
+	- **key** (const Tensor&)
+	- **value** (const Tensor&)
+	- **bias** (const paddle::optional<Tensor>&)
+	- **cu_seqlens_q** (const paddle::optional<Tensor>&)
+	- **cu_seqlens_k** (const paddle::optional<Tensor>&)
+	- **causal_diagonal** (const paddle::optional<Tensor>&)
+	- **seqlen_k** (const paddle::optional<Tensor>&)
+	- **max_seqlen_q** (const Scalar&)
+	- **max_seqlen_k** (const Scalar&)
+	- **causal** (bool)
+	- **dropout_p** (double)
+	- **scale** (float)
+	- **is_test** (bool)
 
 返回
 :::::::::::::::::::::

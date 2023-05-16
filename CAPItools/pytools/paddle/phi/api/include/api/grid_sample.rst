@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **grid** (const Tensor&) - 
-	- **mode** (const std::string&) - 
-	- **padding_mode** (const std::string&) - 
-	- **align_corners** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **grid** (const Tensor&)
+	- **mode** (const std::string&)
+	- **padding_mode** (const std::string&)
+	- **align_corners** (bool)
 
 返回
 :::::::::::::::::::::

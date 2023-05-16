@@ -11,9 +11,7 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **condition** (const Tensor&) - 
-
-
+	- **condition** (const Tensor&)
 
 返回
 :::::::::::::::::::::

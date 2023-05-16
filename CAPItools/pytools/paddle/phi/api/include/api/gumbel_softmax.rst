@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **temperature** (float) - 
-	- **hard** (bool) - 
-	- **axis** (int) - 
-
-
+	- **x** (const Tensor&)
+	- **temperature** (float)
+	- **hard** (bool)
+	- **axis** (int)
 
 返回
 :::::::::::::::::::::

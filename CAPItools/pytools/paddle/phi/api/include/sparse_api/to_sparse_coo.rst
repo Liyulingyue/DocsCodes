@@ -11,10 +11,8 @@ paddle\phi\api\include\sparse_api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **sparse_dim** (int64_t) - 
-
-
+	- **x** (const Tensor&)
+	- **sparse_dim** (int64_t)
 
 返回
 :::::::::::::::::::::

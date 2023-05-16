@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **offset** (int) - 
-	- **dim1** (int) - 
-	- **dim2** (int) - 
-
-
+	- **input** (const Tensor&)
+	- **offset** (int)
+	- **dim1** (int)
+	- **dim2** (int)
 
 返回
 :::::::::::::::::::::

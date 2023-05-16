@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **scale_a** (float) - 
-	- **scale_b** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **scale_a** (float)
+	- **scale_b** (float)
 
 返回
 :::::::::::::::::::::

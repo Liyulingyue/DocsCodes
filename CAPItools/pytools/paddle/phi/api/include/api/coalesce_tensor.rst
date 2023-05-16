@@ -11,19 +11,17 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const std::vector<Tensor>&) - 
-	- **dtype** (DataType) - 
-	- **copy_data** (bool) - 
-	- **set_constant** (bool) - 
-	- **persist_output** (bool) - 
-	- **constant** (float) - 
-	- **use_align** (bool) - 
-	- **align_size** (int) - 
-	- **size_of_dtype** (int) - 
-	- **concated_shapes** (const std::vector<int64_t>&) - 
-	- **concated_ranks** (const std::vector<int64_t>&) - 
-
-
+	- **input** (const std::vector<Tensor>&)
+	- **dtype** (DataType)
+	- **copy_data** (bool)
+	- **set_constant** (bool)
+	- **persist_output** (bool)
+	- **constant** (float)
+	- **use_align** (bool)
+	- **align_size** (int)
+	- **size_of_dtype** (int)
+	- **concated_shapes** (const std::vector<int64_t>&)
+	- **concated_ranks** (const std::vector<int64_t>&)
 
 返回
 :::::::::::::::::::::

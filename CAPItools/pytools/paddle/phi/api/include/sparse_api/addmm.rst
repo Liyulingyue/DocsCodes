@@ -11,13 +11,11 @@ paddle\phi\api\include\sparse_api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **x** (const Tensor&) - 
-	- **y** (const Tensor&) - 
-	- **beta** (float) - 
-	- **alpha** (float) - 
-
-
+	- **input** (const Tensor&)
+	- **x** (const Tensor&)
+	- **y** (const Tensor&)
+	- **beta** (float)
+	- **alpha** (float)
 
 返回
 :::::::::::::::::::::

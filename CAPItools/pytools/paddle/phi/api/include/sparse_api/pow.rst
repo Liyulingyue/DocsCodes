@@ -11,10 +11,8 @@ paddle\phi\api\include\sparse_api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **factor** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **factor** (float)
 
 返回
 :::::::::::::::::::::

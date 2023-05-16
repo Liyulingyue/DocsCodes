@@ -11,14 +11,12 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **shape** (const IntArray&) - 
-	- **dtype** (DataType) - 
-	- **min** (const Scalar&) - 
-	- **max** (const Scalar&) - 
-	- **seed** (int) - 
-	- **place** (const Place&) - 
-
-
+	- **shape** (const IntArray&)
+	- **dtype** (DataType)
+	- **min** (const Scalar&)
+	- **max** (const Scalar&)
+	- **seed** (int)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

@@ -11,11 +11,9 @@ paddle\phi\api\include\sparse_api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **value** (const Scalar&) - 
-	- **dtype** (DataType) - 
-
-
+	- **x** (const Tensor&)
+	- **value** (const Scalar&)
+	- **dtype** (DataType)
 
 返回
 :::::::::::::::::::::

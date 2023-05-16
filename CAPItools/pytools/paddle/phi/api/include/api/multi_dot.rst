@@ -11,9 +11,7 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const std::vector<Tensor>&) - 
-
-
+	- **x** (const std::vector<Tensor>&)
 
 返回
 :::::::::::::::::::::

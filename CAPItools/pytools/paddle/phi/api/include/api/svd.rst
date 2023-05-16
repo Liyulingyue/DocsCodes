@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **full_matrices** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **full_matrices** (bool)
 
 返回
 :::::::::::::::::::::

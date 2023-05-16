@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **seg_num** (int) - 
-	- **shift_ratio** (float) - 
-	- **data_format** (const std::string&) - 
-
-
+	- **x** (const Tensor&)
+	- **seg_num** (int)
+	- **shift_ratio** (float)
+	- **data_format** (const std::string&)
 
 返回
 :::::::::::::::::::::

@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **axes** (const std::vector<int64_t>&) - 
-	- **normalization** (const std::string&) - 
-	- **forward** (bool) - 
-	- **last_dim_size** (int64_t) - 
-
-
+	- **x** (const Tensor&)
+	- **axes** (const std::vector<int64_t>&)
+	- **normalization** (const std::string&)
+	- **forward** (bool)
+	- **last_dim_size** (int64_t)
 
 返回
 :::::::::::::::::::::

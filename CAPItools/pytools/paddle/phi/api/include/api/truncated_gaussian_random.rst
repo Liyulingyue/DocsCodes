@@ -11,14 +11,12 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **shape** (const std::vector<int>&) - 
-	- **mean** (float) - 
-	- **std** (float) - 
-	- **seed** (int) - 
-	- **dtype** (DataType) - 
-	- **place** (const Place&) - 
-
-
+	- **shape** (const std::vector<int>&)
+	- **mean** (float)
+	- **std** (float)
+	- **seed** (int)
+	- **dtype** (DataType)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

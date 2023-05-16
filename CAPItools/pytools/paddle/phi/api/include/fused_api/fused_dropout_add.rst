@@ -11,16 +11,14 @@ paddle\phi\api\include\fused_api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **y** (const Tensor&) - 
-	- **seed_tensor** (const paddle::optional<Tensor>&) - 
-	- **p** (const Scalar&) - 
-	- **is_test** (bool) - 
-	- **mode** (const std::string&) - 
-	- **seed** (int) - 
-	- **fix_seed** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **y** (const Tensor&)
+	- **seed_tensor** (const paddle::optional<Tensor>&)
+	- **p** (const Scalar&)
+	- **is_test** (bool)
+	- **mode** (const std::string&)
+	- **seed** (int)
+	- **fix_seed** (bool)
 
 返回
 :::::::::::::::::::::

@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **paddings** (const std::vector<int>&) - 
-	- **pad_value** (const Scalar&) - 
-
-
+	- **x** (const Tensor&)
+	- **paddings** (const std::vector<int>&)
+	- **pad_value** (const Scalar&)
 
 返回
 :::::::::::::::::::::

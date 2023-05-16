@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **output** (Tensor&) - 
-	- **shape** (const std::vector<int>&) - 
-	- **dtype** (DataType) - 
-	- **values** (const std::vector<phi::Scalar>&) - 
-	- **place** (const Place&) - 
-
-
+	- **output** (Tensor&)
+	- **shape** (const std::vector<int>&)
+	- **dtype** (DataType)
+	- **values** (const std::vector<phi::Scalar>&)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

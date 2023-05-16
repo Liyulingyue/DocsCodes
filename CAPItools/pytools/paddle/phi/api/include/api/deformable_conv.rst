@@ -11,18 +11,16 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **offset** (const Tensor&) - 
-	- **filter** (const Tensor&) - 
-	- **mask** (const paddle::optional<Tensor>&) - 
-	- **strides** (const std::vector<int>&) - 
-	- **paddings** (const std::vector<int>&) - 
-	- **dilations** (const std::vector<int>&) - 
-	- **deformable_groups** (int) - 
-	- **groups** (int) - 
-	- **im2col_step** (int) - 
-
-
+	- **x** (const Tensor&)
+	- **offset** (const Tensor&)
+	- **filter** (const Tensor&)
+	- **mask** (const paddle::optional<Tensor>&)
+	- **strides** (const std::vector<int>&)
+	- **paddings** (const std::vector<int>&)
+	- **dilations** (const std::vector<int>&)
+	- **deformable_groups** (int)
+	- **groups** (int)
+	- **im2col_step** (int)
 
 返回
 :::::::::::::::::::::

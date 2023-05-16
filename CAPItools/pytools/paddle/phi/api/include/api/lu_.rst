@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (Tensor&) - 
-	- **pivot** (bool) - 
-
-
+	- **x** (Tensor&)
+	- **pivot** (bool)
 
 返回
 :::::::::::::::::::::

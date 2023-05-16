@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **label** (const Tensor&) - 
-	- **weight** (const paddle::optional<Tensor>&) - 
-	- **ignore_index** (int64_t) - 
-	- **reduction** (const std::string&) - 
-
-
+	- **input** (const Tensor&)
+	- **label** (const Tensor&)
+	- **weight** (const paddle::optional<Tensor>&)
+	- **ignore_index** (int64_t)
+	- **reduction** (const std::string&)
 
 返回
 :::::::::::::::::::::

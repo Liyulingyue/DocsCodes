@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **num_rows** (const Scalar&) - 
-	- **num_columns** (const Scalar&) - 
-	- **dtype** (DataType) - 
-	- **place** (const Place&) - 
-
-
+	- **num_rows** (const Scalar&)
+	- **num_columns** (const Scalar&)
+	- **dtype** (DataType)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

@@ -11,20 +11,18 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **out_size** (const paddle::optional<Tensor>&) - 
-	- **size_tensor** (const paddle::optional<std::vector<Tensor> >&) - 
-	- **scale_tensor** (const paddle::optional<Tensor>&) - 
-	- **data_layout** (const std::string&) - 
-	- **out_d** (int) - 
-	- **out_h** (int) - 
-	- **out_w** (int) - 
-	- **scale** (const std::vector<float>&) - 
-	- **interp_method** (const std::string&) - 
-	- **align_corners** (bool) - 
-	- **align_mode** (int) - 
-
-
+	- **x** (const Tensor&)
+	- **out_size** (const paddle::optional<Tensor>&)
+	- **size_tensor** (const paddle::optional<std::vector<Tensor> >&)
+	- **scale_tensor** (const paddle::optional<Tensor>&)
+	- **data_layout** (const std::string&)
+	- **out_d** (int)
+	- **out_h** (int)
+	- **out_w** (int)
+	- **scale** (const std::vector<float>&)
+	- **interp_method** (const std::string&)
+	- **align_corners** (bool)
+	- **align_mode** (int)
 
 返回
 :::::::::::::::::::::

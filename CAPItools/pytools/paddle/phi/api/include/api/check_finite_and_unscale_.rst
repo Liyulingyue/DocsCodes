@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (std::vector<Tensor>&) - 
-	- **scale** (const Tensor&) - 
-	- **input_found_infinite** (Tensor&) - 
-
-
+	- **x** (std::vector<Tensor>&)
+	- **scale** (const Tensor&)
+	- **input_found_infinite** (Tensor&)
 
 返回
 :::::::::::::::::::::

@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **row** (int) - 
-	- **col** (int) - 
-	- **offset** (int) - 
-	- **dtype** (DataType) - 
-	- **place** (const Place&) - 
-
-
+	- **row** (int)
+	- **col** (int)
+	- **offset** (int)
+	- **dtype** (DataType)
+	- **place** (const Place&)
 
 返回
 :::::::::::::::::::::

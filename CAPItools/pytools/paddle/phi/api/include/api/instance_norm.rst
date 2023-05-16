@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **scale** (const paddle::optional<Tensor>&) - 
-	- **bias** (const paddle::optional<Tensor>&) - 
-	- **epsilon** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **scale** (const paddle::optional<Tensor>&)
+	- **bias** (const paddle::optional<Tensor>&)
+	- **epsilon** (float)
 
 返回
 :::::::::::::::::::::

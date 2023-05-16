@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **paddings** (const IntArray&) - 
-	- **mode** (const std::string&) - 
-	- **pad_value** (float) - 
-	- **data_format** (const std::string&) - 
-
-
+	- **x** (const Tensor&)
+	- **paddings** (const IntArray&)
+	- **mode** (const std::string&)
+	- **pad_value** (float)
+	- **data_format** (const std::string&)
 
 返回
 :::::::::::::::::::::

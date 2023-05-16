@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **axis** (int) - 
-	- **descending** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **axis** (int)
+	- **descending** (bool)
 
 返回
 :::::::::::::::::::::

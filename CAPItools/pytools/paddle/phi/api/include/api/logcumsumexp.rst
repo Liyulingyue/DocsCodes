@@ -11,13 +11,11 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **axis** (int) - 
-	- **flatten** (bool) - 
-	- **exclusive** (bool) - 
-	- **reverse** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **axis** (int)
+	- **flatten** (bool)
+	- **exclusive** (bool)
+	- **reverse** (bool)
 
 返回
 :::::::::::::::::::::

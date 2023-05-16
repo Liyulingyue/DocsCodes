@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **atol_tensor** (const Tensor&) - 
-	- **use_default_tol** (bool) - 
-	- **hermitian** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **atol_tensor** (const Tensor&)
+	- **use_default_tol** (bool)
+	- **hermitian** (bool)
 
 返回
 :::::::::::::::::::::

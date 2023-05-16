@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **lower** (float) - 
-	- **upper** (float) - 
-	- **is_test** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **lower** (float)
+	- **upper** (float)
+	- **is_test** (bool)
 
 返回
 :::::::::::::::::::::

@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **segment_ids** (const Tensor&) - 
-	- **pooltype** (const std::string&) - 
-
-
+	- **x** (const Tensor&)
+	- **segment_ids** (const Tensor&)
+	- **pooltype** (const std::string&)
 
 返回
 :::::::::::::::::::::

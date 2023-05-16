@@ -11,15 +11,13 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **param** (Tensor&) - 
-	- **grad** (const Tensor&) - 
-	- **moment** (Tensor&) - 
-	- **learning_rate** (const Tensor&) - 
-	- **master_param** (paddle::optional<Tensor>&) - 
-	- **epsilon** (float) - 
-	- **multi_precision** (bool) - 
-
-
+	- **param** (Tensor&)
+	- **grad** (const Tensor&)
+	- **moment** (Tensor&)
+	- **learning_rate** (const Tensor&)
+	- **master_param** (paddle::optional<Tensor>&)
+	- **epsilon** (float)
+	- **multi_precision** (bool)
 
 返回
 :::::::::::::::::::::

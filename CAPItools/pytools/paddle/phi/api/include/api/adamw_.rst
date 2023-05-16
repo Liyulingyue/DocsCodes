@@ -11,27 +11,25 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **param** (Tensor&) - 
-	- **grad** (const Tensor&) - 
-	- **learning_rate** (const Tensor&) - 
-	- **moment1** (Tensor&) - 
-	- **moment2** (Tensor&) - 
-	- **beta1_pow** (Tensor&) - 
-	- **beta2_pow** (Tensor&) - 
-	- **master_param** (paddle::optional<Tensor>&) - 
-	- **skip_update** (const paddle::optional<Tensor>&) - 
-	- **beta1** (const Scalar&) - 
-	- **beta2** (const Scalar&) - 
-	- **epsilon** (const Scalar&) - 
-	- **lr_ratio** (float) - 
-	- **coeff** (float) - 
-	- **with_decay** (bool) - 
-	- **lazy_mode** (bool) - 
-	- **min_row_size_to_use_multithread** (int64_t) - 
-	- **multi_precision** (bool) - 
-	- **use_global_beta_pow** (bool) - 
-
-
+	- **param** (Tensor&)
+	- **grad** (const Tensor&)
+	- **learning_rate** (const Tensor&)
+	- **moment1** (Tensor&)
+	- **moment2** (Tensor&)
+	- **beta1_pow** (Tensor&)
+	- **beta2_pow** (Tensor&)
+	- **master_param** (paddle::optional<Tensor>&)
+	- **skip_update** (const paddle::optional<Tensor>&)
+	- **beta1** (const Scalar&)
+	- **beta2** (const Scalar&)
+	- **epsilon** (const Scalar&)
+	- **lr_ratio** (float)
+	- **coeff** (float)
+	- **with_decay** (bool)
+	- **lazy_mode** (bool)
+	- **min_row_size_to_use_multithread** (int64_t)
+	- **multi_precision** (bool)
+	- **use_global_beta_pow** (bool)
 
 返回
 :::::::::::::::::::::

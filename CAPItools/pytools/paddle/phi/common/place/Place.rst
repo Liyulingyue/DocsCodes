@@ -17,10 +17,6 @@ Place ( ) :
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 explicit Place ( AllocationType type , int8_t id , const std::string & dev_type = "" ) :
 '''''''''''
@@ -28,11 +24,9 @@ explicit Place ( AllocationType type , int8_t id , const std::string & dev_type 
 
 **参数**
 '''''''''''
-	- **type** (AllocationType) - 
-	- **id** (int8_t) - 
-	- **dev_type** (const std::string&) - 
-
-
+	- **type** (AllocationType)
+	- **id** (int8_t)
+	- **dev_type** (const std::string&)
 
 explicit Place ( AllocationType type , const std::string & dev_type = "" ) :
 '''''''''''
@@ -40,10 +34,8 @@ explicit Place ( AllocationType type , const std::string & dev_type = "" ) :
 
 **参数**
 '''''''''''
-	- **type** (AllocationType) - 
-	- **dev_type** (const std::string&) - 
-
-
+	- **type** (AllocationType)
+	- **dev_type** (const std::string&)
 
 Place ( paddle::PlaceType type ) ;
 '''''''''''
@@ -51,9 +43,7 @@ Place ( paddle::PlaceType type ) ;
 
 **参数**
 '''''''''''
-	- **type** (paddle::PlaceType) - 
-
-
+	- **type** (paddle::PlaceType)
 
 void Reset ( AllocationType type , int8_t device_id = 0 , const std::string & dev_type = "" ) noexcept {
 '''''''''''
@@ -61,17 +51,11 @@ void Reset ( AllocationType type , int8_t device_id = 0 , const std::string & de
 
 **参数**
 '''''''''''
-	- **type** (AllocationType) - 
-	- **device_id** (int8_t) - 
-	- **dev_type** (const std::string&) - 
-
-
+	- **type** (AllocationType)
+	- **device_id** (int8_t)
+	- **dev_type** (const std::string&)
 
 AllocationType GetType ( ) const {
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -83,19 +67,11 @@ int8_t GetDeviceId ( ) const {
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
 int8_t
 std::string GetDeviceType ( ) const {
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -107,19 +83,11 @@ std::string DebugString ( ) const ;
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
 std::string
 uint32_t HashValue ( ) const {
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -133,9 +101,7 @@ inline bool operator = = ( const Place & rhs ) const {
 
 **参数**
 '''''''''''
-	- **rhs** (const Place&) - 
-
-
+	- **rhs** (const Place&)
 
 **返回**
 '''''''''''
@@ -146,9 +112,7 @@ inline bool operator ! = ( const Place & rhs ) const {
 
 **参数**
 '''''''''''
-	- **rhs** (const Place&) - 
-
-
+	- **rhs** (const Place&)
 
 **返回**
 '''''''''''
@@ -159,9 +123,7 @@ inline bool operator<( const Place & rhs ) const {
 
 **参数**
 '''''''''''
-	- **rhs** (const Place&) - 
-
-
+	- **rhs** (const Place&)
 
 **返回**
 '''''''''''

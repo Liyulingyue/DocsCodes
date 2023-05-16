@@ -11,11 +11,9 @@ paddle\phi\api\include\sparse_api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **y** (const Tensor&) - 
-	- **mask** (const Tensor&) - 
-
-
+	- **x** (const Tensor&)
+	- **y** (const Tensor&)
+	- **mask** (const Tensor&)
 
 返回
 :::::::::::::::::::::

@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **eps** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **eps** (float)
 
 返回
 :::::::::::::::::::::

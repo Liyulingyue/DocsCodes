@@ -11,16 +11,14 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **label** (const Tensor&) - 
-	- **stat_pos** (const Tensor&) - 
-	- **stat_neg** (const Tensor&) - 
-	- **ins_tag_weight** (const paddle::optional<Tensor>&) - 
-	- **curve** (const std::string&) - 
-	- **num_thresholds** (int) - 
-	- **slide_steps** (int) - 
-
-
+	- **x** (const Tensor&)
+	- **label** (const Tensor&)
+	- **stat_pos** (const Tensor&)
+	- **stat_neg** (const Tensor&)
+	- **ins_tag_weight** (const paddle::optional<Tensor>&)
+	- **curve** (const std::string&)
+	- **num_thresholds** (int)
+	- **slide_steps** (int)
 
 返回
 :::::::::::::::::::::

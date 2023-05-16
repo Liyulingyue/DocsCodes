@@ -11,13 +11,11 @@ paddle\phi\api\include\fused_api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **dout** (const Tensor&) - 
-	- **dweight** (const paddle::optional<Tensor>&) - 
-	- **dbias** (const paddle::optional<Tensor>&) - 
-	- **multi_precision** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **dout** (const Tensor&)
+	- **dweight** (const paddle::optional<Tensor>&)
+	- **dbias** (const paddle::optional<Tensor>&)
+	- **multi_precision** (bool)
 
 返回
 :::::::::::::::::::::

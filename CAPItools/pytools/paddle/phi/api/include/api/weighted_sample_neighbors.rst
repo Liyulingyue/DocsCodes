@@ -11,15 +11,13 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **row** (const Tensor&) - 
-	- **colptr** (const Tensor&) - 
-	- **edge_weight** (const Tensor&) - 
-	- **input_nodes** (const Tensor&) - 
-	- **eids** (const paddle::optional<Tensor>&) - 
-	- **sample_size** (int) - 
-	- **return_eids** (bool) - 
-
-
+	- **row** (const Tensor&)
+	- **colptr** (const Tensor&)
+	- **edge_weight** (const Tensor&)
+	- **input_nodes** (const Tensor&)
+	- **eids** (const paddle::optional<Tensor>&)
+	- **sample_size** (int)
+	- **return_eids** (bool)
 
 返回
 :::::::::::::::::::::

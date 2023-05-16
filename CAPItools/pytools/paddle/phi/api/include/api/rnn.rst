@@ -11,21 +11,19 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **pre_state** (const std::vector<Tensor>&) - 
-	- **weight_list** (const std::vector<Tensor>&) - 
-	- **sequence_length** (const paddle::optional<Tensor>&) - 
-	- **dropout_state_in** (const Tensor&) - 
-	- **dropout_prob** (float) - 
-	- **is_bidirec** (bool) - 
-	- **input_size** (int) - 
-	- **hidden_size** (int) - 
-	- **num_layers** (int) - 
-	- **mode** (const std::string&) - 
-	- **seed** (int) - 
-	- **is_test** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **pre_state** (const std::vector<Tensor>&)
+	- **weight_list** (const std::vector<Tensor>&)
+	- **sequence_length** (const paddle::optional<Tensor>&)
+	- **dropout_state_in** (const Tensor&)
+	- **dropout_prob** (float)
+	- **is_bidirec** (bool)
+	- **input_size** (int)
+	- **hidden_size** (int)
+	- **num_layers** (int)
+	- **mode** (const std::string&)
+	- **seed** (int)
+	- **is_test** (bool)
 
 返回
 :::::::::::::::::::::

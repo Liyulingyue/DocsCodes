@@ -11,15 +11,13 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **input** (const Tensor&) - 
-	- **label** (const Tensor&) - 
-	- **soft_label** (bool) - 
-	- **use_softmax** (bool) - 
-	- **numeric_stable_mode** (bool) - 
-	- **ignore_index** (int) - 
-	- **axis** (int) - 
-
-
+	- **input** (const Tensor&)
+	- **label** (const Tensor&)
+	- **soft_label** (bool)
+	- **use_softmax** (bool)
+	- **numeric_stable_mode** (bool)
+	- **ignore_index** (int)
+	- **axis** (int)
 
 返回
 :::::::::::::::::::::

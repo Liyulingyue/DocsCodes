@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **sorted_sequence** (const Tensor&) - 
-	- **values** (const Tensor&) - 
-	- **out_int32** (bool) - 
-	- **right** (bool) - 
-
-
+	- **sorted_sequence** (const Tensor&)
+	- **values** (const Tensor&)
+	- **out_int32** (bool)
+	- **right** (bool)
 
 返回
 :::::::::::::::::::::

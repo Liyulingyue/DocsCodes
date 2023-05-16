@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **p** (float) - 
-	- **axis** (int) - 
-	- **max_norm** (float) - 
-
-
+	- **x** (const Tensor&)
+	- **p** (float)
+	- **axis** (int)
+	- **max_norm** (float)
 
 返回
 :::::::::::::::::::::

@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **start_axis** (int) - 
-	- **stop_axis** (int) - 
-
-
+	- **x** (const Tensor&)
+	- **start_axis** (int)
+	- **stop_axis** (int)
 
 返回
 :::::::::::::::::::::

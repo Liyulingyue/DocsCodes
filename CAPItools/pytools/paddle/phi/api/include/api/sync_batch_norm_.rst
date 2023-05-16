@@ -11,19 +11,17 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **mean** (Tensor&) - 
-	- **variance** (Tensor&) - 
-	- **scale** (const Tensor&) - 
-	- **bias** (const Tensor&) - 
-	- **is_test** (bool) - 
-	- **momentum** (float) - 
-	- **epsilon** (float) - 
-	- **data_layout** (const std::string&) - 
-	- **use_global_stats** (bool) - 
-	- **trainable_statistics** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **mean** (Tensor&)
+	- **variance** (Tensor&)
+	- **scale** (const Tensor&)
+	- **bias** (const Tensor&)
+	- **is_test** (bool)
+	- **momentum** (float)
+	- **epsilon** (float)
+	- **data_layout** (const std::string&)
+	- **use_global_stats** (bool)
+	- **trainable_statistics** (bool)
 
 返回
 :::::::::::::::::::::

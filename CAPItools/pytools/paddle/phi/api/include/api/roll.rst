@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **shifts** (const IntArray&) - 
-	- **axis** (const std::vector<int64_t>&) - 
-
-
+	- **x** (const Tensor&)
+	- **shifts** (const IntArray&)
+	- **axis** (const std::vector<int64_t>&)
 
 返回
 :::::::::::::::::::::

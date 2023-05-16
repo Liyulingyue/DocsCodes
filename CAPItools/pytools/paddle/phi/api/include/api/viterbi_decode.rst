@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **potentials** (const Tensor&) - 
-	- **transition_params** (const Tensor&) - 
-	- **lengths** (const Tensor&) - 
-	- **include_bos_eos_tag** (bool) - 
-
-
+	- **potentials** (const Tensor&)
+	- **transition_params** (const Tensor&)
+	- **lengths** (const Tensor&)
+	- **include_bos_eos_tag** (bool)
 
 返回
 :::::::::::::::::::::

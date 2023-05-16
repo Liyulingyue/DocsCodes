@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **inputs** (const std::vector<Tensor>&) - 
-	- **index** (const Tensor&) - 
-
-
+	- **inputs** (const std::vector<Tensor>&)
+	- **index** (const Tensor&)
 
 返回
 :::::::::::::::::::::

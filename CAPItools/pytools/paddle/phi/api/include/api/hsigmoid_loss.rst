@@ -11,16 +11,14 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **label** (const Tensor&) - 
-	- **w** (const Tensor&) - 
-	- **bias** (const paddle::optional<Tensor>&) - 
-	- **path** (const paddle::optional<Tensor>&) - 
-	- **code** (const paddle::optional<Tensor>&) - 
-	- **num_classes** (int) - 
-	- **is_sparse** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **label** (const Tensor&)
+	- **w** (const Tensor&)
+	- **bias** (const paddle::optional<Tensor>&)
+	- **path** (const paddle::optional<Tensor>&)
+	- **code** (const paddle::optional<Tensor>&)
+	- **num_classes** (int)
+	- **is_sparse** (bool)
 
 返回
 :::::::::::::::::::::

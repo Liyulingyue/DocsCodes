@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **real** (const Tensor&) - 
-	- **imag** (const Tensor&) - 
-
-
+	- **real** (const Tensor&)
+	- **imag** (const Tensor&)
 
 返回
 :::::::::::::::::::::

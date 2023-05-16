@@ -11,12 +11,10 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **y** (const Tensor&) - 
-	- **unpack_ludata** (bool) - 
-	- **unpack_pivots** (bool) - 
-
-
+	- **x** (const Tensor&)
+	- **y** (const Tensor&)
+	- **unpack_ludata** (bool)
+	- **unpack_pivots** (bool)
 
 返回
 :::::::::::::::::::::

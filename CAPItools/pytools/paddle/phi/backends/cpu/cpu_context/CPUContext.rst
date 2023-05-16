@@ -17,10 +17,6 @@ CPUContext ( ) ;
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 CPUContext ( CPUContext & & ) ;
 '''''''''''
@@ -28,9 +24,7 @@ CPUContext ( CPUContext & & ) ;
 
 **参数**
 '''''''''''
-	- **&** (CPUContext&) - 
-
-
+	- **&** (CPUContext&)
 
 CPUContext & operator = ( CPUContext & & ) ;
 '''''''''''
@@ -38,9 +32,7 @@ CPUContext & operator = ( CPUContext & & ) ;
 
 **参数**
 '''''''''''
-	- **&** (CPUContext&) - 
-
-
+	- **&** (CPUContext&)
 
 **返回**
 '''''''''''
@@ -51,24 +43,14 @@ explicit CPUContext ( const Place & ) ;
 
 **参数**
 '''''''''''
-	- **&** (const Place) - 
-
-
+	- **&** (const Place)
 
 virtual ~CPUContext ( ) ;
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 Eigen::DefaultDevice * eigen_device ( ) const ;
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 
@@ -80,19 +62,11 @@ const Place & GetPlace ( ) const override ;
 '''''''''''
 
 
-**参数**
-'''''''''''
-
-
 
 **返回**
 '''''''''''
 Place
 static const char * name ( ) {
-'''''''''''
-
-
-**参数**
 '''''''''''
 
 

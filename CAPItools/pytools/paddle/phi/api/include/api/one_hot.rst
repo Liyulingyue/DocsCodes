@@ -11,10 +11,8 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **num_classes** (const Scalar&) - 
-
-
+	- **x** (const Tensor&)
+	- **num_classes** (const Scalar&)
 
 返回
 :::::::::::::::::::::

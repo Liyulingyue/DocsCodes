@@ -11,11 +11,9 @@ paddle\phi\api\include\api.h
 
 参数
 :::::::::::::::::::::
-	- **x** (const Tensor&) - 
-	- **min** (const Scalar&) - 
-	- **max** (const Scalar&) - 
-
-
+	- **x** (const Tensor&)
+	- **min** (const Scalar&)
+	- **max** (const Scalar&)
 
 返回
 :::::::::::::::::::::
