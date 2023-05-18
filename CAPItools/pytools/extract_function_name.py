@@ -5,8 +5,6 @@ import os
 from utils_helper import func_helper, class_helper
 from utils import get_PADDLE_API_class, get_PADDLE_API_func
 
-LANGUAGE = "cn"
-
 # TODO 通过已安装的 paddle 来查找 include
 # import paddle
 # import inspect
@@ -35,7 +33,7 @@ def analysis_file(path):
 
 
 # 生成文件
-def generate_docs(all_funcs, all_class, cpp2py_api_list):
+def generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE = "cn"):
     for item in all_funcs:
         path = item["filename"].replace("../", "").replace(".h", "")
         if not os.path.exists("./" + path):
@@ -75,9 +73,11 @@ def cpp2py(data: dict):
 
 
 if __name__ == "__main__":
+    LANGUAGE = "cn"
     all_funcs = []
     all_class = []
     cpp2py_api_list = []
+    overview_list = []
     root_dir = '../paddle'
     for home, dirs, files in os.walk(root_dir):
         for file_name in files:
@@ -94,10 +94,18 @@ if __name__ == "__main__":
 
             print("Parsing: ", file_path)
             data = analysis_file(file_path)
-            all_funcs.extend(get_PADDLE_API_func(data))
-            all_class.extend(get_PADDLE_API_class(data))
 
-    generate_docs(all_funcs, all_class, cpp2py_api_list)
+            # 信息抽取
+            current_func = get_PADDLE_API_func(data)
+            current_class = get_PADDLE_API_class(data)
+
+            # 信息记录
+            all_funcs.extend(current_func)
+            all_class.extend(current_class)
+            overview_list.append({'h_file':file_path,'class':current_class,'function':current_func})
+
+    generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE)
+
     print("PADDLE_API func count: ", len(all_funcs))
     print("PADDLE_API class count: ", len(all_class))
     print("cpp2py api count: ", len(cpp2py_api_list))
