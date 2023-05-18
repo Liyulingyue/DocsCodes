@@ -1,6 +1,3 @@
-LANGUAGE = "cn"
-
-
 # 获取方法中的参数parameters
 def get_parameters(parameters):
     # parameter_api = ""  # 这里解析是给api使用的 (暂时不用)
@@ -17,19 +14,22 @@ def get_parameters(parameters):
             parameter_type_tmp += "*"
         # parameter_api += f" {i['name']}, "
         desc = i.get('desc', '').replace('  ', '')
-        parameter_dict.append({'name':i['name'],
-                               'type':parameter_type_tmp,
-                               'intro':desc})
+        parameter_dict.append({'name': i['name'],
+                               'type': parameter_type_tmp,
+                               'intro': desc})
         # parameter += f"\t- **{i['name']}** ({parameter_type_tmp}) - {desc}\n"
     # 去掉末尾的逗号
     # parameter_api = parameter_api[:-2]
     # return parameter, parameter_api
     return parameter_dict
 
+
 class func_helper(object):
-    def __init__(self, function_dict):
+    def __init__(self, function_dict, cpp2py_api_list, language):
         super(func_helper, self).__init__()
         self.function_dict = function_dict
+        self.cpp2py_api_list = cpp2py_api_list
+        self.LANGUAGE = language
         self.decode()
 
     def decode(self):
@@ -38,7 +38,9 @@ class func_helper(object):
         # 解析api
         self.api = self.function_dict["debug"].replace("PADDLE_API ", "")
         self.namespace = self.function_dict["namespace"].replace("::", "_")
-        self.doxygen = self.function_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
+        self.doxygen = self.function_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
+                                                                                                          "").replace(
+            "  ", "")
         # TODO 如果使用已安装的 paddle 包需要调整
         self.file_path = self.function_dict["filename"].replace("../", "")
 
@@ -51,17 +53,24 @@ class func_helper(object):
 
     def create_file(self, save_dir):
         with open(save_dir, 'w', encoding='utf8') as f:
-            head_text = f'.. _{LANGUAGE}_api_{self.namespace}{self.func_name}:\n' \
+            head_text = f'.. _{self.LANGUAGE}_api_{self.namespace}{self.func_name}:\n' \
                         f'\n'
             f.write(head_text)
 
-            name_and_intro_text = f'{self.func_name}\n'\
+            name_and_intro_text = f'{self.func_name}\n' \
                                   f'-------------------------------\n' \
                                   f'\n' \
                                   f'..cpp: function::{self.api}\n' \
                                   f'{self.doxygen}' \
                                   f'\n'
             f.write(name_and_intro_text)
+
+            if self.func_name in self.cpp2py_api_list:
+                cpp2py_text = f'本 API 与 Python API 对齐，详细用法可参考链接：' \
+                              f'[paddle.{self.func_name}]' \
+                              f'(https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/{self.func_name}_{self.LANGUAGE}.html)' \
+                              f'\n\n'
+                f.write(cpp2py_text)
 
             define_path_text = f'定义目录\n' \
                                f':::::::::::::::::::::\n' \
@@ -72,7 +81,7 @@ class func_helper(object):
             if len(self.parameter_dict) != 0:
                 parameters_text = f'参数\n' \
                                   f':::::::::::::::::::::'
-                f.write(parameters_text+'\n')
+                f.write(parameters_text + '\n')
                 for param in self.parameter_dict:
                     param_text = f"\t- **{param['name']}**"
                     if param['type'] != "":
@@ -90,10 +99,12 @@ class func_helper(object):
             if 'void' not in self.returns:
                 f.write(return_text)
 
+
 class class_helper(object):
-    def __init__(self, class_dict):
+    def __init__(self, class_dict, language):
         super(class_helper, self).__init__()
         self.class_dict = class_dict
+        self.LANGUAGE = language
         self.decode()
 
     def decode(self):
@@ -101,7 +112,9 @@ class class_helper(object):
         self.class_name = self.class_dict["name"].replace("PADDLE_API", "")
         # TODO 如果使用已安装的 paddle 包需要调整
         self.file_path = self.class_dict["filename"].replace("../", "")
-        self.doxygen = self.class_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ", "")
+        self.doxygen = self.class_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
+                                                                                                       "").replace("  ",
+                                                                                                                   "")
         # 初始化函数
         # 避免空函数解析
         self.init_func = self.class_name
@@ -115,7 +128,9 @@ class class_helper(object):
 
             function_name = ith_function['debug']
             # 获取描述
-            funcs_doxygen = ith_function.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*", "").replace("  ","")
+            funcs_doxygen = ith_function.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
+                                                                                                         "").replace(
+                "  ", "")
             # 解析参数
             if len(ith_function["parameters"]) != 0:
                 parameter_dict = get_parameters(ith_function["parameters"])
@@ -124,20 +139,20 @@ class class_helper(object):
             # 获取返回值
             returns = ith_function["returns"].replace("PADDLE_API ", "")
 
-            self.functions_infor.append({'name':function_name,
-                                        'doxygen':funcs_doxygen,
-                                        'parameter':parameter_dict,
-                                        'returns':returns})
+            self.functions_infor.append({'name': function_name,
+                                         'doxygen': funcs_doxygen,
+                                         'parameter': parameter_dict,
+                                         'returns': returns})
 
     def create_file(self, save_dir):
         with open(save_dir, 'w', encoding='utf8') as f:
-            head_text = f'.. _cn_api_{self.class_name}:\n' \
+            head_text = f'.. _{self.LANGUAGE}_api_{self.class_name}:\n' \
                         f'\n'
             f.write(head_text)
 
             name_and_intro_text = f'{self.class_name}[源代码](https://github.com/PaddlePaddle/Paddle/blob/{self.branch}/{self.file_path})\n' \
                                   f'-------------------------------\n' \
-                                  f'\n'\
+                                  f'\n' \
                                   f'.. cpp:class:: {self.init_func}\n' \
                                   f'{self.doxygen}\n' \
                                   f'\n'

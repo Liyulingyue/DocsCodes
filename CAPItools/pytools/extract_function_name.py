@@ -4,6 +4,8 @@ import os
 
 from configure import func_helper, class_helper
 
+LANGUAGE = "cn"
+
 # TODO 通过已安装的 paddle 来查找 include
 # import paddle
 # import inspect
@@ -21,7 +23,6 @@ from configure import func_helper, class_helper
 PADDLE_API phi::CUDAStream* GetCurrentCUDAStream(const phi::Place& place);
 #endif
 """
-
 
 
 # 获取存在 PADDLE_API func 数组的名称
@@ -56,18 +57,18 @@ def analysis_file(path):
 
 
 # 生成文件
-def generate_docs(all_funcs, all_class):
+def generate_docs(all_funcs, all_class, cpp2py_api_list):
     for item in all_funcs:
         path = item["filename"].replace("../", "").replace(".h", "")
         if not os.path.exists("./" + path):
             os.makedirs("./" + path)
 
-        # TODO 这个反斜杠需要单独处理看看
+        # 这个反斜杠需要单独处理, 在 linux 下
         func_name = item["name"].replace("/", "")
-        rst_dir = os.path.join(".", path, func_name+".rst")
-        # avoid a filename such as operate*.rst
+        rst_dir = os.path.join(".", path, func_name + ".rst")
+        # avoid a filename such as operate*.rst, only windows
         try:
-            helper = func_helper(item)
+            helper = func_helper(item, cpp2py_api_list, LANGUAGE)
             helper.create_file(rst_dir)
         except:
             print('FAULT GENERATE:' + rst_dir)
@@ -76,31 +77,39 @@ def generate_docs(all_funcs, all_class):
         path = item["filename"].replace("../", "").replace(".h", "")
         if not os.path.exists("./" + path):
             os.makedirs("./" + path)
-        # text = generate_class_doc_file(i)
 
         func_name = item["name"].replace("PADDLE_API", "")
-        rst_dir = os.path.join(".", path, func_name+".rst")
+        rst_dir = os.path.join(".", path, func_name + ".rst")
         try:
-            helper = class_helper(item)
+            helper = class_helper(item, LANGUAGE)
             helper.create_file(rst_dir)
-            # with open(rst_dir, "w") as f:
-            #     f.write(text)
         except:
             print('FAULT GENERATE:' + rst_dir)
 
 
-        # with open(rst_dir, "w") as f:
-        #     f.write(text)
+# cpp 对应 python api
+def cpp2py(data: dict):
+    cpp2py_api_list = []
+    for i in data["using"]:
+        cpp2py_api_list.append(i.replace("paddle::", ""))
+
+    return cpp2py_api_list
 
 
 if __name__ == "__main__":
     all_funcs = []
     all_class = []
+    cpp2py_api_list = []
     root_dir = '../paddle'
     for home, dirs, files in os.walk(root_dir):
         for file_name in files:
-            # 跳过文件中未包含PADDLE_API
             file_path = os.path.join(home, file_name)
+            # 处理 cpp 和 py api对应的文件
+            if file_name == "tensor_compat.h":
+                cpp2py_data = analysis_file(file_path)
+                cpp2py_api_list = cpp2py(cpp2py_data).copy()
+
+            # 跳过文件中未包含PADDLE_API
             with open(file_path, encoding='utf8') as f:
                 if 'PADDLE_API ' not in f.read():
                     continue
@@ -110,6 +119,7 @@ if __name__ == "__main__":
             all_funcs.extend(get_PADDLE_API_func(data))
             all_class.extend(get_PADDLE_API_class(data))
 
-    generate_docs(all_funcs, all_class)
+    generate_docs(all_funcs, all_class, cpp2py_api_list)
     print("PADDLE_API func count: ", len(all_funcs))
     print("PADDLE_API class count: ", len(all_class))
+    print("cpp2py api count: ", len(cpp2py_api_list))
