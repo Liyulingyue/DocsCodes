@@ -106,6 +106,12 @@ if __name__ == "__main__":
 
     generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE)
 
+    # TODO: delete the try-except after every thing is prepare
+    try:
+        generate_overview(all_funcs, all_class, cpp2py_api_list, LANGUAGE)
+    except:
+        pass
+
     print("PADDLE_API func count: ", len(all_funcs))
     print("PADDLE_API class count: ", len(all_class))
     print("cpp2py api count: ", len(cpp2py_api_list))
