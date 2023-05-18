@@ -23,7 +23,6 @@ PADDLE_API phi::CUDAStream* GetCurrentCUDAStream(const phi::Place& place);
 """
 
 
-
 # 获取存在 PADDLE_API func 数组的名称
 def get_PADDLE_API_func(data: dict):
     result = []
@@ -64,7 +63,7 @@ def generate_docs(all_funcs, all_class):
 
         # TODO 这个反斜杠需要单独处理看看
         func_name = item["name"].replace("/", "")
-        rst_dir = os.path.join(".", path, func_name+".rst")
+        rst_dir = os.path.join(".", path, func_name + ".rst")
         # avoid a filename such as operate*.rst
         try:
             helper = func_helper(item)
@@ -79,7 +78,7 @@ def generate_docs(all_funcs, all_class):
         # text = generate_class_doc_file(i)
 
         func_name = item["name"].replace("PADDLE_API", "")
-        rst_dir = os.path.join(".", path, func_name+".rst")
+        rst_dir = os.path.join(".", path, func_name + ".rst")
         try:
             helper = class_helper(item)
             helper.create_file(rst_dir)
@@ -87,7 +86,6 @@ def generate_docs(all_funcs, all_class):
             #     f.write(text)
         except:
             print('FAULT GENERATE:' + rst_dir)
-
 
         # with open(rst_dir, "w") as f:
         #     f.write(text)
