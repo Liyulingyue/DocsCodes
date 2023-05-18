@@ -2,7 +2,7 @@ import CppHeaderParser
 import json
 import os
 
-from configure import func_helper, class_helper
+from utils_helper import func_helper, class_helper
 
 LANGUAGE = "cn"
 
@@ -65,7 +65,7 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list):
 
         # 这个反斜杠需要单独处理, 在 linux 下
         func_name = item["name"].replace("/", "")
-        rst_dir = os.path.join(".", path, func_name + ".rst")
+        rst_dir = os.path.join(".", LANGUAGE, path, func_name + ".rst")
         # avoid a filename such as operate*.rst, only windows
         try:
             helper = func_helper(item, cpp2py_api_list, LANGUAGE)
@@ -79,7 +79,7 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list):
             os.makedirs("./" + path)
 
         func_name = item["name"].replace("PADDLE_API", "")
-        rst_dir = os.path.join(".", path, func_name + ".rst")
+        rst_dir = os.path.join(".", LANGUAGE, path, func_name + ".rst")
         try:
             helper = class_helper(item, LANGUAGE)
             helper.create_file(rst_dir)
