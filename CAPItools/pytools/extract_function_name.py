@@ -3,6 +3,7 @@ import json
 import os
 
 from utils_helper import func_helper, class_helper
+from utils import get_PADDLE_API_class, get_PADDLE_API_func
 
 LANGUAGE = "cn"
 
@@ -23,29 +24,6 @@ LANGUAGE = "cn"
 PADDLE_API phi::CUDAStream* GetCurrentCUDAStream(const phi::Place& place);
 #endif
 """
-
-
-# 获取存在 PADDLE_API func 数组的名称
-def get_PADDLE_API_func(data: dict):
-    result = []
-    for i in data["functions"]:
-        if 'PADDLE_API' in i['debug']:
-            result.append(i)
-    return result
-
-
-# 获取存在 PADDLE_API class 数组的名称
-def get_PADDLE_API_class(data: dict):
-    result = []
-    for classname in data["classes"]:
-        # TODO 目前没有 PADDLE_API 是 struct 的
-        if data["classes"][classname]["declaration_method"] == "struct":
-            continue
-
-        # TODO 这里需要处理一下, 因为类名和 PADDLE_API 会粘在一起, 例: PADDLE_APIDeviceContextPool
-        if "PADDLE_API" in classname:
-            result.append(data["classes"][classname])
-    return result
 
 
 # 获取namespace
