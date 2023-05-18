@@ -2,22 +2,20 @@
 欢迎使用飞桨框架（PaddlePaddle），PaddlePaddle 是一个易用、高效、灵活、可扩展的深度学习框架，致力于让深度学习技术的创新与应用更简单。
 在本版本中，飞桨框架对 C++ 接口做了许多优化，您可以参考下表来了解飞桨框架最新版的 C++ 目录结构与说明。更详细的说明，请参见 版本说明 。此外，您可参考 PaddlePaddle 的 GitHub 了解详情。
 
-## ../paddle\fluid\platform\init_phi.h
+## [init_phi.h](../paddle\fluid\platform\init_phi.h)
 ### classes
-PADDLE_APIInitPhi
-### functions
+InitPhi
 
-## ../paddle\phi\api\ext\op_meta_info.h
+## [op_meta_info.h](../paddle\phi\api\ext\op_meta_info.h)
 ### classes
-PADDLE_APICustomOpKernelContext
-PADDLE_APIOpMetaInfo
-PADDLE_APIOpMetaInfoMap
-PADDLE_APIOpMetaInfoBuilder
+CustomOpKernelContext
+OpMetaInfo
+OpMetaInfoMap
+OpMetaInfoBuilder
 ### functions
 AssignTensorImpl
 
-## ../paddle\phi\api\include\api.h
-### classes
+## [api.h](../paddle\phi\api\include\api.h)
 ### functions
 accuracy
 acos
@@ -407,25 +405,21 @@ yolo_loss
 zeros
 zeros_like
 
-## ../paddle\phi\api\include\context_pool.h
+## [context_pool.h](../paddle\phi\api\include\context_pool.h)
 ### classes
-PADDLE_APIDeviceContextPool
+DeviceContextPool
 ### functions
 GetAllocator
 GetCurrentCUDAStream
 
-## ../paddle\phi\api\include\dll_decl.h
-### classes
-### functions
+## [dll_decl.h](../paddle\phi\api\include\dll_decl.h)
 
-## ../paddle\phi\api\include\fused_api.h
-### classes
+## [fused_api.h](../paddle\phi\api\include\fused_api.h)
 ### functions
 fused_dropout_add
 fused_linear_param_grad_add
 
-## ../paddle\phi\api\include\sparse_api.h
-### classes
+## [sparse_api.h](../paddle\phi\api\include\sparse_api.h)
 ### functions
 abs
 acos
@@ -474,48 +468,43 @@ matmul
 maxpool
 mv
 
-## ../paddle\phi\api\include\strings_api.h
-### classes
+## [strings_api.h](../paddle\phi\api\include\strings_api.h)
 ### functions
 empty
 empty_like
 lower
 upper
 
-## ../paddle\phi\api\include\tensor.h
+## [tensor.h](../paddle\phi\api\include\tensor.h)
 ### classes
-PADDLE_APITensor
+Tensor
 ### functions
 operator+
 operator-
 operator*
 operator/
 
-## ../paddle\phi\api\include\tensor_utils.h
-### classes
+## [tensor_utils.h](../paddle\phi\api\include\tensor_utils.h)
 ### functions
 from_blob
 
-## ../paddle\phi\backends\cpu\cpu_context.h
+## [cpu_context.h](../paddle\phi\backends\cpu\cpu_context.h)
 ### classes
-PADDLE_APICPUContext
-### functions
+CPUContext
 
-## ../paddle\phi\backends\gpu\gpu_context.h
+## [gpu_context.h](../paddle\phi\backends\gpu\gpu_context.h)
 ### classes
-PADDLE_APIGPUContext
-### functions
+GPUContext
 
-## ../paddle\phi\common\place.h
+## [place.h](../paddle\phi\common\place.h)
 ### classes
-PADDLE_APIPlace
+Place
 ### functions
 operator==
 operator==
 DefaultGPUPlace
 
-## ../paddle\phi\core\device_context.h
+## [device_context.h](../paddle\phi\core\device_context.h)
 ### classes
-PADDLE_APIDeviceContext
-### functions
+DeviceContext
 
