@@ -1,3 +1,5 @@
+import os
+
 from utils import get_parameters
 
 
@@ -175,5 +177,32 @@ class class_helper(object):
                                           f"\n"
                         f.write(fun_return_text)
 
-def generate_overview(overview_list, LANGUAGE):
-    pass
+def generate_overview(overview_list, root_dir, LANGUAGE):
+    dir_path = os.path.join(".", LANGUAGE)
+    if not os.path.exists(dir_path):
+        os.makedirs(dir_path)
+
+    rst_dir = os.path.join(dir_path, 'index.rst')
+    with open(rst_dir, 'w', encoding='utf8') as f:
+        head_text = f'# C++ 文档\n' \
+                    f'欢迎使用飞桨框架（PaddlePaddle），PaddlePaddle 是一个易用、高效、灵活、可扩展的深度学习框架，致力于让深度学习技术的创新与应用更简单。\n' \
+                    f'在本版本中，飞桨框架对 C++ 接口做了许多优化，您可以参考下表来了解飞桨框架最新版的 C++ 目录结构与说明。更详细的说明，请参见 版本说明 。此外，您可参考 PaddlePaddle 的 GitHub 了解详情。\n' \
+                    f'\n'
+        f.write(head_text)
+
+        for h_dict in overview_list:
+            h_head_text = f'## {h_dict["h_file"]}\n'
+            f.write(h_head_text)
+
+            # write class
+            h_class_text = f'### classes\n'
+            f.write(h_class_text)
+            for class_name in h_dict["class"]:
+                f.write(class_name['name']+'\n')
+
+            # write functions
+            h_function_text = f'### functions\n'
+            f.write(h_function_text)
+            for function_name in h_dict["function"]:
+                f.write(function_name['name']+'\n')
+            f.write('\n')

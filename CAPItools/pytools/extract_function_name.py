@@ -94,6 +94,7 @@ if __name__ == "__main__":
                 if 'PADDLE_API ' not in f.read():
                     continue
 
+
             print("Parsing: ", file_path)
             data = analysis_file(file_path)
 
@@ -110,9 +111,9 @@ if __name__ == "__main__":
 
     # TODO: delete the try-except after every thing is prepare
     try:
-        generate_overview(overview_list, LANGUAGE)
+        generate_overview(overview_list, root_dir, LANGUAGE)
     except:
-        pass
+        print('index error')
 
     print("PADDLE_API func count: ", len(all_funcs))
     print("PADDLE_API class count: ", len(all_class))
