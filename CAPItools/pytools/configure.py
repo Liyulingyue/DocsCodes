@@ -1,6 +1,3 @@
-LANGUAGE = "cn"
-
-
 # 获取方法中的参数parameters
 def get_parameters(parameters):
     # parameter_api = ""  # 这里解析是给api使用的 (暂时不用)
@@ -28,9 +25,11 @@ def get_parameters(parameters):
 
 
 class func_helper(object):
-    def __init__(self, function_dict):
+    def __init__(self, function_dict, cpp2py_api_list, language):
         super(func_helper, self).__init__()
         self.function_dict = function_dict
+        self.cpp2py_api_list = cpp2py_api_list
+        self.LANGUAGE = language
         self.decode()
 
     def decode(self):
@@ -54,7 +53,7 @@ class func_helper(object):
 
     def create_file(self, save_dir):
         with open(save_dir, 'w', encoding='utf8') as f:
-            head_text = f'.. _{LANGUAGE}_api_{self.namespace}{self.func_name}:\n' \
+            head_text = f'.. _{self.LANGUAGE}_api_{self.namespace}{self.func_name}:\n' \
                         f'\n'
             f.write(head_text)
 
@@ -65,6 +64,13 @@ class func_helper(object):
                                   f'{self.doxygen}' \
                                   f'\n'
             f.write(name_and_intro_text)
+
+            if self.func_name in self.cpp2py_api_list:
+                cpp2py_text = f'本 API 与 Python API 对齐，详细用法可参考链接：' \
+                              f'[paddle.{self.func_name}]' \
+                              f'(https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/{self.func_name}_{self.LANGUAGE}.html)' \
+                              f'\n\n'
+                f.write(cpp2py_text)
 
             define_path_text = f'定义目录\n' \
                                f':::::::::::::::::::::\n' \
@@ -95,9 +101,10 @@ class func_helper(object):
 
 
 class class_helper(object):
-    def __init__(self, class_dict):
+    def __init__(self, class_dict, language):
         super(class_helper, self).__init__()
         self.class_dict = class_dict
+        self.LANGUAGE = language
         self.decode()
 
     def decode(self):
@@ -139,7 +146,7 @@ class class_helper(object):
 
     def create_file(self, save_dir):
         with open(save_dir, 'w', encoding='utf8') as f:
-            head_text = f'.. _cn_api_{self.class_name}:\n' \
+            head_text = f'.. _{self.LANGUAGE}_api_{self.class_name}:\n' \
                         f'\n'
             f.write(head_text)
 
