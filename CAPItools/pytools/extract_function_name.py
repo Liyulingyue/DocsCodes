@@ -2,7 +2,7 @@ import CppHeaderParser
 import json
 import os
 
-from utils_helper import func_helper, class_helper
+from utils_helper import func_helper, class_helper, generate_overview
 from utils import get_PADDLE_API_class, get_PADDLE_API_func
 
 # TODO 通过已安装的 paddle 来查找 include
@@ -36,8 +36,9 @@ def analysis_file(path):
 def generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE = "cn"):
     for item in all_funcs:
         path = item["filename"].replace("../", "").replace(".h", "")
-        if not os.path.exists("./" + path):
-            os.makedirs("./" + path)
+        dir_path = os.path.join(".", LANGUAGE, path)
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
 
         # 这个反斜杠需要单独处理, 在 linux 下
         func_name = item["name"].replace("/", "")
@@ -51,8 +52,9 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE = "cn"):
 
     for item in all_class:
         path = item["filename"].replace("../", "").replace(".h", "")
-        if not os.path.exists("./" + path):
-            os.makedirs("./" + path)
+        dir_path = os.path.join(".", LANGUAGE, path)
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
 
         func_name = item["name"].replace("PADDLE_API", "")
         rst_dir = os.path.join(".", LANGUAGE, path, func_name + ".rst")
@@ -108,7 +110,7 @@ if __name__ == "__main__":
 
     # TODO: delete the try-except after every thing is prepare
     try:
-        generate_overview(all_funcs, all_class, cpp2py_api_list, LANGUAGE)
+        generate_overview(overview_list, LANGUAGE)
     except:
         pass
 

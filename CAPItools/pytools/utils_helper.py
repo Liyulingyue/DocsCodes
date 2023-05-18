@@ -174,3 +174,6 @@ class class_helper(object):
                                           f"{fun_infor['returns']}" \
                                           f"\n"
                         f.write(fun_return_text)
+
+def generate_overview(overview_list, LANGUAGE):
+    pass
