@@ -201,13 +201,13 @@ def generate_overview(overview_list, root_dir, LANGUAGE):
                 h_class_text = f'### classes\n'
                 f.write(h_class_text)
                 for class_name in h_dict["class"]:
-                    f.write(class_name['name'].replace("PADDLE_API", "")+'\n')
+                    f.write('- '+class_name['name'].replace("PADDLE_API", "")+'\n')
 
             if len(h_dict["function"])>0:
                 # write functions
                 h_function_text = f'### functions\n'
                 f.write(h_function_text)
                 for function_name in h_dict["function"]:
-                    f.write(function_name['name']+'\n')
+                    f.write('- '+function_name['name']+'\n')
 
             f.write('\n')
