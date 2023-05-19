@@ -5,6 +5,7 @@ fill_diagonal_tensor_
 
 ..cpp: function::Tensor & fill_diagonal_tensor_ ( Tensor & x , const Tensor & y , int64_t offset = 0 , int dim1 = 0 , int dim2 = 1 ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

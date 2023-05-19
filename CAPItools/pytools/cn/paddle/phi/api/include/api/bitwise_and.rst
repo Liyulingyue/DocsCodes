@@ -5,6 +5,7 @@ bitwise_and
 
 ..cpp: function::Tensor bitwise_and ( const Tensor & x , const Tensor & y ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

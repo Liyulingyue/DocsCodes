@@ -5,6 +5,7 @@ logical_not
 
 ..cpp: function::Tensor logical_not ( const Tensor & x ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

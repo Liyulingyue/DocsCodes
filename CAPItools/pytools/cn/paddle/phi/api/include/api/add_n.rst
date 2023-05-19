@@ -5,6 +5,7 @@ add_n
 
 ..cpp: function::Tensor add_n ( const std::vector<Tensor> & inputs ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

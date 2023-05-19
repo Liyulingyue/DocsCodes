@@ -5,6 +5,7 @@ scatter_
 
 ..cpp: function::Tensor & scatter_ ( Tensor & x , const Tensor & index , const Tensor & updates , bool overwrite = true ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

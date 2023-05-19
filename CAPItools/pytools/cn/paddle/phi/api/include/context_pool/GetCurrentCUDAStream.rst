@@ -6,6 +6,7 @@ GetCurrentCUDAStream
 ..cpp: function::phi::CUDAStream * GetCurrentCUDAStream ( const phi::Place & place ) ;
  Get the current CUDA stream for the passed CUDA device.
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\context_pool.h

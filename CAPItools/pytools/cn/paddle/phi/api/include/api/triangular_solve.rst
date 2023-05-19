@@ -5,6 +5,7 @@ triangular_solve
 
 ..cpp: function::Tensor triangular_solve ( const Tensor & x , const Tensor & y , bool upper , bool transpose , bool unitriangular ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.triangular_solve](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/triangular_solve_cn.html)
 
 定义目录

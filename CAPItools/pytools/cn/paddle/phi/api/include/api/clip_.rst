@@ -5,6 +5,7 @@ clip_
 
 ..cpp: function::Tensor & clip_ ( Tensor & x , const Scalar & min , const Scalar & max ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ pad3d
 
 ..cpp: function::Tensor pad3d ( const Tensor & x , const IntArray & paddings , const std::string & mode , float pad_value , const std::string & data_format ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

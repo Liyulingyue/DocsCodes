@@ -5,6 +5,7 @@ tile
 
 ..cpp: function::Tensor tile ( const Tensor & x , const IntArray & repeat_times = { } ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.tile](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/tile_cn.html)
 
 定义目录

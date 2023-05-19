@@ -5,6 +5,7 @@ split_with_num
 
 ..cpp: function::std::vector<Tensor> split_with_num ( const Tensor & x , int num , const Scalar & axis ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

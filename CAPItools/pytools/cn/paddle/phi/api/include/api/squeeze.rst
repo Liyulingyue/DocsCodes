@@ -5,6 +5,7 @@ squeeze
 
 ..cpp: function::Tensor squeeze ( const Tensor & x , const IntArray & axis = { } ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ addmm
 
 ..cpp: function::Tensor addmm ( const Tensor & input , const Tensor & x , const Tensor & y , float beta = 1.0 , float alpha = 1.0 ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.addmm](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/addmm_cn.html)
 
 定义目录

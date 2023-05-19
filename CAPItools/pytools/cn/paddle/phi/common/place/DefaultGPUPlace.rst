@@ -5,6 +5,7 @@ DefaultGPUPlace
 
 ..cpp: function::GPUPlace DefaultGPUPlace ( ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\common\place.h

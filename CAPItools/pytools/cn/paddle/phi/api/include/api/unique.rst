@@ -5,6 +5,7 @@ unique
 
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor , Tensor> unique ( const Tensor & x , bool return_index , bool return_inverse , bool return_counts , const std::vector<int> & axis , DataType dtype = DataType::INT64 ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.unique](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/unique_cn.html)
 
 定义目录

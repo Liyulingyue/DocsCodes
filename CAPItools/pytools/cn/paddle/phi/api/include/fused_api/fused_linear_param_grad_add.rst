@@ -5,6 +5,7 @@ fused_linear_param_grad_add
 
 ..cpp: function::std::tuple<Tensor , Tensor> fused_linear_param_grad_add ( const Tensor & x , const Tensor & dout , const paddle::optional<Tensor> & dweight , const paddle::optional<Tensor> & dbias , bool multi_precision = true ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\fused_api.h

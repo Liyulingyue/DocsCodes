@@ -5,6 +5,7 @@ operator-
 
 ..cpp: function::Tensor operator - ( const Scalar & x , const Tensor & y ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\tensor.h

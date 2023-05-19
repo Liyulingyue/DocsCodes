@@ -5,6 +5,7 @@ trunc
 
 ..cpp: function::Tensor trunc ( const Tensor & input ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

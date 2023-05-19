@@ -5,6 +5,7 @@ min
 
 ..cpp: function::Tensor min ( const Tensor & x , const IntArray & axis = { } , bool keepdim = false ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ layer_norm
 
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor> layer_norm ( const Tensor & x , const paddle::optional<Tensor> & scale , const paddle::optional<Tensor> & bias , float epsilon , int begin_norm_axis ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

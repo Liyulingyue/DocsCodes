@@ -5,6 +5,7 @@ tan
 
 ..cpp: function::Tensor tan ( const Tensor & x ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h

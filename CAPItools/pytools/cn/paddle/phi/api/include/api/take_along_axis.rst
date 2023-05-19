@@ -5,6 +5,7 @@ take_along_axis
 
 ..cpp: function::Tensor take_along_axis ( const Tensor & arr , const Tensor & indices , int axis ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ equal
 
 ..cpp: function::Tensor equal ( const Tensor & x , const Tensor & y ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.equal](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/equal_cn.html)
 
 定义目录

@@ -5,6 +5,7 @@ broadcast_tensors
 
 ..cpp: function::std::vector<Tensor> broadcast_tensors ( const std::vector<Tensor> & input ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

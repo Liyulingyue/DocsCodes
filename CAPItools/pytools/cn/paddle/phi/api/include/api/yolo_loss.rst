@@ -5,6 +5,7 @@ yolo_loss
 
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor> yolo_loss ( const Tensor & x , const Tensor & gt_box , const Tensor & gt_label , const paddle::optional<Tensor> & gt_score , const std::vector<int> & anchors , const std::vector<int> & anchor_mask , int class_num , float ignore_thresh , int downsample_ratio , bool use_label_smooth = true , float scale_x_y = 1.0 ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

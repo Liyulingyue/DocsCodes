@@ -5,6 +5,7 @@ lstsq
 
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor , Tensor> lstsq ( const Tensor & x , const Tensor & y , const Scalar & rcond , const std::string & driver ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

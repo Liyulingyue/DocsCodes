@@ -5,6 +5,7 @@ tril_indices
 
 ..cpp: function::Tensor tril_indices ( int rows , int cols , int offset , DataType dtype , const Place & place = { } ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

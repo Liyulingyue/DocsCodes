@@ -5,6 +5,7 @@ repeat_interleave_with_tensor_index
 
 ..cpp: function::Tensor repeat_interleave_with_tensor_index ( const Tensor & x , const Tensor & repeats , int axis ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

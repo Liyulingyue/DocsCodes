@@ -5,6 +5,7 @@ segment_pool
 
 ..cpp: function::Tensor segment_pool ( const Tensor & x , const Tensor & segment_ids , const std::string & pooltype = "SUM" ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

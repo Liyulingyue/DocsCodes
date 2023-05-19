@@ -5,6 +5,7 @@ tril
 
 ..cpp: function::Tensor tril ( const Tensor & x , int diagonal ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.tril](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/tril_cn.html)
 
 定义目录

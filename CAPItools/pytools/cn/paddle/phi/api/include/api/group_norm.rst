@@ -5,6 +5,7 @@ group_norm
 
 ..cpp: function::Tensor group_norm ( const Tensor & x , const paddle::optional<Tensor> & scale , const paddle::optional<Tensor> & bias , float epsilon , int groups , const std::string & data_layout ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

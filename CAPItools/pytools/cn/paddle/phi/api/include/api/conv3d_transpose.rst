@@ -5,6 +5,7 @@ conv3d_transpose
 
 ..cpp: function::Tensor conv3d_transpose ( const Tensor & x , const Tensor & filter , const std::vector<int> & strides , const std::vector<int> & paddings , const std::vector<int> & output_padding , const std::vector<int> & output_size , const std::string & padding_algorithm , int groups , const std::vector<int> & dilations , const std::string & data_format ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

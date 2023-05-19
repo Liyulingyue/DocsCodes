@@ -17,9 +17,9 @@ class func_helper(object):
         # 解析api
         self.api = self.function_dict["debug"].replace("PADDLE_API ", "")
         self.namespace = self.function_dict["namespace"].replace("::", "_")
-        self.doxygen = self.function_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
-                                                                                                          "").replace(
-            "  ", "")
+        doxygen = self.function_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*","").replace("  ", "")
+        self.introduction = doxygen
+
         # TODO 如果使用已安装的 paddle 包需要调整
         self.file_path = self.function_dict["filename"].replace("../", "")
 
@@ -29,6 +29,21 @@ class func_helper(object):
             self.parameter_dict = {}
 
         self.returns = self.function_dict["returns"].replace("PADDLE_API ", "")
+
+        # analysis doxygen
+        if '@' in doxygen:
+            doxygen = doxygen[doxygen.find('@'):]
+            for doxygen_part in doxygen.split('@'):
+                if doxygen_part.startswith('brief '):
+                    self.introduction = doxygen_part.replace('brief ', '', 1)
+                elif doxygen_part.startswith('return '):
+                    self.returns = doxygen_part.replace('return ', '', 1)
+                elif doxygen_part.startswith('param '):
+                    param_intro = doxygen_part.replace('param ', '', 1)
+                    param_name = param_intro[:param_intro.find(' ')]
+                    self.parameter_dict[param_name]['intro'] = param_intro
+                else:
+                    pass
 
     def create_file(self, save_dir):
         with open(save_dir, 'w', encoding='utf8') as f:
@@ -40,7 +55,7 @@ class func_helper(object):
                                   f'-------------------------------\n' \
                                   f'\n' \
                                   f'..cpp: function::{self.api}\n' \
-                                  f'{self.doxygen}' \
+                                  f'{self.introduction}\n' \
                                   f'\n'
             f.write(name_and_intro_text)
 
@@ -61,12 +76,12 @@ class func_helper(object):
                 parameters_text = f'参数\n' \
                                   f':::::::::::::::::::::'
                 f.write(parameters_text + '\n')
-                for param in self.parameter_dict:
-                    param_text = f"\t- **{param['name']}**"
-                    if param['type'] != "":
-                        param_text += f" ({param['type']})"
-                    if param['intro'] != "":
-                        param_text += f" - {param['intro']}"
+                for param in self.parameter_dict.keys():
+                    param_text = f"\t- **{param}**"
+                    if self.parameter_dict[param]['type'] != "":
+                        param_text += f" ({self.parameter_dict[param]['type']})"
+                    if self.parameter_dict[param]['intro'] != "":
+                        param_text += f" - {self.parameter_dict[param]['intro']}"
                     param_text += "\n"
                     f.write(param_text)
             f.write('\n')
@@ -160,12 +175,12 @@ class class_helper(object):
                         parameters_text = f"**参数**\n" \
                                           f"\'\'\'\'\'\'\'\'\'\'\'\n"
                         f.write(parameters_text)
-                        for param in fun_infor['parameter']:
-                            param_text = f"\t- **{param['name']}**"
-                            if param['type'] != "":
-                                param_text += f" ({param['type']})"
-                            if param['intro'] != "":
-                                param_text += f" - {param['intro']}"
+                        for param in fun_infor['parameter'].keys():
+                            param_text = f"\t- **{param}**"
+                            if fun_infor['parameter'][param]['type'] != "":
+                                param_text += f" ({fun_infor['parameter'][param]['type']})"
+                            if fun_infor['parameter'][param]['intro'] != "":
+                                param_text += f" - {fun_infor['parameter'][param]['intro']}"
                             param_text += "\n"
                             f.write(param_text)
                     f.write('\n')

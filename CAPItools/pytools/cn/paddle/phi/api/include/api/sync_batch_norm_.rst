@@ -5,6 +5,7 @@ sync_batch_norm_
 
 ..cpp: function::std::tuple<Tensor , Tensor & , Tensor & , Tensor , Tensor , Tensor> sync_batch_norm_ ( const Tensor & x , Tensor & mean , Tensor & variance , const Tensor & scale , const Tensor & bias , bool is_test , float momentum , float epsilon , const std::string & data_layout , bool use_global_stats , bool trainable_statistics ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ prod
 
 ..cpp: function::Tensor prod ( const Tensor & x , const IntArray & dims , bool keep_dim , bool reduce_all ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ send_u_recv
 
 ..cpp: function::Tensor send_u_recv ( const Tensor & x , const Tensor & src_index , const Tensor & dst_index , const std::string & reduce_op = "SUM" , const IntArray & out_size = { 0 } ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.send_u_recv](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/send_u_recv_cn.html)
 
 定义目录

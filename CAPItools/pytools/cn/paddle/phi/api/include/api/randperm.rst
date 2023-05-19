@@ -5,6 +5,7 @@ randperm
 
 ..cpp: function::Tensor randperm ( int n , DataType dtype , const Place & place = { } ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

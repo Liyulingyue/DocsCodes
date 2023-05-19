@@ -5,6 +5,7 @@ remainder_
 
 ..cpp: function::Tensor & remainder_ ( Tensor & x , const Tensor & y ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

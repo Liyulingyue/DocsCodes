@@ -5,6 +5,7 @@ lerp
 
 ..cpp: function::Tensor lerp ( const Tensor & x , const Tensor & y , const Tensor & weight ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.lerp](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/lerp_cn.html)
 
 定义目录

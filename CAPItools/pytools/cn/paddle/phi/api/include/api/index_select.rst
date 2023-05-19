@@ -5,6 +5,7 @@ index_select
 
 ..cpp: function::Tensor index_select ( const Tensor & x , const Tensor & index , int axis = 0 ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

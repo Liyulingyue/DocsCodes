@@ -5,6 +5,7 @@ margin_cross_entropy
 
 ..cpp: function::std::tuple<Tensor , Tensor> margin_cross_entropy ( const Tensor & logits , const Tensor & label , bool return_softmax = false , int ring_id = 0 , int rank = 0 , int nranks = 1 , float margin1 = 1.0 f , float margin2 = 0.5 f , float margin3 = 0.0 f , float scale = 64.0 f ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

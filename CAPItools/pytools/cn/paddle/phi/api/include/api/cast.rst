@@ -5,6 +5,7 @@ cast
 
 ..cpp: function::Tensor cast ( const Tensor & x , DataType dtype ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

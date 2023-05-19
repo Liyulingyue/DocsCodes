@@ -5,6 +5,7 @@ fold
 
 ..cpp: function::Tensor fold ( const Tensor & x , const std::vector<int> & output_sizes , const std::vector<int> & kernel_sizes , const std::vector<int> & strides , const std::vector<int> & paddings , const std::vector<int> & dilations ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

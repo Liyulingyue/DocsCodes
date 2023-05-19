@@ -5,6 +5,7 @@ strided_slice
 
 ..cpp: function::Tensor strided_slice ( const Tensor & x , const std::vector<int> & axes , const IntArray & starts , const IntArray & ends , const IntArray & strides ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.strided_slice](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/strided_slice_cn.html)
 
 定义目录

@@ -5,6 +5,7 @@ logcumsumexp
 
 ..cpp: function::Tensor logcumsumexp ( const Tensor & x , int axis = - 1 , bool flatten = false , bool exclusive = false , bool reverse = false ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

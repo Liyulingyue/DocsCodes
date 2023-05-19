@@ -5,6 +5,7 @@ logical_or
 
 ..cpp: function::Tensor logical_or ( const Tensor & x , const Tensor & y ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

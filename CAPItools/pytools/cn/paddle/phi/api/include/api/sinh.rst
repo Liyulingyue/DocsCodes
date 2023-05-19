@@ -5,6 +5,7 @@ sinh
 
 ..cpp: function::Tensor sinh ( const Tensor & x ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.sinh](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/sinh_cn.html)
 
 定义目录

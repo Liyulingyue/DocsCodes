@@ -5,6 +5,7 @@ instance_norm
 
 ..cpp: function::Tensor instance_norm ( const Tensor & x , const paddle::optional<Tensor> & scale , const paddle::optional<Tensor> & bias , float epsilon ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ warpctc
 
 ..cpp: function::Tensor warpctc ( const Tensor & logits , const Tensor & label , const paddle::optional<Tensor> & logits_length , const paddle::optional<Tensor> & labels_length , int blank = 0 , bool norm_by_times = false ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

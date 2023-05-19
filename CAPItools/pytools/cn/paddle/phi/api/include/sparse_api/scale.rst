@@ -5,6 +5,7 @@ scale
 
 ..cpp: function::Tensor scale ( const Tensor & x , float scale , float bias , bool bias_after_scale ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h

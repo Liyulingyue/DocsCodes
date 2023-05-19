@@ -5,6 +5,7 @@ prelu
 
 ..cpp: function::Tensor prelu ( const Tensor & x , const Tensor & alpha , const std::string & data_format = "NCHW" , const std::string & mode = "all" ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

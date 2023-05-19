@@ -5,6 +5,7 @@ maxout
 
 ..cpp: function::Tensor maxout ( const Tensor & x , int groups , int axis = 1 ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.maxout](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/maxout_cn.html)
 
 定义目录

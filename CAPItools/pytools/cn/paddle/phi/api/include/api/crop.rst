@@ -5,6 +5,7 @@ crop
 
 ..cpp: function::Tensor crop ( const Tensor & x , const IntArray & shape = { } , const IntArray & offsets = { } ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

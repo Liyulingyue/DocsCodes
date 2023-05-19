@@ -5,6 +5,7 @@ argmin
 
 ..cpp: function::Tensor argmin ( const Tensor & x , const Scalar & axis , bool keepdims = false , bool flatten = false , int dtype = 3 ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

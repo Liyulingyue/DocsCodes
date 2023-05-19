@@ -5,6 +5,7 @@ assign_out_
 
 ..cpp: function::Tensor & assign_out_ ( const Tensor & x , Tensor & output ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ mean
 
 ..cpp: function::Tensor mean ( const Tensor & x , const IntArray & axis = { } , bool keepdim = false ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

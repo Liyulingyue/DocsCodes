@@ -5,6 +5,7 @@ multinomial
 
 ..cpp: function::Tensor multinomial ( const Tensor & x , const Scalar & num_samples = 1 , bool replacement = false ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.multinomial](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/multinomial_cn.html)
 
 定义目录

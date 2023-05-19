@@ -5,6 +5,7 @@ uniform_inplace
 
 ..cpp: function::Tensor uniform_inplace ( const Tensor & x , float min = -1.0 , float max = 1.0 , int seed = 0 , int diag_num = 0 , int diag_step = 0 , float diag_val = 1.0 ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

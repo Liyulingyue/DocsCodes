@@ -5,6 +5,7 @@ norm
 
 ..cpp: function::std::tuple<Tensor , Tensor> norm ( const Tensor & x , int axis , float epsilon , bool is_test ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

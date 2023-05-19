@@ -5,6 +5,7 @@ divide_scalar
 
 ..cpp: function::Tensor divide_scalar ( const Tensor & x , float scalar ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h

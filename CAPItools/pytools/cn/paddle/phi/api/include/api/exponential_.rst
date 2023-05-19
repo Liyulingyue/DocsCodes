@@ -5,6 +5,7 @@ exponential_
 
 ..cpp: function::Tensor & exponential_ ( Tensor & x , float lam ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ pow
 
 ..cpp: function::Tensor pow ( const Tensor & x , float factor ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h

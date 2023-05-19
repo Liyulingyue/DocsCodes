@@ -5,6 +5,7 @@ gaussian
 
 ..cpp: function::Tensor gaussian ( const IntArray & shape , float mean , float std , int seed , DataType dtype , const Place & place = { } ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

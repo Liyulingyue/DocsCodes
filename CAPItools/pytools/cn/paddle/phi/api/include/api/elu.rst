@@ -5,6 +5,7 @@ elu
 
 ..cpp: function::Tensor elu ( const Tensor & x , float alpha = 1.0 f ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.elu](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/elu_cn.html)
 
 定义目录

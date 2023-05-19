@@ -5,6 +5,7 @@ gather
 
 ..cpp: function::Tensor gather ( const Tensor & x , const Tensor & index , const Scalar & axis = 0 ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.gather](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/gather_cn.html)
 
 定义目录

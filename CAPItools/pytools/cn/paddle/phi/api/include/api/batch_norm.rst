@@ -5,6 +5,7 @@ batch_norm
 
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor , Tensor , Tensor , Tensor> batch_norm ( const Tensor & x , const Tensor & mean , const Tensor & variance , const Tensor & scale , const Tensor & bias , bool is_test , float momentum , float epsilon , const std::string & data_layout , bool use_global_stats , bool trainable_statistics ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

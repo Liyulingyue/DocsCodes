@@ -5,6 +5,7 @@ psroi_pool
 
 ..cpp: function::Tensor psroi_pool ( const Tensor & x , const Tensor & boxes , const paddle::optional<Tensor> & boxes_num , int pooled_height , int pooled_width , int output_channels , float spatial_scale ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

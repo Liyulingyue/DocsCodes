@@ -5,6 +5,7 @@ sigmoid_cross_entropy_with_logits
 
 ..cpp: function::Tensor sigmoid_cross_entropy_with_logits ( const Tensor & x , const Tensor & label , bool normalize = false , int ignore_index = - 100 ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

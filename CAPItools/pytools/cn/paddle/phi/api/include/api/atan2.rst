@@ -5,6 +5,7 @@ atan2
 
 ..cpp: function::Tensor atan2 ( const Tensor & x , const Tensor & y ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.atan2](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/atan2_cn.html)
 
 定义目录

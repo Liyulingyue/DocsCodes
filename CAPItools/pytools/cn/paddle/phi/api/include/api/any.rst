@@ -5,6 +5,7 @@ any
 
 ..cpp: function::Tensor any ( const Tensor & x , const std::vector<int64_t> & axis = { } , bool keepdim = false ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

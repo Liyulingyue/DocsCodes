@@ -5,6 +5,7 @@ decode_jpeg
 
 ..cpp: function::Tensor decode_jpeg ( const Tensor & x , const std::string & mode , const Place & place ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

@@ -5,6 +5,7 @@ upper
 
 ..cpp: function::Tensor upper ( const Tensor & x , bool use_utf8_encoding ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\strings_api.h

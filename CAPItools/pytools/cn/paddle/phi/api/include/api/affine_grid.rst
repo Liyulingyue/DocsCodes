@@ -5,6 +5,7 @@ affine_grid
 
 ..cpp: function::Tensor affine_grid ( const Tensor & input , const IntArray & output_shape = { } , bool align_corners = true ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

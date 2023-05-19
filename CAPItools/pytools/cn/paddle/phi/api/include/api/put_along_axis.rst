@@ -5,6 +5,7 @@ put_along_axis
 
 ..cpp: function::Tensor put_along_axis ( const Tensor & arr , const Tensor & indices , const Tensor & values , int axis , const std::string & reduce = "assign" ) ;
 
+
 本 API 与 Python API 对齐，详细用法可参考链接：[paddle.put_along_axis](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/put_along_axis_cn.html)
 
 定义目录

@@ -5,6 +5,7 @@ softmax_
 
 ..cpp: function::Tensor & softmax_ ( Tensor & x , int axis ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

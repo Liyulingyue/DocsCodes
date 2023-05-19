@@ -5,6 +5,7 @@ bincount
 
 ..cpp: function::Tensor bincount ( const Tensor & x , const paddle::optional<Tensor> & weights , const Scalar & minlength = 0 ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

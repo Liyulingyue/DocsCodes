@@ -4,7 +4,7 @@ from_blob
 -------------------------------
 
 ..cpp: function::Tensor from_blob ( void * data , const phi::IntArray & shape , phi::DataType dtype , phi::DataLayout layout = phi::DataLayout::NCHW , const phi::Place & place = phi::Place ( ) , const Deleter & deleter = nullptr ) ;
- @brief Construct a Tensor from a buffer pointed to by `data` @note `from_blob` doesn’t copy or move data, Modifying the constructed tensor is equivalent to modifying the original data. @param data The pointer to the memory buffer. @param shape The dims of the tensor. @param dtype The data type of the tensor, should correspond to data type of`data`. See PD_FOR_EACH_DATA_TYPE in `phi/common/data_type.h` @param layout The data layout of the tensor. @param place The place where the tensor is located.If `place` is default value, it will be inferred from `data`，However，the feature is only supported on CPU or GPU.If `place` is not default value, make sure that `place` is equalto the place of `data` @param deleter A function or function object that will be called to free thememory buffer. @return A Tensor object constructed from the buffer
+Construct a Tensor from a buffer pointed to by `data` 
 
 定义目录
 :::::::::::::::::::::
@@ -12,13 +12,14 @@ paddle\phi\api\include\tensor_utils.h
 
 参数
 :::::::::::::::::::::
-	- **data** (void*) - The pointer to the memory buffer.
-	- **shape** (const phi::IntArray&) - The dims of the tensor.
-	- **dtype** (phi::DataType) - The data type of the tensor, should correspond to data type of`data`. See PD_FOR_EACH_DATA_TYPE in `phi/common/data_type.h`
-	- **layout** (phi::DataLayout) - The data layout of the tensor.
-	- **place** (const phi::Place&) - The place where the tensor is located.If `place` is default value, it will be inferred from `data`，However，the feature is only supported on CPU or GPU.If `place` is not default value, make sure that `place` is equalto the place of `data`
-	- **deleter** (function<void ( void )>&) - A function or function object that will be called to free thememory buffer.
+	- **data** (void*) - data The pointer to the memory buffer. 
+	- **shape** (const phi::IntArray&) - shape The dims of the tensor. 
+	- **dtype** (phi::DataType) - dtype The data type of the tensor, should correspond to data type of`data`. See PD_FOR_EACH_DATA_TYPE in `phi/common/data_type.h` 
+	- **layout** (phi::DataLayout) - layout The data layout of the tensor. 
+	- **place** (const phi::Place&) - place The place where the tensor is located.If `place` is default value, it will be inferred from `data`，However，the feature is only supported on CPU or GPU.If `place` is not default value, make sure that `place` is equalto the place of `data` 
+	- **deleter** (function<void ( void )>&) - deleter A function or function object that will be called to free thememory buffer. 
 
 返回
 :::::::::::::::::::::
-Tensor
+A Tensor object constructed from the buffer
+

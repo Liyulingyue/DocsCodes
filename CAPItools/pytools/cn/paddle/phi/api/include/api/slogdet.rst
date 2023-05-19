@@ -5,6 +5,7 @@ slogdet
 
 ..cpp: function::Tensor slogdet ( const Tensor & x ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h

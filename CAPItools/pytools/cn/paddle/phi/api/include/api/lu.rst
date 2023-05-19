@@ -5,6 +5,7 @@ lu
 
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor> lu ( const Tensor & x , bool pivot = true ) ;
 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
