@@ -20,6 +20,8 @@ class func_helper(object):
         doxygen = self.function_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*","").replace("  ", "")
         self.introduction = doxygen
 
+        self.note = ""
+
         # TODO 如果使用已安装的 paddle 包需要调整
         self.file_path = self.function_dict["filename"].replace("../", "")
 
@@ -42,6 +44,8 @@ class func_helper(object):
                     param_intro = doxygen_part.replace('param ', '', 1)
                     param_name = param_intro[:param_intro.find(' ')]
                     self.parameter_dict[param_name]['intro'] = param_intro
+                elif doxygen_part.startswith('note '):
+                    self.note = doxygen_part.replace('note ', '', 1)
                 else:
                     pass
 
@@ -62,9 +66,15 @@ class func_helper(object):
             if self.func_name in self.cpp2py_api_list:
                 cpp2py_text = f'本 API 与 Python API 对齐，详细用法可参考链接：' \
                               f'[paddle.{self.func_name}]' \
-                              f'(https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/{self.func_name}_{self.LANGUAGE}.html)' \
-                              f'\n\n'
+                              f'(https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/{self.func_name}_{self.LANGUAGE}.html)\n' \
+                              f'\n'
                 f.write(cpp2py_text)
+
+            if self.note != "":
+                note_text = f'..note::\n' \
+                            f'\t{self.note}\n' \
+                            f'\n'
+                f.write(note_text)
 
             define_path_text = f'定义目录\n' \
                                f':::::::::::::::::::::\n' \

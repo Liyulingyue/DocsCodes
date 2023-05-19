@@ -6,6 +6,9 @@ from_blob
 ..cpp: function::Tensor from_blob ( void * data , const phi::IntArray & shape , phi::DataType dtype , phi::DataLayout layout = phi::DataLayout::NCHW , const phi::Place & place = phi::Place ( ) , const Deleter & deleter = nullptr ) ;
 Construct a Tensor from a buffer pointed to by `data` 
 
+..note::
+	`from_blob` doesn’t copy or move data, Modifying the constructed tensor is equivalent to modifying the original data. 
+
 定义目录
 :::::::::::::::::::::
 paddle\phi\api\include\tensor_utils.h
