@@ -6,13 +6,13 @@ strided_slice
 ..cpp: function::Tensor strided_slice ( const Tensor & x , const std::vector<int> & axes , const IntArray & starts , const IntArray & ends , const IntArray & strides ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.strided_slice](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/strided_slice_en.html)
+This API is aligned with Python API, more details are shown in [paddle.strided_slice](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/strided_slice_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **axes** (const std::vector<int>&)
@@ -20,6 +20,6 @@ paddle\phi\api\include\api.h
 	- **ends** (const IntArray&)
 	- **strides** (const IntArray&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

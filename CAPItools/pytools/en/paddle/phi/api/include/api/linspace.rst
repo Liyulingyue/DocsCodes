@@ -6,11 +6,11 @@ linspace
 ..cpp: function::Tensor linspace ( const Tensor & start , const Tensor & stop , const Tensor & number , DataType dtype , const Place & place ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **start** (const Tensor&)
 	- **stop** (const Tensor&)
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType)
 	- **place** (const Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

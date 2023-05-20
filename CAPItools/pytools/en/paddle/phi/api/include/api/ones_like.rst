@@ -6,16 +6,16 @@ ones_like
 ..cpp: function::Tensor ones_like ( const Tensor & x , DataType dtype = DataType::UNDEFINED , const Place & place = { } ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **dtype** (DataType)
 	- **place** (const Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

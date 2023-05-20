@@ -6,14 +6,14 @@ broadcast_tensors
 ..cpp: function::std::vector<Tensor> broadcast_tensors ( const std::vector<Tensor> & input ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **input** (const std::vector<Tensor>&)
 
-返回
+Returns
 :::::::::::::::::::::
 std::vector<Tensor>

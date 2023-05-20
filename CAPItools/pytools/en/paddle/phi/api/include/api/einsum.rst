@@ -6,15 +6,15 @@ einsum
 ..cpp: function::std::tuple<Tensor , std::vector<Tensor> , std::vector<Tensor> > einsum ( const std::vector<Tensor> & x , const std::string & equation ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const std::vector<Tensor>&)
 	- **equation** (const std::string&)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , std::vector<Tensor> , std::vector<Tensor> >

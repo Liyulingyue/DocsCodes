@@ -7,14 +7,14 @@ GetCurrentCUDAStream
  Get the current CUDA stream for the passed CUDA device.
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\context_pool.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **place** (const phi::Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 phi::CUDAStream

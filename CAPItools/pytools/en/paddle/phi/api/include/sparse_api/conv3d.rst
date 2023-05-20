@@ -6,11 +6,11 @@ conv3d
 ..cpp: function::Tensor conv3d ( const Tensor & x , const Tensor & kernel , const std::vector<int> & paddings , const std::vector<int> & dilations , const std::vector<int> & strides , int groups , bool subm , const std::string & key = "" ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **kernel** (const Tensor&)
@@ -21,6 +21,6 @@ paddle\phi\api\include\sparse_api.h
 	- **subm** (bool)
 	- **key** (const std::string&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

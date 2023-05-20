@@ -6,11 +6,11 @@ full_batch_size_like
 ..cpp: function::Tensor full_batch_size_like ( const Tensor & input , const std::vector<int> & shape , DataType dtype , const Scalar & value , int input_dim_idx , int output_dim_idx , const Place & place = CPUPlace ( ) ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **input** (const Tensor&)
 	- **shape** (const std::vector<int>&)
@@ -20,6 +20,6 @@ paddle\phi\api\include\api.h
 	- **output_dim_idx** (int)
 	- **place** (const Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

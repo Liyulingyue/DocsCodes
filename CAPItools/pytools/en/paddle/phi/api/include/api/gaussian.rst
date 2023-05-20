@@ -6,11 +6,11 @@ gaussian
 ..cpp: function::Tensor gaussian ( const IntArray & shape , float mean , float std , int seed , DataType dtype , const Place & place = { } ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **shape** (const IntArray&)
 	- **mean** (float)
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType)
 	- **place** (const Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

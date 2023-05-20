@@ -6,14 +6,14 @@ add_n
 ..cpp: function::Tensor add_n ( const std::vector<Tensor> & inputs ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **inputs** (const std::vector<Tensor>&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

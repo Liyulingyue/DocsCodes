@@ -6,14 +6,14 @@ values
 ..cpp: function::Tensor values ( const Tensor & x ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

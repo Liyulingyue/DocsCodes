@@ -6,16 +6,16 @@ accuracy
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor> accuracy ( const Tensor & x , const Tensor & indices , const Tensor & label ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **indices** (const Tensor&)
 	- **label** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

@@ -6,14 +6,14 @@ shape
 ..cpp: function::Tensor shape ( const Tensor & input ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **input** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

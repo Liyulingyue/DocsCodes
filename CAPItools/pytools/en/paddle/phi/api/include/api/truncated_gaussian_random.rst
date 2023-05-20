@@ -6,11 +6,11 @@ truncated_gaussian_random
 ..cpp: function::Tensor truncated_gaussian_random ( const std::vector<int> & shape , float mean , float std , int seed , DataType dtype = DataType::FLOAT32 , const Place & place = { } ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **shape** (const std::vector<int>&)
 	- **mean** (float)
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType)
 	- **place** (const Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

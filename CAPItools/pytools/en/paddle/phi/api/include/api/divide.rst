@@ -6,17 +6,17 @@ divide
 ..cpp: function::Tensor divide ( const Tensor & x , const Tensor & y ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.divide](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/divide_en.html)
+This API is aligned with Python API, more details are shown in [paddle.divide](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/divide_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **y** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

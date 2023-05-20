@@ -6,15 +6,15 @@ softshrink
 ..cpp: function::Tensor softshrink ( const Tensor & x , float threshold = 0.5 ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **threshold** (float)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

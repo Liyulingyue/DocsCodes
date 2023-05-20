@@ -6,17 +6,17 @@ embedding
 ..cpp: function::Tensor embedding ( const Tensor & x , const Tensor & weight , int64_t padding_idx = - 1 , bool sparse = false ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **weight** (const Tensor&)
 	- **padding_idx** (int64_t)
 	- **sparse** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

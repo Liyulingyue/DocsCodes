@@ -6,17 +6,17 @@ unsqueeze
 ..cpp: function::Tensor unsqueeze ( const Tensor & x , const IntArray & axis = { } ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.unsqueeze](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/unsqueeze_en.html)
+This API is aligned with Python API, more details are shown in [paddle.unsqueeze](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/unsqueeze_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **axis** (const IntArray&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

@@ -6,11 +6,11 @@ DefaultGPUPlace
 ..cpp: function::GPUPlace DefaultGPUPlace ( ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\common\place.h
 
 
-返回
+Returns
 :::::::::::::::::::::
 GPUPlace

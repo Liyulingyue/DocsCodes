@@ -6,17 +6,17 @@ masked_select
 ..cpp: function::Tensor masked_select ( const Tensor & x , const Tensor & mask ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.masked_select](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/masked_select_en.html)
+This API is aligned with Python API, more details are shown in [paddle.masked_select](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/masked_select_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **mask** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

@@ -6,17 +6,17 @@ gather_nd
 ..cpp: function::Tensor gather_nd ( const Tensor & x , const Tensor & index ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.gather_nd](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/gather_nd_en.html)
+This API is aligned with Python API, more details are shown in [paddle.gather_nd](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/gather_nd_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **index** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

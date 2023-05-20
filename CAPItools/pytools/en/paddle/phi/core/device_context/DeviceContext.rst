@@ -1,17 +1,17 @@
 .. _en_api_DeviceContext:
 
-DeviceContext[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\core\device_context.h)
+DeviceContext[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\core\device_context.h)
 -------------------------------
 
 .. cpp:class:: DeviceContext ( const DeviceContext & ) ;
  DeviceContext provides device-related interfaces. All kernels must access the interfaces provided by the backend through DeviceContext.
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\core\device_context.h
 
-方法
+Methods
 :::::::::::::::::::::
 
 DeviceContext ( ) ;
@@ -25,7 +25,7 @@ DeviceContext ( const DeviceContext & ) ;
 Copy construct.
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **&** (const DeviceContext)
 
@@ -34,7 +34,7 @@ DeviceContext ( DeviceContext & & ) ;
 Move construct.
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **&** (DeviceContext&)
 
@@ -43,11 +43,11 @@ DeviceContext & operator = ( DeviceContext & & ) ;
 Move assign operator.
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **&** (DeviceContext&)
 
-**返回**
+**Returns**
 '''''''''''
 DeviceContext
 virtual ~DeviceContext ( ) ;
@@ -60,7 +60,7 @@ void SetAllocator ( const Allocator * ) ;
 '''''''''''
 Set the device-related Allocator object. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (const Allocator*)
 
@@ -68,7 +68,7 @@ void SetHostAllocator ( const Allocator * ) ;
 '''''''''''
 Set the host Allocator object. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (const Allocator*)
 
@@ -76,7 +76,7 @@ void SetZeroAllocator ( const Allocator * ) ;
 '''''''''''
 Set the zero-size Allocator object. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (const Allocator*)
 
@@ -84,7 +84,7 @@ void SetHostZeroAllocator ( const Allocator * ) ;
 '''''''''''
 Set the zero-size host Allocator object. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (const Allocator*)
 
@@ -92,7 +92,7 @@ void SetPinnedAllocator ( const Allocator * ) ;
 '''''''''''
 Set the zero-size Allocator object. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (const Allocator*)
 
@@ -101,7 +101,7 @@ const Allocator & GetAllocator ( ) const ;
 Get the const Allocator object. 
 
 
-**返回**
+**Returns**
 '''''''''''
 Allocator
 
@@ -110,7 +110,7 @@ const Allocator & GetHostAllocator ( ) const ;
 Get the const device-related Allocator object. 
 
 
-**返回**
+**Returns**
 '''''''''''
 Allocator
 
@@ -119,7 +119,7 @@ const Allocator & GetZeroAllocator ( ) const ;
 
 
 
-**返回**
+**Returns**
 '''''''''''
 Allocator
 const Allocator & GetHostZeroAllocator ( ) const ;
@@ -127,7 +127,7 @@ const Allocator & GetHostZeroAllocator ( ) const ;
 
 
 
-**返回**
+**Returns**
 '''''''''''
 Allocator
 const Allocator & GetPinnedAllocator ( ) const ;
@@ -135,14 +135,14 @@ const Allocator & GetPinnedAllocator ( ) const ;
 
 
 
-**返回**
+**Returns**
 '''''''''''
 Allocator
 void SetCUDAGraphAllocator ( const Allocator * ) ;
 '''''''''''
 Set the CUDA graph Allocator object. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (const Allocator*)
 
@@ -151,7 +151,7 @@ const Allocator & GetCUDAGraphAllocator ( ) const ;
 Get the const CUDA graph Allocator object. 
 
 
-**返回**
+**Returns**
 '''''''''''
 Allocator
 
@@ -160,7 +160,7 @@ bool IsCUDAGraphAllocatorValid ( ) const ;
 Test whether the CUDA graph allocator is valid This method should be called before calling GetCUDAGraphAllocator(). Other unit can calls GetCUDAGraphAllocator() method, only when this method returns True! 
 
 
-**返回**
+**Returns**
 '''''''''''
 true if cuda_graph_allocator_ is valid, false otherwise
 
@@ -169,7 +169,7 @@ void * Alloc ( TensorBase * , DataType dtype , size_t requested_size = 0 , bool 
 Allocate device memory for tensor.
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (TensorBase*)
 	- **dtype** (DataType)
@@ -181,13 +181,13 @@ T * Alloc ( TensorBase * tensor , size_t requested_size = 0 , bool pinned = fals
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **tensor** (TensorBase*)
 	- **requested_size** (size_t)
 	- **pinned** (bool)
 
-**返回**
+**Returns**
 '''''''''''
 T
 void * HostAlloc ( TensorBase * tensor , DataType dtype , size_t requested_size = 0 , bool fake_alloc = false ) const ;
@@ -195,7 +195,7 @@ void * HostAlloc ( TensorBase * tensor , DataType dtype , size_t requested_size 
 Allocate host memory for tensor.
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **tensor** (TensorBase*)
 	- **dtype** (DataType)
@@ -206,12 +206,12 @@ T * HostAlloc ( TensorBase * tensor , size_t requested_size = 0 ) const ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **tensor** (TensorBase*)
 	- **requested_size** (size_t)
 
-**返回**
+**Returns**
 '''''''''''
 T
 virtual const Place & GetPlace ( ) const = 0 ;
@@ -219,7 +219,7 @@ virtual const Place & GetPlace ( ) const = 0 ;
 
 
 
-**返回**
+**Returns**
 '''''''''''
 Place
 virtual void Wait ( ) const {
@@ -231,7 +231,7 @@ void SetGenerator ( Generator * ) ;
 '''''''''''
 Set the generator for special op. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (Generator*)
 
@@ -240,7 +240,7 @@ Generator * GetGenerator ( ) const ;
 Get the generator object. 
 
 
-**返回**
+**Returns**
 '''''''''''
 Generator
 
@@ -248,7 +248,7 @@ void SetHostGenerator ( Generator * ) ;
 '''''''''''
 Set the host generator for special op. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (Generator*)
 
@@ -257,7 +257,7 @@ Generator * GetHostGenerator ( ) const ;
 Get the host generator object. 
 
 
-**返回**
+**Returns**
 '''''''''''
 Generator
 
@@ -266,7 +266,7 @@ TypeInfo<DeviceContext> type_info ( ) const {
 Return the type information of the derived class to supportsafely downcast in non-rtti environment. 
 
 
-**返回**
+**Returns**
 '''''''''''
 The type information of the derived class.
 
@@ -274,7 +274,7 @@ void SetCommContext ( distributed::CommContext * comm_context ) ;
 '''''''''''
 Set the comm context point. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **comm_context** (distributed::CommContext*)
 
@@ -283,7 +283,7 @@ distributed::CommContext * GetCommContext ( ) const ;
 Get the comm context point. 
 
 
-**返回**
+**Returns**
 '''''''''''
 comm context point
 

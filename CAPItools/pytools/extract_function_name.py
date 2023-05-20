@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
     # TODO: delete the try-except after every thing is prepare
     try:
-        generate_overview(overview_list, root_dir, LANGUAGE)
+        generate_overview(overview_list, root_dir, "cn")
     except:
         print('index error')
 

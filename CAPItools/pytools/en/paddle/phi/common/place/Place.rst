@@ -1,16 +1,16 @@
 .. _en_api_Place:
 
-Place[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\common\place.h)
+Place[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\common\place.h)
 -------------------------------
 
 .. cpp:class:: explicit Place ( AllocationType type , int8_t id , const std::string & dev_type = "" ) :
 /// \brief The place is used to specify where the data is stored.
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\common\place.h
 
-方法
+Methods
 :::::::::::::::::::::
 
 Place ( ) :
@@ -22,7 +22,7 @@ explicit Place ( AllocationType type , int8_t id , const std::string & dev_type 
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **type** (AllocationType)
 	- **id** (int8_t)
@@ -32,7 +32,7 @@ explicit Place ( AllocationType type , const std::string & dev_type = "" ) :
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **type** (AllocationType)
 	- **dev_type** (const std::string&)
@@ -41,7 +41,7 @@ Place ( paddle::PlaceType type ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **type** (paddle::PlaceType)
 
@@ -49,7 +49,7 @@ void Reset ( AllocationType type , int8_t device_id = 0 , const std::string & de
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **type** (AllocationType)
 	- **device_id** (int8_t)
@@ -60,7 +60,7 @@ AllocationType GetType ( ) const {
 
 
 
-**返回**
+**Returns**
 '''''''''''
 int
 int8_t GetDeviceId ( ) const {
@@ -68,7 +68,7 @@ int8_t GetDeviceId ( ) const {
 
 
 
-**返回**
+**Returns**
 '''''''''''
 int8_t
 std::string GetDeviceType ( ) const {
@@ -76,7 +76,7 @@ std::string GetDeviceType ( ) const {
 
 
 
-**返回**
+**Returns**
 '''''''''''
 std::string
 std::string DebugString ( ) const ;
@@ -84,7 +84,7 @@ std::string DebugString ( ) const ;
 
 
 
-**返回**
+**Returns**
 '''''''''''
 std::string
 uint32_t HashValue ( ) const {
@@ -92,39 +92,39 @@ uint32_t HashValue ( ) const {
 
 
 
-**返回**
+**Returns**
 '''''''''''
 uint32_t
 inline bool operator = = ( const Place & rhs ) const {
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **rhs** (const Place&)
 
-**返回**
+**Returns**
 '''''''''''
 bool
 inline bool operator ! = ( const Place & rhs ) const {
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **rhs** (const Place&)
 
-**返回**
+**Returns**
 '''''''''''
 bool
 inline bool operator<( const Place & rhs ) const {
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **rhs** (const Place&)
 
-**返回**
+**Returns**
 '''''''''''
 bool

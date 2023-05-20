@@ -6,11 +6,11 @@ uniform
 ..cpp: function::Tensor uniform ( const IntArray & shape , DataType dtype , const Scalar & min , const Scalar & max , int seed , const Place & place = { } ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **shape** (const IntArray&)
 	- **dtype** (DataType)
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **seed** (int)
 	- **place** (const Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

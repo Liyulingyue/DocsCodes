@@ -1,23 +1,23 @@
 .. _en_api_OpMetaInfoBuilder:
 
-OpMetaInfoBuilder[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\api\ext\op_meta_info.h)
+OpMetaInfoBuilder[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\api\ext\op_meta_info.h)
 -------------------------------
 
 .. cpp:class:: explicit OpMetaInfoBuilder ( std::string & & name , size_t index ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\ext\op_meta_info.h
 
-方法
+Methods
 :::::::::::::::::::::
 
 explicit OpMetaInfoBuilder ( std::string & & name , size_t index ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **name** (std::string)
 	- **index** (size_t)
@@ -26,76 +26,76 @@ OpMetaInfoBuilder & Inputs ( std::vector<std::string> & & inputs ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **inputs** (std::vector<std::string>)
 
-**返回**
+**Returns**
 '''''''''''
 OpMetaInfoBuilder
 OpMetaInfoBuilder & Outputs ( std::vector<std::string> & & outputs ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **outputs** (std::vector<std::string>)
 
-**返回**
+**Returns**
 '''''''''''
 OpMetaInfoBuilder
 OpMetaInfoBuilder & Attrs ( std::vector<std::string> & & attrs ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **attrs** (std::vector<std::string>)
 
-**返回**
+**Returns**
 '''''''''''
 OpMetaInfoBuilder
 OpMetaInfoBuilder & SetInplaceMap ( std::unordered_map<std::string , std::string> & & inplace_map ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **inplace_map** (std::unordered_map<std::string, std::string>)
 
-**返回**
+**Returns**
 '''''''''''
 OpMetaInfoBuilder
 OpMetaInfoBuilder & SetKernelFn ( KernelFunc func ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **func** (void ( ) ( CustomOpKernelContext ))
 
-**返回**
+**Returns**
 '''''''''''
 OpMetaInfoBuilder
 OpMetaInfoBuilder & SetInferShapeFn ( InferShapeFunc func ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **func** (vector<std::vector<int64_t> > ( ) ( const std::vector<std::vector<int64_t> > input_shapes, const std::vector<std::vector<std::vector<int64_t> > > vec_input_shapes, const std::vector<paddle::any> attrs ))
 
-**返回**
+**Returns**
 '''''''''''
 OpMetaInfoBuilder
 OpMetaInfoBuilder & SetInferDtypeFn ( InferDtypeFunc func ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **func** (vector<DataType> ( ) ( const std::vector<DataType> input_dtypes, const std::vector<std::vector<DataType> > vec_input_dtypes ))
 
-**返回**
+**Returns**
 '''''''''''
 OpMetaInfoBuilder

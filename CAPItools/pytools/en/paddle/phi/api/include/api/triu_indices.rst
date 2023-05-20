@@ -6,11 +6,11 @@ triu_indices
 ..cpp: function::Tensor triu_indices ( int row , int col , int offset , DataType dtype , const Place & place = { } ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **row** (int)
 	- **col** (int)
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **dtype** (DataType)
 	- **place** (const Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

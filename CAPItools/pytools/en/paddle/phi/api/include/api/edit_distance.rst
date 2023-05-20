@@ -6,11 +6,11 @@ edit_distance
 ..cpp: function::std::tuple<Tensor , Tensor> edit_distance ( const Tensor & hyps , const Tensor & refs , const paddle::optional<Tensor> & hypslength , const paddle::optional<Tensor> & refslength , bool normalized = false ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **hyps** (const Tensor&)
 	- **refs** (const Tensor&)
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **refslength** (const paddle::optional<Tensor>&)
 	- **normalized** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

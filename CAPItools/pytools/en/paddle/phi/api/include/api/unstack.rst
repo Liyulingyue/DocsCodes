@@ -6,16 +6,16 @@ unstack
 ..cpp: function::std::vector<Tensor> unstack ( const Tensor & x , int axis = 0 , int num = 0 ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **axis** (int)
 	- **num** (int)
 
-返回
+Returns
 :::::::::::::::::::::
 std::vector<Tensor>

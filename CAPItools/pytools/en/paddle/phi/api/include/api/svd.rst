@@ -6,15 +6,15 @@ svd
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor> svd ( const Tensor & x , bool full_matrices = false ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **full_matrices** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

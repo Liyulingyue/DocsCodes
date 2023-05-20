@@ -6,15 +6,15 @@ unsqueeze_
 ..cpp: function::Tensor & unsqueeze_ ( Tensor & x , const IntArray & axis = { } ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (Tensor&)
 	- **axis** (const IntArray&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

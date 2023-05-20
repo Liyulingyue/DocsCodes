@@ -6,17 +6,17 @@ reshape
 ..cpp: function::Tensor reshape ( const Tensor & x , const IntArray & shape ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.reshape](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/reshape_en.html)
+This API is aligned with Python API, more details are shown in [paddle.reshape](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/reshape_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **shape** (const IntArray&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

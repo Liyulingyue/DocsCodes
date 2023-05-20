@@ -6,16 +6,16 @@ masked_matmul
 ..cpp: function::Tensor masked_matmul ( const Tensor & x , const Tensor & y , const Tensor & mask ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **y** (const Tensor&)
 	- **mask** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

@@ -6,17 +6,17 @@ scatter_
 ..cpp: function::Tensor & scatter_ ( Tensor & x , const Tensor & index , const Tensor & updates , bool overwrite = true ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (Tensor&)
 	- **index** (const Tensor&)
 	- **updates** (const Tensor&)
 	- **overwrite** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

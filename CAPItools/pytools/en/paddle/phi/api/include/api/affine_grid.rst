@@ -6,16 +6,16 @@ affine_grid
 ..cpp: function::Tensor affine_grid ( const Tensor & input , const IntArray & output_shape = { } , bool align_corners = true ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **input** (const Tensor&)
 	- **output_shape** (const IntArray&)
 	- **align_corners** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

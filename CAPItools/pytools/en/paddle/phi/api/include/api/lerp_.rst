@@ -6,16 +6,16 @@ lerp_
 ..cpp: function::Tensor & lerp_ ( Tensor & x , const Tensor & y , const Tensor & weight ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (Tensor&)
 	- **y** (const Tensor&)
 	- **weight** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

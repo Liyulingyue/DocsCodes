@@ -9,11 +9,11 @@ Construct a Tensor from a buffer pointed to by `data`
 ..note::
 	`from_blob` doesn’t copy or move data, Modifying the constructed tensor is equivalent to modifying the original data. 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\tensor_utils.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **data** (void*) - The pointer to the memory buffer. 
 	- **shape** (const phi::IntArray&) - The dims of the tensor. 
@@ -22,7 +22,7 @@ paddle\phi\api\include\tensor_utils.h
 	- **place** (const phi::Place&) - The place where the tensor is located.If `place` is default value, it will be inferred from `data`，However，the feature is only supported on CPU or GPU.If `place` is not default value, make sure that `place` is equalto the place of `data` 
 	- **deleter** (function<void ( void )>&) - A function or function object that will be called to free thememory buffer. 
 
-返回
+Returns
 :::::::::::::::::::::
 A Tensor object constructed from the buffer
 

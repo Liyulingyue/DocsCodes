@@ -6,13 +6,13 @@ put_along_axis
 ..cpp: function::Tensor put_along_axis ( const Tensor & arr , const Tensor & indices , const Tensor & values , int axis , const std::string & reduce = "assign" ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.put_along_axis](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/put_along_axis_en.html)
+This API is aligned with Python API, more details are shown in [paddle.put_along_axis](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/put_along_axis_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **arr** (const Tensor&)
 	- **indices** (const Tensor&)
@@ -20,6 +20,6 @@ paddle\phi\api\include\api.h
 	- **axis** (int)
 	- **reduce** (const std::string&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

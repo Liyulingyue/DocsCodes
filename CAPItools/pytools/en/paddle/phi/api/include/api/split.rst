@@ -6,18 +6,18 @@ split
 ..cpp: function::std::vector<Tensor> split ( const Tensor & x , const IntArray & sections , const Scalar & axis ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.split](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/split_en.html)
+This API is aligned with Python API, more details are shown in [paddle.split](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/split_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **sections** (const IntArray&)
 	- **axis** (const Scalar&)
 
-返回
+Returns
 :::::::::::::::::::::
 std::vector<Tensor>

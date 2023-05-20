@@ -6,11 +6,11 @@ weighted_sample_neighbors
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor> weighted_sample_neighbors ( const Tensor & row , const Tensor & colptr , const Tensor & edge_weight , const Tensor & input_nodes , const paddle::optional<Tensor> & eids , int sample_size , bool return_eids ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **row** (const Tensor&)
 	- **colptr** (const Tensor&)
@@ -20,6 +20,6 @@ paddle\phi\api\include\api.h
 	- **sample_size** (int)
 	- **return_eids** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

@@ -6,11 +6,11 @@ spectral_norm
 ..cpp: function::Tensor spectral_norm ( const Tensor & weight , const Tensor & u , const Tensor & v , int dim = 0 , int power_iters = 1 , float eps = 1e - 12f ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **weight** (const Tensor&)
 	- **u** (const Tensor&)
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **power_iters** (int)
 	- **eps** (float)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

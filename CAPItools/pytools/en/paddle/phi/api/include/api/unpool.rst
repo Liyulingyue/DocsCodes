@@ -6,11 +6,11 @@ unpool
 ..cpp: function::Tensor unpool ( const Tensor & x , const Tensor & indices , const std::vector<int> & ksize , const std::vector<int> & strides , const std::vector<int> & padding , const IntArray & output_size , const std::string & data_format ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **indices** (const Tensor&)
@@ -20,6 +20,6 @@ paddle\phi\api\include\api.h
 	- **output_size** (const IntArray&)
 	- **data_format** (const std::string&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

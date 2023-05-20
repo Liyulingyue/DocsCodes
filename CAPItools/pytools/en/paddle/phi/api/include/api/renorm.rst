@@ -6,17 +6,17 @@ renorm
 ..cpp: function::Tensor renorm ( const Tensor & x , float p , int axis , float max_norm ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **p** (float)
 	- **axis** (int)
 	- **max_norm** (float)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

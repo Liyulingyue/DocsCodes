@@ -6,11 +6,11 @@ hsigmoid_loss
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor> hsigmoid_loss ( const Tensor & x , const Tensor & label , const Tensor & w , const paddle::optional<Tensor> & bias , const paddle::optional<Tensor> & path , const paddle::optional<Tensor> & code , int num_classes , bool is_sparse ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **label** (const Tensor&)
@@ -21,6 +21,6 @@ paddle\phi\api\include\api.h
 	- **num_classes** (int)
 	- **is_sparse** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

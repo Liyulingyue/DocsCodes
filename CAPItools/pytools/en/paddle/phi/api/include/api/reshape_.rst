@@ -6,15 +6,15 @@ reshape_
 ..cpp: function::Tensor & reshape_ ( Tensor & x , const IntArray & shape ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (Tensor&)
 	- **shape** (const IntArray&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

@@ -6,15 +6,15 @@ multiplex
 ..cpp: function::Tensor multiplex ( const std::vector<Tensor> & inputs , const Tensor & index ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **inputs** (const std::vector<Tensor>&)
 	- **index** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

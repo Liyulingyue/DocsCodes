@@ -6,11 +6,11 @@ fused_attention
 ..cpp: function::Tensor fused_attention ( const Tensor & query , const Tensor & key , const Tensor & value , const Tensor & sparse_mask , const paddle::optional<Tensor> & key_padding_mask , const paddle::optional<Tensor> & attn_mask ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **query** (const Tensor&)
 	- **key** (const Tensor&)
@@ -19,6 +19,6 @@ paddle\phi\api\include\sparse_api.h
 	- **key_padding_mask** (const paddle::optional<Tensor>&)
 	- **attn_mask** (const paddle::optional<Tensor>&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

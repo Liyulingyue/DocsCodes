@@ -6,19 +6,19 @@ full
 ..cpp: function::Tensor full ( const IntArray & shape , const Scalar & value , DataType dtype = DataType::FLOAT32 , const Place & place = CPUPlace ( ) ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.full](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/full_en.html)
+This API is aligned with Python API, more details are shown in [paddle.full](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/full_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **shape** (const IntArray&)
 	- **value** (const Scalar&)
 	- **dtype** (DataType)
 	- **place** (const Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

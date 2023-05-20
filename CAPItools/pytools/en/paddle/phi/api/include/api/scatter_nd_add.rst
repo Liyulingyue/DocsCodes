@@ -6,18 +6,18 @@ scatter_nd_add
 ..cpp: function::Tensor scatter_nd_add ( const Tensor & x , const Tensor & index , const Tensor & updates ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.scatter_nd_add](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/scatter_nd_add_en.html)
+This API is aligned with Python API, more details are shown in [paddle.scatter_nd_add](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/scatter_nd_add_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **index** (const Tensor&)
 	- **updates** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

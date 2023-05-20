@@ -6,17 +6,17 @@ stack
 ..cpp: function::Tensor stack ( const std::vector<Tensor> & x , int axis = 0 ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.stack](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/stack_en.html)
+This API is aligned with Python API, more details are shown in [paddle.stack](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/stack_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const std::vector<Tensor>&)
 	- **axis** (int)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

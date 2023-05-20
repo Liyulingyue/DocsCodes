@@ -1,16 +1,16 @@
 .. _en_api_OpMetaInfoMap:
 
-OpMetaInfoMap[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\api\ext\op_meta_info.h)
+OpMetaInfoMap[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\api\ext\op_meta_info.h)
 -------------------------------
 
 .. cpp:class:: OpMetaInfoMap
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\ext\op_meta_info.h
 
-方法
+Methods
 :::::::::::::::::::::
 
 static OpMetaInfoMap & Instance ( ) {
@@ -18,18 +18,18 @@ static OpMetaInfoMap & Instance ( ) {
 
 
 
-**返回**
+**Returns**
 '''''''''''
 OpMetaInfoMap
 std::vector<OpMetaInfo> & operator [ ] ( const std::string & name ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **name** (const std::string&)
 
-**返回**
+**Returns**
 '''''''''''
 std :: vector< OpMetaInfo >
 const std::unordered_map<std::string , std::vector<OpMetaInfo> > & GetMap ( ) const ;
@@ -37,6 +37,6 @@ const std::unordered_map<std::string , std::vector<OpMetaInfo> > & GetMap ( ) co
 
 
 
-**返回**
+**Returns**
 '''''''''''
 std::unordered_map<std::string , std::vector<OpMetaInfo> >

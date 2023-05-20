@@ -6,18 +6,18 @@ ones
 ..cpp: function::Tensor ones ( const IntArray & shape , DataType dtype = DataType::FLOAT32 , const Place & place = CPUPlace ( ) ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.ones](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/ones_en.html)
+This API is aligned with Python API, more details are shown in [paddle.ones](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/ones_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **shape** (const IntArray&)
 	- **dtype** (DataType)
 	- **place** (const Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

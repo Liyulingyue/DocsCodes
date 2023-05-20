@@ -6,15 +6,15 @@ fill_
 ..cpp: function::Tensor & fill_ ( Tensor & x , const Scalar & value ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (Tensor&)
 	- **value** (const Scalar&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

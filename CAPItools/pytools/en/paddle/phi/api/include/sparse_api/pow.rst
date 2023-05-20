@@ -6,15 +6,15 @@ pow
 ..cpp: function::Tensor pow ( const Tensor & x , float factor ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **factor** (float)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

@@ -6,15 +6,15 @@ multiply_
 ..cpp: function::Tensor & multiply_ ( Tensor & x , const Tensor & y ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (Tensor&)
 	- **y** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

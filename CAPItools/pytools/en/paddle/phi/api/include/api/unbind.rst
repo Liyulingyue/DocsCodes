@@ -6,17 +6,17 @@ unbind
 ..cpp: function::std::vector<Tensor> unbind ( const Tensor & input , int axis = 0 ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.unbind](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/unbind_en.html)
+This API is aligned with Python API, more details are shown in [paddle.unbind](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/unbind_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **input** (const Tensor&)
 	- **axis** (int)
 
-返回
+Returns
 :::::::::::::::::::::
 std::vector<Tensor>

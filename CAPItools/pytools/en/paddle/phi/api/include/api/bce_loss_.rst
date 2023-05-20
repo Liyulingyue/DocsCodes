@@ -6,15 +6,15 @@ bce_loss_
 ..cpp: function::Tensor & bce_loss_ ( Tensor & input , const Tensor & label ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **input** (Tensor&)
 	- **label** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

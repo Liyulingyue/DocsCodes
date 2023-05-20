@@ -6,17 +6,17 @@ fill_diagonal_
 ..cpp: function::Tensor & fill_diagonal_ ( Tensor & x , float value = 0 , int offset = 0 , bool wrap = false ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (Tensor&)
 	- **value** (float)
 	- **offset** (int)
 	- **wrap** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

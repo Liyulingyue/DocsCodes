@@ -6,11 +6,11 @@ fold
 ..cpp: function::Tensor fold ( const Tensor & x , const std::vector<int> & output_sizes , const std::vector<int> & kernel_sizes , const std::vector<int> & strides , const std::vector<int> & paddings , const std::vector<int> & dilations ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **output_sizes** (const std::vector<int>&)
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **paddings** (const std::vector<int>&)
 	- **dilations** (const std::vector<int>&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

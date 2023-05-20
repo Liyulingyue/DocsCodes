@@ -6,11 +6,11 @@ layer_norm
 ..cpp: function::std::tuple<Tensor , Tensor , Tensor> layer_norm ( const Tensor & x , const paddle::optional<Tensor> & scale , const paddle::optional<Tensor> & bias , float epsilon , int begin_norm_axis ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **scale** (const paddle::optional<Tensor>&)
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **epsilon** (float)
 	- **begin_norm_axis** (int)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor>

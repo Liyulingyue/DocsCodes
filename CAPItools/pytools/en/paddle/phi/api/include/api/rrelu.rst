@@ -6,17 +6,17 @@ rrelu
 ..cpp: function::Tensor rrelu ( const Tensor & x , float lower , float upper , bool is_test ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **lower** (float)
 	- **upper** (float)
 	- **is_test** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

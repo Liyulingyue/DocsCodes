@@ -6,14 +6,14 @@ dirichlet
 ..cpp: function::Tensor dirichlet ( const Tensor & alpha ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **alpha** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

@@ -7,14 +7,14 @@ GetAllocator
  Get the Allocator for the passed place.
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\context_pool.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **place** (const phi::Place&)
 
-返回
+Returns
 :::::::::::::::::::::
 phi::Allocator

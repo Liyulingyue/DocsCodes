@@ -117,7 +117,7 @@ class func_helper(object):
             f.write(name_and_intro_text)
 
             if self.func_name in self.cpp2py_api_list:
-                cpp2py_text = f'本 API 与 Python API 对齐，详细用法可参考链接：' \
+                cpp2py_text = f'This API is aligned with Python API, more details are shown in ' \
                               f'[paddle.{self.func_name}]' \
                               f'(https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/{self.func_name}_{language}.html)\n' \
                               f'\n'
@@ -129,14 +129,14 @@ class func_helper(object):
                             f'\n'
                 f.write(note_text)
 
-            define_path_text = f'定义目录\n' \
+            define_path_text = f'Path\n' \
                                f':::::::::::::::::::::\n' \
                                f'{self.file_path}\n' \
                                f'\n'
             f.write(define_path_text)
 
             if len(self.parameter_dict) != 0:
-                parameters_text = f'参数\n' \
+                parameters_text = f'Parameters\n' \
                                   f':::::::::::::::::::::'
                 f.write(parameters_text + '\n')
                 for param in self.parameter_dict.keys():
@@ -149,7 +149,7 @@ class func_helper(object):
                     f.write(param_text)
             f.write('\n')
 
-            return_text = f'返回\n' \
+            return_text = f'Returns\n' \
                           f':::::::::::::::::::::\n' \
                           f'{self.returns}' \
                           f'\n'
@@ -284,7 +284,7 @@ class class_helper(object):
                         f'\n'
             f.write(head_text)
 
-            name_and_intro_text = f'{self.class_name}[源代码](https://github.com/PaddlePaddle/Paddle/blob/{self.branch}/{self.file_path})\n' \
+            name_and_intro_text = f'{self.class_name}[source](https://github.com/PaddlePaddle/Paddle/blob/{self.branch}/{self.file_path})\n' \
                                   f'-------------------------------\n' \
                                   f'\n' \
                                   f'.. cpp:class:: {self.init_func}\n' \
@@ -292,14 +292,14 @@ class class_helper(object):
                                   f'\n'
             f.write(name_and_intro_text)
 
-            define_path_text = f'定义目录\n' \
+            define_path_text = f'Path\n' \
                                f':::::::::::::::::::::\n' \
                                f'{self.file_path}\n' \
                                f'\n'
             f.write(define_path_text)
 
             if self.class_function_number != 0:
-                class_function_head_text = f'方法\n' \
+                class_function_head_text = f'Methods\n' \
                                            f':::::::::::::::::::::\n' \
                                            f'\n'
                 f.write(class_function_head_text)
@@ -312,7 +312,7 @@ class class_helper(object):
                     f.write(fun_name_and_intro_text)
 
                     if len(fun_infor['parameter']) != 0:
-                        parameters_text = f"**参数**\n" \
+                        parameters_text = f"**Parameters**\n" \
                                           f"\'\'\'\'\'\'\'\'\'\'\'\n"
                         f.write(parameters_text)
                         for param in fun_infor['parameter'].keys():
@@ -326,16 +326,59 @@ class class_helper(object):
                     f.write('\n')
 
                     if fun_infor['returns'] != '' and 'void' not in fun_infor['returns']:
-                        fun_return_text = f"**返回**\n" \
+                        fun_return_text = f"**Returns**\n" \
                                           f"\'\'\'\'\'\'\'\'\'\'\'\n" \
                                           f"{fun_infor['returns']}" \
                                           f"\n"
                         f.write(fun_return_text)
 
+def generate_overview(overview_list, root_dir, language):
+    if language == 'cn':
+        generate_overview_cn(overview_list, root_dir, language)
+    elif language == 'en':
+        generate_overview_en(overview_list, root_dir, language)
+    else:
+        print('Error language! ')
 
 
-def generate_overview(overview_list, root_dir, LANGUAGE):
-    dir_path = os.path.join(".", LANGUAGE)
+def generate_overview_cn(overview_list, root_dir, LANGUAGE):
+    dir_path = os.path.join(root_dir, LANGUAGE)
+    if not os.path.exists(dir_path):
+        os.makedirs(dir_path)
+
+    rst_dir = os.path.join(dir_path, 'index.rst')
+    with open(rst_dir, 'w', encoding='utf8') as f:
+        head_text = f'# C++ 文档\n' \
+                    f'欢迎使用飞桨框架（PaddlePaddle），PaddlePaddle 是一个易用、高效、灵活、可扩展的深度学习框架，致力于让深度学习技术的创新与应用更简单。\n' \
+                    f'在本版本中，飞桨框架对 C++ 接口做了许多优化，您可以参考下表来了解飞桨框架最新版的 C++ 目录结构与说明。更详细的说明，请参见 版本说明 。此外，您可参考 PaddlePaddle 的 GitHub 了解详情。\n' \
+                    f'\n'
+        f.write(head_text)
+
+        for h_dict in overview_list:
+            basename = os.path.basename(h_dict["h_file"])
+            h_head_text = f'## [{basename}]({h_dict["h_file"]})\n'
+            f.write(h_head_text)
+
+            # TODO: add url link
+            if len(h_dict["class"])>0:
+                # write class
+                h_class_text = f'### classes\n'
+                f.write(h_class_text)
+                for class_name in h_dict["class"]:
+                    f.write('- '+class_name['name'].replace("PADDLE_API", "")+'\n')
+
+            if len(h_dict["function"])>0:
+                # write functions
+                h_function_text = f'### functions\n'
+                f.write(h_function_text)
+                for function_name in h_dict["function"]:
+                    f.write('- '+function_name['name']+'\n')
+
+            f.write('\n')
+
+
+def generate_overview_en(overview_list, root_dir, LANGUAGE):
+    dir_path = os.path.join(root_dir, LANGUAGE)
     if not os.path.exists(dir_path):
         os.makedirs(dir_path)
 

@@ -6,15 +6,15 @@ complex
 ..cpp: function::Tensor complex ( const Tensor & real , const Tensor & imag ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **real** (const Tensor&)
 	- **imag** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

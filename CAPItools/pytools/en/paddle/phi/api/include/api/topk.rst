@@ -6,11 +6,11 @@ topk
 ..cpp: function::std::tuple<Tensor , Tensor> topk ( const Tensor & x , const Scalar & k = 1 , int axis = - 1 , bool largest = true , bool sorted = true ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **k** (const Scalar&)
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **largest** (bool)
 	- **sorted** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

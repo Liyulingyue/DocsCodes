@@ -6,11 +6,11 @@ pool3d
 ..cpp: function::Tensor pool3d ( const Tensor & x , const std::vector<int> & kernel_size , const std::vector<int> & strides , const std::vector<int> & paddings , bool ceil_mode , bool exclusive , const std::string & data_format , const std::string & pooling_type , bool global_pooling , bool adaptive , const std::string & padding_algorithm ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **kernel_size** (const std::vector<int>&)
@@ -24,6 +24,6 @@ paddle\phi\api\include\api.h
 	- **adaptive** (bool)
 	- **padding_algorithm** (const std::string&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

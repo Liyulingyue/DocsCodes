@@ -6,16 +6,16 @@ crop
 ..cpp: function::Tensor crop ( const Tensor & x , const IntArray & shape = { } , const IntArray & offsets = { } ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **shape** (const IntArray&)
 	- **offsets** (const IntArray&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

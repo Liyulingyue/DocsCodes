@@ -6,11 +6,11 @@ adadelta_
 ..cpp: function::std::tuple<Tensor & , Tensor & , Tensor & , paddle::optional<Tensor> &> adadelta_ ( Tensor & param , const Tensor & grad , Tensor & avg_squared_grad , Tensor & avg_squared_update , const Tensor & learning_rate , paddle::optional<Tensor> & master_param , float rho , float epsilon , bool multi_precision ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **param** (Tensor&)
 	- **grad** (const Tensor&)
@@ -22,6 +22,6 @@ paddle\phi\api\include\api.h
 	- **epsilon** (float)
 	- **multi_precision** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor , Tensor , paddle::optional<Tensor> >

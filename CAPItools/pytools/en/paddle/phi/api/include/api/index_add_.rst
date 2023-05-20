@@ -6,17 +6,17 @@ index_add_
 ..cpp: function::Tensor & index_add_ ( Tensor & x , const Tensor & index , const Tensor & add_value , int axis = 0 ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (Tensor&)
 	- **index** (const Tensor&)
 	- **add_value** (const Tensor&)
 	- **axis** (int)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

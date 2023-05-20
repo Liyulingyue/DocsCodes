@@ -6,16 +6,16 @@ full_like
 ..cpp: function::Tensor full_like ( const Tensor & x , const Scalar & value , DataType dtype = DataType::UNDEFINED ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\sparse_api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **value** (const Scalar&)
 	- **dtype** (DataType)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

@@ -6,14 +6,14 @@ relu_
 ..cpp: function::Tensor & relu_ ( Tensor & x ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

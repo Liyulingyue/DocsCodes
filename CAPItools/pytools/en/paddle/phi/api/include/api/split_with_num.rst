@@ -6,16 +6,16 @@ split_with_num
 ..cpp: function::std::vector<Tensor> split_with_num ( const Tensor & x , int num , const Scalar & axis ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **num** (int)
 	- **axis** (const Scalar&)
 
-返回
+Returns
 :::::::::::::::::::::
 std::vector<Tensor>

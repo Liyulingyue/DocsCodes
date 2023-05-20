@@ -6,16 +6,16 @@ kldiv_loss
 ..cpp: function::Tensor kldiv_loss ( const Tensor & x , const Tensor & label , const std::string & reduction = "mean" ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **label** (const Tensor&)
 	- **reduction** (const std::string&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

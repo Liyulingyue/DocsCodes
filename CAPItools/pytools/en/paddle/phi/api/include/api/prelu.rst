@@ -6,17 +6,17 @@ prelu
 ..cpp: function::Tensor prelu ( const Tensor & x , const Tensor & alpha , const std::string & data_format = "NCHW" , const std::string & mode = "all" ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **alpha** (const Tensor&)
 	- **data_format** (const std::string&)
 	- **mode** (const std::string&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

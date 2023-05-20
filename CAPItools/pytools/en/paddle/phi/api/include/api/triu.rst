@@ -6,15 +6,15 @@ triu
 ..cpp: function::Tensor triu ( const Tensor & x , int diagonal ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **diagonal** (int)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

@@ -6,17 +6,17 @@ npu_identity
 ..cpp: function::Tensor npu_identity ( const Tensor & x , int format = - 1 ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.npu_identity](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/npu_identity_en.html)
+This API is aligned with Python API, more details are shown in [paddle.npu_identity](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/npu_identity_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **format** (int)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

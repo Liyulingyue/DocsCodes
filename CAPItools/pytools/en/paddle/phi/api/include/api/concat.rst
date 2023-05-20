@@ -6,17 +6,17 @@ concat
 ..cpp: function::Tensor concat ( const std::vector<Tensor> & x , const Scalar & axis ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.concat](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/concat_en.html)
+This API is aligned with Python API, more details are shown in [paddle.concat](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/concat_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const std::vector<Tensor>&)
 	- **axis** (const Scalar&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

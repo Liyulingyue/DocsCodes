@@ -6,11 +6,11 @@ fill_diagonal_tensor
 ..cpp: function::Tensor fill_diagonal_tensor ( const Tensor & x , const Tensor & y , int64_t offset = 0 , int dim1 = 0 , int dim2 = 1 ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **y** (const Tensor&)
@@ -18,6 +18,6 @@ paddle\phi\api\include\api.h
 	- **dim1** (int)
 	- **dim2** (int)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

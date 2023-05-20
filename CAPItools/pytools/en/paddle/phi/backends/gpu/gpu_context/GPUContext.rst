@@ -1,23 +1,23 @@
 .. _en_api_GPUContext:
 
-GPUContext[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\backends\gpu\gpu_context.h)
+GPUContext[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\backends\gpu\gpu_context.h)
 -------------------------------
 
 .. cpp:class:: explicit GPUContext ( const GPUPlace & place , bool init = true , int stream_priority = 0 ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\backends\gpu\gpu_context.h
 
-方法
+Methods
 :::::::::::::::::::::
 
 explicit GPUContext ( const GPUPlace & place , bool init = true , int stream_priority = 0 ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **place** (const GPUPlace&)
 	- **init** (bool)
@@ -27,7 +27,7 @@ GPUContext ( GPUContext & & ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **&** (GPUContext&)
 
@@ -35,11 +35,11 @@ GPUContext & operator = ( GPUContext & & ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **&** (GPUContext&)
 
-**返回**
+**Returns**
 '''''''''''
 GPUContext
 virtual ~GPUContext ( ) ;
@@ -52,7 +52,7 @@ const Place & GetPlace ( ) const override ;
 /*! \briefReturn place in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 Place
 gpuStream_t stream ( ) const ;
@@ -60,7 +60,7 @@ gpuStream_t stream ( ) const ;
 /*! \briefReturn gpu stream in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 gpuStream_t
 CUDAStream * cuda_stream ( ) const ;
@@ -68,7 +68,7 @@ CUDAStream * cuda_stream ( ) const ;
 /*! \briefReturn CUDAStream in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 CUDAStream
 dnnHandle_t cudnn_handle ( ) const ;
@@ -76,7 +76,7 @@ dnnHandle_t cudnn_handle ( ) const ;
 /*! \briefReturn cudnnhandle in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 dnnHandle_t
 blasHandle_t cublas_handle ( ) const ;
@@ -84,7 +84,7 @@ blasHandle_t cublas_handle ( ) const ;
 /*! \briefReturn cublas handle in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 blasHandle_t
 blasLtHandle_t cublaslt_handle ( ) const ;
@@ -92,7 +92,7 @@ blasLtHandle_t cublaslt_handle ( ) const ;
 /*! \briefReturn cublasLt handle in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 blasLtHandle_t
 solverHandle_t cusolver_dn_handle ( ) const ;
@@ -100,7 +100,7 @@ solverHandle_t cusolver_dn_handle ( ) const ;
 /*! \briefReturn cusolver handle in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 solverHandle_t
 sparseHandle_t cusparse_handle ( ) const ;
@@ -108,7 +108,7 @@ sparseHandle_t cusparse_handle ( ) const ;
 /*! \briefReturn cusparse handle in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 sparseHandle_t
 void Wait ( ) const override ;
@@ -120,7 +120,7 @@ void WaitEvent ( gpuEvent_t ev ) const ;
 '''''''''''
 /*! \briefWait for event in the stream. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **ev** (gpuEvent_t)
 
@@ -129,7 +129,7 @@ bool tensor_core_available ( ) const ;
 /*! \briefCheck whether tensor core is supported 
 
 
-**返回**
+**Returns**
 '''''''''''
 bool
 int GetComputeCapability ( ) const ;
@@ -137,7 +137,7 @@ int GetComputeCapability ( ) const ;
 /*! \briefReturn compute capability in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 int
 int GetMaxPhysicalThreadCount ( ) const ;
@@ -145,7 +145,7 @@ int GetMaxPhysicalThreadCount ( ) const ;
 /*! \briefReturn the max physical thread count in the device context 
 
 
-**返回**
+**Returns**
 '''''''''''
 int
 int GetSMCount ( ) const ;
@@ -153,7 +153,7 @@ int GetSMCount ( ) const ;
 /*! \briefReturn the SM count in the device context 
 
 
-**返回**
+**Returns**
 '''''''''''
 int
 int GetMaxThreadsPerBlock ( ) const ;
@@ -161,7 +161,7 @@ int GetMaxThreadsPerBlock ( ) const ;
 /*! \briefReturn the Max thread num of block in the device context 
 
 
-**返回**
+**Returns**
 '''''''''''
 int
 std::array<int , 3> GetCUDAMaxGridDimSize ( ) const ;
@@ -169,7 +169,7 @@ std::array<int , 3> GetCUDAMaxGridDimSize ( ) const ;
 /*! \briefReturn the max grid dim size in the device context 
 
 
-**返回**
+**Returns**
 '''''''''''
 std::array<int , 3>
 Eigen::GpuDevice * eigen_device ( ) const ;
@@ -177,7 +177,7 @@ Eigen::GpuDevice * eigen_device ( ) const ;
 /*! \briefReturn eigen device in the device context. 
 
 
-**返回**
+**Returns**
 '''''''''''
 Eigen::GpuDevice
 DnnWorkspaceHandle cudnn_workspace_handle ( ) const ;
@@ -186,14 +186,14 @@ DnnWorkspaceHandle cudnn_workspace_handle ( ) const ;
 
 
 
-**返回**
+**Returns**
 '''''''''''
 DnnWorkspaceHandle
 void CublasCall ( const std::function<void ( blasHandle_t )> & ) const ;
 '''''''''''
 /*! \briefCall cublas function safely. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **&** (const std::function<void ( blasHandle_t )>)
 
@@ -202,7 +202,7 @@ void TensorCoreCublasCallIfAvailable ( const std::function<void ( blasHandle_t )
 /*! \briefCall cublas function with Tensor Core safely. If
 Tensor Core is not available, use DEFAULT_MATH instead. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **&** (const std::function<void ( blasHandle_t )>)
 
@@ -210,7 +210,7 @@ void CusparseCall ( const std::function<void ( sparseHandle_t )> & ) const ;
 '''''''''''
 /*! \briefCall cusparse function safely. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **&** (const std::function<void ( sparseHandle_t )>)
 
@@ -218,7 +218,7 @@ void RecordEvent ( gpuEvent_t ev , const std::function<void ( )> & callback ) co
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **ev** (gpuEvent_t)
 	- **callback** (const std::function<void ( )>&)
@@ -227,7 +227,7 @@ void RecordEvent ( gpuEvent_t ev ) const ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **ev** (gpuEvent_t)
 
@@ -235,7 +235,7 @@ void AddStreamCallback ( const std::function<void ( )> & callback ) const ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **callback** (const std::function<void ( )>&)
 
@@ -248,29 +248,29 @@ bool HasDnnAttr ( const std::string & attr_name ) const ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **attr_name** (const std::string&)
 
-**返回**
+**Returns**
 '''''''''''
 bool
 const Attribute & GetDnnAttr ( const std::string & attr_name ) const ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **attr_name** (const std::string&)
 
-**返回**
+**Returns**
 '''''''''''
 Attribute
 void SetDnnAttr ( const std::string & attr_name , Attribute attr ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **attr_name** (const std::string&)
 	- **attr** (Attribute)
@@ -285,7 +285,7 @@ static const char * name ( ) {
 
 
 
-**返回**
+**Returns**
 '''''''''''
 char
 ncclComm_t nccl_comm ( ) const ;
@@ -293,14 +293,14 @@ ncclComm_t nccl_comm ( ) const ;
 /*! \briefReturn nccl communicators. 
 
 
-**返回**
+**Returns**
 '''''''''''
 ncclComm_t
 void set_nccl_comm ( ncclComm_t comm ) ;
 '''''''''''
 /*! \briefSet nccl communicators. 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **comm** (ncclComm_t)
 
@@ -313,7 +313,7 @@ void PartialInitWithoutAllocator ( int stream_priority = 0 ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **stream_priority** (int)
 
@@ -326,7 +326,7 @@ void SetCUDAStream ( CUDAStream * , bool clear = true ) ;
 '''''''''''
 
 
-**参数**
+**Parameters**
 '''''''''''
 	- **** (CUDAStream*)
 	- **clear** (bool)

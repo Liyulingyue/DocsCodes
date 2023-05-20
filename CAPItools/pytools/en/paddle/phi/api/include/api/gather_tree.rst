@@ -6,15 +6,15 @@ gather_tree
 ..cpp: function::Tensor gather_tree ( const Tensor & ids , const Tensor & parents ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **ids** (const Tensor&)
 	- **parents** (const Tensor&)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

@@ -6,16 +6,16 @@ meshgrid
 ..cpp: function::std::vector<Tensor> meshgrid ( const std::vector<Tensor> & inputs ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.meshgrid](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/meshgrid_en.html)
+This API is aligned with Python API, more details are shown in [paddle.meshgrid](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/meshgrid_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **inputs** (const std::vector<Tensor>&)
 
-返回
+Returns
 :::::::::::::::::::::
 std::vector<Tensor>

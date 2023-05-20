@@ -6,13 +6,13 @@ nll_loss
 ..cpp: function::std::tuple<Tensor , Tensor> nll_loss ( const Tensor & input , const Tensor & label , const paddle::optional<Tensor> & weight , int64_t ignore_index = - 100 , const std::string & reduction = "mean" ) ;
 
 
-本 API 与 Python API 对齐，详细用法可参考链接：[paddle.nll_loss](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/nll_loss_en.html)
+This API is aligned with Python API, more details are shown in [paddle.nll_loss](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/nll_loss_en.html)
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **input** (const Tensor&)
 	- **label** (const Tensor&)
@@ -20,6 +20,6 @@ paddle\phi\api\include\api.h
 	- **ignore_index** (int64_t)
 	- **reduction** (const std::string&)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>

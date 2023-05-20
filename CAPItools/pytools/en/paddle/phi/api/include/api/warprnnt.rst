@@ -6,11 +6,11 @@ warprnnt
 ..cpp: function::Tensor warprnnt ( const Tensor & input , const Tensor & label , const Tensor & input_lengths , const Tensor & label_lengths , int blank = 0 , float fastemit_lambda = 0.0 ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **input** (const Tensor&)
 	- **label** (const Tensor&)
@@ -19,6 +19,6 @@ paddle\phi\api\include\api.h
 	- **blank** (int)
 	- **fastemit_lambda** (float)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

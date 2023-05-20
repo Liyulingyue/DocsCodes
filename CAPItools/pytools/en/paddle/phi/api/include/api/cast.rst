@@ -6,15 +6,15 @@ cast
 ..cpp: function::Tensor cast ( const Tensor & x , DataType dtype ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **dtype** (DataType)
 
-返回
+Returns
 :::::::::::::::::::::
 Tensor

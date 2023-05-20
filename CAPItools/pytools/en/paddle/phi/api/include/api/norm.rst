@@ -6,17 +6,17 @@ norm
 ..cpp: function::std::tuple<Tensor , Tensor> norm ( const Tensor & x , int axis , float epsilon , bool is_test ) ;
 
 
-定义目录
+Path
 :::::::::::::::::::::
 paddle\phi\api\include\api.h
 
-参数
+Parameters
 :::::::::::::::::::::
 	- **x** (const Tensor&)
 	- **axis** (int)
 	- **epsilon** (float)
 	- **is_test** (bool)
 
-返回
+Returns
 :::::::::::::::::::::
 std::tuple<Tensor , Tensor>
