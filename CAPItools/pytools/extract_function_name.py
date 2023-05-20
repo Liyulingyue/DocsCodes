@@ -46,9 +46,10 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE = "cn"):
         rst_dir = os.path.join(".", LANGUAGE, path, func_name + ".rst")
         # avoid a filename such as operate*.rst, only windows
         try:
-            helper = func_helper(item, cpp2py_api_list, LANGUAGE)
-            helper.create_file(rst_dir)
+            helper = func_helper(item, cpp2py_api_list)
+            helper.create_file(rst_dir, LANGUAGE)
         except:
+            print(traceback.format_exc())
             print('FAULT GENERATE:' + rst_dir)
 
     for item in all_class:
@@ -60,8 +61,8 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE = "cn"):
         func_name = item["name"].replace("PADDLE_API", "")
         rst_dir = os.path.join(".", LANGUAGE, path, func_name + ".rst")
         try:
-            helper = class_helper(item, LANGUAGE)
-            helper.create_file(rst_dir)
+            helper = class_helper(item)
+            helper.create_file(rst_dir, LANGUAGE)
         except:
             print(traceback.format_exc())
             print('FAULT GENERATE:' + rst_dir)
@@ -77,7 +78,6 @@ def cpp2py(data: dict):
 
 
 if __name__ == "__main__":
-    LANGUAGE = "cn"
     all_funcs = []
     all_class = []
     cpp2py_api_list = []
@@ -109,7 +109,8 @@ if __name__ == "__main__":
             all_class.extend(current_class)
             overview_list.append({'h_file':file_path,'class':current_class,'function':current_func})
 
-    generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE)
+    generate_docs(all_funcs, all_class, cpp2py_api_list, "cn")
+    generate_docs(all_funcs, all_class, cpp2py_api_list, "en")
 
     # TODO: delete the try-except after every thing is prepare
     try:
