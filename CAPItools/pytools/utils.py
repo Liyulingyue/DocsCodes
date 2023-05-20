@@ -62,7 +62,7 @@ def parse_doxygen(doxygen):
             elif doxygen_part.startswith('param '):
                 param_intro = doxygen_part.replace('param ', '', 1)
                 param_name = param_intro[:param_intro.find(' ')]
-                doxygen_dict['param_intro'][param_name] = param_intro
+                doxygen_dict['param_intro'][param_name] = param_intro[param_intro.find(' ')+1:]
             elif doxygen_part.startswith('note '):
                 doxygen_dict['note'] = doxygen_part.replace('note ', '', 1)
             else:

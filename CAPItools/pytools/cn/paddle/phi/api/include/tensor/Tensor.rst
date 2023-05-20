@@ -15,13 +15,13 @@ paddle\phi\api\include\tensor.h
 
 Tensor ( ) = default ;
 '''''''''''
- @brief Construct a new Tensor object
+Construct a new Tensor object
 
 
 
 Tensor ( const Tensor & ) = default ;
 '''''''''''
- @brief Construct a new Tensor object by copy
+Construct a new Tensor object by copy
 
 
 **参数**
@@ -30,7 +30,7 @@ Tensor ( const Tensor & ) = default ;
 
 Tensor ( Tensor & & ) = default ;
 '''''''''''
- @brief Construct a new Tensor object by move
+Construct a new Tensor object by move
 
 
 **参数**
@@ -39,45 +39,45 @@ Tensor ( Tensor & & ) = default ;
 
 explicit Tensor ( std::shared_ptr<phi::TensorBase> tensor_impl ) ;
 '''''''''''
- @brief Construct a new Tensor object by a TensorBase pointer @param tensor_impl
-
+Construct a new Tensor object by a TensorBase pointer 
 
 **参数**
 '''''''''''
-	- **tensor_impl** (std::shared_ptr<phi::TensorBase >)
+	- **tensor_impl** (std::shared_ptr<phi::TensorBase >) - tensor_impl
+
 
 explicit Tensor ( const Place & place ) ;
 '''''''''''
- @brief Construct a new Tensor object on the target place. This is a deprecated method and may be removed in the future!!! @param place
-
+Construct a new Tensor object on the target place. This is a deprecated method and may be removed in the future!!! 
 
 **参数**
 '''''''''''
-	- **place** (const Place&)
+	- **place** (const Place&) - place
+
 
 Tensor ( const Place & place , const std::vector<int64_t> & shape ) ;
 '''''''''''
- @brief Construct a new Tensor object on the target place with specified shape. This is a deprecated method and may be removed in the future!!! @param place @param shape
-
+Construct a new Tensor object on the target place with specified shape. This is a deprecated method and may be removed in the future!!! 
 
 **参数**
 '''''''''''
 	- **place** (const Place&)
-	- **shape** (const std::vector<int64_t>&)
+	- **shape** (const std::vector<int64_t>&) - shape
+
 
 Tensor ( std::shared_ptr<phi::TensorBase> tensor_impl , const std::string & name ) ;
 '''''''''''
- @brief Construct a new Tensor object by a TensorBase pointer and name @param tensor_impl
-
+Construct a new Tensor object by a TensorBase pointer and name 
 
 **参数**
 '''''''''''
-	- **tensor_impl** (std::shared_ptr<phi::TensorBase >)
+	- **tensor_impl** (std::shared_ptr<phi::TensorBase >) - tensor_impl
+
 	- **name** (const std::string&)
 
 explicit Tensor ( const std::string & name ) :
 '''''''''''
- @brief Construct a new Tensor object with name @note Internal method, used to adapt original execution mechanism and debug analysis in the development of new dygraph. It may be removed in the future. 
+Construct a new Tensor object with name 
 
 **参数**
 '''''''''''
@@ -85,188 +85,187 @@ explicit Tensor ( const std::string & name ) :
 
 int64_t numel ( ) const ;
 '''''''''''
- @brief Return the number of elements of Tensor. @return int64_t
-
+Return the number of elements of Tensor. 
 
 
 **返回**
 '''''''''''
 int64_t
+
 int64_t size ( ) const ;
 '''''''''''
- @brief Get the size of current tensor. The compatible method of `Tensor::numel()`. This is a deprecated method and may be removed in the future! @return int64_t
-
+Get the size of current tensor. The compatible method of `Tensor::numel()`. This is a deprecated method and may be removed in the future! 
 
 
 **返回**
 '''''''''''
 int64_t
+
 const phi::DDim & dims ( ) const ;
 '''''''''''
- @brief Return the dimensions of Tensor. @return phi::DDim
-
+Return the dimensions of Tensor. 
 
 
 **返回**
 '''''''''''
 phi::DDim
+
 std::vector<int64_t> shape ( ) const ;
 '''''''''''
- @brief Return the shape (dimensions) of Tensor. The compatible method of `Tensor::dims()`. This is a deprecated method and may be removed in the future! @return std::vector<int64_t>
-
+Return the shape (dimensions) of Tensor. The compatible method of `Tensor::dims()`. This is a deprecated method and may be removed in the future! 
 
 
 **返回**
 '''''''''''
 std::vector<int64_t>
+
 void reshape ( const std::vector<int64_t> & shape ) ;
 '''''''''''
- @brief Reset the shape of the tensor. @note: This method means Reset the shape of the tensor, and must be called before calling mutable_data() or copy_to(const Place& place), this is not a standard definition of reshape behavior, so we will deprecated this feature in the future. @param shape
-
+Reset the shape of the tensor. 
 
 **参数**
 '''''''''''
-	- **shape** (const std::vector<int64_t>&)
+	- **shape** (const std::vector<int64_t>&) - shape
+
 
 DataType dtype ( ) const ;
 '''''''''''
- @brief Return the data type of Tensor. @return DataType
-
+Return the data type of Tensor. 
 
 
 **返回**
 '''''''''''
 DataType
+
 DataType type ( ) const ;
 '''''''''''
- @brief Return the data type of Tensor. The compatible method of `Tensor::dtype()`. This is a deprecated method and may be removed in the future! @return DataType
-
+Return the data type of Tensor. The compatible method of `Tensor::dtype()`. This is a deprecated method and may be removed in the future! 
 
 
 **返回**
 '''''''''''
 DataType
+
 phi::DataLayout layout ( ) const ;
 '''''''''''
- @brief Return the layout of Tensor. @return DataLayout
-
+Return the layout of Tensor. 
 
 
 **返回**
 '''''''''''
-phi::DataLayout
+DataLayout
+
 bool is_dense_tensor ( ) const ;
 '''''''''''
- @brief Determine whether tensor is DenseTensor @return true @return false
-
+Determine whether tensor is DenseTensor 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool is_selected_rows ( ) const ;
 '''''''''''
- @brief Determine whether tensor is SelectedRows @return true @return false
-
+Determine whether tensor is SelectedRows 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool is_sparse_coo_tensor ( ) const ;
 '''''''''''
- @brief Determine whether tensor is SparseCooTensor @return true @return false
-
+Determine whether tensor is SparseCooTensor 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool is_sparse_csr_tensor ( ) const ;
 '''''''''''
- @brief Determine whether tensor is SparseCsrTensor @return true @return false
-
+Determine whether tensor is SparseCsrTensor 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool is_string_tensor ( ) const ;
 '''''''''''
- @brief Determine whether tensor is StringTensor @return true @return false
-
+Determine whether tensor is StringTensor 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 const Place & place ( ) const ;
 '''''''''''
- @brief Return the place (device) of Tensor. @return Place
-
+Return the place (device) of Tensor. 
 
 
 **返回**
 '''''''''''
 Place
+
 bool is_cpu ( ) const ;
 '''''''''''
- @brief Determine whether the tensor device is CPU @return true @return false
-
+Determine whether the tensor device is CPU 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool is_gpu ( ) const ;
 '''''''''''
- @brief Determine whether the tensor device is GPU @return true @return false
-
+Determine whether the tensor device is GPU 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool is_gpu_pinned ( ) const ;
 '''''''''''
- @brief Determine whether the tensor device is GPU_PINNED @return true @return false
-
+Determine whether the tensor device is GPU_PINNED 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool is_xpu ( ) const ;
 '''''''''''
- @brief Determine whether the tensor device is XPU @return true @return false
-
+Determine whether the tensor device is XPU 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool is_custom_device ( ) const ;
 '''''''''''
- @brief Determine whether the tensor device is CustomDevice @return true @return false
-
+Determine whether the tensor device is CustomDevice 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 T * mutable_data ( ) ;
 '''''''''''
- @brief Get the memory pointer in CPU or GPU with specific data type. It's usually used to get the output data pointer, same as the T* data(). @tparam T @return T*
-
+Get the memory pointer in CPU or GPU with specific data type. It's usually used to get the output data pointer, same as the T* data(). 
 
 
 **返回**
 '''''''''''
-T
+T*
+
 T * mutable_data ( const Place & place ) ;
 '''''''''''
- @brief Get the memory pointer in CPU or GPU with specific data type. It's usually used to get the output data pointer. This is a deprecated method and may be removed in the future! @tparam T @param place @return T*
-
+Get the memory pointer in CPU or GPU with specific data type. It's usually used to get the output data pointer. This is a deprecated method and may be removed in the future! 
 
 **参数**
 '''''''''''
@@ -274,99 +273,105 @@ T * mutable_data ( const Place & place ) ;
 
 **返回**
 '''''''''''
-T
+T*
+
 const T * data ( ) const ;
 '''''''''''
- @brief Get the const memory pointer directly. It's usually used to get the output data pointer. @tparam T @return T*
-
+Get the const memory pointer directly. It's usually used to get the output data pointer. 
 
 
 **返回**
 '''''''''''
-T
+T*
+
 T * data ( ) ;
 '''''''''''
- @brief Get the memory pointer directly. It's usually used to get the mutable output data pointer. @tparam T @return T*
-
+Get the memory pointer directly. It's usually used to get the mutable output data pointer. 
 
 
 **返回**
 '''''''''''
-T
+T*
+
 const void * data ( ) const ;
 '''''''''''
- @brief Get the const memory pointer directly. It's usually used to get the output data pointer. @tparam T @return T*
+Get the const memory pointer directly. It's usually used to get the output data pointer. 
 
 
+**返回**
+'''''''''''
+T*
 
 void * data ( ) ;
 '''''''''''
- @brief Get the memory pointer directly. It's usually used to get the mutable output data pointer. @tparam T @return T*
+Get the memory pointer directly. It's usually used to get the mutable output data pointer. 
 
 
+**返回**
+'''''''''''
+T*
 
 Tensor slice ( int64_t begin_idx , int64_t end_idx ) const ;
 '''''''''''
- @brief Return a sub-tensor of the given tensor. It is usually used to extract a sub-tensor (which supports modifying the data of the original tensor) to perform further operations. @param begin_idx The index of the start row (inclusive) to slice.The index number begins from 0. @param end_idx The index of the end row (exclusive) to slice. The index number begins from begin_idx + 1. @return Tensor
-
+Return a sub-tensor of the given tensor. It is usually used to extract a sub-tensor (which supports modifying the data of the original tensor) to perform further operations. 
 
 **参数**
 '''''''''''
-	- **begin_idx** (int64_t) - The index of the start row (inclusive) to slice.The index number begins from 0.
-	- **end_idx** (int64_t) - The index of the end row (exclusive) to slice. The index number begins from begin_idx + 1.
+	- **begin_idx** (int64_t) - The index of the start row (inclusive) to slice.The index number begins from 0. 
+	- **end_idx** (int64_t) - The index of the end row (exclusive) to slice. The index number begins from begin_idx + 1. 
 
 **返回**
 '''''''''''
 Tensor
+
 const std::shared_ptr<phi::TensorBase> & impl ( ) const ;
 '''''''''''
- @brief Return the implementation of current Tensor. @return std::shared_ptr<phi::TensorBase>
-
+Return the implementation of current Tensor. 
 
 
 **返回**
 '''''''''''
 std::shared_ptr<phi::TensorBase>
+
 void set_impl ( const std::shared_ptr<phi::TensorBase> & impl ) ;
 '''''''''''
- @brief Set the implementation of current Tensor. @param impl
-
+Set the implementation of current Tensor. 
 
 **参数**
 '''''''''''
-	- **impl** (const std::shared_ptr<phi::TensorBase>&)
+	- **impl** (const std::shared_ptr<phi::TensorBase>&) - impl
+
 
 void set_impl ( std::shared_ptr<phi::TensorBase> & & impl ) ;
 '''''''''''
- @brief Set the implementation of current Tensor. @param impl
-
+Set the implementation of current Tensor. 
 
 **参数**
 '''''''''''
-	- **impl** (std::shared_ptr<phi::TensorBase>)
+	- **impl** (std::shared_ptr<phi::TensorBase>) - impl
+
 
 gpuStream_t stream ( ) const ;
 '''''''''''
- @brief Get the stream where the tensor is currently located This is a deprecated method and may be removed in the future! @return gpuStream_t
-
+Get the stream where the tensor is currently located This is a deprecated method and may be removed in the future! 
 
 
 **返回**
 '''''''''''
 gpuStream_t
+
 const std::string & name ( ) const {
 '''''''''''
- @brief Return the name of Tensor. @note Used to adapt original execution mechanism and debug analysis in the development of new dygraph. @return const std::string&
-
+Return the name of Tensor. 
 
 
 **返回**
 '''''''''''
-std::string
+const std::string&
+
 void set_name ( const std::string & name ) {
 '''''''''''
- @brief Set name of Tensor. @note Used to adapt original execution mechanism and debug analysis in the development of new dygraph. @param const std::string& name
-
+Set name of Tensor. 
 
 **参数**
 '''''''''''
@@ -374,8 +379,7 @@ void set_name ( const std::string & name ) {
 
 Tensor copy_to ( const Place & target_place ) const ;
 '''''''''''
- @brief Copy the current Tensor data to the specified device and return the new Tensor. It's usually used to set the input tensor data. @note The Tensor's `copy_to` method is deprecated since version 2.3, and will be removed in version 2.4, please use `copy_to` method without template argument instead. reason: copying a Tensor to another device does not need to specify the data type template argument @tparam T @param target_place, the target place of which the tensor will copy to. @return Tensor
-
+Copy the current Tensor data to the specified device and return the new Tensor. It's usually used to set the input tensor data. 
 
 **参数**
 '''''''''''
@@ -384,10 +388,10 @@ Tensor copy_to ( const Place & target_place ) const ;
 **返回**
 '''''''''''
 Tensor
+
 Tensor copy_to ( const Place & place , bool blocking ) const ;
 '''''''''''
- @brief Transfer the current Tensor to the specified device and return. @param place, The target place of which the tensor will copy to. @param blocking, Should we copy this in sync way. @return Tensor
-
+Transfer the current Tensor to the specified device and return. 
 
 **参数**
 '''''''''''
@@ -397,10 +401,10 @@ Tensor copy_to ( const Place & place , bool blocking ) const ;
 **返回**
 '''''''''''
 Tensor
+
 void copy_ ( const Tensor & src , const Place & target_place , bool blocking ) ;
 '''''''''''
- @brief Transfer the source Tensor to current Tensor. @param src, the source Tensor to be copied. @param blocking, Should we copy this in sync way. @return void
-
+Transfer the source Tensor to current Tensor. 
 
 **参数**
 '''''''''''
@@ -410,8 +414,7 @@ void copy_ ( const Tensor & src , const Place & target_place , bool blocking ) ;
 
 Tensor cast ( DataType target_type ) const ;
 '''''''''''
- @brief Cast datatype from one to another @param target_type @return Tensor
-
+Cast datatype from one to another 
 
 **参数**
 '''''''''''
@@ -420,43 +423,43 @@ Tensor cast ( DataType target_type ) const ;
 **返回**
 '''''''''''
 Tensor
+
 bool defined ( ) const ;
 '''''''''''
- @brief Determine whether it is a meaningful Tensor @return true @return false
-
+Determine whether it is a meaningful Tensor 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool initialized ( ) const ;
 '''''''''''
- @brief Determine whether Tensor is initialized. @return true @return false
-
+Determine whether Tensor is initialized. 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 bool is_initialized ( ) const ;
 '''''''''''
- @brief Determine whether Tensor is initialized. This is a deprecated method and may be removed in the future! @return true @return false
-
+Determine whether Tensor is initialized. This is a deprecated method and may be removed in the future! 
 
 
 **返回**
 '''''''''''
-bool
+false
+
 void reset ( ) ;
 '''''''''''
- @brief Reset the Tensor implementation
+Reset the Tensor implementation
 
 
 
 Tensor & operator = ( const Tensor & x ) & ;
 '''''''''''
- @brief Assignment operator @param x @return Tensor&
-
+Assignment operator 
 
 **参数**
 '''''''''''
@@ -464,11 +467,11 @@ Tensor & operator = ( const Tensor & x ) & ;
 
 **返回**
 '''''''''''
-Tensor
+Tensor&
+
 Tensor & operator = ( Tensor & & x ) & ;
 '''''''''''
- @brief Move assignment operator @param x @return Tensor&
-
+Move assignment operator 
 
 **参数**
 '''''''''''
@@ -476,11 +479,11 @@ Tensor & operator = ( Tensor & & x ) & ;
 
 **返回**
 '''''''''''
-Tensor
+Tensor&
+
 Tensor operator + ( const Tensor & other ) const ;
 '''''''''''
- @brief Tensor operants @param other @return Tensor
-
+Tensor operants 
 
 **参数**
 '''''''''''
@@ -489,6 +492,7 @@ Tensor operator + ( const Tensor & other ) const ;
 **返回**
 '''''''''''
 Tensor
+
 Tensor operator - ( const Tensor & other ) const ;
 '''''''''''
 
@@ -683,49 +687,49 @@ Tensor operator ^ ( const Tensor & other ) const ;
 Tensor
 AbstractAutogradMeta * get_autograd_meta ( ) const ;
 '''''''''''
- @brief Get the autograd meta object pointer @return AbstractAutogradMeta*
-
+Get the autograd meta object pointer 
 
 
 **返回**
 '''''''''''
-AbstractAutogradMeta
+AbstractAutogradMeta*
+
 const std::shared_ptr<AbstractAutogradMeta> & mutable_autograd_meta ( ) const ;
 '''''''''''
- @brief Get the shared pointer of autograd meta object @return std::shared_ptr<AbstractAutogradMeta>&
-
+Get the shared pointer of autograd meta object 
 
 
 **返回**
 '''''''''''
-std::shared_ptr<AbstractAutogradMeta>
+std::shared_ptr<AbstractAutogradMeta>&
+
 void set_autograd_meta ( std::shared_ptr<AbstractAutogradMeta> autograd_meta ) ;
 '''''''''''
- @brief Set the autograd meta object @param autograd_meta
-
+Set the autograd meta object 
 
 **参数**
 '''''''''''
-	- **autograd_meta** (std::shared_ptr<AbstractAutogradMeta >)
+	- **autograd_meta** (std::shared_ptr<AbstractAutogradMeta >) - autograd_meta
+
 
 void bump_inplace_version ( ) ;
 '''''''''''
- @brief Increase inplace version
+Increase inplace version
 
 
 
 uint32_t current_inplace_version ( ) ;
 '''''''''''
- @brief Get current inplace version @return uint32_t
-
+Get current inplace version 
 
 
 **返回**
 '''''''''''
 uint32_t
+
 void reset_inplace_version ( bool set_to_zero = false ) ;
 '''''''''''
- @brief Reset inplace version
+Reset inplace version
 
 
 **参数**
@@ -734,8 +738,7 @@ void reset_inplace_version ( bool set_to_zero = false ) ;
 
 Tensor to_sparse_coo ( const int64_t sparse_dim ) const ;
 '''''''''''
- @brief Convert DenseTensor or SparseCsrTensor to SparseCooTensor @param sparse_dim, The number of sparse dimensions @return Tensor
-
+Convert DenseTensor or SparseCsrTensor to SparseCooTensor 
 
 **参数**
 '''''''''''
@@ -744,24 +747,25 @@ Tensor to_sparse_coo ( const int64_t sparse_dim ) const ;
 **返回**
 '''''''''''
 Tensor
+
 Tensor to_sparse_csr ( ) const ;
 '''''''''''
- @brief Convert DenseTensor or SparseCooTensor to SparseCsrTensor @return Tensor
-
+Convert DenseTensor or SparseCooTensor to SparseCsrTensor 
 
 
 **返回**
 '''''''''''
 Tensor
+
 Tensor to_dense ( ) const ;
 '''''''''''
- @brief Convert SparseCooTensor or SparseCsrTensor to DenseTensor @return Tensor
-
+Convert SparseCooTensor or SparseCsrTensor to DenseTensor 
 
 
 **返回**
 '''''''''''
 Tensor
+
 Tensor add ( const Tensor & y ) const ;
 '''''''''''
 

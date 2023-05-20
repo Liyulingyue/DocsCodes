@@ -138,6 +138,9 @@ class class_helper(object):
             # 获取返回值
             returns = ith_function["returns"].replace("PADDLE_API ", "")
 
+
+            if 'Construct a new Tensor object on the target place. This is a deprecated method and may be removed' in funcs_doxygen:
+                a = 1
             # analysis doxygen
             doxygen_dict = parse_doxygen(funcs_doxygen)
             if doxygen_dict['intro'] != "": funcs_intro = doxygen_dict['intro']
