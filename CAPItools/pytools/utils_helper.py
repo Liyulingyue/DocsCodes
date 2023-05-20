@@ -1,6 +1,6 @@
 import os
 
-from utils import get_parameters
+from utils import get_parameters, parse_doxygen
 
 
 class func_helper(object):
@@ -33,21 +33,13 @@ class func_helper(object):
         self.returns = self.function_dict["returns"].replace("PADDLE_API ", "")
 
         # analysis doxygen
-        if '@' in doxygen:
-            doxygen = doxygen[doxygen.find('@'):]
-            for doxygen_part in doxygen.split('@'):
-                if doxygen_part.startswith('brief '):
-                    self.introduction = doxygen_part.replace('brief ', '', 1)
-                elif doxygen_part.startswith('return '):
-                    self.returns = doxygen_part.replace('return ', '', 1)
-                elif doxygen_part.startswith('param '):
-                    param_intro = doxygen_part.replace('param ', '', 1)
-                    param_name = param_intro[:param_intro.find(' ')]
-                    self.parameter_dict[param_name]['intro'] = param_intro
-                elif doxygen_part.startswith('note '):
-                    self.note = doxygen_part.replace('note ', '', 1)
-                else:
-                    pass
+        doxygen_dict = parse_doxygen(doxygen)
+        if doxygen_dict['intro'] != "": self.introduction = doxygen_dict['intro']
+        if doxygen_dict['note'] != "": self.note = doxygen_dict['note']
+        if doxygen_dict['returns'] != "": self.returns = doxygen_dict['returns']
+        if doxygen_dict['param_intro'] != {}:
+            for param_name in doxygen_dict['param_intro'].keys():
+                self.parameter_dict[param_name]['intro'] = doxygen_dict['param_intro'][param_name]
 
     def create_file(self, save_dir):
         with open(save_dir, 'w', encoding='utf8') as f:
@@ -118,7 +110,7 @@ class class_helper(object):
         self.file_path = self.class_dict["filename"].replace("../", "")
         self.doxygen = self.class_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
                                                                                                        "").replace("  ",
-                                                                                                                   "")
+                                                                                                 "")
         # 初始化函数
         # 避免空函数解析
         self.init_func = self.class_name
@@ -135,6 +127,9 @@ class class_helper(object):
             funcs_doxygen = ith_function.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
                                                                                                          "").replace(
                 "  ", "")
+            funcs_intro = funcs_doxygen
+            funcs_note = ""
+
             # 解析参数
             if len(ith_function["parameters"]) != 0:
                 parameter_dict = get_parameters(ith_function["parameters"])
@@ -143,10 +138,24 @@ class class_helper(object):
             # 获取返回值
             returns = ith_function["returns"].replace("PADDLE_API ", "")
 
+            # analysis doxygen
+            doxygen_dict = parse_doxygen(funcs_doxygen)
+            if doxygen_dict['intro'] != "": funcs_intro = doxygen_dict['intro']
+            if doxygen_dict['note'] != "": funcs_note = doxygen_dict['note']
+            if doxygen_dict['returns'] != "": returns = doxygen_dict['returns']
+            if doxygen_dict['param_intro'] != {}:
+                for param_name in doxygen_dict['param_intro'].keys():
+                    # TODO: 可能param_name 不同步，需要注意
+                    if param_name in parameter_dict.keys():
+                        parameter_dict[param_name]['intro'] = doxygen_dict['param_intro'][param_name]
+
             self.functions_infor.append({'name': function_name,
-                                         'doxygen': funcs_doxygen,
+                                         'doxygen': funcs_intro,# 'note': funcs_note,
                                          'parameter': parameter_dict,
                                          'returns': returns})
+
+        # if '@' in self.doxygen:
+        #     print('CLASS: ' + self.file_path + ' - ' + self.class_name)
 
     def create_file(self, save_dir):
         with open(save_dir, 'w', encoding='utf8') as f:

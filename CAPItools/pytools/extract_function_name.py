@@ -1,6 +1,7 @@
 import CppHeaderParser
 import json
 import os
+import traceback
 
 from utils_helper import func_helper, class_helper, generate_overview
 from utils import get_PADDLE_API_class, get_PADDLE_API_func
@@ -62,6 +63,7 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE = "cn"):
             helper = class_helper(item, LANGUAGE)
             helper.create_file(rst_dir)
         except:
+            print(traceback.format_exc())
             print('FAULT GENERATE:' + rst_dir)
 
 

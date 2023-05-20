@@ -43,3 +43,29 @@ def get_parameters(parameters):
     # parameter_api = parameter_api[:-2]
     # return parameter, parameter_api
     return parameter_dict
+
+
+def parse_doxygen(doxygen):
+    doxygen_dict = {'intro':'',
+                    'returns':'',
+                    'param_intro': {},
+                    'note': '',
+                    }
+
+    if '@' in doxygen:
+        doxygen = doxygen[doxygen.find('@'):]
+        for doxygen_part in doxygen.split('@'):
+            if doxygen_part.startswith('brief '):
+                doxygen_dict['intro'] = doxygen_part.replace('brief ', '', 1)
+            elif doxygen_part.startswith('return '):
+                doxygen_dict['returns'] = doxygen_part.replace('return ', '', 1)
+            elif doxygen_part.startswith('param '):
+                param_intro = doxygen_part.replace('param ', '', 1)
+                param_name = param_intro[:param_intro.find(' ')]
+                doxygen_dict['param_intro'][param_name] = param_intro
+            elif doxygen_part.startswith('note '):
+                doxygen_dict['note'] = doxygen_part.replace('note ', '', 1)
+            else:
+                pass
+
+    return doxygen_dict
