@@ -118,7 +118,7 @@ Return the shape (dimensions) of Tensor. The compatible method of `Tensor::dims(
 **返回**
 '''''''''''
 std::vector<int64_t>
-
+#TODO：@note 字段感觉也是需要解析的
 void reshape ( const std::vector<int64_t> & shape ) ;
 '''''''''''
 Reset the shape of the tensor. 
@@ -243,6 +243,7 @@ Determine whether the tensor device is XPU
 
 **返回**
 '''''''''''
+# TODO：此处的解析结果有问题，这个 case 也许修改 Paddle 侧的 comment 会更好
 false
 
 bool is_custom_device ( ) const ;
@@ -254,6 +255,7 @@ Determine whether the tensor device is CustomDevice
 '''''''''''
 false
 
+# TODO： template <typename T>，这种模版类型的 case，需要有种方式展示出来
 T * mutable_data ( ) ;
 '''''''''''
 Get the memory pointer in CPU or GPU with specific data type. It's usually used to get the output data pointer, same as the T* data(). 
@@ -383,6 +385,7 @@ Copy the current Tensor data to the specified device and return the new Tensor. 
 
 **参数**
 '''''''''''
+#TODO：@param target_place 是否可以解析出来？
 	- **target_place** (const Place&)
 
 **返回**

@@ -24,5 +24,7 @@ paddle\phi\api\include\tensor_utils.h
 
 返回
 :::::::::::::::::::::
+#TODO：此处感觉写成下面这行比较好
+- **Tensor** - A Tensor object constructed from the buffer
 A Tensor object constructed from the buffer
 

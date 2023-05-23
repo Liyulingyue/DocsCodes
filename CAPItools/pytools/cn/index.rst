@@ -1,6 +1,13 @@
 # C++ 文档
 欢迎使用飞桨框架（PaddlePaddle），PaddlePaddle 是一个易用、高效、灵活、可扩展的深度学习框架，致力于让深度学习技术的创新与应用更简单。
-在本版本中，飞桨框架对 C++ 接口做了许多优化，您可以参考下表来了解飞桨框架最新版的 C++ 目录结构与说明。更详细的说明，请参见 版本说明 。此外，您可参考 PaddlePaddle 的 GitHub 了解详情。
+在本版本中，飞桨框架对 C++ 接口做了许多优化，您可以参考下表来了解飞桨框架最新版的 C++ 目录结构与说明。此外，您可参考 PaddlePaddle 的 GitHub 了解详情。
+
+本文档的应用场景为 C++ 训练，并主要在自定义算子开发时使用。本文档内容持续迭代中，在下个版本可能会有不兼容的升级，如果不介意随下一版本升级的话，可以使用，追求稳定的话则不建议使用。
+
+# TODO：overview 的展示页面，目前来看主要按照文件路径展示，能否再加一大块内容，这个内容按照 namespace 组织。
+如下面这个 comment 所示，官方文档的侧边栏目录按照 .h 路径展示。但是 overview 页面的下面，感觉再加一个按照 namespace 组织的方式，会提高用户的易用性。
+https://github.com/PaddlePaddle/community/pull/529#issuecomment-1529041937
+# TODO：英文文档同步修改
 
 ## [init_phi.h](../paddle\fluid\platform\init_phi.h)
 ### classes

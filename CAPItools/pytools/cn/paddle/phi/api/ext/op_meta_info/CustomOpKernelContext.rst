@@ -87,6 +87,7 @@ const std::pair<size_t , size_t> & OutputRangeAt ( size_t idx ) const ;
 
 **返回**
 '''''''''''
+#TODO：此处 OutputRangeAt 的返回值应该是 const std::pair<size_t , size_t> &， const 修饰符和引用修饰符 & 不要去掉。其他 API 同理
 std::pair<size_t , size_t>
 const Tensor & InputAt ( size_t idx ) const ;
 '''''''''''
