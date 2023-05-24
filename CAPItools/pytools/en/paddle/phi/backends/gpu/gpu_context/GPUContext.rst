@@ -41,7 +41,7 @@ GPUContext & operator = ( GPUContext & & ) ;
 
 **Returns**
 '''''''''''
-GPUContext
+GPUContext &
 virtual ~GPUContext ( ) ;
 '''''''''''
 
@@ -54,7 +54,7 @@ const Place & GetPlace ( ) const override ;
 
 **Returns**
 '''''''''''
-Place
+const Place &
 gpuStream_t stream ( ) const ;
 '''''''''''
 /*! \briefReturn gpu stream in the device context. 
@@ -70,7 +70,7 @@ CUDAStream * cuda_stream ( ) const ;
 
 **Returns**
 '''''''''''
-CUDAStream
+CUDAStream *
 dnnHandle_t cudnn_handle ( ) const ;
 '''''''''''
 /*! \briefReturn cudnnhandle in the device context. 
@@ -171,7 +171,7 @@ std::array<int , 3> GetCUDAMaxGridDimSize ( ) const ;
 
 **Returns**
 '''''''''''
-std::array<int , 3>
+std::array<int, 3 >
 Eigen::GpuDevice * eigen_device ( ) const ;
 '''''''''''
 /*! \briefReturn eigen device in the device context. 
@@ -179,7 +179,7 @@ Eigen::GpuDevice * eigen_device ( ) const ;
 
 **Returns**
 '''''''''''
-Eigen::GpuDevice
+Eigen::GpuDevice *
 DnnWorkspaceHandle cudnn_workspace_handle ( ) const ;
 '''''''''''
 /*! \briefReturn a cudnn workspace handle to call multiple cudnnfunctions without interrupting by other threads.Once the first cudnn function is called by the handle, a lockwould be acquired to prevent other threads from accessing theworkspace. Once the handle is destructed, the lock would be released.
@@ -265,7 +265,7 @@ const Attribute & GetDnnAttr ( const std::string & attr_name ) const ;
 
 **Returns**
 '''''''''''
-Attribute
+const Attribute &
 void SetDnnAttr ( const std::string & attr_name , Attribute attr ) ;
 '''''''''''
 
@@ -287,7 +287,7 @@ static const char * name ( ) {
 
 **Returns**
 '''''''''''
-char
+const char *
 ncclComm_t nccl_comm ( ) const ;
 '''''''''''
 /*! \briefReturn nccl communicators. 

@@ -36,7 +36,7 @@ CPUContext & operator = ( CPUContext & & ) ;
 
 **返回**
 '''''''''''
-CPUContext
+CPUContext &
 explicit CPUContext ( const Place & ) ;
 '''''''''''
 
@@ -57,7 +57,7 @@ Eigen::DefaultDevice * eigen_device ( ) const ;
 
 **返回**
 '''''''''''
-Eigen::DefaultDevice
+Eigen::DefaultDevice *
 const Place & GetPlace ( ) const override ;
 '''''''''''
 
@@ -65,7 +65,7 @@ const Place & GetPlace ( ) const override ;
 
 **返回**
 '''''''''''
-Place
+const Place &
 static const char * name ( ) {
 '''''''''''
 
@@ -73,4 +73,4 @@ static const char * name ( ) {
 
 **返回**
 '''''''''''
-char
+const char *

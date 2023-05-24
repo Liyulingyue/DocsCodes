@@ -76,7 +76,7 @@ const std::pair<size_t , size_t> & InputRangeAt ( size_t idx ) const ;
 
 **返回**
 '''''''''''
-std::pair<size_t , size_t>
+const std::pair<size_t, size_t> &
 const std::pair<size_t , size_t> & OutputRangeAt ( size_t idx ) const ;
 '''''''''''
 
@@ -87,7 +87,7 @@ const std::pair<size_t , size_t> & OutputRangeAt ( size_t idx ) const ;
 
 **返回**
 '''''''''''
-std::pair<size_t , size_t>
+const std::pair<size_t, size_t> &
 const Tensor & InputAt ( size_t idx ) const ;
 '''''''''''
 
@@ -98,7 +98,7 @@ const Tensor & InputAt ( size_t idx ) const ;
 
 **返回**
 '''''''''''
-Tensor
+const Tensor &
 std::vector<Tensor> InputsBetween ( size_t start , size_t end ) const ;
 '''''''''''
 
@@ -110,7 +110,7 @@ std::vector<Tensor> InputsBetween ( size_t start , size_t end ) const ;
 
 **返回**
 '''''''''''
-std::vector<Tensor>
+std::vector<Tensor >
 Tensor & MutableInputAt ( size_t idx ) ;
 '''''''''''
 
@@ -121,7 +121,7 @@ Tensor & MutableInputAt ( size_t idx ) ;
 
 **返回**
 '''''''''''
-Tensor
+Tensor &
 std::vector<Tensor> * AllMutableInput ( ) ;
 '''''''''''
 
@@ -129,7 +129,7 @@ std::vector<Tensor> * AllMutableInput ( ) ;
 
 **返回**
 '''''''''''
-std::vector<Tensor>
+std::vector<Tensor> *
 paddle::optional<Tensor> OptionalInputAt ( size_t idx ) ;
 '''''''''''
 
@@ -140,7 +140,7 @@ paddle::optional<Tensor> OptionalInputAt ( size_t idx ) ;
 
 **返回**
 '''''''''''
-paddle::optional<Tensor>
+paddle::optional<Tensor >
 paddle::optional<std::vector<Tensor> > OptionalInputsBetween ( size_t start , size_t end ) ;
 '''''''''''
 
@@ -160,7 +160,7 @@ const std::vector<paddle::any> & Attrs ( ) const {
 
 **返回**
 '''''''''''
-std::vector<paddle::any>
+const std::vector<paddle::any> &
 const std::vector<std::pair<size_t , size_t> > & InputRange ( ) {
 '''''''''''
 
@@ -168,7 +168,7 @@ const std::vector<std::pair<size_t , size_t> > & InputRange ( ) {
 
 **返回**
 '''''''''''
-std::vector<std::pair<size_t , size_t> >
+const std::vector<std::pair<size_t, size_t> > &
 const std::vector<std::pair<size_t , size_t> > & OutputRange ( ) {
 '''''''''''
 
@@ -176,7 +176,7 @@ const std::vector<std::pair<size_t , size_t> > & OutputRange ( ) {
 
 **返回**
 '''''''''''
-std::vector<std::pair<size_t , size_t> >
+const std::vector<std::pair<size_t, size_t> > &
 Tensor * MutableOutputAt ( size_t idx ) ;
 '''''''''''
 
@@ -187,7 +187,7 @@ Tensor * MutableOutputAt ( size_t idx ) ;
 
 **返回**
 '''''''''''
-Tensor
+Tensor *
 std::vector<Tensor *> MutableOutputBetweeen ( size_t start , size_t end ) ;
 '''''''''''
 
@@ -199,7 +199,7 @@ std::vector<Tensor *> MutableOutputBetweeen ( size_t start , size_t end ) ;
 
 **返回**
 '''''''''''
-std::vector<Tensor *>
+std::vector<Tensor * >
 std::vector<Tensor> OutputsBetweeen ( size_t start , size_t end ) ;
 '''''''''''
 
@@ -211,7 +211,7 @@ std::vector<Tensor> OutputsBetweeen ( size_t start , size_t end ) ;
 
 **返回**
 '''''''''''
-std::vector<Tensor>
+std::vector<Tensor >
 std::vector<Tensor> * AllMutableOutput ( ) ;
 '''''''''''
 
@@ -219,7 +219,7 @@ std::vector<Tensor> * AllMutableOutput ( ) ;
 
 **返回**
 '''''''''''
-std::vector<Tensor>
+std::vector<Tensor> *
 AttrType AttrAt ( size_t idx ) const {
 '''''''''''
 
@@ -263,7 +263,7 @@ std::vector<Tensor *> * AllMutablePlainOutput ( ) ;
 
 **返回**
 '''''''''''
-std::vector<Tensor >
+std::vector<Tensor *> *
 std::unordered_map<size_t , size_t> GetInplaceIndexMap ( ) ;
 '''''''''''
 
@@ -271,7 +271,7 @@ std::unordered_map<size_t , size_t> GetInplaceIndexMap ( ) ;
 
 **返回**
 '''''''''''
-std::unordered_map<size_t , size_t>
+std::unordered_map<size_t, size_t >
 std::unordered_map<size_t , size_t> GetInplaceReverseIndexMap ( ) ;
 '''''''''''
 
@@ -279,4 +279,4 @@ std::unordered_map<size_t , size_t> GetInplaceReverseIndexMap ( ) ;
 
 **返回**
 '''''''''''
-std::unordered_map<size_t , size_t>
+std::unordered_map<size_t, size_t >

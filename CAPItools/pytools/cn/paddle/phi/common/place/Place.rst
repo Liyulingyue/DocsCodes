@@ -62,7 +62,7 @@ AllocationType GetType ( ) const {
 
 **返回**
 '''''''''''
-int
+AllocationType
 int8_t GetDeviceId ( ) const {
 '''''''''''
 

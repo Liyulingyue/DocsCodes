@@ -20,7 +20,7 @@ static OpMetaInfoMap & Instance ( ) {
 
 **Returns**
 '''''''''''
-OpMetaInfoMap
+OpMetaInfoMap &
 std::vector<OpMetaInfo> & operator [ ] ( const std::string & name ) ;
 '''''''''''
 
@@ -31,7 +31,7 @@ std::vector<OpMetaInfo> & operator [ ] ( const std::string & name ) ;
 
 **Returns**
 '''''''''''
-std :: vector< OpMetaInfo >
+std::vector<OpMetaInfo> &
 const std::unordered_map<std::string , std::vector<OpMetaInfo> > & GetMap ( ) const ;
 '''''''''''
 
@@ -39,4 +39,4 @@ const std::unordered_map<std::string , std::vector<OpMetaInfo> > & GetMap ( ) co
 
 **Returns**
 '''''''''''
-std::unordered_map<std::string , std::vector<OpMetaInfo> >
+const std::unordered_map<std::string, std::vector<OpMetaInfo> > &

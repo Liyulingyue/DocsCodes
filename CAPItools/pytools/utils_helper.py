@@ -202,7 +202,8 @@ class class_helper(object):
             else:
                 parameter_dict = {}
             # 获取返回值
-            returns = ith_function["returns"].replace("PADDLE_API ", "")
+            # returns = ith_function["returns"].replace("PADDLE_API ", "")
+            returns = ith_function["rtnType"]
 
             # analysis doxygen
             doxygen_dict = parse_doxygen(funcs_doxygen)

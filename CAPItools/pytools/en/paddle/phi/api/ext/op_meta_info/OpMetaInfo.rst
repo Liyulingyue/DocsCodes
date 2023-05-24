@@ -31,7 +31,7 @@ OpMetaInfo & Inputs ( std::vector<std::string> & & inputs ) ;
 
 **Returns**
 '''''''''''
-OpMetaInfo
+OpMetaInfo &
 OpMetaInfo & Outputs ( std::vector<std::string> & & outputs ) ;
 '''''''''''
 
@@ -42,7 +42,7 @@ OpMetaInfo & Outputs ( std::vector<std::string> & & outputs ) ;
 
 **Returns**
 '''''''''''
-OpMetaInfo
+OpMetaInfo &
 OpMetaInfo & Attrs ( std::vector<std::string> & & attrs ) ;
 '''''''''''
 
@@ -53,7 +53,7 @@ OpMetaInfo & Attrs ( std::vector<std::string> & & attrs ) ;
 
 **Returns**
 '''''''''''
-OpMetaInfo
+OpMetaInfo &
 OpMetaInfo & SetInplaceMap ( std::unordered_map<std::string , std::string> & & inplace_map ) ;
 '''''''''''
 
@@ -64,7 +64,7 @@ OpMetaInfo & SetInplaceMap ( std::unordered_map<std::string , std::string> & & i
 
 **Returns**
 '''''''''''
-OpMetaInfo
+OpMetaInfo &
 OpMetaInfo & SetKernelFn ( KernelFunc & & func ) ;
 '''''''''''
 
@@ -75,7 +75,7 @@ OpMetaInfo & SetKernelFn ( KernelFunc & & func ) ;
 
 **Returns**
 '''''''''''
-OpMetaInfo
+OpMetaInfo &
 OpMetaInfo & SetInferShapeFn ( InferShapeFunc & & func ) ;
 '''''''''''
 
@@ -86,7 +86,7 @@ OpMetaInfo & SetInferShapeFn ( InferShapeFunc & & func ) ;
 
 **Returns**
 '''''''''''
-OpMetaInfo
+OpMetaInfo &
 OpMetaInfo & SetInferDtypeFn ( InferDtypeFunc & & func ) ;
 '''''''''''
 
@@ -97,4 +97,4 @@ OpMetaInfo & SetInferDtypeFn ( InferDtypeFunc & & func ) ;
 
 **Returns**
 '''''''''''
-OpMetaInfo
+OpMetaInfo &

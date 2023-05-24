@@ -49,7 +49,7 @@ Move assign operator.
 
 **Returns**
 '''''''''''
-DeviceContext
+DeviceContext &
 virtual ~DeviceContext ( ) ;
 '''''''''''
 Default destruct.
@@ -121,7 +121,7 @@ const Allocator & GetZeroAllocator ( ) const ;
 
 **Returns**
 '''''''''''
-Allocator
+const Allocator &
 const Allocator & GetHostZeroAllocator ( ) const ;
 '''''''''''
 
@@ -129,7 +129,7 @@ const Allocator & GetHostZeroAllocator ( ) const ;
 
 **Returns**
 '''''''''''
-Allocator
+const Allocator &
 const Allocator & GetPinnedAllocator ( ) const ;
 '''''''''''
 
@@ -137,7 +137,7 @@ const Allocator & GetPinnedAllocator ( ) const ;
 
 **Returns**
 '''''''''''
-Allocator
+const Allocator &
 void SetCUDAGraphAllocator ( const Allocator * ) ;
 '''''''''''
 Set the CUDA graph Allocator object. 
@@ -189,7 +189,7 @@ T * Alloc ( TensorBase * tensor , size_t requested_size = 0 , bool pinned = fals
 
 **Returns**
 '''''''''''
-T
+T *
 void * HostAlloc ( TensorBase * tensor , DataType dtype , size_t requested_size = 0 , bool fake_alloc = false ) const ;
 '''''''''''
 Allocate host memory for tensor.
@@ -213,7 +213,7 @@ T * HostAlloc ( TensorBase * tensor , size_t requested_size = 0 ) const ;
 
 **Returns**
 '''''''''''
-T
+T *
 virtual const Place & GetPlace ( ) const = 0 ;
 '''''''''''
 
@@ -221,7 +221,7 @@ virtual const Place & GetPlace ( ) const = 0 ;
 
 **Returns**
 '''''''''''
-Place
+const Place &
 virtual void Wait ( ) const {
 '''''''''''
 
