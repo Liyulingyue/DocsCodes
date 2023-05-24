@@ -350,7 +350,8 @@ def generate_overview_cn(overview_list, root_dir, LANGUAGE):
     with open(rst_dir, 'w', encoding='utf8') as f:
         head_text = f'# C++ 文档\n' \
                     f'欢迎使用飞桨框架（PaddlePaddle），PaddlePaddle 是一个易用、高效、灵活、可扩展的深度学习框架，致力于让深度学习技术的创新与应用更简单。\n' \
-                    f'在本版本中，飞桨框架对 C++ 接口做了许多优化，您可以参考下表来了解飞桨框架最新版的 C++ 目录结构与说明。更详细的说明，请参见 版本说明 。此外，您可参考 PaddlePaddle 的 GitHub 了解详情。\n' \
+                    f'在本版本中，飞桨框架对 C++ 接口做了许多优化，您可以参考下表来了解飞桨框架最新版的 C++ 目录结构与说明。此外，您可参考 PaddlePaddle 的 GitHub 了解详情。\n' \
+                    f'本文档的应用场景为 C++ 训练，并主要在自定义算子开发时使用。本文档内容持续迭代中，在下个版本可能会有不兼容的升级，如果不介意随下一版本升级的话，可以使用，追求稳定的话则不建议使用。\n' \
                     f'\n'
         f.write(head_text)
 
@@ -386,7 +387,8 @@ def generate_overview_en(overview_list, root_dir, LANGUAGE):
     with open(rst_dir, 'w', encoding='utf8') as f:
         head_text = f'# C++ API Reference\n' \
                     f'PaddlePaddle (PArallel Distributed Deep LEarning) is an efficient, flexible, and extensible deep learning framework, commits to making the innovation and application of deep learning technology easier.\n' \
-                    f'In this version, PaddlePaddle has made many optimizations to the APIs. You can refer to the following table to understand the C++ API directory structure and description of the latest version of PaddlePaddle. In addition, you can refer to PaddlePaddle’s GitHub for details, or read Release Notes to learn about the features of the new version.\n' \
+                    f'In this version, PaddlePaddle has made many optimizations to the C++ APIs. You can refer to the following table to understand the C++ API directory structure and description of the latest version of PaddlePaddle. In addition, you can refer to PaddlePaddle’s GitHub for details.\n' \
+                    f'The application scenario of this document is C++training and is mainly used in the development of custom operators. The content of this document is continuously iterating, and there may be incompatible upgrades in the next version. If you don’t mind upgrading with the next version, you can use it. Otherwise, it is not recommended to use it.\n' \
                     f'\n'
         f.write(head_text)
 
