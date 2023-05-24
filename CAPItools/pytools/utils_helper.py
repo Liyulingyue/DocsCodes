@@ -167,9 +167,16 @@ class class_helper(object):
         self.class_name = self.class_dict["name"].replace("PADDLE_API", "")
         # TODO 如果使用已安装的 paddle 包需要调整
         self.file_path = self.class_dict["filename"].replace("../", "")
-        self.doxygen = self.class_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
+        doxygen = self.class_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
                                                                                                        "").replace("  ",
                                                                                                  "")
+        self.introduction = doxygen
+        self.note = ""
+        # analysis doxygen
+        doxygen_dict = parse_doxygen(doxygen)
+        if doxygen_dict['intro'] != "": self.introduction = doxygen_dict['intro']
+        if doxygen_dict['note'] != "": self.note = doxygen_dict['note']
+
         # 初始化函数
         # 避免空函数解析
         self.init_func = self.class_name
@@ -209,7 +216,8 @@ class class_helper(object):
                         parameter_dict[param_name]['intro'] = doxygen_dict['param_intro'][param_name]
 
             self.functions_infor.append({'name': function_name,
-                                         'doxygen': funcs_intro,# 'note': funcs_note,
+                                         'doxygen': funcs_intro,
+                                         'note': funcs_note,
                                          'parameter': parameter_dict,
                                          'returns': returns})
 
@@ -234,9 +242,15 @@ class class_helper(object):
                                   f'-------------------------------\n' \
                                   f'\n' \
                                   f'.. cpp:class:: {self.init_func}\n' \
-                                  f'{self.doxygen}\n' \
+                                  f'{self.introduction}\n' \
                                   f'\n'
             f.write(name_and_intro_text)
+
+            if self.note != "":
+                note_text = f'..note::\n' \
+                            f'\t{self.note}\n' \
+                            f'\n'
+                f.write(note_text)
 
             define_path_text = f'定义目录\n' \
                                f':::::::::::::::::::::\n' \
@@ -256,6 +270,12 @@ class class_helper(object):
                                               f"{fun_infor['doxygen']}\n" \
                                               f"\n"
                     f.write(fun_name_and_intro_text)
+
+                    if fun_infor['note'] != "":
+                        fun_note_text = f'..note::\n' \
+                                        f'\t{fun_infor["note"]}\n' \
+                                        f'\n'
+                        f.write(fun_note_text)
 
                     if len(fun_infor['parameter']) != 0:
                         parameters_text = f"**参数**\n" \
@@ -288,9 +308,15 @@ class class_helper(object):
                                   f'-------------------------------\n' \
                                   f'\n' \
                                   f'.. cpp:class:: {self.init_func}\n' \
-                                  f'{self.doxygen}\n' \
+                                  f'{self.introduction}\n' \
                                   f'\n'
             f.write(name_and_intro_text)
+
+            if self.note != "":
+                note_text = f'..note::\n' \
+                            f'\t{self.note}\n' \
+                            f'\n'
+                f.write(note_text)
 
             define_path_text = f'Path\n' \
                                f':::::::::::::::::::::\n' \
@@ -310,6 +336,12 @@ class class_helper(object):
                                               f"{fun_infor['doxygen']}\n" \
                                               f"\n"
                     f.write(fun_name_and_intro_text)
+
+                    if fun_infor['note'] != "":
+                        fun_note_text = f'..note::\n' \
+                                        f'\t{fun_infor["note"]}\n' \
+                                        f'\n'
+                        f.write(fun_note_text)
 
                     if len(fun_infor['parameter']) != 0:
                         parameters_text = f"**Parameters**\n" \

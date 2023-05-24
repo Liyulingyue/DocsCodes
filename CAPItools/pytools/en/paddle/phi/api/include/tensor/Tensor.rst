@@ -79,6 +79,9 @@ explicit Tensor ( const std::string & name ) :
 '''''''''''
 Construct a new Tensor object with name 
 
+..note::
+	Internal method, used to adapt original execution mechanism and debug analysis in the development of new dygraph. It may be removed in the future. 
+
 **Parameters**
 '''''''''''
 	- **name** (const std::string&)
@@ -364,6 +367,9 @@ const std::string & name ( ) const {
 '''''''''''
 Return the name of Tensor. 
 
+..note::
+	Used to adapt original execution mechanism and debug analysis in the development of new dygraph. 
+
 
 **Returns**
 '''''''''''
@@ -373,6 +379,9 @@ void set_name ( const std::string & name ) {
 '''''''''''
 Set name of Tensor. 
 
+..note::
+	Used to adapt original execution mechanism and debug analysis in the development of new dygraph. 
+
 **Parameters**
 '''''''''''
 	- **name** (const std::string&)
@@ -380,6 +389,9 @@ Set name of Tensor.
 Tensor copy_to ( const Place & target_place ) const ;
 '''''''''''
 Copy the current Tensor data to the specified device and return the new Tensor. It's usually used to set the input tensor data. 
+
+..note::
+	The Tensor's `copy_to` method is deprecated since version 2.3, and will be removed in version 2.4, please use `copy_to` method without template argument instead. reason: copying a Tensor to another device does not need to specify the data type template argument 
 
 **Parameters**
 '''''''''''
