@@ -12,6 +12,6 @@ paddle\phi\api\ext\op_meta_info.h
 
 Parameters
 :::::::::::::::::::::
-	- **src** (Tensor&)
+	- **src** (const Tensor&)
 	- **dst** (Tensor*)
 

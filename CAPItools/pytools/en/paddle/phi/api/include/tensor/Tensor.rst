@@ -532,7 +532,7 @@ Tensor operator + ( const Scalar & other ) const ;
 
 **Parameters**
 '''''''''''
-	- **other** (Scalar&)
+	- **other** (const Scalar&)
 
 **Returns**
 '''''''''''
@@ -543,7 +543,7 @@ Tensor operator - ( const Scalar & other ) const ;
 
 **Parameters**
 '''''''''''
-	- **other** (Scalar&)
+	- **other** (const Scalar&)
 
 **Returns**
 '''''''''''
@@ -554,7 +554,7 @@ Tensor operator * ( const Scalar & other ) const ;
 
 **Parameters**
 '''''''''''
-	- **other** (Scalar&)
+	- **other** (const Scalar&)
 
 **Returns**
 '''''''''''
@@ -565,7 +565,7 @@ Tensor operator / ( const Scalar & other ) const ;
 
 **Parameters**
 '''''''''''
-	- **other** (Scalar&)
+	- **other** (const Scalar&)
 
 **Returns**
 '''''''''''
@@ -816,7 +816,7 @@ Tensor add ( const Scalar & y ) const ;
 
 **Parameters**
 '''''''''''
-	- **y** (Scalar&)
+	- **y** (const Scalar&)
 
 **Returns**
 '''''''''''
@@ -827,7 +827,7 @@ Tensor divide ( const Scalar & y ) const ;
 
 **Parameters**
 '''''''''''
-	- **y** (Scalar&)
+	- **y** (const Scalar&)
 
 **Returns**
 '''''''''''
@@ -838,7 +838,7 @@ Tensor multiply ( const Scalar & y ) const ;
 
 **Parameters**
 '''''''''''
-	- **y** (Scalar&)
+	- **y** (const Scalar&)
 
 **Returns**
 '''''''''''
@@ -849,7 +849,7 @@ Tensor subtract ( const Scalar & y ) const ;
 
 **Parameters**
 '''''''''''
-	- **y** (Scalar&)
+	- **y** (const Scalar&)
 
 **Returns**
 '''''''''''
@@ -978,7 +978,7 @@ Tensor pow ( const Scalar & y ) const ;
 
 **Parameters**
 '''''''''''
-	- **y** (Scalar&)
+	- **y** (const Scalar&)
 
 **Returns**
 '''''''''''
@@ -1024,7 +1024,7 @@ Tensor roll ( const IntArray & shifts = { } , const std::vector<int64_t> & axis 
 
 **Parameters**
 '''''''''''
-	- **shifts** (IntArray&)
+	- **shifts** (const IntArray&)
 	- **axis** (const std::vector<int64_t>&)
 
 **Returns**
@@ -1088,7 +1088,7 @@ Tensor expand ( const IntArray & shape ) const ;
 
 **Parameters**
 '''''''''''
-	- **shape** (IntArray&)
+	- **shape** (const IntArray&)
 
 **Returns**
 '''''''''''
@@ -1112,7 +1112,7 @@ Tensor max ( const IntArray & axis = { } , bool keepdim = false ) const ;
 
 **Parameters**
 '''''''''''
-	- **axis** (IntArray&)
+	- **axis** (const IntArray&)
 	- **keepdim** (bool)
 
 **Returns**
@@ -1146,7 +1146,7 @@ Tensor scale ( const Scalar & scale = 1.0 , float bias = 0.0 , bool bias_after_s
 
 **Parameters**
 '''''''''''
-	- **scale** (Scalar&)
+	- **scale** (const Scalar&)
 	- **bias** (float)
 	- **bias_after_scale** (bool)
 
@@ -1159,7 +1159,7 @@ Tensor sum ( const IntArray & axis = { } , DataType dtype = DataType::UNDEFINED 
 
 **Parameters**
 '''''''''''
-	- **axis** (IntArray&)
+	- **axis** (const IntArray&)
 	- **dtype** (DataType)
 	- **keepdim** (bool)
 
@@ -1172,7 +1172,7 @@ Tensor tile ( const IntArray & repeat_times = { } ) const ;
 
 **Parameters**
 '''''''''''
-	- **repeat_times** (IntArray&)
+	- **repeat_times** (const IntArray&)
 
 **Returns**
 '''''''''''

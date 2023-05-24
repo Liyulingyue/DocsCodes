@@ -43,6 +43,8 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE = "cn"):
 
         # 这个反斜杠需要单独处理, 在 linux 下
         func_name = item["name"].replace("/", "")
+        if 'abs' in func_name:
+            print('a')
         rst_dir = os.path.join(".", LANGUAGE, path, func_name + ".rst")
         # avoid a filename such as operate*.rst, only windows
         try:

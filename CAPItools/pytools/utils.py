@@ -32,9 +32,11 @@ def get_parameters(parameters):
         if i["reference"] == 1:
             # parameter_api += "&"
             parameter_type_tmp += "&"
-        elif i["pointer"] == 1:
+        if i["pointer"] == 1:
             # parameter_api += "*"
             parameter_type_tmp += "*"
+        if i["constant"] == 1 and not parameter_type_tmp.startswith('const'):
+            parameter_type_tmp = "const "+parameter_type_tmp
         # parameter_api += f" {i['name']}, "
         desc = i.get('desc', '').replace('  ', '')
         parameter_dict[i['name']] = {'type': parameter_type_tmp,'intro': desc}

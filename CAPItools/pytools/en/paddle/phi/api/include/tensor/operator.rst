@@ -12,7 +12,7 @@ paddle\phi\api\include\tensor.h
 
 Parameters
 :::::::::::::::::::::
-	- **x** (Scalar&)
+	- **x** (const Scalar&)
 	- **y** (const Tensor&)
 
 Returns

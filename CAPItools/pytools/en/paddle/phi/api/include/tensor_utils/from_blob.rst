@@ -20,7 +20,7 @@ Parameters
 	- **dtype** (phi::DataType) - The data type of the tensor, should correspond to data type of`data`. See PD_FOR_EACH_DATA_TYPE in `phi/common/data_type.h` 
 	- **layout** (phi::DataLayout) - The data layout of the tensor. 
 	- **place** (const phi::Place&) - The place where the tensor is located.If `place` is default value, it will be inferred from `data`，However，the feature is only supported on CPU or GPU.If `place` is not default value, make sure that `place` is equalto the place of `data` 
-	- **deleter** (function<void ( void )>&) - A function or function object that will be called to free thememory buffer. 
+	- **deleter** (const function<void ( void )>&) - A function or function object that will be called to free thememory buffer. 
 
 Returns
 :::::::::::::::::::::

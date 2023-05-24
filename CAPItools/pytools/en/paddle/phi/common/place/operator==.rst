@@ -13,7 +13,7 @@ paddle\phi\common\place.h
 Parameters
 :::::::::::::::::::::
 	- **place_type** (PlaceType)
-	- **place** (Place&)
+	- **place** (const Place&)
 
 Returns
 :::::::::::::::::::::
