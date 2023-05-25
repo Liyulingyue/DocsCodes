@@ -27,17 +27,11 @@ GPUContext ( GPUContext & & ) ;
 '''''''''''
 
 
-**Parameters**
-'''''''''''
-	- **&** (GPUContext&)
 
 GPUContext & operator = ( GPUContext & & ) ;
 '''''''''''
 
 
-**Parameters**
-'''''''''''
-	- **&** (GPUContext&)
 
 **Returns**
 '''''''''''
@@ -210,26 +204,17 @@ void CublasCall ( const std::function<void ( blasHandle_t )> & ) const ;
 '''''''''''
 /*! \briefCall cublas function safely. 
 
-**Parameters**
-'''''''''''
-	- **&** (const std::function<void ( blasHandle_t )>)
 
 void TensorCoreCublasCallIfAvailable ( const std::function<void ( blasHandle_t )> & ) const ;
 '''''''''''
 /*! \briefCall cublas function with Tensor Core safely. If
 Tensor Core is not available, use DEFAULT_MATH instead. 
 
-**Parameters**
-'''''''''''
-	- **&** (const std::function<void ( blasHandle_t )>)
 
 void CusparseCall ( const std::function<void ( sparseHandle_t )> & ) const ;
 '''''''''''
 /*! \briefCall cusparse function safely. 
 
-**Parameters**
-'''''''''''
-	- **&** (const std::function<void ( sparseHandle_t )>)
 
 void RecordEvent ( gpuEvent_t ev , const std::function<void ( )> & callback ) const ;
 '''''''''''

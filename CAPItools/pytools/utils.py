@@ -39,7 +39,12 @@ def get_parameters(parameters):
             parameter_type_tmp = "const "+parameter_type_tmp
         # parameter_api += f" {i['name']}, "
         desc = i.get('desc', '').replace('  ', '')
-        parameter_dict[i['name']] = {'type': parameter_type_tmp,'intro': desc}
+
+        # special progress for none parameter name case
+        if i['name'] == '&':
+            continue
+        else:
+            parameter_dict[i['name']] = {'type': parameter_type_tmp,'intro': desc}
         # parameter += f"\t- **{i['name']}** ({parameter_type_tmp}) - {desc}\n"
     # 去掉末尾的逗号
     # parameter_api = parameter_api[:-2]

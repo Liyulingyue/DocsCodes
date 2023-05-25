@@ -24,18 +24,12 @@ Tensor ( const Tensor & ) = default ;
 Construct a new Tensor object by copy
 
 
-**Parameters**
-'''''''''''
-	- **&** (const Tensor)
 
 Tensor ( Tensor & & ) = default ;
 '''''''''''
 Construct a new Tensor object by move
 
 
-**Parameters**
-'''''''''''
-	- **&** (Tensor&)
 
 explicit Tensor ( std::shared_ptr<phi::TensorBase> tensor_impl ) ;
 '''''''''''

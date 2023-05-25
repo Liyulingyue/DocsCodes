@@ -25,27 +25,18 @@ DeviceContext ( const DeviceContext & ) ;
 Copy construct.
 
 
-**Parameters**
-'''''''''''
-	- **&** (const DeviceContext)
 
 DeviceContext ( DeviceContext & & ) ;
 '''''''''''
 Move construct.
 
 
-**Parameters**
-'''''''''''
-	- **&** (DeviceContext&)
 
 DeviceContext & operator = ( DeviceContext & & ) ;
 '''''''''''
 Move assign operator.
 
 
-**Parameters**
-'''''''''''
-	- **&** (DeviceContext&)
 
 **Returns**
 '''''''''''

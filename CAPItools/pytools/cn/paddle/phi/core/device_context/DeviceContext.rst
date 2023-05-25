@@ -25,27 +25,18 @@ DeviceContext ( const DeviceContext & ) ;
 Copy construct.
 
 
-**参数**
-'''''''''''
-	- **&** (const DeviceContext)
 
 DeviceContext ( DeviceContext & & ) ;
 '''''''''''
 Move construct.
 
 
-**参数**
-'''''''''''
-	- **&** (DeviceContext&)
 
 DeviceContext & operator = ( DeviceContext & & ) ;
 '''''''''''
 Move assign operator.
 
 
-**参数**
-'''''''''''
-	- **&** (DeviceContext&)
 
 **返回**
 '''''''''''

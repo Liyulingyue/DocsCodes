@@ -22,17 +22,11 @@ CPUContext ( CPUContext & & ) ;
 '''''''''''
 
 
-**Parameters**
-'''''''''''
-	- **&** (CPUContext&)
 
 CPUContext & operator = ( CPUContext & & ) ;
 '''''''''''
 
 
-**Parameters**
-'''''''''''
-	- **&** (CPUContext&)
 
 **Returns**
 '''''''''''
@@ -42,9 +36,6 @@ explicit CPUContext ( const Place & ) ;
 '''''''''''
 
 
-**Parameters**
-'''''''''''
-	- **&** (const Place)
 
 virtual ~CPUContext ( ) ;
 '''''''''''
