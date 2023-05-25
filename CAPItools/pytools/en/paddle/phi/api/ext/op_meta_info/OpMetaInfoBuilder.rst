@@ -33,6 +33,7 @@ OpMetaInfoBuilder & Inputs ( std::vector<std::string> & & inputs ) ;
 **Returns**
 '''''''''''
 OpMetaInfoBuilder &
+
 OpMetaInfoBuilder & Outputs ( std::vector<std::string> & & outputs ) ;
 '''''''''''
 
@@ -44,6 +45,7 @@ OpMetaInfoBuilder & Outputs ( std::vector<std::string> & & outputs ) ;
 **Returns**
 '''''''''''
 OpMetaInfoBuilder &
+
 OpMetaInfoBuilder & Attrs ( std::vector<std::string> & & attrs ) ;
 '''''''''''
 
@@ -55,6 +57,7 @@ OpMetaInfoBuilder & Attrs ( std::vector<std::string> & & attrs ) ;
 **Returns**
 '''''''''''
 OpMetaInfoBuilder &
+
 OpMetaInfoBuilder & SetInplaceMap ( std::unordered_map<std::string , std::string> & & inplace_map ) ;
 '''''''''''
 
@@ -66,6 +69,7 @@ OpMetaInfoBuilder & SetInplaceMap ( std::unordered_map<std::string , std::string
 **Returns**
 '''''''''''
 OpMetaInfoBuilder &
+
 OpMetaInfoBuilder & SetKernelFn ( KernelFunc func ) ;
 '''''''''''
 
@@ -77,6 +81,7 @@ OpMetaInfoBuilder & SetKernelFn ( KernelFunc func ) ;
 **Returns**
 '''''''''''
 OpMetaInfoBuilder &
+
 OpMetaInfoBuilder & SetInferShapeFn ( InferShapeFunc func ) ;
 '''''''''''
 
@@ -88,6 +93,7 @@ OpMetaInfoBuilder & SetInferShapeFn ( InferShapeFunc func ) ;
 **Returns**
 '''''''''''
 OpMetaInfoBuilder &
+
 OpMetaInfoBuilder & SetInferDtypeFn ( InferDtypeFunc func ) ;
 '''''''''''
 
@@ -99,3 +105,4 @@ OpMetaInfoBuilder & SetInferDtypeFn ( InferDtypeFunc func ) ;
 **Returns**
 '''''''''''
 OpMetaInfoBuilder &
+

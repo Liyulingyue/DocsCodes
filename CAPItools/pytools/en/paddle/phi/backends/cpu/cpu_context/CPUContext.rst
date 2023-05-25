@@ -22,28 +22,20 @@ CPUContext ( CPUContext & & ) ;
 '''''''''''
 
 
-**Parameters**
-'''''''''''
-	- **&** (CPUContext&)
 
 CPUContext & operator = ( CPUContext & & ) ;
 '''''''''''
 
 
-**Parameters**
-'''''''''''
-	- **&** (CPUContext&)
 
 **Returns**
 '''''''''''
 CPUContext &
+
 explicit CPUContext ( const Place & ) ;
 '''''''''''
 
 
-**Parameters**
-'''''''''''
-	- **&** (const Place)
 
 virtual ~CPUContext ( ) ;
 '''''''''''
@@ -58,6 +50,7 @@ Eigen::DefaultDevice * eigen_device ( ) const ;
 **Returns**
 '''''''''''
 Eigen::DefaultDevice *
+
 const Place & GetPlace ( ) const override ;
 '''''''''''
 
@@ -66,6 +59,7 @@ const Place & GetPlace ( ) const override ;
 **Returns**
 '''''''''''
 const Place &
+
 static const char * name ( ) {
 '''''''''''
 
@@ -74,3 +68,4 @@ static const char * name ( ) {
 **Returns**
 '''''''''''
 const char *
+
