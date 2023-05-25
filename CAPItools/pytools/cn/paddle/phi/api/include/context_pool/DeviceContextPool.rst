@@ -22,6 +22,7 @@ static DeviceContextPool & Instance ( ) ;
 **返回**
 '''''''''''
 DeviceContextPool &
+
 const phi::DeviceContext * Get ( const Place & place ) ;
 '''''''''''
 
@@ -33,6 +34,7 @@ const phi::DeviceContext * Get ( const Place & place ) ;
 **返回**
 '''''''''''
 const phi::DeviceContext *
+
 phi::DeviceContext * GetMutable ( const Place & place ) ;
 '''''''''''
 
@@ -44,6 +46,8 @@ phi::DeviceContext * GetMutable ( const Place & place ) ;
 **返回**
 '''''''''''
 phi::DeviceContext *
+
+template<AllocationType T>
 const typename DefaultDeviceContextType<T>::TYPE * Get ( const Place & place ) {
 '''''''''''
 
@@ -55,3 +59,4 @@ const typename DefaultDeviceContextType<T>::TYPE * Get ( const Place & place ) {
 **返回**
 '''''''''''
 const typename DefaultDeviceContextType<T >::TYPE *
+

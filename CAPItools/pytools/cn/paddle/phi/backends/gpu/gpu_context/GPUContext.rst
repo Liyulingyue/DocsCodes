@@ -42,6 +42,7 @@ GPUContext & operator = ( GPUContext & & ) ;
 **返回**
 '''''''''''
 GPUContext &
+
 virtual ~GPUContext ( ) ;
 '''''''''''
 
@@ -55,6 +56,7 @@ const Place & GetPlace ( ) const override ;
 **返回**
 '''''''''''
 const Place &
+
 gpuStream_t stream ( ) const ;
 '''''''''''
 /*! \briefReturn gpu stream in the device context. 
@@ -63,6 +65,7 @@ gpuStream_t stream ( ) const ;
 **返回**
 '''''''''''
 gpuStream_t
+
 CUDAStream * cuda_stream ( ) const ;
 '''''''''''
 /*! \briefReturn CUDAStream in the device context. 
@@ -71,6 +74,7 @@ CUDAStream * cuda_stream ( ) const ;
 **返回**
 '''''''''''
 CUDAStream *
+
 dnnHandle_t cudnn_handle ( ) const ;
 '''''''''''
 /*! \briefReturn cudnnhandle in the device context. 
@@ -79,6 +83,7 @@ dnnHandle_t cudnn_handle ( ) const ;
 **返回**
 '''''''''''
 dnnHandle_t
+
 blasHandle_t cublas_handle ( ) const ;
 '''''''''''
 /*! \briefReturn cublas handle in the device context. 
@@ -87,6 +92,7 @@ blasHandle_t cublas_handle ( ) const ;
 **返回**
 '''''''''''
 blasHandle_t
+
 blasLtHandle_t cublaslt_handle ( ) const ;
 '''''''''''
 /*! \briefReturn cublasLt handle in the device context. 
@@ -95,6 +101,7 @@ blasLtHandle_t cublaslt_handle ( ) const ;
 **返回**
 '''''''''''
 blasLtHandle_t
+
 solverHandle_t cusolver_dn_handle ( ) const ;
 '''''''''''
 /*! \briefReturn cusolver handle in the device context. 
@@ -103,6 +110,7 @@ solverHandle_t cusolver_dn_handle ( ) const ;
 **返回**
 '''''''''''
 solverHandle_t
+
 sparseHandle_t cusparse_handle ( ) const ;
 '''''''''''
 /*! \briefReturn cusparse handle in the device context. 
@@ -111,6 +119,7 @@ sparseHandle_t cusparse_handle ( ) const ;
 **返回**
 '''''''''''
 sparseHandle_t
+
 void Wait ( ) const override ;
 '''''''''''
 /*! \briefWait for all operations completion in the stream. 
@@ -132,6 +141,7 @@ bool tensor_core_available ( ) const ;
 **返回**
 '''''''''''
 bool
+
 int GetComputeCapability ( ) const ;
 '''''''''''
 /*! \briefReturn compute capability in the device context. 
@@ -140,6 +150,7 @@ int GetComputeCapability ( ) const ;
 **返回**
 '''''''''''
 int
+
 int GetMaxPhysicalThreadCount ( ) const ;
 '''''''''''
 /*! \briefReturn the max physical thread count in the device context 
@@ -148,6 +159,7 @@ int GetMaxPhysicalThreadCount ( ) const ;
 **返回**
 '''''''''''
 int
+
 int GetSMCount ( ) const ;
 '''''''''''
 /*! \briefReturn the SM count in the device context 
@@ -156,6 +168,7 @@ int GetSMCount ( ) const ;
 **返回**
 '''''''''''
 int
+
 int GetMaxThreadsPerBlock ( ) const ;
 '''''''''''
 /*! \briefReturn the Max thread num of block in the device context 
@@ -164,6 +177,7 @@ int GetMaxThreadsPerBlock ( ) const ;
 **返回**
 '''''''''''
 int
+
 std::array<int , 3> GetCUDAMaxGridDimSize ( ) const ;
 '''''''''''
 /*! \briefReturn the max grid dim size in the device context 
@@ -172,6 +186,7 @@ std::array<int , 3> GetCUDAMaxGridDimSize ( ) const ;
 **返回**
 '''''''''''
 std::array<int, 3 >
+
 Eigen::GpuDevice * eigen_device ( ) const ;
 '''''''''''
 /*! \briefReturn eigen device in the device context. 
@@ -180,6 +195,7 @@ Eigen::GpuDevice * eigen_device ( ) const ;
 **返回**
 '''''''''''
 Eigen::GpuDevice *
+
 DnnWorkspaceHandle cudnn_workspace_handle ( ) const ;
 '''''''''''
 /*! \briefReturn a cudnn workspace handle to call multiple cudnnfunctions without interrupting by other threads.Once the first cudnn function is called by the handle, a lockwould be acquired to prevent other threads from accessing theworkspace. Once the handle is destructed, the lock would be released.
@@ -189,6 +205,7 @@ DnnWorkspaceHandle cudnn_workspace_handle ( ) const ;
 **返回**
 '''''''''''
 DnnWorkspaceHandle
+
 void CublasCall ( const std::function<void ( blasHandle_t )> & ) const ;
 '''''''''''
 /*! \briefCall cublas function safely. 
@@ -255,6 +272,7 @@ bool HasDnnAttr ( const std::string & attr_name ) const ;
 **返回**
 '''''''''''
 bool
+
 const Attribute & GetDnnAttr ( const std::string & attr_name ) const ;
 '''''''''''
 
@@ -266,6 +284,7 @@ const Attribute & GetDnnAttr ( const std::string & attr_name ) const ;
 **返回**
 '''''''''''
 const Attribute &
+
 void SetDnnAttr ( const std::string & attr_name , Attribute attr ) ;
 '''''''''''
 
@@ -288,6 +307,7 @@ static const char * name ( ) {
 **返回**
 '''''''''''
 const char *
+
 ncclComm_t nccl_comm ( ) const ;
 '''''''''''
 /*! \briefReturn nccl communicators. 
@@ -296,6 +316,7 @@ ncclComm_t nccl_comm ( ) const ;
 **返回**
 '''''''''''
 ncclComm_t
+
 void set_nccl_comm ( ncclComm_t comm ) ;
 '''''''''''
 /*! \briefSet nccl communicators. 

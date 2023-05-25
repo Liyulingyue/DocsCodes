@@ -59,6 +59,8 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, LANGUAGE = "cn"):
             os.makedirs(dir_path)
 
         func_name = item["name"].replace("PADDLE_API", "")
+        if 'Tensor' in func_name:
+            a = 1
         rst_dir = os.path.join(".", LANGUAGE, path, func_name + ".rst")
         try:
             helper = class_helper(item)

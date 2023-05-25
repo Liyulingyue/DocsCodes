@@ -182,6 +182,7 @@ class class_helper(object):
         self.init_func = self.class_name
 
         self.functions_infor = []
+        # TODO: 未来可能在private也有函数
         self.class_function_number = len(self.class_dict["methods"]["public"])
         for i in range(self.class_function_number):
             ith_function = self.class_dict["methods"]["public"][i]
@@ -204,6 +205,10 @@ class class_helper(object):
             # 获取返回值
             # returns = ith_function["returns"].replace("PADDLE_API ", "")
             returns = ith_function["rtnType"]
+            # TODO Template 没有仅对class起作用，可能需要同步添加到API中
+            template = ""
+            if ith_function['template'] != False:
+                template = ith_function['template']
 
             # analysis doxygen
             doxygen_dict = parse_doxygen(funcs_doxygen)
@@ -220,7 +225,8 @@ class class_helper(object):
                                          'doxygen': funcs_intro,
                                          'note': funcs_note,
                                          'parameter': parameter_dict,
-                                         'returns': returns})
+                                         'returns': returns,
+                                         'template':template})
 
         # if '@' in self.doxygen:
         #     print('CLASS: ' + self.file_path + ' - ' + self.class_name)
@@ -266,10 +272,14 @@ class class_helper(object):
                 f.write(class_function_head_text)
 
                 for fun_infor in self.functions_infor:
-                    fun_name_and_intro_text = f"{fun_infor['name']}\n" \
-                                              f"\'\'\'\'\'\'\'\'\'\'\'\n" \
-                                              f"{fun_infor['doxygen']}\n" \
-                                              f"\n"
+                    if fun_infor['template'] == "":
+                        fun_name_and_intro_text = ""
+                    else:
+                        fun_name_and_intro_text = f'{fun_infor["template"]}\n'
+                    fun_name_and_intro_text += f"{fun_infor['name']}\n" \
+                                               f"\'\'\'\'\'\'\'\'\'\'\'\n" \
+                                               f"{fun_infor['doxygen']}\n" \
+                                               f"\n"
                     f.write(fun_name_and_intro_text)
 
                     if fun_infor['note'] != "":
@@ -295,7 +305,7 @@ class class_helper(object):
                     if fun_infor['returns'] != '' and 'void' not in fun_infor['returns']:
                         fun_return_text = f"**返回**\n" \
                                           f"\'\'\'\'\'\'\'\'\'\'\'\n" \
-                                          f"{fun_infor['returns']}" \
+                                          f"{fun_infor['returns']}\n" \
                                           f"\n"
                         f.write(fun_return_text)
 
@@ -332,10 +342,14 @@ class class_helper(object):
                 f.write(class_function_head_text)
 
                 for fun_infor in self.functions_infor:
-                    fun_name_and_intro_text = f"{fun_infor['name']}\n" \
-                                              f"\'\'\'\'\'\'\'\'\'\'\'\n" \
-                                              f"{fun_infor['doxygen']}\n" \
-                                              f"\n"
+                    if fun_infor['template'] == "":
+                        fun_name_and_intro_text = ""
+                    else:
+                        fun_name_and_intro_text = f'{fun_infor["template"]}\n'
+                    fun_name_and_intro_text += f"{fun_infor['name']}\n" \
+                                               f"\'\'\'\'\'\'\'\'\'\'\'\n" \
+                                               f"{fun_infor['doxygen']}\n" \
+                                               f"\n"
                     f.write(fun_name_and_intro_text)
 
                     if fun_infor['note'] != "":
@@ -361,7 +375,7 @@ class class_helper(object):
                     if fun_infor['returns'] != '' and 'void' not in fun_infor['returns']:
                         fun_return_text = f"**Returns**\n" \
                                           f"\'\'\'\'\'\'\'\'\'\'\'\n" \
-                                          f"{fun_infor['returns']}" \
+                                          f"{fun_infor['returns']}\n" \
                                           f"\n"
                         f.write(fun_return_text)
 

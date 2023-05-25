@@ -63,6 +63,7 @@ AllocationType GetType ( ) const {
 **Returns**
 '''''''''''
 AllocationType
+
 int8_t GetDeviceId ( ) const {
 '''''''''''
 
@@ -71,6 +72,7 @@ int8_t GetDeviceId ( ) const {
 **Returns**
 '''''''''''
 int8_t
+
 std::string GetDeviceType ( ) const {
 '''''''''''
 
@@ -79,6 +81,7 @@ std::string GetDeviceType ( ) const {
 **Returns**
 '''''''''''
 std::string
+
 std::string DebugString ( ) const ;
 '''''''''''
 
@@ -87,6 +90,7 @@ std::string DebugString ( ) const ;
 **Returns**
 '''''''''''
 std::string
+
 uint32_t HashValue ( ) const {
 '''''''''''
 
@@ -95,6 +99,7 @@ uint32_t HashValue ( ) const {
 **Returns**
 '''''''''''
 uint32_t
+
 inline bool operator = = ( const Place & rhs ) const {
 '''''''''''
 
@@ -106,6 +111,7 @@ inline bool operator = = ( const Place & rhs ) const {
 **Returns**
 '''''''''''
 bool
+
 inline bool operator ! = ( const Place & rhs ) const {
 '''''''''''
 
@@ -117,6 +123,7 @@ inline bool operator ! = ( const Place & rhs ) const {
 **Returns**
 '''''''''''
 bool
+
 inline bool operator<( const Place & rhs ) const {
 '''''''''''
 
@@ -128,3 +135,4 @@ inline bool operator<( const Place & rhs ) const {
 **Returns**
 '''''''''''
 bool
+

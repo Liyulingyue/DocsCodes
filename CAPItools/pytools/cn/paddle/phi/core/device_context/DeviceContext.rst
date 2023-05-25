@@ -50,6 +50,7 @@ Move assign operator.
 **返回**
 '''''''''''
 DeviceContext &
+
 virtual ~DeviceContext ( ) ;
 '''''''''''
 Default destruct.
@@ -105,6 +106,7 @@ Get the const Allocator object.
 '''''''''''
 Allocator
 
+
 const Allocator & GetHostAllocator ( ) const ;
 '''''''''''
 Get the const device-related Allocator object. 
@@ -114,6 +116,7 @@ Get the const device-related Allocator object.
 '''''''''''
 Allocator
 
+
 const Allocator & GetZeroAllocator ( ) const ;
 '''''''''''
 
@@ -122,6 +125,7 @@ const Allocator & GetZeroAllocator ( ) const ;
 **返回**
 '''''''''''
 const Allocator &
+
 const Allocator & GetHostZeroAllocator ( ) const ;
 '''''''''''
 
@@ -130,6 +134,7 @@ const Allocator & GetHostZeroAllocator ( ) const ;
 **返回**
 '''''''''''
 const Allocator &
+
 const Allocator & GetPinnedAllocator ( ) const ;
 '''''''''''
 
@@ -138,6 +143,7 @@ const Allocator & GetPinnedAllocator ( ) const ;
 **返回**
 '''''''''''
 const Allocator &
+
 void SetCUDAGraphAllocator ( const Allocator * ) ;
 '''''''''''
 Set the CUDA graph Allocator object. 
@@ -155,6 +161,7 @@ Get the const CUDA graph Allocator object.
 '''''''''''
 Allocator
 
+
 bool IsCUDAGraphAllocatorValid ( ) const ;
 '''''''''''
 Test whether the CUDA graph allocator is valid This method should be called before calling GetCUDAGraphAllocator(). Other unit can calls GetCUDAGraphAllocator() method, only when this method returns True! 
@@ -163,6 +170,7 @@ Test whether the CUDA graph allocator is valid This method should be called befo
 **返回**
 '''''''''''
 true if cuda_graph_allocator_ is valid, false otherwise
+
 
 void * Alloc ( TensorBase * , DataType dtype , size_t requested_size = 0 , bool pinned = false , bool fake_alloc = false ) const ;
 '''''''''''
@@ -177,6 +185,7 @@ Allocate device memory for tensor.
 	- **pinned** (bool)
 	- **fake_alloc** (bool)
 
+template<typename T>
 T * Alloc ( TensorBase * tensor , size_t requested_size = 0 , bool pinned = false ) const ;
 '''''''''''
 
@@ -190,6 +199,7 @@ T * Alloc ( TensorBase * tensor , size_t requested_size = 0 , bool pinned = fals
 **返回**
 '''''''''''
 T *
+
 void * HostAlloc ( TensorBase * tensor , DataType dtype , size_t requested_size = 0 , bool fake_alloc = false ) const ;
 '''''''''''
 Allocate host memory for tensor.
@@ -202,6 +212,7 @@ Allocate host memory for tensor.
 	- **requested_size** (size_t)
 	- **fake_alloc** (bool)
 
+template<typename T>
 T * HostAlloc ( TensorBase * tensor , size_t requested_size = 0 ) const ;
 '''''''''''
 
@@ -214,6 +225,7 @@ T * HostAlloc ( TensorBase * tensor , size_t requested_size = 0 ) const ;
 **返回**
 '''''''''''
 T *
+
 virtual const Place & GetPlace ( ) const = 0 ;
 '''''''''''
 
@@ -222,6 +234,7 @@ virtual const Place & GetPlace ( ) const = 0 ;
 **返回**
 '''''''''''
 const Place &
+
 virtual void Wait ( ) const {
 '''''''''''
 
@@ -244,6 +257,7 @@ Get the generator object.
 '''''''''''
 Generator
 
+
 void SetHostGenerator ( Generator * ) ;
 '''''''''''
 Set the host generator for special op. 
@@ -261,6 +275,7 @@ Get the host generator object.
 '''''''''''
 Generator
 
+
 TypeInfo<DeviceContext> type_info ( ) const {
 '''''''''''
 Return the type information of the derived class to supportsafely downcast in non-rtti environment. 
@@ -269,6 +284,7 @@ Return the type information of the derived class to supportsafely downcast in no
 **返回**
 '''''''''''
 The type information of the derived class.
+
 
 void SetCommContext ( distributed::CommContext * comm_context ) ;
 '''''''''''
@@ -286,4 +302,5 @@ Get the comm context point.
 **返回**
 '''''''''''
 comm context point
+
 
