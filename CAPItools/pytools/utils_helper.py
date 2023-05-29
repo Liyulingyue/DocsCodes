@@ -379,11 +379,11 @@ class class_helper(object):
                                           f"\n"
                         f.write(fun_return_text)
 
-def generate_overview(overview_list, root_dir, language):
+def generate_overview(overview_list, save_dir, language):
     if language == 'cn':
-        generate_overview_cn(overview_list, root_dir, language)
+        generate_overview_cn(overview_list, save_dir, language)
     elif language == 'en':
-        generate_overview_en(overview_list, root_dir, language)
+        generate_overview_en(overview_list, save_dir, language)
     else:
         print('Error language! ')
 
