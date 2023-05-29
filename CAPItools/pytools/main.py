@@ -83,10 +83,15 @@ def cpp2py(data: dict):
 
 
 if __name__ == "__main__":
+    '''
     assert len(sys.argv) == 3
 
     root_dir = sys.argv[1]
     save_dir = sys.argv[2]
+    '''
+    # for simple run
+    root_dir = '../paddle'
+    save_dir = '.'
 
     all_funcs = []
     all_class = []

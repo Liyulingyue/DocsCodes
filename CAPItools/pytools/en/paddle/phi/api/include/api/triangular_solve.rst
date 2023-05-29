@@ -3,7 +3,7 @@
 triangular_solve
 -------------------------------
 
-..cpp: function::Tensor triangular_solve ( const Tensor & x , const Tensor & y , bool upper , bool transpose , bool unitriangular ) ;
+..cpp: function::Tensor triangular_solve ( const Tensor & x , const Tensor & y , bool upper = true , bool transpose = false , bool unitriangular = false ) ;
 
 
 This API is aligned with Python API, more details are shown in [paddle.triangular_solve](https://www.paddlepaddle.org.cn/documentation/docs/zh/api/paddle/triangular_solve_en.html)

@@ -3,7 +3,7 @@
 lstsq
 -------------------------------
 
-..cpp: function::std::tuple<Tensor , Tensor , Tensor , Tensor> lstsq ( const Tensor & x , const Tensor & y , const Scalar & rcond , const std::string & driver ) ;
+..cpp: function::std::tuple<Tensor , Tensor , Tensor , Tensor> lstsq ( const Tensor & x , const Tensor & y , const Scalar & rcond = 0.0 f , const std::string & driver = "gels" ) ;
 
 
 Path

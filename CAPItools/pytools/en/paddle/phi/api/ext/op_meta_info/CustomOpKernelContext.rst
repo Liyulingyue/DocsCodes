@@ -58,7 +58,7 @@ void EmplaceBackAttr ( paddle::any attr ) ;
 '''''''''''
 	- **attr** (paddle::any)
 
-void EmplaceBackAttrs ( const std::vector<paddle::any> & attrs ) {
+void EmplaceBackAttrs ( const std::vector<paddle::any> & attrs ) ;
 '''''''''''
 
 
@@ -161,7 +161,7 @@ paddle::optional<std::vector<Tensor> > OptionalInputsBetween ( size_t start , si
 '''''''''''
 paddle::optional<std::vector<Tensor> >
 
-const std::vector<paddle::any> & Attrs ( ) const {
+const std::vector<paddle::any> & Attrs ( ) const ;
 '''''''''''
 
 
@@ -170,7 +170,7 @@ const std::vector<paddle::any> & Attrs ( ) const {
 '''''''''''
 const std::vector<paddle::any> &
 
-const std::vector<std::pair<size_t , size_t> > & InputRange ( ) {
+const std::vector<std::pair<size_t , size_t> > & InputRange ( ) ;
 '''''''''''
 
 
@@ -179,7 +179,7 @@ const std::vector<std::pair<size_t , size_t> > & InputRange ( ) {
 '''''''''''
 const std::vector<std::pair<size_t, size_t> > &
 
-const std::vector<std::pair<size_t , size_t> > & OutputRange ( ) {
+const std::vector<std::pair<size_t , size_t> > & OutputRange ( ) ;
 '''''''''''
 
 
@@ -200,7 +200,7 @@ Tensor * MutableOutputAt ( size_t idx ) ;
 '''''''''''
 Tensor *
 
-std::vector<Tensor *> MutableOutputBetweeen ( size_t start , size_t end ) ;
+std::vector<Tensor *> MutableOutputBetween ( size_t start , size_t end ) ;
 '''''''''''
 
 
@@ -213,7 +213,7 @@ std::vector<Tensor *> MutableOutputBetweeen ( size_t start , size_t end ) ;
 '''''''''''
 std::vector<Tensor * >
 
-std::vector<Tensor> OutputsBetweeen ( size_t start , size_t end ) ;
+std::vector<Tensor> OutputsBetween ( size_t start , size_t end ) ;
 '''''''''''
 
 

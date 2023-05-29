@@ -3,7 +3,7 @@
 unpool3d
 -------------------------------
 
-..cpp: function::Tensor unpool3d ( const Tensor & x , const Tensor & indices , const std::vector<int> & ksize , const std::vector<int> & strides , const std::vector<int> & padding , const std::vector<int> & output_size , const std::string & data_format ) ;
+..cpp: function::Tensor unpool3d ( const Tensor & x , const Tensor & indices , const std::vector<int> & ksize , const std::vector<int> & strides = { 1 , 1 , 1 } , const std::vector<int> & paddings = { 0 , 0 , 0 } , const std::vector<int> & output_size = { 0 , 0 , 0 } , const std::string & data_format = "NCDHW" ) ;
 
 
 Path
@@ -16,7 +16,7 @@ Parameters
 	- **indices** (const Tensor&)
 	- **ksize** (const std::vector<int>&)
 	- **strides** (const std::vector<int>&)
-	- **padding** (const std::vector<int>&)
+	- **paddings** (const std::vector<int>&)
 	- **output_size** (const std::vector<int>&)
 	- **data_format** (const std::string&)
 

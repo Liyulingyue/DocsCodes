@@ -166,7 +166,7 @@ Determine whether tensor is DenseTensor
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool is_selected_rows ( ) const ;
@@ -176,7 +176,7 @@ Determine whether tensor is SelectedRows
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool is_sparse_coo_tensor ( ) const ;
@@ -186,7 +186,7 @@ Determine whether tensor is SparseCooTensor
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool is_sparse_csr_tensor ( ) const ;
@@ -196,7 +196,7 @@ Determine whether tensor is SparseCsrTensor
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool is_string_tensor ( ) const ;
@@ -206,7 +206,7 @@ Determine whether tensor is StringTensor
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 const Place & place ( ) const ;
@@ -226,7 +226,7 @@ Determine whether the tensor device is CPU
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool is_gpu ( ) const ;
@@ -236,7 +236,7 @@ Determine whether the tensor device is GPU
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool is_gpu_pinned ( ) const ;
@@ -246,7 +246,7 @@ Determine whether the tensor device is GPU_PINNED
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool is_xpu ( ) const ;
@@ -256,7 +256,7 @@ Determine whether the tensor device is XPU
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool is_custom_device ( ) const ;
@@ -266,7 +266,7 @@ Determine whether the tensor device is CustomDevice
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 template<typename T>
@@ -388,7 +388,7 @@ Get the stream where the tensor is currently located This is a deprecated method
 gpuStream_t
 
 
-const std::string & name ( ) const {
+const std::string & name ( ) const ;
 '''''''''''
 Return the name of Tensor. 
 
@@ -401,7 +401,7 @@ Return the name of Tensor.
 const std::string&
 
 
-void set_name ( const std::string & name ) {
+void set_name ( const std::string & name ) ;
 '''''''''''
 Set name of Tensor. 
 
@@ -422,7 +422,7 @@ Copy the current Tensor data to the specified device and return the new Tensor. 
 
 **Parameters**
 '''''''''''
-	- **target_place** (const Place&)
+	- **target_place** (const Place&) - The target place of which the tensor will copy to. 
 
 **Returns**
 '''''''''''
@@ -435,8 +435,8 @@ Transfer the current Tensor to the specified device and return.
 
 **Parameters**
 '''''''''''
-	- **place** (const Place&)
-	- **blocking** (bool)
+	- **place** (const Place&) - The target place of which the tensor will copy to. 
+	- **blocking** (bool) - Should we copy this in sync way. 
 
 **Returns**
 '''''''''''
@@ -449,9 +449,9 @@ Transfer the source Tensor to current Tensor.
 
 **Parameters**
 '''''''''''
-	- **src** (const Tensor&)
+	- **src** (const Tensor&) - The source Tensor to be copied. 
 	- **target_place** (const Place&)
-	- **blocking** (bool)
+	- **blocking** (bool) - Should we copy this in sync way. 
 
 Tensor cast ( DataType target_type ) const ;
 '''''''''''
@@ -473,7 +473,7 @@ Determine whether it is a meaningful Tensor
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool initialized ( ) const ;
@@ -483,7 +483,7 @@ Determine whether Tensor is initialized.
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 bool is_initialized ( ) const ;
@@ -493,7 +493,7 @@ Determine whether Tensor is initialized. This is a deprecated method and may be 
 
 **Returns**
 '''''''''''
-false
+bool
 
 
 void reset ( ) ;
@@ -811,7 +811,7 @@ Convert DenseTensor or SparseCsrTensor to SparseCooTensor
 
 **Parameters**
 '''''''''''
-	- **sparse_dim** (const int64_t)
+	- **sparse_dim** (const int64_t) - The number of sparse dimensions 
 
 **Returns**
 '''''''''''

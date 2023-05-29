@@ -3,7 +3,7 @@
 layer_norm
 -------------------------------
 
-..cpp: function::std::tuple<Tensor , Tensor , Tensor> layer_norm ( const Tensor & x , const paddle::optional<Tensor> & scale , const paddle::optional<Tensor> & bias , float epsilon , int begin_norm_axis ) ;
+..cpp: function::Tensor layer_norm ( const Tensor & x , const paddle::optional<Tensor> & scale , const paddle::optional<Tensor> & bias , float epsilon = 1e - 5 , int begin_norm_axis = 1 ) ;
 
 
 Path
@@ -20,4 +20,4 @@ Parameters
 
 Returns
 :::::::::::::::::::::
-std::tuple<Tensor , Tensor , Tensor>
+Tensor

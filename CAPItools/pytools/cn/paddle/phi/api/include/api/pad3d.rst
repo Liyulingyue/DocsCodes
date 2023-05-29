@@ -3,7 +3,7 @@
 pad3d
 -------------------------------
 
-..cpp: function::Tensor pad3d ( const Tensor & x , const IntArray & paddings , const std::string & mode , float pad_value , const std::string & data_format ) ;
+..cpp: function::Tensor pad3d ( const Tensor & x , const IntArray & paddings , const std::string & mode = "constant" , float pad_value = 0.0 , const std::string & data_format = "NCDHW" ) ;
 
 
 定义目录

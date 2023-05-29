@@ -32,6 +32,7 @@ The application scenario of this document is C++training and is mainly used in t
 
 ### [api.h](../paddle\phi\api\include\api.h)
 #### functions
+- abs
 - accuracy
 - acos
 - acosh
@@ -77,6 +78,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -94,6 +96,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -129,17 +132,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -151,6 +162,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -169,6 +181,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -176,6 +189,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -191,6 +206,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -198,6 +214,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -264,6 +281,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -271,6 +289,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -281,7 +300,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -299,7 +318,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -314,7 +332,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -339,26 +356,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -373,7 +384,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -405,8 +415,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -415,8 +425,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 
@@ -430,6 +438,7 @@ The application scenario of this document is C++training and is mainly used in t
 - AssignTensorImpl
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -475,6 +484,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -492,6 +502,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -527,17 +538,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -549,6 +568,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -567,6 +587,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -574,6 +595,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -589,6 +612,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -596,6 +620,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -662,6 +687,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -669,6 +695,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -679,7 +706,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -697,7 +724,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -712,7 +738,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -737,26 +762,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -771,7 +790,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -803,8 +821,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -813,8 +831,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 
@@ -837,6 +853,7 @@ The application scenario of this document is C++training and is mainly used in t
 - GetCurrentCUDAStream
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -882,6 +899,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -899,6 +917,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -934,17 +953,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -956,6 +983,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -974,6 +1002,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -981,6 +1010,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -996,6 +1027,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -1003,6 +1035,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -1069,6 +1102,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -1076,6 +1110,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -1086,7 +1121,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -1104,7 +1139,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -1119,7 +1153,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -1144,26 +1177,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -1178,7 +1205,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -1210,8 +1236,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -1220,8 +1246,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -1240,6 +1264,7 @@ The application scenario of this document is C++training and is mainly used in t
 - GetCurrentCUDAStream
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -1285,6 +1310,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -1302,6 +1328,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -1337,17 +1364,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -1359,6 +1394,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -1377,6 +1413,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -1384,6 +1421,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -1399,6 +1438,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -1406,6 +1446,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -1472,6 +1513,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -1479,6 +1521,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -1489,7 +1532,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -1507,7 +1550,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -1522,7 +1564,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -1547,26 +1588,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -1581,7 +1616,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -1613,8 +1647,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -1623,8 +1657,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -1646,6 +1678,7 @@ The application scenario of this document is C++training and is mainly used in t
 - GetCurrentCUDAStream
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -1691,6 +1724,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -1708,6 +1742,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -1743,17 +1778,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -1765,6 +1808,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -1783,6 +1827,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -1790,6 +1835,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -1805,6 +1852,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -1812,6 +1860,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -1878,6 +1927,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -1885,6 +1935,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -1895,7 +1946,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -1913,7 +1964,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -1928,7 +1978,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -1953,26 +2002,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -1987,7 +2030,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -2019,8 +2061,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -2029,8 +2071,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -2069,6 +2109,7 @@ The application scenario of this document is C++training and is mainly used in t
 - sqrt
 - square
 - subtract
+- sum
 - sync_batch_norm_
 - tan
 - tanh
@@ -2098,6 +2139,7 @@ The application scenario of this document is C++training and is mainly used in t
 - GetCurrentCUDAStream
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -2143,6 +2185,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -2160,6 +2203,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -2195,17 +2239,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -2217,6 +2269,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -2235,6 +2288,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -2242,6 +2296,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -2257,6 +2313,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -2264,6 +2321,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -2330,6 +2388,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -2337,6 +2396,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -2347,7 +2407,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -2365,7 +2425,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -2380,7 +2439,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -2405,26 +2463,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -2439,7 +2491,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -2471,8 +2522,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -2481,8 +2532,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -2520,6 +2569,7 @@ The application scenario of this document is C++training and is mainly used in t
 - sqrt
 - square
 - subtract
+- sum
 - sync_batch_norm_
 - tan
 - tanh
@@ -2556,6 +2606,7 @@ The application scenario of this document is C++training and is mainly used in t
 - GetCurrentCUDAStream
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -2601,6 +2652,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -2618,6 +2670,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -2653,17 +2706,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -2675,6 +2736,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -2693,6 +2755,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -2700,6 +2763,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -2715,6 +2780,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -2722,6 +2788,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -2788,6 +2855,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -2795,6 +2863,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -2805,7 +2874,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -2823,7 +2892,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -2838,7 +2906,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -2863,26 +2930,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -2897,7 +2958,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -2929,8 +2989,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -2939,8 +2999,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -2978,6 +3036,7 @@ The application scenario of this document is C++training and is mainly used in t
 - sqrt
 - square
 - subtract
+- sum
 - sync_batch_norm_
 - tan
 - tanh
@@ -3027,6 +3086,7 @@ The application scenario of this document is C++training and is mainly used in t
 - operator/
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -3072,6 +3132,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -3089,6 +3150,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -3124,17 +3186,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -3146,6 +3216,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -3164,6 +3235,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -3171,6 +3243,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -3186,6 +3260,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -3193,6 +3268,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -3259,6 +3335,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -3266,6 +3343,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -3276,7 +3354,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -3294,7 +3372,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -3309,7 +3386,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -3334,26 +3410,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -3368,7 +3438,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -3400,8 +3469,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -3410,8 +3479,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -3449,6 +3516,7 @@ The application scenario of this document is C++training and is mainly used in t
 - sqrt
 - square
 - subtract
+- sum
 - sync_batch_norm_
 - tan
 - tanh
@@ -3494,6 +3562,7 @@ The application scenario of this document is C++training and is mainly used in t
 - from_blob
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -3539,6 +3608,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -3556,6 +3626,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -3591,17 +3662,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -3613,6 +3692,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -3631,6 +3711,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -3638,6 +3719,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -3653,6 +3736,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -3660,6 +3744,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -3726,6 +3811,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -3733,6 +3819,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -3743,7 +3830,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -3761,7 +3848,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -3776,7 +3862,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -3801,26 +3886,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -3835,7 +3914,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -3867,8 +3945,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -3877,8 +3955,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -3916,6 +3992,7 @@ The application scenario of this document is C++training and is mainly used in t
 - sqrt
 - square
 - subtract
+- sum
 - sync_batch_norm_
 - tan
 - tanh
@@ -3961,6 +4038,7 @@ The application scenario of this document is C++training and is mainly used in t
 - from_blob
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -4006,6 +4084,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -4023,6 +4102,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -4058,17 +4138,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -4080,6 +4168,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -4098,6 +4187,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -4105,6 +4195,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -4120,6 +4212,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -4127,6 +4220,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -4193,6 +4287,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -4200,6 +4295,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -4210,7 +4306,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -4228,7 +4324,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -4243,7 +4338,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -4268,26 +4362,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -4302,7 +4390,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -4334,8 +4421,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -4344,8 +4431,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -4383,6 +4468,7 @@ The application scenario of this document is C++training and is mainly used in t
 - sqrt
 - square
 - subtract
+- sum
 - sync_batch_norm_
 - tan
 - tanh
@@ -4431,6 +4517,7 @@ The application scenario of this document is C++training and is mainly used in t
 - from_blob
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -4476,6 +4563,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -4493,6 +4581,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -4528,17 +4617,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -4550,6 +4647,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -4568,6 +4666,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -4575,6 +4674,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -4590,6 +4691,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -4597,6 +4699,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -4663,6 +4766,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -4670,6 +4774,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -4680,7 +4785,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -4698,7 +4803,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -4713,7 +4817,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -4738,26 +4841,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -4772,7 +4869,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -4804,8 +4900,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -4814,8 +4910,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -4853,6 +4947,7 @@ The application scenario of this document is C++training and is mainly used in t
 - sqrt
 - square
 - subtract
+- sum
 - sync_batch_norm_
 - tan
 - tanh
@@ -4909,6 +5004,7 @@ The application scenario of this document is C++training and is mainly used in t
 - DefaultGPUPlace
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -4954,6 +5050,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -4971,6 +5068,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -5006,17 +5104,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -5028,6 +5134,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -5046,6 +5153,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -5053,6 +5161,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -5068,6 +5178,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -5075,6 +5186,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -5141,6 +5253,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -5148,6 +5261,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -5158,7 +5272,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -5176,7 +5290,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -5191,7 +5304,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -5216,26 +5328,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -5250,7 +5356,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -5282,8 +5387,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -5292,8 +5397,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -5331,6 +5434,7 @@ The application scenario of this document is C++training and is mainly used in t
 - sqrt
 - square
 - subtract
+- sum
 - sync_batch_norm_
 - tan
 - tanh
@@ -5384,6 +5488,7 @@ The application scenario of this document is C++training and is mainly used in t
 - DefaultGPUPlace
 
 ### paddle::experimental::
+- abs
 - accuracy
 - acos
 - acosh
@@ -5429,6 +5534,7 @@ The application scenario of this document is C++training and is mainly used in t
 - clip
 - clip_
 - clip_by_norm
+- coalesce_tensor
 - complex
 - conj
 - cos
@@ -5446,6 +5552,7 @@ The application scenario of this document is C++training and is mainly used in t
 - dirichlet
 - dist
 - dot
+- edit_distance
 - eig
 - eigh
 - eigvals
@@ -5481,17 +5588,25 @@ The application scenario of this document is C++training and is mainly used in t
 - gelu
 - generate_proposals
 - grid_sample
+- group_norm
 - gumbel_softmax
 - hardshrink
 - hardsigmoid
 - hardtanh
 - histogram
 - huber_loss
+- i0
+- i0e
+- i1
+- i1e
 - imag
 - index_add
 - index_add_
+- index_put
+- index_put_
 - index_sample
 - index_select
+- instance_norm
 - inverse
 - is_empty
 - isclose
@@ -5503,6 +5618,7 @@ The application scenario of this document is C++training and is mainly used in t
 - kthvalue
 - label_smooth
 - lamb_
+- layer_norm
 - leaky_relu
 - lerp
 - lerp_
@@ -5521,6 +5637,7 @@ The application scenario of this document is C++training and is mainly used in t
 - logical_xor
 - logit
 - logsigmoid
+- lstsq
 - lu
 - lu_
 - lu_unpack
@@ -5528,6 +5645,8 @@ The application scenario of this document is C++training and is mainly used in t
 - masked_select
 - matrix_nms
 - matrix_power
+- max_pool2d_with_index
+- max_pool3d_with_index
 - maxout
 - mean_all
 - memory_efficient_attention
@@ -5543,6 +5662,7 @@ The application scenario of this document is C++training and is mainly used in t
 - mv
 - nanmedian
 - nearest_interp
+- nextafter
 - nll_loss
 - nms
 - nonzero
@@ -5550,6 +5670,7 @@ The application scenario of this document is C++training and is mainly used in t
 - numel
 - overlap_add
 - p_norm
+- pad3d
 - pixel_shuffle
 - poisson
 - pow
@@ -5616,6 +5737,7 @@ The application scenario of this document is C++training and is mainly used in t
 - thresholded_relu
 - topk
 - trace
+- triangular_solve
 - trilinear_interp
 - trunc
 - unbind
@@ -5623,6 +5745,7 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform_inplace
 - uniform_inplace_
 - unique_consecutive
+- unpool3d
 - unsqueeze
 - unsqueeze_
 - unstack
@@ -5633,7 +5756,7 @@ The application scenario of this document is C++training and is mainly used in t
 - weighted_sample_neighbors
 - where
 - yolo_box
-- abs
+- yolo_loss
 - adadelta_
 - add
 - add_
@@ -5651,7 +5774,6 @@ The application scenario of this document is C++training and is mainly used in t
 - cast
 - channel_shuffle
 - check_finite_and_unscale_
-- coalesce_tensor
 - concat
 - conv2d
 - conv2d_transpose
@@ -5666,7 +5788,6 @@ The application scenario of this document is C++training and is mainly used in t
 - distribute_fpn_proposals
 - divide
 - dropout
-- edit_distance
 - einsum
 - elementwise_pow
 - embedding
@@ -5691,26 +5812,20 @@ The application scenario of this document is C++training and is mainly used in t
 - gaussian
 - greater_equal
 - greater_than
-- group_norm
 - hardswish
 - heaviside
 - hsigmoid_loss
 - increment
 - increment_
-- instance_norm
-- layer_norm
 - less_equal
 - less_than
 - linspace
 - logspace
 - logsumexp
-- lstsq
 - matmul
 - matrix_rank
 - matrix_rank_tol
 - max
-- max_pool2d_with_index
-- max_pool3d_with_index
 - maximum
 - mean
 - min
@@ -5725,7 +5840,6 @@ The application scenario of this document is C++training and is mainly used in t
 - ones
 - ones_like
 - pad
-- pad3d
 - pool2d
 - pool3d
 - prior_box
@@ -5757,8 +5871,8 @@ The application scenario of this document is C++training and is mainly used in t
 - swish
 - sync_batch_norm_
 - tile
+- trans_layout
 - transpose
-- triangular_solve
 - tril
 - tril_indices
 - triu
@@ -5767,8 +5881,6 @@ The application scenario of this document is C++training and is mainly used in t
 - uniform
 - unique
 - unpool
-- unpool3d
-- yolo_loss
 - zeros
 - zeros_like
 - DeviceContextPool
@@ -5806,6 +5918,7 @@ The application scenario of this document is C++training and is mainly used in t
 - sqrt
 - square
 - subtract
+- sum
 - sync_batch_norm_
 - tan
 - tanh

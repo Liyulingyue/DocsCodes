@@ -163,7 +163,7 @@ Test whether the CUDA graph allocator is valid This method should be called befo
 true if cuda_graph_allocator_ is valid, false otherwise
 
 
-void * Alloc ( TensorBase * , DataType dtype , size_t requested_size = 0 , bool pinned = false , bool fake_alloc = false ) const ;
+virtual void * Alloc ( TensorBase * , DataType dtype , size_t requested_size = 0 , bool pinned = false , bool fake_alloc = false ) const ;
 '''''''''''
 Allocate device memory for tensor.
 
