@@ -8,6 +8,7 @@
 #include "paddle/phi/backends/callback_manager.h"
 #include "paddle/phi/backends/context_pool.h"
 #include "paddle/phi/backends/device_base.h"
+#include "paddle/phi/backends/device_code.h"
 #include "paddle/phi/backends/device_ext.h"
 #include "paddle/phi/backends/device_guard.h"
 #include "paddle/phi/backends/device_manager.h"

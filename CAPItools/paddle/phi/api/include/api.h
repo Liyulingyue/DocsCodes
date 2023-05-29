@@ -11,6 +11,8 @@ namespace paddle {
 namespace experimental {
 
 
+PADDLE_API Tensor abs(const Tensor& x);
+
 PADDLE_API std::tuple<Tensor, Tensor, Tensor> accuracy(const Tensor& x, const Tensor& indices, const Tensor& label);
 
 PADDLE_API Tensor acos(const Tensor& x);
@@ -101,6 +103,8 @@ PADDLE_API Tensor& clip_(Tensor& x, const Scalar& min, const Scalar& max);
 
 PADDLE_API Tensor clip_by_norm(const Tensor& x, float max_norm);
 
+PADDLE_API std::tuple<std::vector<Tensor>, Tensor> coalesce_tensor(const std::vector<Tensor>& input, DataType dtype, bool copy_data = false, bool set_constant = false, bool persist_output = false, float constant = 0.0, bool use_align = true, int align_size = -1, int size_of_dtype = -1, const std::vector<int64_t>& concated_shapes = {}, const std::vector<int64_t>& concated_ranks = {});
+
 PADDLE_API Tensor complex(const Tensor& real, const Tensor& imag);
 
 PADDLE_API Tensor conj(const Tensor& x);
@@ -134,6 +138,8 @@ PADDLE_API Tensor dirichlet(const Tensor& alpha);
 PADDLE_API Tensor dist(const Tensor& x, const Tensor& y, float p = 2.0);
 
 PADDLE_API Tensor dot(const Tensor& x, const Tensor& y);
+
+PADDLE_API std::tuple<Tensor, Tensor> edit_distance(const Tensor& hyps, const Tensor& refs, const paddle::optional<Tensor>& hypslength, const paddle::optional<Tensor>& refslength, bool normalized = false);
 
 PADDLE_API std::tuple<Tensor, Tensor> eig(const Tensor& x);
 
@@ -205,6 +211,8 @@ PADDLE_API std::tuple<Tensor, Tensor, Tensor> generate_proposals(const Tensor& s
 
 PADDLE_API Tensor grid_sample(const Tensor& x, const Tensor& grid, const std::string& mode = "bilinear", const std::string& padding_mode = "zeros", bool align_corners = true);
 
+PADDLE_API Tensor group_norm(const Tensor& x, const paddle::optional<Tensor>& scale, const paddle::optional<Tensor>& bias, float epsilon = 1e-5, int groups = -1, const std::string& data_layout = "NCHW");
+
 PADDLE_API Tensor gumbel_softmax(const Tensor& x, float temperature = 1.0, bool hard = false, int axis = -1);
 
 PADDLE_API Tensor hardshrink(const Tensor& x, float threshold = 0.5);
@@ -217,15 +225,29 @@ PADDLE_API Tensor histogram(const Tensor& input, int64_t bins = 100, int min = 0
 
 PADDLE_API Tensor huber_loss(const Tensor& input, const Tensor& label, float delta);
 
+PADDLE_API Tensor i0(const Tensor& x);
+
+PADDLE_API Tensor i0e(const Tensor& x);
+
+PADDLE_API Tensor i1(const Tensor& x);
+
+PADDLE_API Tensor i1e(const Tensor& x);
+
 PADDLE_API Tensor imag(const Tensor& x);
 
 PADDLE_API Tensor index_add(const Tensor& x, const Tensor& index, const Tensor& add_value, int axis = 0);
 
 PADDLE_API Tensor& index_add_(Tensor& x, const Tensor& index, const Tensor& add_value, int axis = 0);
 
+PADDLE_API Tensor index_put(const Tensor& x, const std::vector<Tensor>& indices, const Tensor& value, bool accumulate = false);
+
+PADDLE_API Tensor& index_put_(Tensor& x, const std::vector<Tensor>& indices, const Tensor& value, bool accumulate = false);
+
 PADDLE_API Tensor index_sample(const Tensor& x, const Tensor& index);
 
 PADDLE_API Tensor index_select(const Tensor& x, const Tensor& index, int axis = 0);
+
+PADDLE_API Tensor instance_norm(const Tensor& x, const paddle::optional<Tensor>& scale, const paddle::optional<Tensor>& bias, float epsilon = 1e-5);
 
 PADDLE_API Tensor inverse(const Tensor& x);
 
@@ -248,6 +270,8 @@ PADDLE_API std::tuple<Tensor, Tensor> kthvalue(const Tensor& x, int k = 1, int a
 PADDLE_API Tensor label_smooth(const Tensor& label, const paddle::optional<Tensor>& prior_dist, float epsilon = 0.0f);
 
 PADDLE_API std::tuple<Tensor&, Tensor&, Tensor&, Tensor&, Tensor&, paddle::optional<Tensor>&> lamb_(Tensor& param, const Tensor& grad, const Tensor& learning_rate, Tensor& moment1, Tensor& moment2, Tensor& beta1_pow, Tensor& beta2_pow, paddle::optional<Tensor>& master_param, const paddle::optional<Tensor>& skip_update, float weight_decay, float beta1 = 0.9, float beta2 = 0.999, float epsilon = 1.0e-6f, bool multi_precision = false);
+
+PADDLE_API Tensor layer_norm(const Tensor& x, const paddle::optional<Tensor>& scale, const paddle::optional<Tensor>& bias, float epsilon = 1e-5, int begin_norm_axis = 1);
 
 PADDLE_API Tensor leaky_relu(const Tensor& x, float negative_slope = 0.02f);
 
@@ -285,6 +309,8 @@ PADDLE_API Tensor logit(const Tensor& x, float eps = 1e-6f);
 
 PADDLE_API Tensor logsigmoid(const Tensor& x);
 
+PADDLE_API std::tuple<Tensor, Tensor, Tensor, Tensor> lstsq(const Tensor& x, const Tensor& y, const Scalar& rcond = 0.0f, const std::string& driver = "gels");
+
 PADDLE_API std::tuple<Tensor, Tensor, Tensor> lu(const Tensor& x, bool pivot = true);
 
 PADDLE_API std::tuple<Tensor&, Tensor, Tensor> lu_(Tensor& x, bool pivot = true);
@@ -298,6 +324,10 @@ PADDLE_API Tensor masked_select(const Tensor& x, const Tensor& mask);
 PADDLE_API std::tuple<Tensor, Tensor, Tensor> matrix_nms(const Tensor& bboxes, const Tensor& scores, float score_threshold, int nms_top_k, int keep_top_k, float post_threshold = 0., bool use_gaussian = false, float gaussian_sigma = 2., int background_label = 0, bool normalized = true);
 
 PADDLE_API Tensor matrix_power(const Tensor& x, int n);
+
+PADDLE_API std::tuple<Tensor, Tensor> max_pool2d_with_index(const Tensor& x, const std::vector<int>& kernel_size, const std::vector<int>& strides = {1, 1}, const std::vector<int>& paddings = {0, 0}, bool global_pooling = false, bool adaptive = false);
+
+PADDLE_API std::tuple<Tensor, Tensor> max_pool3d_with_index(const Tensor& x, const std::vector<int>& kernel_size, const std::vector<int>& strides = {1, 1, 1}, const std::vector<int>& paddings = {0, 0, 0}, bool global_pooling = false, bool adaptive = false);
 
 PADDLE_API Tensor maxout(const Tensor& x, int groups, int axis = 1);
 
@@ -329,6 +359,8 @@ PADDLE_API Tensor nanmedian(const Tensor& x, const IntArray& axis = {}, bool kee
 
 PADDLE_API Tensor nearest_interp(const Tensor& x, const paddle::optional<Tensor>& out_size, const paddle::optional<std::vector<Tensor>>& size_tensor, const paddle::optional<Tensor>& scale_tensor, const std::string& data_layout = "NCHW", int out_d = 0, int out_h = 0, int out_w = 0, const std::vector<float>& scale = {}, const std::string& interp_method = "bilinear", bool align_corners = true, int align_mode = 1);
 
+PADDLE_API Tensor nextafter(const Tensor& x, const Tensor& y);
+
 PADDLE_API std::tuple<Tensor, Tensor> nll_loss(const Tensor& input, const Tensor& label, const paddle::optional<Tensor>& weight, int64_t ignore_index = -100, const std::string& reduction = "mean");
 
 PADDLE_API Tensor nms(const Tensor& x, float threshold = 1.0f);
@@ -342,6 +374,8 @@ PADDLE_API Tensor numel(const Tensor& x);
 PADDLE_API Tensor overlap_add(const Tensor& x, int hop_length, int axis = -1);
 
 PADDLE_API Tensor p_norm(const Tensor& x, float porder = 2, int axis = -1, float epsilon = 1.0e-12f, bool keepdim = false, bool asvector = false);
+
+PADDLE_API Tensor pad3d(const Tensor& x, const IntArray& paddings, const std::string& mode = "constant", float pad_value = 0.0, const std::string& data_format = "NCDHW");
 
 PADDLE_API Tensor pixel_shuffle(const Tensor& x, int upscale_factor = 1, const std::string& data_format = "NCHW");
 
@@ -475,6 +509,8 @@ PADDLE_API std::tuple<Tensor, Tensor> topk(const Tensor& x, const Scalar& k = 1,
 
 PADDLE_API Tensor trace(const Tensor& x, int offset = 0, int axis1 = 0, int axis2 = 1);
 
+PADDLE_API Tensor triangular_solve(const Tensor& x, const Tensor& y, bool upper = true, bool transpose = false, bool unitriangular = false);
+
 PADDLE_API Tensor trilinear_interp(const Tensor& x, const paddle::optional<Tensor>& out_size, const paddle::optional<std::vector<Tensor>>& size_tensor, const paddle::optional<Tensor>& scale_tensor, const std::string& data_layout = "NCHW", int out_d = 0, int out_h = 0, int out_w = 0, const std::vector<float>& scale = {}, const std::string& interp_method = "bilinear", bool align_corners = true, int align_mode = 1);
 
 PADDLE_API Tensor trunc(const Tensor& input);
@@ -488,6 +524,8 @@ PADDLE_API Tensor uniform_inplace(const Tensor& x, float min = -1.0, float max =
 PADDLE_API Tensor& uniform_inplace_(Tensor& x, float min = -1.0, float max = 1.0, int seed = 0, int diag_num = 0, int diag_step = 0, float diag_val = 1.0);
 
 PADDLE_API std::tuple<Tensor, Tensor, Tensor> unique_consecutive(const Tensor& x, bool return_inverse = false, bool return_counts = false, const std::vector<int>& axis = {}, int dtype = 5);
+
+PADDLE_API Tensor unpool3d(const Tensor& x, const Tensor& indices, const std::vector<int>& ksize, const std::vector<int>& strides = {1,1,1}, const std::vector<int>& paddings = {0,0,0}, const std::vector<int>& output_size = {0,0,0}, const std::string& data_format = "NCDHW");
 
 PADDLE_API Tensor unsqueeze(const Tensor& x, const IntArray& axis = {});
 
@@ -509,7 +547,7 @@ PADDLE_API Tensor where(const Tensor& condition, const Tensor& x, const Tensor& 
 
 PADDLE_API std::tuple<Tensor, Tensor> yolo_box(const Tensor& x, const Tensor& img_size, const std::vector<int>& anchors = {}, int class_num = 1, float conf_thresh = 0.01, int downsample_ratio = 32, bool clip_bbox = true, float scale_x_y = 1.0, bool iou_aware = false, float iou_aware_factor = 0.5);
 
-PADDLE_API Tensor abs(const Tensor& x);
+PADDLE_API Tensor yolo_loss(const Tensor& x, const Tensor& gt_box, const Tensor& gt_label, const paddle::optional<Tensor>& gt_score, const std::vector<int>& anchors = {}, const std::vector<int>& anchor_mask = {}, int class_num = 1, float ignore_thresh = 0.7, int downsample_ratio = 32, bool use_label_smooth = true, float scale_x_y = 1.0);
 
 PADDLE_API std::tuple<Tensor&, Tensor&, Tensor&, paddle::optional<Tensor>&> adadelta_(Tensor& param, const Tensor& grad, Tensor& avg_squared_grad, Tensor& avg_squared_update, const Tensor& learning_rate, paddle::optional<Tensor>& master_param, float rho, float epsilon, bool multi_precision);
 
@@ -545,8 +583,6 @@ PADDLE_API Tensor channel_shuffle(const Tensor& x, int groups, const std::string
 
 PADDLE_API std::tuple<std::vector<Tensor>&, Tensor&> check_finite_and_unscale_(std::vector<Tensor>& x, const Tensor& scale, Tensor& input_found_infinite);
 
-PADDLE_API std::tuple<std::vector<Tensor>, Tensor> coalesce_tensor(const std::vector<Tensor>& input, DataType dtype, bool copy_data = false, bool set_constant = false, bool persist_output = false, float constant = 0.0, bool use_align = true, int align_size = -1, int size_of_dtype = -1, const std::vector<int64_t>& concated_shapes = {}, const std::vector<int64_t>& concated_ranks = {});
-
 PADDLE_API Tensor concat(const std::vector<Tensor>& x, const Scalar& axis);
 
 PADDLE_API Tensor conv2d(const Tensor& input, const Tensor& filter, const std::vector<int>& strides, const std::vector<int>& paddings, const std::string& padding_algorithm, const std::vector<int>& dilations, int groups, const std::string& data_format);
@@ -574,8 +610,6 @@ PADDLE_API std::tuple<std::vector<Tensor>, std::vector<Tensor>, Tensor> distribu
 PADDLE_API Tensor divide(const Tensor& x, const Tensor& y);
 
 PADDLE_API std::tuple<Tensor, Tensor> dropout(const Tensor& x, const paddle::optional<Tensor>& seed_tensor, const Scalar& p, bool is_test, const std::string& mode, int seed, bool fix_seed);
-
-PADDLE_API std::tuple<Tensor, Tensor> edit_distance(const Tensor& hyps, const Tensor& refs, const paddle::optional<Tensor>& hypslength, const paddle::optional<Tensor>& refslength, bool normalized = false);
 
 PADDLE_API std::tuple<Tensor, std::vector<Tensor>, std::vector<Tensor>> einsum(const std::vector<Tensor>& x, const std::string& equation);
 
@@ -625,8 +659,6 @@ PADDLE_API Tensor greater_equal(const Tensor& x, const Tensor& y);
 
 PADDLE_API Tensor greater_than(const Tensor& x, const Tensor& y);
 
-PADDLE_API Tensor group_norm(const Tensor& x, const paddle::optional<Tensor>& scale, const paddle::optional<Tensor>& bias, float epsilon, int groups, const std::string& data_layout);
-
 PADDLE_API Tensor hardswish(const Tensor& x);
 
 PADDLE_API Tensor heaviside(const Tensor& x, const Tensor& y);
@@ -636,10 +668,6 @@ PADDLE_API std::tuple<Tensor, Tensor, Tensor> hsigmoid_loss(const Tensor& x, con
 PADDLE_API Tensor increment(const Tensor& x, float value = 1.0);
 
 PADDLE_API Tensor& increment_(Tensor& x, float value = 1.0);
-
-PADDLE_API Tensor instance_norm(const Tensor& x, const paddle::optional<Tensor>& scale, const paddle::optional<Tensor>& bias, float epsilon);
-
-PADDLE_API std::tuple<Tensor, Tensor, Tensor> layer_norm(const Tensor& x, const paddle::optional<Tensor>& scale, const paddle::optional<Tensor>& bias, float epsilon, int begin_norm_axis);
 
 PADDLE_API Tensor less_equal(const Tensor& x, const Tensor& y);
 
@@ -651,8 +679,6 @@ PADDLE_API Tensor logspace(const Tensor& start, const Tensor& stop, const Tensor
 
 PADDLE_API Tensor logsumexp(const Tensor& x, const std::vector<int64_t>& axis, bool keepdim, bool reduce_all);
 
-PADDLE_API std::tuple<Tensor, Tensor, Tensor, Tensor> lstsq(const Tensor& x, const Tensor& y, const Scalar& rcond, const std::string& driver);
-
 PADDLE_API Tensor matmul(const Tensor& x, const Tensor& y, bool transpose_x = false, bool transpose_y = false);
 
 PADDLE_API Tensor matrix_rank(const Tensor& x, float tol, bool use_default_tol = true, bool hermitian = false);
@@ -660,10 +686,6 @@ PADDLE_API Tensor matrix_rank(const Tensor& x, float tol, bool use_default_tol =
 PADDLE_API Tensor matrix_rank_tol(const Tensor& x, const Tensor& atol_tensor, bool use_default_tol = true, bool hermitian = false);
 
 PADDLE_API Tensor max(const Tensor& x, const IntArray& axis = {}, bool keepdim = false);
-
-PADDLE_API std::tuple<Tensor, Tensor> max_pool2d_with_index(const Tensor& x, const std::vector<int>& kernel_size, const std::vector<int>& strides, const std::vector<int>& paddings, bool global_pooling, bool adaptive);
-
-PADDLE_API std::tuple<Tensor, Tensor> max_pool3d_with_index(const Tensor& x, const std::vector<int>& kernel_size, const std::vector<int>& strides, const std::vector<int>& paddings, bool global_pooling, bool adaptive);
 
 PADDLE_API Tensor maximum(const Tensor& x, const Tensor& y);
 
@@ -692,8 +714,6 @@ PADDLE_API Tensor ones(const IntArray& shape, DataType dtype = DataType::FLOAT32
 PADDLE_API Tensor ones_like(const Tensor& x, DataType dtype = DataType::UNDEFINED, const Place& place = {});
 
 PADDLE_API Tensor pad(const Tensor& x, const std::vector<int>& paddings, const Scalar& pad_value);
-
-PADDLE_API Tensor pad3d(const Tensor& x, const IntArray& paddings, const std::string& mode, float pad_value, const std::string& data_format);
 
 PADDLE_API Tensor pool2d(const Tensor& x, const IntArray& kernel_size, const std::vector<int>& strides, const std::vector<int>& paddings, bool ceil_mode, bool exclusive, const std::string& data_format, const std::string& pooling_type, bool global_pooling, bool adaptive, const std::string& padding_algorithm);
 
@@ -757,9 +777,9 @@ PADDLE_API std::tuple<Tensor, Tensor&, Tensor&, Tensor, Tensor, Tensor> sync_bat
 
 PADDLE_API Tensor tile(const Tensor& x, const IntArray& repeat_times = {});
 
-PADDLE_API Tensor transpose(const Tensor& x, const std::vector<int>& perm);
+PADDLE_API Tensor trans_layout(const Tensor& x, const std::vector<int>& perm);
 
-PADDLE_API Tensor triangular_solve(const Tensor& x, const Tensor& y, bool upper, bool transpose, bool unitriangular);
+PADDLE_API Tensor transpose(const Tensor& x, const std::vector<int>& perm);
 
 PADDLE_API Tensor tril(const Tensor& x, int diagonal);
 
@@ -776,10 +796,6 @@ PADDLE_API Tensor uniform(const IntArray& shape, DataType dtype, const Scalar& m
 PADDLE_API std::tuple<Tensor, Tensor, Tensor, Tensor> unique(const Tensor& x, bool return_index, bool return_inverse, bool return_counts, const std::vector<int>& axis, DataType dtype = DataType::INT64);
 
 PADDLE_API Tensor unpool(const Tensor& x, const Tensor& indices, const std::vector<int>& ksize, const std::vector<int>& strides, const std::vector<int>& padding, const IntArray& output_size, const std::string& data_format);
-
-PADDLE_API Tensor unpool3d(const Tensor& x, const Tensor& indices, const std::vector<int>& ksize, const std::vector<int>& strides, const std::vector<int>& padding, const std::vector<int>& output_size, const std::string& data_format);
-
-PADDLE_API std::tuple<Tensor, Tensor, Tensor> yolo_loss(const Tensor& x, const Tensor& gt_box, const Tensor& gt_label, const paddle::optional<Tensor>& gt_score, const std::vector<int>& anchors, const std::vector<int>& anchor_mask, int class_num, float ignore_thresh, int downsample_ratio, bool use_label_smooth = true, float scale_x_y = 1.0);
 
 PADDLE_API Tensor zeros(const IntArray& shape, DataType dtype = DataType::FLOAT32, const Place& place = CPUPlace());
 

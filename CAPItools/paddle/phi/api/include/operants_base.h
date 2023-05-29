@@ -39,6 +39,8 @@ class TensorOperantsBase {
 
   virtual Tensor pow(const Tensor& x, const Scalar& y) = 0;
 
+  virtual Tensor abs(const Tensor& x) = 0;
+
   virtual Tensor bitwise_and(const Tensor& x, const Tensor& y) = 0;
 
   virtual Tensor bitwise_not(const Tensor& x) = 0;
@@ -62,8 +64,6 @@ class TensorOperantsBase {
   virtual Tensor scatter(const Tensor& x, const Tensor& index, const Tensor& updates, bool overwrite = true) = 0;
 
   virtual Tensor scatter_nd_add(const Tensor& x, const Tensor& index, const Tensor& updates) = 0;
-
-  virtual Tensor abs(const Tensor& x) = 0;
 
   virtual Tensor add(const Tensor& x, const Tensor& y) = 0;
 

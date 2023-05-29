@@ -162,6 +162,11 @@ PADDLE_API Tensor square(const Tensor& x);
 PADDLE_API Tensor subtract(const Tensor& x, const Tensor& y);
 
 
+// out
+
+PADDLE_API Tensor sum(const Tensor& x, const IntArray& axis = {}, DataType dtype = DataType::UNDEFINED, bool keepdim = false);
+
+
 // out, mean_out, variance_out, saved_mean, saved_variance, reserve_space
 
 PADDLE_API std::tuple<Tensor, Tensor&, Tensor&, Tensor, Tensor, Tensor> sync_batch_norm_(const Tensor& x, Tensor& mean, Tensor& variance, const Tensor& scale, const Tensor& bias, bool is_test, float momentum, float epsilon, const std::string& data_layout, bool use_global_stats, bool trainable_statistics);

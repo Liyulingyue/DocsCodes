@@ -44,6 +44,8 @@ class PhiTensorOperants : public TensorOperantsBase {
   Tensor pow(const Tensor& x, const Scalar& y);
 
 
+  Tensor abs(const Tensor& x);
+
   Tensor bitwise_and(const Tensor& x, const Tensor& y);
 
   Tensor bitwise_not(const Tensor& x);
@@ -67,8 +69,6 @@ class PhiTensorOperants : public TensorOperantsBase {
   Tensor scatter(const Tensor& x, const Tensor& index, const Tensor& updates, bool overwrite = true);
 
   Tensor scatter_nd_add(const Tensor& x, const Tensor& index, const Tensor& updates);
-
-  Tensor abs(const Tensor& x);
 
   Tensor add(const Tensor& x, const Tensor& y);
 
