@@ -29,6 +29,8 @@ OpMetaInfo & Inputs ( std::vector<std::string> & & inputs ) ;
 '''''''''''
 	- **inputs** (std::vector<std::string>)
 
+#TODO：同理，参数类型为 std::vector<std::string>&&
+
 **返回**
 '''''''''''
 OpMetaInfo &
@@ -100,6 +102,8 @@ OpMetaInfo & SetInferDtypeFn ( InferDtypeFunc & & func ) ;
 **参数**
 '''''''''''
 	- **func** (vector<DataType> ( ) ( const std::vector<DataType> input_dtypes, const std::vector<std::vector<DataType> > vec_input_dtypes ))
+
+# TODO：这里有个 corner case，传入的参数为 InferDtypeFunc&&，这个 InferDtypeFunc 是用 using 声明出来的。直接用 InferDtypeFunc&& 是不是会更好些？
 
 **返回**
 '''''''''''

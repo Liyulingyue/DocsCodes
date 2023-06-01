@@ -25,6 +25,7 @@ void EmplaceBackInput ( Tensor & & input ) ;
 **参数**
 '''''''''''
 	- **input** (Tensor)
+# TODO：此处的参数类型为 Tensor&&，可能要修复下，因为 Tensor&& 和 Tensor 这两个参数类型还是有区别的
 
 void EmplaceBackInputs ( const std::vector<Tensor> & inputs ) ;
 '''''''''''
