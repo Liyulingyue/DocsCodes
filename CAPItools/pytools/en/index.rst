@@ -1,3 +1,4 @@
+# TODO: 英文索引页似乎有重复内容，en/index.rst 有将近六千行，中文 index.rst 有一千行，明显不一致，需要 debug 下
 # C++ API Reference
 PaddlePaddle (PArallel Distributed Deep LEarning) is an efficient, flexible, and extensible deep learning framework, commits to making the innovation and application of deep learning technology easier.
 In this version, PaddlePaddle has made many optimizations to the C++ APIs. You can refer to the following table to understand the C++ API directory structure and description of the latest version of PaddlePaddle. In addition, you can refer to PaddlePaddle’s GitHub for details.
