@@ -40,7 +40,7 @@ class func_helper(object):
             for param_name in doxygen_dict['param_intro'].keys():
                 self.parameter_dict[param_name]['intro'] = doxygen_dict['param_intro'][param_name]
 
-    def create_file(self, save_dir, language):
+    def create_and_write_file(self, save_dir, language):
         if language == 'cn':
             self.create_and_write_file_cn(save_dir, language)
         elif language == 'en':
@@ -231,7 +231,7 @@ class class_helper(object):
         # if '@' in self.doxygen:
         #     print('CLASS: ' + self.file_path + ' - ' + self.class_name)
 
-    def create_file(self, save_dir, language):
+    def create_and_write_file(self, save_dir, language):
         if language == 'cn':
             self.create_and_write_file_cn(save_dir, language)
         elif language == 'en':

@@ -7,6 +7,7 @@ import json
 import os
 import traceback
 import sys
+import re
 
 from utils_helper import func_helper, class_helper, generate_overview
 from utils import get_PADDLE_API_class, get_PADDLE_API_func
@@ -48,11 +49,15 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, LANGUAGE = "c
 
         # 这个反斜杠需要单独处理, 在 linux 下
         func_name = item["name"].replace("/", "")
+        if func_name.startswith('operator'):
+            checkwords = func_name.replace('operator','',1)
+            if re.search(r"\w", checkwords) == None:
+                continue  # 跳过操作符声明
         rst_dir = os.path.join(save_dir, LANGUAGE, path, func_name + ".rst")
         # avoid a filename such as operate*.rst, only windows
         try:
             helper = func_helper(item, cpp2py_api_list)
-            helper.create_file(rst_dir, LANGUAGE)
+            helper.create_and_write_file(rst_dir, LANGUAGE)
         except:
             print(traceback.format_exc())
             print('FAULT GENERATE:' + rst_dir)
@@ -67,7 +72,7 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, LANGUAGE = "c
         rst_dir = os.path.join(save_dir, LANGUAGE, path, func_name + ".rst")
         try:
             helper = class_helper(item)
-            helper.create_file(rst_dir, LANGUAGE)
+            helper.create_and_write_file(rst_dir, LANGUAGE)
         except:
             print(traceback.format_exc())
             print('FAULT GENERATE:' + rst_dir)
