@@ -83,15 +83,13 @@ def cpp2py(data: dict):
 
 
 if __name__ == "__main__":
-    '''
-    assert len(sys.argv) == 3
-
-    root_dir = sys.argv[1]
-    save_dir = sys.argv[2]
-    '''
-    # for simple run
-    root_dir = '../paddle'
-    save_dir = '.'
+    if len(sys.argv) == 3:
+        root_dir = sys.argv[1]
+        save_dir = sys.argv[2]
+    else:
+        # for simple run
+        root_dir = '../paddle'
+        save_dir = '.'
 
     all_funcs = []
     all_class = []
@@ -126,12 +124,9 @@ if __name__ == "__main__":
     generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, "cn")
     generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, "en")
 
-    # TODO: delete the try-except after every thing is prepare
-    try:
-        generate_overview(overview_list, save_dir, "cn")
-        generate_overview(overview_list, save_dir, "en")
-    except:
-        print('index error')
+    # overview
+    generate_overview(overview_list, save_dir, "cn")
+    generate_overview(overview_list, save_dir, "en")
 
     print("PADDLE_API func count: ", len(all_funcs))
     print("PADDLE_API class count: ", len(all_class))

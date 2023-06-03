@@ -402,7 +402,7 @@ def generate_overview_cn(overview_list, root_dir, LANGUAGE):
                     f'\n'
         f.write(head_text)
 
-        f.write('## 头文件\n')
+        f.write('## 头文件索引\n')
         namespace_dict = {} # 用于对齐namespace
 
         for h_dict in overview_list:
@@ -435,7 +435,7 @@ def generate_overview_cn(overview_list, root_dir, LANGUAGE):
 
             f.write('\n')
 
-        namespace_text = '## 命名空间\n'
+        namespace_text = '## 命名空间索引\n'
         for namespace in namespace_dict.keys():
             namespace_text += f'### {namespace}\n'
             for name in namespace_dict[namespace]:
@@ -458,7 +458,7 @@ def generate_overview_en(overview_list, root_dir, LANGUAGE):
                     f'\n'
         f.write(head_text)
 
-        f.write('## include\n')
+        f.write('## Index by header file\n')
         namespace_dict = {}
 
         for h_dict in overview_list:
@@ -490,7 +490,7 @@ def generate_overview_en(overview_list, root_dir, LANGUAGE):
 
             f.write('\n')
 
-            namespace_text = '## namespace\n'
+            namespace_text = '## Index by namespace\n'
             for namespace in namespace_dict.keys():
                 namespace_text += f'### {namespace}\n'
                 for name in namespace_dict[namespace]:
