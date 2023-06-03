@@ -3,7 +3,7 @@
 Place[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\common\place.h)
 -------------------------------
 
-.. cpp:class:: explicit Place ( AllocationType type , int8_t id , const std::string & dev_type = "" ) :
+.. cpp:class:: Place
 /// \brief The place is used to specify where the data is stored.
 
 Path

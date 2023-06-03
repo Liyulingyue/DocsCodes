@@ -3,7 +3,7 @@
 Tensor[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\api\include\tensor.h)
 -------------------------------
 
-.. cpp:class:: Tensor ( std::shared_ptr<phi::TensorBase> tensor_impl , const std::string & name ) ;
+.. cpp:class:: Tensor
 
 
 Path

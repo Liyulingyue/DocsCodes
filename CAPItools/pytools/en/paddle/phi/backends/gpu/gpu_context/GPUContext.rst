@@ -3,7 +3,7 @@
 GPUContext[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\backends\gpu\gpu_context.h)
 -------------------------------
 
-.. cpp:class:: explicit GPUContext ( const GPUPlace & place , bool init = true , int stream_priority = 0 ) ;
+.. cpp:class:: GPUContext
 
 
 Path

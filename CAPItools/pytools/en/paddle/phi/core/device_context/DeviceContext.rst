@@ -3,7 +3,7 @@
 DeviceContext[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\core\device_context.h)
 -------------------------------
 
-.. cpp:class:: DeviceContext ( const DeviceContext & ) ;
+.. cpp:class:: DeviceContext
  DeviceContext provides device-related interfaces. All kernels must access the interfaces provided by the backend through DeviceContext.
 
 

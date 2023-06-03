@@ -3,7 +3,7 @@
 CPUContext[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\backends\cpu\cpu_context.h)
 -------------------------------
 
-.. cpp:class:: explicit CPUContext ( const Place & ) ;
+.. cpp:class:: CPUContext
 
 
 定义目录

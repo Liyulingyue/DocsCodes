@@ -3,7 +3,7 @@
 InitPhi[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\fluid\platform\init_phi.h)
 -------------------------------
 
-.. cpp:class:: InitPhi ( ) ;
+.. cpp:class:: InitPhi
 
 
 定义目录

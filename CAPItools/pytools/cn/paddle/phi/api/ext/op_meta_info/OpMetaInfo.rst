@@ -3,7 +3,7 @@
 OpMetaInfo[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\api\ext\op_meta_info.h)
 -------------------------------
 
-.. cpp:class:: explicit OpMetaInfo ( const std::string & op_name ) :
+.. cpp:class:: OpMetaInfo
 
 
 定义目录

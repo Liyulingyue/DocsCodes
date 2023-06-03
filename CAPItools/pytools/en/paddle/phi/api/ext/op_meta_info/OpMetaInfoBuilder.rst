@@ -3,7 +3,7 @@
 OpMetaInfoBuilder[source](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi\api\ext\op_meta_info.h)
 -------------------------------
 
-.. cpp:class:: explicit OpMetaInfoBuilder ( std::string & & name , size_t index ) ;
+.. cpp:class:: OpMetaInfoBuilder
 
 
 Path

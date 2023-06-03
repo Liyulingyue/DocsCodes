@@ -186,8 +186,8 @@ class class_helper(object):
         self.class_function_number = len(self.class_dict["methods"]["public"])
         for i in range(self.class_function_number):
             ith_function = self.class_dict["methods"]["public"][i]
-            if self.class_name in ith_function["name"] and len(ith_function["debug"]) > len(self.init_func):
-                self.init_func = ith_function["debug"]
+            # if self.class_name in ith_function["name"] and len(ith_function["debug"]) > len(self.init_func):
+            #     self.init_func = ith_function["debug"]
 
             function_name = ith_function['debug']
             # 获取描述
