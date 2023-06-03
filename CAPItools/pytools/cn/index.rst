@@ -3,7 +3,7 @@
 在本版本中，飞桨框架对 C++ 接口做了许多优化，您可以参考下表来了解飞桨框架最新版的 C++ 目录结构与说明。此外，您可参考 PaddlePaddle 的 GitHub 了解详情。
 本文档的应用场景为 C++ 训练，并主要在自定义算子开发时使用。本文档内容持续迭代中，在下个版本可能会有不兼容的升级，如果不介意随下一版本升级的话，可以使用，追求稳定的话则不建议使用。
 
-## 头文件
+## 头文件索引
 ### [init_phi.h](../paddle\fluid\platform\init_phi.h)
 #### classes
 - InitPhi
@@ -519,7 +519,7 @@
 #### classes
 - DeviceContext
 
-## 命名空间
+## 命名空间索引
 ### paddle::
 - InitPhi
 - CustomOpKernelContext

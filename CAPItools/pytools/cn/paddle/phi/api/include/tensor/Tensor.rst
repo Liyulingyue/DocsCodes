@@ -5,6 +5,7 @@ Tensor[源代码](https://github.com/PaddlePaddle/Paddle/blob/develop/paddle\phi
 
 .. cpp:class:: Tensor ( std::shared_ptr<phi::TensorBase> tensor_impl , const std::string & name ) ;
 
+# Why： class 的声明，为何后面跟上了构造函数的参数？当 class 有多个重载的构造函数时，应该会冲突，这里不展示后面的参数是不是更好些～
 
 定义目录
 :::::::::::::::::::::
