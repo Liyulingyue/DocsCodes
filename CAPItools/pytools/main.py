@@ -49,6 +49,8 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, LANGUAGE = "c
 
         # 这个反斜杠需要单独处理, 在 linux 下
         func_name = item["name"].replace("/", "")
+
+        # Note: 操作符仅不生成rst，实际上在Overview列表依然会呈现以提示存在此操作符
         if func_name.startswith('operator'):
             checkwords = func_name.replace('operator','',1)
             if re.search(r"\w", checkwords) == None:
@@ -112,7 +114,6 @@ if __name__ == "__main__":
             with open(file_path, encoding='utf8') as f:
                 if 'PADDLE_API ' not in f.read():
                     continue
-
 
             print("Parsing: ", file_path)
             data = analysis_file(file_path)
