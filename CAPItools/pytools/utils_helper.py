@@ -11,7 +11,7 @@ class func_helper(object):
         self.decode()
 
     def decode(self):
-        # TODO 这里要看一下 operator== 这种情况能不能正常解析
+        # Note 这里要看一下 operator== 这种情况能不能正常解析
         self.func_name = self.function_dict["name"]
         # 解析api
         self.api = self.function_dict["debug"].replace("PADDLE_API ", "")
@@ -21,7 +21,7 @@ class func_helper(object):
 
         self.note = ""
 
-        # TODO 如果使用已安装的 paddle 包需要调整
+        # Note 如果使用已安装的 paddle 包需要调整
         self.file_path = self.function_dict["filename"].replace("../", "")
 
         if len(self.function_dict["parameters"]) != 0:
@@ -163,9 +163,9 @@ class class_helper(object):
         self.decode()
 
     def decode(self):
-        self.branch = "develop"  # TODO 这里可以看看从包里面获取
+        self.branch = "develop"  # Note 这里可以看看从包里面获取
         self.class_name = self.class_dict["name"].replace("PADDLE_API", "")
-        # TODO 如果使用已安装的 paddle 包需要调整
+        # Note 如果使用已安装的 paddle 包需要调整
         self.file_path = self.class_dict["filename"].replace("../", "")
         doxygen = self.class_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
                                                                                                        "").replace("  ",
@@ -182,7 +182,7 @@ class class_helper(object):
         self.init_func = self.class_name
 
         self.functions_infor = []
-        # TODO: 未来可能在private也有函数
+        # Note: 未来可能在private也有函数
         self.class_function_number = len(self.class_dict["methods"]["public"])
         for i in range(self.class_function_number):
             ith_function = self.class_dict["methods"]["public"][i]
@@ -205,7 +205,7 @@ class class_helper(object):
             # 获取返回值
             # returns = ith_function["returns"].replace("PADDLE_API ", "")
             returns = ith_function["rtnType"]
-            # TODO Template 没有仅对class起作用，可能需要同步添加到API中
+            # Note Template 没有仅对class起作用，可能需要同步添加到API中
             template = ""
             if ith_function['template'] != False:
                 template = ith_function['template']
@@ -217,7 +217,7 @@ class class_helper(object):
             if doxygen_dict['returns'] != "": returns = doxygen_dict['returns']
             if doxygen_dict['param_intro'] != {}:
                 for param_name in doxygen_dict['param_intro'].keys():
-                    # TODO: 可能param_name 不同步，需要注意
+                    # Note: 可能param_name 不同步，需要注意
                     if param_name in parameter_dict.keys():
                         parameter_dict[param_name]['intro'] = doxygen_dict['param_intro'][param_name]
 
@@ -410,7 +410,7 @@ def generate_overview_cn(overview_list, root_dir, LANGUAGE):
             h_head_text = f'### [{basename}]({h_dict["h_file"]})\n'
             f.write(h_head_text)
 
-            # TODO: add url link
+            # Note: add url link
             if len(h_dict["class"])>0:
                 # write class
                 h_class_text = f'#### classes\n'
@@ -466,7 +466,7 @@ def generate_overview_en(overview_list, root_dir, LANGUAGE):
             h_head_text = f'### [{basename}]({h_dict["h_file"]})\n'
             f.write(h_head_text)
 
-            # TODO: add url link
+            # Note: add url link
             if len(h_dict["class"])>0:
                 # write class
                 h_class_text = f'#### classes\n'

@@ -11,7 +11,7 @@ import sys
 from utils_helper import func_helper, class_helper, generate_overview
 from utils import get_PADDLE_API_class, get_PADDLE_API_func
 
-# TODO 通过已安装的 paddle 来查找 include
+# Noite 通过已安装的 paddle 来查找 include
 # import paddle
 # import inspect
 #
@@ -19,7 +19,7 @@ from utils import get_PADDLE_API_class, get_PADDLE_API_func
 # print(os.path.dirname(inspect.getsourcefile(paddle)))
 
 
-# TODO 需要单独处理一下这种
+# Note 需要单独处理一下这种
 """
 #if defined(PADDLE_WITH_CUDA) || defined(PADDLE_WITH_HIP)
 /**

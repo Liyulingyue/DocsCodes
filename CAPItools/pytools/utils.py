@@ -11,11 +11,11 @@ def get_PADDLE_API_func(data: dict):
 def get_PADDLE_API_class(data: dict):
     result = []
     for classname in data["classes"]:
-        # TODO 目前没有 PADDLE_API 是 struct 的
+        # Note 目前没有 PADDLE_API 是 struct 的
         if data["classes"][classname]["declaration_method"] == "struct":
             continue
 
-        # TODO 这里需要处理一下, 因为类名和 PADDLE_API 会粘在一起, 例: PADDLE_APIDeviceContextPool
+        # Note 这里需要处理一下, 因为类名和 PADDLE_API 会粘在一起, 例: PADDLE_APIDeviceContextPool
         if "PADDLE_API" in classname:
             result.append(data["classes"][classname])
     return result
