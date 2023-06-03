@@ -19,7 +19,7 @@ explicit OpMetaInfoBuilder ( std::string & & name , size_t index ) ;
 
 **参数**
 '''''''''''
-	- **name** (std::string)
+	- **name** (std::string&&)
 	- **index** (size_t)
 
 OpMetaInfoBuilder & Inputs ( std::vector<std::string> & & inputs ) ;
@@ -28,7 +28,7 @@ OpMetaInfoBuilder & Inputs ( std::vector<std::string> & & inputs ) ;
 
 **参数**
 '''''''''''
-	- **inputs** (std::vector<std::string>)
+	- **inputs** (std::vector<std::string>&&)
 
 **返回**
 '''''''''''
@@ -40,7 +40,7 @@ OpMetaInfoBuilder & Outputs ( std::vector<std::string> & & outputs ) ;
 
 **参数**
 '''''''''''
-	- **outputs** (std::vector<std::string>)
+	- **outputs** (std::vector<std::string>&&)
 
 **返回**
 '''''''''''
@@ -52,7 +52,7 @@ OpMetaInfoBuilder & Attrs ( std::vector<std::string> & & attrs ) ;
 
 **参数**
 '''''''''''
-	- **attrs** (std::vector<std::string>)
+	- **attrs** (std::vector<std::string>&&)
 
 **返回**
 '''''''''''
@@ -64,7 +64,7 @@ OpMetaInfoBuilder & SetInplaceMap ( std::unordered_map<std::string , std::string
 
 **参数**
 '''''''''''
-	- **inplace_map** (std::unordered_map<std::string, std::string>)
+	- **inplace_map** (std::unordered_map<std::string, std::string>&&)
 
 **返回**
 '''''''''''

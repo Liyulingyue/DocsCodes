@@ -24,7 +24,7 @@ void EmplaceBackInput ( Tensor & & input ) ;
 
 **Parameters**
 '''''''''''
-	- **input** (Tensor)
+	- **input** (Tensor&&)
 
 void EmplaceBackInputs ( const std::vector<Tensor> & inputs ) ;
 '''''''''''
@@ -40,7 +40,7 @@ void EmplaceBackOutput ( Tensor & & output ) ;
 
 **Parameters**
 '''''''''''
-	- **output** (Tensor)
+	- **output** (Tensor&&)
 
 void EmplaceBackOutputs ( const std::vector<Tensor> & outputs ) ;
 '''''''''''

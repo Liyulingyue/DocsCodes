@@ -19,7 +19,7 @@ explicit OpMetaInfoBuilder ( std::string & & name , size_t index ) ;
 
 **Parameters**
 '''''''''''
-	- **name** (std::string)
+	- **name** (std::string&&)
 	- **index** (size_t)
 
 OpMetaInfoBuilder & Inputs ( std::vector<std::string> & & inputs ) ;
@@ -28,7 +28,7 @@ OpMetaInfoBuilder & Inputs ( std::vector<std::string> & & inputs ) ;
 
 **Parameters**
 '''''''''''
-	- **inputs** (std::vector<std::string>)
+	- **inputs** (std::vector<std::string>&&)
 
 **Returns**
 '''''''''''
@@ -40,7 +40,7 @@ OpMetaInfoBuilder & Outputs ( std::vector<std::string> & & outputs ) ;
 
 **Parameters**
 '''''''''''
-	- **outputs** (std::vector<std::string>)
+	- **outputs** (std::vector<std::string>&&)
 
 **Returns**
 '''''''''''
@@ -52,7 +52,7 @@ OpMetaInfoBuilder & Attrs ( std::vector<std::string> & & attrs ) ;
 
 **Parameters**
 '''''''''''
-	- **attrs** (std::vector<std::string>)
+	- **attrs** (std::vector<std::string>&&)
 
 **Returns**
 '''''''''''
@@ -64,7 +64,7 @@ OpMetaInfoBuilder & SetInplaceMap ( std::unordered_map<std::string , std::string
 
 **Parameters**
 '''''''''''
-	- **inplace_map** (std::unordered_map<std::string, std::string>)
+	- **inplace_map** (std::unordered_map<std::string, std::string>&&)
 
 **Returns**
 '''''''''''

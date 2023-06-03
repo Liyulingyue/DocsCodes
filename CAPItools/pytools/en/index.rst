@@ -3,12 +3,12 @@ PaddlePaddle (PArallel Distributed Deep LEarning) is an efficient, flexible, and
 In this version, PaddlePaddle has made many optimizations to the C++ APIs. You can refer to the following table to understand the C++ API directory structure and description of the latest version of PaddlePaddle. In addition, you can refer to PaddlePaddle’s GitHub for details.
 The application scenario of this document is C++training and is mainly used in the development of custom operators. The content of this document is continuously iterating, and there may be incompatible upgrades in the next version. If you don’t mind upgrading with the next version, you can use it. Otherwise, it is not recommended to use it.
 
-## include
+## Index by header file
 ### [init_phi.h](../paddle\fluid\platform\init_phi.h)
 #### classes
 - InitPhi
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 
@@ -21,7 +21,7 @@ The application scenario of this document is C++training and is mainly used in t
 #### functions
 - AssignTensorImpl
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -428,7 +428,7 @@ The application scenario of this document is C++training and is mainly used in t
 - zeros
 - zeros_like
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -841,7 +841,7 @@ The application scenario of this document is C++training and is mainly used in t
 - GetAllocator
 - GetCurrentCUDAStream
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -1252,7 +1252,7 @@ The application scenario of this document is C++training and is mainly used in t
 
 ### [dll_decl.h](../paddle\phi\api\include\dll_decl.h)
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -1666,7 +1666,7 @@ The application scenario of this document is C++training and is mainly used in t
 - fused_dropout_add
 - fused_linear_param_grad_add
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -2127,7 +2127,7 @@ The application scenario of this document is C++training and is mainly used in t
 - maxpool
 - mv
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -2594,7 +2594,7 @@ The application scenario of this document is C++training and is mainly used in t
 - lower
 - upper
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -3069,7 +3069,7 @@ The application scenario of this document is C++training and is mainly used in t
 - operator*
 - operator/
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -3544,7 +3544,7 @@ The application scenario of this document is C++training and is mainly used in t
 #### functions
 - from_blob
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -4020,7 +4020,7 @@ The application scenario of this document is C++training and is mainly used in t
 #### classes
 - CPUContext
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -4499,7 +4499,7 @@ The application scenario of this document is C++training and is mainly used in t
 #### classes
 - GPUContext
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -4983,7 +4983,7 @@ The application scenario of this document is C++training and is mainly used in t
 - operator==
 - DefaultGPUPlace
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext
@@ -5467,7 +5467,7 @@ The application scenario of this document is C++training and is mainly used in t
 #### classes
 - DeviceContext
 
-## namespace
+## Index by namespace
 ### paddle::
 - InitPhi
 - CustomOpKernelContext

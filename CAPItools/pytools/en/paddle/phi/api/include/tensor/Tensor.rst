@@ -375,7 +375,7 @@ Set the implementation of current Tensor.
 
 **Parameters**
 '''''''''''
-	- **impl** (std::shared_ptr<phi::TensorBase>) - impl
+	- **impl** (std::shared_ptr<phi::TensorBase>&&) - impl
 
 
 gpuStream_t stream ( ) const ;
@@ -521,7 +521,7 @@ Move assignment operator
 
 **Parameters**
 '''''''''''
-	- **x** (Tensor)
+	- **x** (Tensor&&)
 
 **Returns**
 '''''''''''

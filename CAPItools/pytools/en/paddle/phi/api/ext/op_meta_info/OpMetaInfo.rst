@@ -27,7 +27,7 @@ OpMetaInfo & Inputs ( std::vector<std::string> & & inputs ) ;
 
 **Parameters**
 '''''''''''
-	- **inputs** (std::vector<std::string>)
+	- **inputs** (std::vector<std::string>&&)
 
 **Returns**
 '''''''''''
@@ -39,7 +39,7 @@ OpMetaInfo & Outputs ( std::vector<std::string> & & outputs ) ;
 
 **Parameters**
 '''''''''''
-	- **outputs** (std::vector<std::string>)
+	- **outputs** (std::vector<std::string>&&)
 
 **Returns**
 '''''''''''
@@ -51,7 +51,7 @@ OpMetaInfo & Attrs ( std::vector<std::string> & & attrs ) ;
 
 **Parameters**
 '''''''''''
-	- **attrs** (std::vector<std::string>)
+	- **attrs** (std::vector<std::string>&&)
 
 **Returns**
 '''''''''''
@@ -63,7 +63,7 @@ OpMetaInfo & SetInplaceMap ( std::unordered_map<std::string , std::string> & & i
 
 **Parameters**
 '''''''''''
-	- **inplace_map** (std::unordered_map<std::string, std::string>)
+	- **inplace_map** (std::unordered_map<std::string, std::string>&&)
 
 **Returns**
 '''''''''''
@@ -75,7 +75,7 @@ OpMetaInfo & SetKernelFn ( KernelFunc & & func ) ;
 
 **Parameters**
 '''''''''''
-	- **func** (void ( ) ( CustomOpKernelContext ))
+	- **func** (void ( ) ( CustomOpKernelContext )&&)
 
 **Returns**
 '''''''''''
@@ -87,7 +87,7 @@ OpMetaInfo & SetInferShapeFn ( InferShapeFunc & & func ) ;
 
 **Parameters**
 '''''''''''
-	- **func** (vector<std::vector<int64_t> > ( ) ( const std::vector<std::vector<int64_t> > input_shapes, const std::vector<std::vector<std::vector<int64_t> > > vec_input_shapes, const std::vector<paddle::any> attrs ))
+	- **func** (vector<std::vector<int64_t> > ( ) ( const std::vector<std::vector<int64_t> > input_shapes, const std::vector<std::vector<std::vector<int64_t> > > vec_input_shapes, const std::vector<paddle::any> attrs )&&)
 
 **Returns**
 '''''''''''
@@ -99,7 +99,7 @@ OpMetaInfo & SetInferDtypeFn ( InferDtypeFunc & & func ) ;
 
 **Parameters**
 '''''''''''
-	- **func** (vector<DataType> ( ) ( const std::vector<DataType> input_dtypes, const std::vector<std::vector<DataType> > vec_input_dtypes ))
+	- **func** (vector<DataType> ( ) ( const std::vector<DataType> input_dtypes, const std::vector<std::vector<DataType> > vec_input_dtypes )&&)
 
 **Returns**
 '''''''''''

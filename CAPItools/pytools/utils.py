@@ -29,9 +29,9 @@ def get_parameters(parameters):
         parameter_type_tmp = i['type'].replace(" &", "").replace(" *", "")
         # * 和 & 情况
         # parameter_api += parameter_type_tmp
-        if i["reference"] == 1:
-            # parameter_api += "&"
-            parameter_type_tmp += "&"
+
+        # 添加引用
+        parameter_type_tmp += ("&" * i["reference"])
         if i["pointer"] == 1:
             # parameter_api += "*"
             parameter_type_tmp += "*"
