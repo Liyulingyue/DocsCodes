@@ -42,13 +42,13 @@ class func_helper(object):
 
     def create_file(self, save_dir, language):
         if language == 'cn':
-            self.create_file_cn(save_dir, language)
+            self.create_and_write_file_cn(save_dir, language)
         elif language == 'en':
-            self.create_file_en(save_dir, language)
+            self.create_and_write_file_en(save_dir, language)
         else:
             print('Error language! ')
 
-    def create_file_cn(self, save_dir, language):
+    def create_and_write_file_cn(self, save_dir, language):
         with open(save_dir, 'w', encoding='utf8') as f:
             head_text = f'.. _{language}_api_{self.namespace}{self.func_name}:\n' \
                         f'\n'
@@ -102,7 +102,7 @@ class func_helper(object):
             if 'void' not in self.returns:
                 f.write(return_text)
 
-    def create_file_en(self, save_dir, language):
+    def create_and_write_file_en(self, save_dir, language):
         with open(save_dir, 'w', encoding='utf8') as f:
             head_text = f'.. _{language}_api_{self.namespace}{self.func_name}:\n' \
                         f'\n'
@@ -233,13 +233,13 @@ class class_helper(object):
 
     def create_file(self, save_dir, language):
         if language == 'cn':
-            self.create_file_cn(save_dir, language)
+            self.create_and_write_file_cn(save_dir, language)
         elif language == 'en':
-            self.create_file_en(save_dir, language)
+            self.create_and_write_file_en(save_dir, language)
         else:
             print('Error language! ')
 
-    def create_file_cn(self, save_dir, language):
+    def create_and_write_file_cn(self, save_dir, language):
         with open(save_dir, 'w', encoding='utf8') as f:
             head_text = f'.. _{language}_api_{self.class_name}:\n' \
                         f'\n'
@@ -309,7 +309,7 @@ class class_helper(object):
                                           f"\n"
                         f.write(fun_return_text)
 
-    def create_file_en(self, save_dir, language):
+    def create_and_write_file_en(self, save_dir, language):
         with open(save_dir, 'w', encoding='utf8') as f:
             head_text = f'.. _{language}_api_{self.class_name}:\n' \
                         f'\n'
