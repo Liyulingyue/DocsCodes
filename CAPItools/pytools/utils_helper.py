@@ -489,10 +489,10 @@ def generate_overview_en(overview_list, root_dir, LANGUAGE):
 
             f.write('\n')
 
-            namespace_text = '## Index by namespace\n'
-            for namespace in namespace_dict.keys():
-                namespace_text += f'### {namespace}\n'
-                for name in namespace_dict[namespace]:
-                    namespace_text += f'- {name}\n'
-                namespace_text += '\n'
-            f.write(namespace_text)
+        namespace_text = '## Index by namespace\n'
+        for namespace in namespace_dict.keys():
+            namespace_text += f'### {namespace}\n'
+            for name in namespace_dict[namespace]:
+                namespace_text += f'- {name}\n'
+            namespace_text += '\n'
+        f.write(namespace_text)
