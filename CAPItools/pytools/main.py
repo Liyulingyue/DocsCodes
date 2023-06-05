@@ -12,24 +12,6 @@ import re
 from utils_helper import func_helper, class_helper, generate_overview
 from utils import get_PADDLE_API_class, get_PADDLE_API_func
 
-# Noite 通过已安装的 paddle 来查找 include
-# import paddle
-# import inspect
-#
-# # 获取已安装paddle的路径
-# print(os.path.dirname(inspect.getsourcefile(paddle)))
-
-
-# Note 需要单独处理一下这种
-"""
-#if defined(PADDLE_WITH_CUDA) || defined(PADDLE_WITH_HIP)
-/**
- * Get the current CUDA stream for the passed CUDA device.
- */
-PADDLE_API phi::CUDAStream* GetCurrentCUDAStream(const phi::Place& place);
-#endif
-"""
-
 
 # 获取namespace
 # 多线程使用并不安全, 请不要使用多线程
@@ -40,7 +22,7 @@ def analysis_file(path):
 
 
 # 生成文件
-def generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, LANGUAGE = "cn"):
+def generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, LANGUAGE="cn"):
     for item in all_funcs:
         path = item["filename"].replace("../", "").replace(".h", "")
         dir_path = os.path.join(save_dir, LANGUAGE, path)
@@ -52,7 +34,7 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, LANGUAGE = "c
 
         # Note: 操作符仅不生成rst，实际上在Overview列表依然会呈现以提示存在此操作符
         if func_name.startswith('operator'):
-            checkwords = func_name.replace('operator','',1)
+            checkwords = func_name.replace('operator', '', 1)
             if re.search(r"\w", checkwords) == None:
                 continue  # 跳过操作符声明
         rst_dir = os.path.join(save_dir, LANGUAGE, path, func_name + ".rst")
@@ -90,13 +72,22 @@ def cpp2py(data: dict):
 
 
 if __name__ == "__main__":
+    root_dir = ''
+    save_dir = '.'  # 默认保存在当前目录
     if len(sys.argv) == 3:
         root_dir = sys.argv[1]
         save_dir = sys.argv[2]
-    else:
-        # for simple run
-        root_dir = '../paddle'
-        save_dir = '.'
+
+    if root_dir == '':
+        try:
+            import paddle
+            import inspect
+
+            root_dir = os.path.dirname(inspect.getsourcefile(paddle))
+        except:
+            # for simple run
+            root_dir = '../paddle'
+            save_dir = '.'
 
     all_funcs = []
     all_class = []
@@ -104,6 +95,10 @@ if __name__ == "__main__":
     overview_list = []
     for home, dirs, files in os.walk(root_dir):
         for file_name in files:
+            # 跳过不需要处理的文件
+            if file_name.split(".")[-1] not in ["cc", "cu", "h"]:
+                continue
+
             file_path = os.path.join(home, file_name)
             # 处理 cpp 和 py api对应的文件
             if file_name == "tensor_compat.h":
@@ -111,7 +106,7 @@ if __name__ == "__main__":
                 cpp2py_api_list = cpp2py(cpp2py_data).copy()
 
             # 跳过文件中未包含PADDLE_API
-            with open(file_path, encoding='utf8') as f:
+            with open(file_path, encoding='utf-8') as f:
                 if 'PADDLE_API ' not in f.read():
                     continue
 
@@ -125,7 +120,7 @@ if __name__ == "__main__":
             # 信息记录
             all_funcs.extend(current_func)
             all_class.extend(current_class)
-            overview_list.append({'h_file':file_path,'class':current_class,'function':current_func})
+            overview_list.append({'h_file': file_path, 'class': current_class, 'function': current_func})
 
     generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, "cn")
     generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, "en")
