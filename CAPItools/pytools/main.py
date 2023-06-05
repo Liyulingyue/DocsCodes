@@ -73,7 +73,7 @@ def cpp2py(data: dict):
 
 if __name__ == "__main__":
     root_dir = ''
-    save_dir = '.'  # 默认保存在当前目录
+    save_dir = '.' # 默认保存在当前目录
     if len(sys.argv) == 3:
         root_dir = sys.argv[1]
         save_dir = sys.argv[2]
@@ -87,7 +87,7 @@ if __name__ == "__main__":
         except:
             # for simple run
             root_dir = '../paddle'
-            save_dir = '.'
+            save_dir = '.' # 默认保存在当前目录
 
     all_funcs = []
     all_class = []

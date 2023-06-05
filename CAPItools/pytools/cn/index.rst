@@ -4,11 +4,11 @@
 本文档的应用场景为 C++ 训练，并主要在自定义算子开发时使用。本文档内容持续迭代中，在下个版本可能会有不兼容的升级，如果不介意随下一版本升级的话，可以使用，追求稳定的话则不建议使用。
 
 ## 头文件索引
-### [init_phi.h](../paddle\fluid\platform\init_phi.h)
+### [init_phi.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\fluid\platform\init_phi.h)
 #### classes
 - InitPhi
 
-### [op_meta_info.h](../paddle\phi\api\ext\op_meta_info.h)
+### [op_meta_info.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\api\ext\op_meta_info.h)
 #### classes
 - CustomOpKernelContext
 - OpMetaInfo
@@ -17,7 +17,7 @@
 #### functions
 - AssignTensorImpl
 
-### [api.h](../paddle\phi\api\include\api.h)
+### [api.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\api\include\api.h)
 #### functions
 - abs
 - accuracy
@@ -415,21 +415,21 @@
 - zeros
 - zeros_like
 
-### [context_pool.h](../paddle\phi\api\include\context_pool.h)
+### [context_pool.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\api\include\context_pool.h)
 #### classes
 - DeviceContextPool
 #### functions
 - GetAllocator
 - GetCurrentCUDAStream
 
-### [dll_decl.h](../paddle\phi\api\include\dll_decl.h)
+### [dll_decl.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\api\include\dll_decl.h)
 
-### [fused_api.h](../paddle\phi\api\include\fused_api.h)
+### [fused_api.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\api\include\fused_api.h)
 #### functions
 - fused_dropout_add
 - fused_linear_param_grad_add
 
-### [sparse_api.h](../paddle\phi\api\include\sparse_api.h)
+### [sparse_api.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\api\include\sparse_api.h)
 #### functions
 - abs
 - acos
@@ -479,14 +479,14 @@
 - maxpool
 - mv
 
-### [strings_api.h](../paddle\phi\api\include\strings_api.h)
+### [strings_api.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\api\include\strings_api.h)
 #### functions
 - empty
 - empty_like
 - lower
 - upper
 
-### [tensor.h](../paddle\phi\api\include\tensor.h)
+### [tensor.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\api\include\tensor.h)
 #### classes
 - Tensor
 #### functions
@@ -495,19 +495,19 @@
 - operator*
 - operator/
 
-### [tensor_utils.h](../paddle\phi\api\include\tensor_utils.h)
+### [tensor_utils.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\api\include\tensor_utils.h)
 #### functions
 - from_blob
 
-### [cpu_context.h](../paddle\phi\backends\cpu\cpu_context.h)
+### [cpu_context.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\backends\cpu\cpu_context.h)
 #### classes
 - CPUContext
 
-### [gpu_context.h](../paddle\phi\backends\gpu\gpu_context.h)
+### [gpu_context.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\backends\gpu\gpu_context.h)
 #### classes
 - GPUContext
 
-### [place.h](../paddle\phi\common\place.h)
+### [place.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\common\place.h)
 #### classes
 - Place
 #### functions
@@ -515,7 +515,7 @@
 - operator==
 - DefaultGPUPlace
 
-### [device_context.h](../paddle\phi\core\device_context.h)
+### [device_context.h](D:\Codes\DocsCodes\venv\lib\site-packages\paddle\include\paddle\phi\core\device_context.h)
 #### classes
 - DeviceContext
 
