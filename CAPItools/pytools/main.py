@@ -13,7 +13,7 @@ from utils_helper import func_helper, class_helper, generate_overview
 from utils import get_PADDLE_API_class, get_PADDLE_API_func
 
 
-# 获取namespace
+# 解析所有的函数, 类, 枚举, 返回一个字典
 # 多线程使用并不安全, 请不要使用多线程
 def analysis_file(path):
     header = CppHeaderParser.CppHeader(path, encoding='utf8')
@@ -63,6 +63,7 @@ def generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, LANGUAGE="cn"
 
 
 # cpp 对应 python api
+# 用于存储 api 的名称, 用于后续生成对应python api文档链接
 def cpp2py(data: dict):
     cpp2py_api_list = []
     for i in data["using"]:
@@ -100,7 +101,7 @@ if __name__ == "__main__":
                 continue
 
             file_path = os.path.join(home, file_name)
-            # 处理 cpp 和 py api对应的文件
+            # 处理 cpp 和 py api对应的文件, 目前只有这个文件内的 cpp api和 python api是对应的
             if file_name == "tensor_compat.h":
                 cpp2py_data = analysis_file(file_path)
                 cpp2py_api_list = cpp2py(cpp2py_data).copy()
@@ -122,13 +123,15 @@ if __name__ == "__main__":
             all_class.extend(current_class)
             overview_list.append({'h_file': file_path, 'class': current_class, 'function': current_func})
 
+    # 生成文档
     generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, "cn")
     generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, "en")
 
-    # overview
+    # 生成 overview
     generate_overview(overview_list, save_dir, "cn")
     generate_overview(overview_list, save_dir, "en")
 
+    # 统计信息
     print("PADDLE_API func count: ", len(all_funcs))
     print("PADDLE_API class count: ", len(all_class))
     print("cpp2py api count: ", len(cpp2py_api_list))
