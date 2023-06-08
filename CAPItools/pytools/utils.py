@@ -1,4 +1,6 @@
 # 获取存在 PADDLE_API func 数组的名称
+# CppHeaderParser 解析后以字典形式保存数据，'debug' 字段中保存了原始信息
+# 如果 PADDLE_API 在字段中，则表明该 API 是外部暴露的函数
 def get_PADDLE_API_func(data: dict):
     result = []
     for i in data["functions"]:
@@ -8,6 +10,8 @@ def get_PADDLE_API_func(data: dict):
 
 
 # 获取存在 PADDLE_API class 数组的名称
+# CppHeaderParser 解析后以字典形式保存数据
+# 如果 PADDLE_API 在字段中，则表明该 API 是外部暴露的类
 def get_PADDLE_API_class(data: dict):
     result = []
     for classname in data["classes"]:
