@@ -11,9 +11,8 @@ class func_helper(object):
         self.decode()
 
     def decode(self):
-        # Note 这里要看一下 operator== 这种情况能不能正常解析
+        # 解析 api 信息
         self.func_name = self.function_dict["name"]
-        # 解析api
         self.api = self.function_dict["debug"].replace("PADDLE_API ", "")
         self.namespace = self.function_dict["namespace"].replace("::", "_")
         doxygen = self.function_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*","").replace("  ", "")
@@ -21,7 +20,6 @@ class func_helper(object):
 
         self.note = ""
 
-        # Note 如果使用已安装的 paddle 包需要调整
         self.file_path = self.function_dict["filename"].replace("../", "")
 
         if len(self.function_dict["parameters"]) != 0:
@@ -165,7 +163,6 @@ class class_helper(object):
     def decode(self):
         self.branch = "develop"  # Note 这里可以看看从包里面获取
         self.class_name = self.class_dict["name"].replace("PADDLE_API", "")
-        # Note 如果使用已安装的 paddle 包需要调整
         self.file_path = self.class_dict["filename"].replace("../", "")
         doxygen = self.class_dict.get("doxygen", "").replace("/**", "").replace("*/", "").replace("\n*",
                                                                                                        "").replace("  ",
@@ -434,6 +431,7 @@ def generate_overview_cn(overview_list, root_dir, LANGUAGE):
 
             f.write('\n')
 
+        # 根据 namespace 进行分级写入
         namespace_text = '## 命名空间索引\n'
         for namespace in namespace_dict.keys():
             namespace_text += f'### {namespace}\n'
@@ -443,6 +441,7 @@ def generate_overview_cn(overview_list, root_dir, LANGUAGE):
         f.write(namespace_text)
 
 
+# 与 generate_overview_cn 实现原理一致
 def generate_overview_en(overview_list, root_dir, LANGUAGE):
     dir_path = os.path.join(root_dir, LANGUAGE)
     if not os.path.exists(dir_path):
