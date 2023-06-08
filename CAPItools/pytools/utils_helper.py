@@ -2,7 +2,10 @@ import os
 
 from utils import get_parameters, parse_doxygen
 
-
+# 用于生成API文档的辅助类
+# __init__ 初始化函数，调用decode
+# decode 用于解析CppHeaderParser的解析信息
+# create_and_write_file 根据指定的语言类型，在指定目录生成对应的文档
 class func_helper(object):
     def __init__(self, function_dict, cpp2py_api_list):
         super(func_helper, self).__init__()
@@ -154,6 +157,11 @@ class func_helper(object):
             if 'void' not in self.returns:
                 f.write(return_text)
 
+
+# 用于生成Class文档的辅助类
+# __init__ 初始化函数，调用decode
+# decode 用于解析CppHeaderParser的解析信息
+# create_and_write_file 根据指定的语言类型，在指定目录生成对应的文档
 class class_helper(object):
     def __init__(self, class_dict):
         super(class_helper, self).__init__()
@@ -375,6 +383,8 @@ class class_helper(object):
                                           f"\n"
                         f.write(fun_return_text)
 
+# 用于生成Overview页面
+# 根据指定的语言类型，在指定目录生成总览文档
 def generate_overview(overview_list, save_dir, language):
     if language == 'cn':
         generate_overview_cn(overview_list, save_dir, language)

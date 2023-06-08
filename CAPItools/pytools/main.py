@@ -22,6 +22,7 @@ def analysis_file(path):
 
 
 # 生成文件
+# 根据给定的list内容，生成对应的文档信息
 def generate_docs(all_funcs, all_class, cpp2py_api_list, save_dir, LANGUAGE="cn"):
     for item in all_funcs:
         path = item["filename"].replace("../", "").replace(".h", "")
@@ -71,7 +72,10 @@ def cpp2py(data: dict):
 
     return cpp2py_api_list
 
-
+# 运行主函数，主要流程如下
+# 1. 确定生成的目录
+# 2. 提取待生成文档的PADDLE_API list
+# 3. 生成文档
 if __name__ == "__main__":
     root_dir = ''
     save_dir = '.' # 默认保存在当前目录
