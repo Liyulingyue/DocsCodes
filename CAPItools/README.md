@@ -3,8 +3,10 @@ CAPI tools用于一键生成 C++ 的 rst 文档。
 
 ## 调用方式
 ```python
-python main.py [source dir] [target dir]
+python main.py <source dir> <target dir>
 ```
+
+若不设置`source dir`和`target dir`，则默认先查找已安装的`paddlepaddle`包环境。
 
 其中：
 - source dir是安装后的Paddle C++ API声明路径。 例如`venv/Lib/site-packages/paddle/include/paddle`。
@@ -29,3 +31,26 @@ target dir
 
 ## 获取最新PaddlePaddle
 pip install python -m pip install paddlepaddle==0.0.0 -f https://www.paddlepaddle.org.cn/whl/windows/cpu-mkl-avx/develop.html
+
+## 代码结构
+
+### `main.py`文件主要用于处理和筛选包文件, 并调用`utils_helper.py`中的函数进行文件生成
+```python
+def analysis_file() # 用于解析文件内容(多线程不安全)
+
+def generate_docs() # 用于创建目录并传值给utils_helper.py中的函数进行文件生成
+
+def cpp2py() # 用于筛选出 cpp api 和 py api 相对应的函数名称
+```
+
+### `utils_helper.py`文件主要存放函数生成、解析, 以及文件写入的工作
+```python
+
+class func_helper(object) # 用于生成和解析方法
+    decode() # 用于解析输出输出参数、函数名称、返回值、函数注释信息
+class class_helper(object) # 用于生成和解析类
+    decode() # 同func_helper()
+    
+def generate_overview() # 用于生成overview.rst文件
+```
+
